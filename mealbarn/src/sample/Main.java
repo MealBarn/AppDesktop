@@ -16,8 +16,9 @@ public class Main extends Application {
         priStage = primaryStage;
 
         Parent Login = FXMLLoader.load(getClass().getResource("Login.fxml"));  /// 1
-//        Parent Search = FXMLLoader.load(getClass().getResource("Search.fxml"));
+        Parent Search = FXMLLoader.load(getClass().getResource("Search.fxml"));
         this.Login = new Scene(Login); /// 2
+        this.Search = new Scene(Search);
 //        Parent root = FXMLLoader.load(getClass().getResource("Login.fxml"));
         priStage.setTitle("MealBarn");
 //        primaryStage.setScene(new Scene(root, 300, 275));
