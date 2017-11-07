@@ -1,14 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import com.gluonhq.charm.glisten.control.TextField?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="sample.Search"
-            prefHeight="400.0" prefWidth="600.0">
 
+<AnchorPane prefHeight="472.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Search">
+   <children>
+      <TextField layoutX="75.0" layoutY="185.0" prefHeight="27.0" prefWidth="437.0" />
+      <JFXCheckBox layoutX="35.0" layoutY="227.0" text="A la cate" />
+      <JFXCheckBox layoutX="314.0" layoutY="227.0" text="Drink" />
+      <JFXCheckBox layoutX="127.0" layoutY="227.0" text="Appetizer" />
+      <JFXCheckBox layoutX="225.0" layoutY="227.0" text="Dessert" />
+      <JFXCheckBox layoutX="391.0" layoutY="227.0" text="MainCourse" />
+      <JFXCheckBox layoutX="507.0" layoutY="227.0" text="Soup" />
+   </children>
 </AnchorPane>

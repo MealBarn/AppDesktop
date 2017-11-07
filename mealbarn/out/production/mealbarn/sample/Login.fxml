@@ -16,7 +16,7 @@
             <Image url="@../img/ras.jpg" />
          </image>
       </ImageView>
-      <ImageView fitHeight="657.0" fitWidth="443.0" layoutX="478.0" layoutY="-3.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="657.0" fitWidth="443.0" layoutX="476.0" layoutY="-3.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../img/580229a4a5513c4b77411f1ff72869a9.jpg" />
          </image>
@@ -50,7 +50,7 @@
             <Font name="Selima" size="120.0" />
          </font>
       </Text>
-      <Button layoutX="167.0" layoutY="478.0" mnemonicParsing="false" opacity="0.88" prefHeight="35.0" prefWidth="137.0" style="-fx-background-color: #ffff33;" text="Login">
+      <Button layoutX="167.0" layoutY="478.0" mnemonicParsing="false" opacity="0.88" prefHeight="46.0" prefWidth="137.0" style="-fx-background-color: #ffff33; -fx-background-radius: 10;" text="Login">
          <font>
             <Font size="18.0" />
          </font>
