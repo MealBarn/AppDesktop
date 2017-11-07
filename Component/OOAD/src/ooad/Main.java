@@ -20,15 +20,32 @@ public class Main {
     public static void main(String[] args) {
         // TODO code application logic here
         //Scanner input = new Scanner (System.in);
-        EntityManagerFactory emf = Persistence.createEntityManagerFactory("Component.odb");
+       // EntityManagerFactory emf = Persistence.createEntityManagerFactory("Component.odb");
+        //EntityManager em = emf.createEntityManager();
+        
+        //em.getTransaction().begin();
+        //          Component p = new Component();
+         //         em.persist(p);
+         //         p.setId(76);
+         //         p.setComponent("ผงฟู");
+                 //em.clear();
+        //em.getTransaction().commit();
+        
+        
+        
+        //em.close();
+       //emf.close();
+       
+       
+        EntityManagerFactory emf = Persistence.createEntityManagerFactory("Point.odb");
         EntityManager em = emf.createEntityManager();
         
         em.getTransaction().begin();
-                  Component p = new Component();
-                  em.persist(p);
-                  p.setId(76);
-                  p.setComponent("ผงฟู");
-                 //em.clear();
+                 for (int i=1;i<77;i++){
+                     Point p= new Point();
+                     em.persist(p);
+                     //
+                 }
         em.getTransaction().commit();
         
         
