@@ -1,4 +1,4 @@
-package sample;
+package mealbarn;
 
 public class Controller {
 }
