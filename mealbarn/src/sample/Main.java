@@ -15,13 +15,13 @@ public class Main extends Application {
     public void start(Stage primaryStage) throws Exception{
         priStage = primaryStage;
 
-        Parent Login = FXMLLoader.load(getClass().getResource("Login.fxml"));
+        Parent Login = FXMLLoader.load(getClass().getResource("Login.fxml"));  /// 1
 //        Parent Search = FXMLLoader.load(getClass().getResource("Search.fxml"));
-        this.Login = new Scene(Login);
+        this.Login = new Scene(Login); /// 2
 //        Parent root = FXMLLoader.load(getClass().getResource("Login.fxml"));
         priStage.setTitle("MealBarn");
 //        primaryStage.setScene(new Scene(root, 300, 275));
-        priStage.setScene(this.Login);
+        priStage.setScene(this.Login); /// 3
         primaryStage.show();
     }
 
