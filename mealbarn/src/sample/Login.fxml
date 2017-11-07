@@ -4,6 +4,8 @@
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1">
    <children>
@@ -12,11 +14,16 @@
             <Image url="@../img/ras.jpg" />
          </image>
       </ImageView>
-      <ImageView fitHeight="657.0" fitWidth="443.0" layoutX="466.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="657.0" fitWidth="443.0" layoutX="465.0" layoutY="-10.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../img/580229a4a5513c4b77411f1ff72869a9.jpg" />
          </image>
       </ImageView>
       <JFXButton layoutX="589.0" layoutY="401.0" style="-fx-background-color: #FFFFFF;" text="hello" />
+      <Text fill="#f8ff21" layoutX="127.0" layoutY="171.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MEALBARN">
+         <font>
+            <Font name="Selima" size="50.0" />
+         </font>
+      </Text>
    </children>
 </AnchorPane>
