@@ -18,7 +18,7 @@
          </image>
       </ImageView>
       <Pane layoutX="84.0" layoutY="204.0" opacity="0.63" prefHeight="269.0" prefWidth="651.0" style="-fx-background-color: #ffffff; -fx-background-radius: 10;" />
-      <TextArea fx:id="IngredientsChoosedArea" layoutX="137.0" layoutY="319.0" opacity="0.74" prefHeight="127.0" prefWidth="539.0" style="-fx-border-radius: 20;" />
+      <TextArea fx:id="IngredientsChoosedArea" editable="false" layoutX="137.0" layoutY="319.0" opacity="0.74" prefHeight="127.0" prefWidth="539.0" style="-fx-border-radius: 20;" />
       <JFXCheckBox layoutX="112.0" layoutY="282.0" text="A la cate">
          <font>
             <Font size="15.0" />
