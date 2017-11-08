@@ -7,6 +7,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.TextArea;
 import javafx.scene.image.ImageView;
+import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
 import javafx.scene.input.MouseEvent;
 import org.controlsfx.control.textfield.TextFields;
@@ -54,5 +55,4 @@ public class SearchController {
             IngredientType.clear();
         }
     }
-
 }
