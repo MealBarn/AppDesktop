@@ -12,9 +12,9 @@ import javafx.scene.input.KeyEvent;
 import javafx.scene.input.MouseEvent;
 import org.controlsfx.control.textfield.TextFields;
 
-import java.net.URL;
+
 import java.util.ArrayList;
-import java.util.ResourceBundle;
+
 
 public class SearchController {
 
@@ -57,13 +57,23 @@ public class SearchController {
 
     void addIngredientsBox(){
         if(IngredientType.getText().length() != 0){
-            choosed.add(IngredientType.getText());
-            String temp = "";
-            for (String i : choosed){
-                temp = temp + i +"\n";
+            boolean checkMatch = false;
+            for(String i : IngredientsList){
+                if(i.equals(IngredientType.getText())){
+                    checkMatch = true;
+                }
             }
-            IngredientsChoosedArea.setText(temp);
-            IngredientType.clear();
+            if(checkMatch == true) {
+                choosed.add(IngredientType.getText());
+                String temp = "";
+                for (String i : choosed) {
+                    temp = temp + i + "\n";
+                }
+                IngredientsChoosedArea.setText(temp);
+                IngredientType.clear();
+            }
         }
     }
+
+
 }

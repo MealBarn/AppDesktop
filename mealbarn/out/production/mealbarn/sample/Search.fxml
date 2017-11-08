@@ -43,7 +43,7 @@
          <font>
             <Font size="15.0" />
          </font></JFXCheckBox>
-      <JFXTextField fx:id="IngredientType" layoutX="135.0" layoutY="217.0" onKeyPressed="#IngredientsPressEnterAction" onKeyTyped="#IngredientsTypeAction" prefHeight="37.0" prefWidth="549.0" promptText="  PLEASE TYPE YOUR INGREDIENTS HERE" style="-fx-background-color: none; -fx-background-radius: 5;">
+      <JFXTextField fx:id="IngredientType" layoutX="135.0" layoutY="217.0" onKeyPressed="#IngredientsPressEnterAction" onKeyTyped="#IngredientsTypeAction" prefHeight="37.0" prefWidth="549.0" promptText="PLEASE TYPE YOUR INGREDIENTS HERE" style="-fx-background-color: none; -fx-background-radius: 5;">
          <font>
             <Font size="15.0" />
          </font>
