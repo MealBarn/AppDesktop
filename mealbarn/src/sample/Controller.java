@@ -22,7 +22,7 @@ public class Controller {
 
     @FXML
     void loginButtonAction(ActionEvent event) {
-            Main.priStage.setScene(Main.Search);
+            Main.priStage.setScene(Main.Select);
     }
 
 }

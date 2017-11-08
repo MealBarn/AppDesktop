@@ -18,7 +18,7 @@
          </image>
       </ImageView>
       <Pane layoutX="84.0" layoutY="204.0" opacity="0.63" prefHeight="269.0" prefWidth="651.0" style="-fx-background-color: #ffffff; -fx-background-radius: 10;" />
-      <TextArea layoutX="137.0" layoutY="319.0" prefHeight="127.0" prefWidth="539.0" style="-fx-background-radius: 10;" />
+      <TextArea layoutX="137.0" layoutY="319.0" opacity="0.74" prefHeight="127.0" prefWidth="539.0" style="-fx-border-radius: 20;" />
       <JFXCheckBox layoutX="112.0" layoutY="282.0" text="A la cate">
          <font>
             <Font size="15.0" />
@@ -48,7 +48,7 @@
             <Font size="15.0" />
          </font>
       </JFXTextField>
-      <JFXButton layoutX="353.0" layoutY="487.0" prefHeight="43.0" prefWidth="90.0" style="-fx-background-color: #ffcccc#ffcccc;" text="SUBMIT">
+      <JFXButton layoutX="358.0" layoutY="482.0" prefHeight="43.0" prefWidth="90.0" style="-fx-background-color: #29ccc3; -fx-background-radius: 10;" text="SUBMIT">
          <font>
             <Font size="15.0" />
          </font>
@@ -59,7 +59,7 @@
             <Image url="@../img/exit-search.png" />
          </image>
       </ImageView>
-      <Text fill="#d5ff1c" layoutX="199.0" layoutY="192.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MealBarn">
+      <Text fill="#29ccc3" layoutX="199.0" layoutY="192.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MealBarn">
          <font>
             <Font name="Selima" size="130.0" />
          </font>
