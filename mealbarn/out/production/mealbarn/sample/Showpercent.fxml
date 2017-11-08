@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.gluonhq.charm.glisten.control.BottomNavigation?>
+<?import com.jfoenix.controls.JFXProgressBar?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane prefHeight="800.0" prefWidth="1000.0" style="-fx-background-color: #f6f6f6; -fx-background-radius: 5;" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Showpercent">
+   <children>
+      <BottomNavigation layoutX="297.0" layoutY="557.0" />
+      <Pane layoutX="32.0" layoutY="98.0" prefHeight="215.0" prefWidth="364.0" style="-fx-border-color: #e7ba1f#e7ba1f #e7ba1f#e7ba1f; -fx-border-radius: 5;">
+         <children>
+            <ImageView fitHeight="215.0" fitWidth="251.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/abv_breakfast_boredom_busters_20130926_0299-13-Edit.jpg" />
+               </image>
+            </ImageView>
+            <JFXProgressBar layoutX="256.0" layoutY="193.0" prefHeight="8.0" prefWidth="94.0" progress="0.63" />
+            <Text fill="#110d01" layoutX="225.0" layoutY="201.0" strokeType="OUTSIDE" strokeWidth="0.0" text="10%" />
+            <Text layoutX="238.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: bold;" text="ข้าวผัดพริกเผา">
+               <font>
+                  <Font name="TH Sarabun New" size="25.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="NW_RESIZE" />
+               </cursor>
+            </Text>
+            <Text layoutX="290.0" layoutY="182.0" strokeType="OUTSIDE" strokeWidth="0.0" text="วัตถุดิบที่ใช้">
+               <font>
+                  <Font name="TH Sarabun New" size="20.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <Pane layoutX="405.0" layoutY="98.0" prefHeight="215.0" prefWidth="364.0" style="-fx-border-color: #e7ba1f#e7ba1f #e7ba1f#e7ba1f; -fx-border-radius: 5;">
+         <children>
+            <ImageView fitHeight="215.0" fitWidth="251.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/abv_breakfast_boredom_busters_20130926_0299-16-Edit.jpg" />
+               </image>
+            </ImageView>
+            <JFXProgressBar layoutX="256.0" layoutY="190.0" prefHeight="8.0" prefWidth="94.0" progress="0.75" />
+            <Text fill="#110d01" layoutX="223.0" layoutY="199.0" strokeType="OUTSIDE" strokeWidth="0.0" text="10%" />
+            <Text layoutX="290.0" layoutY="180.0" strokeType="OUTSIDE" strokeWidth="0.0" text="วัตถุดิบที่ใช้">
+               <font>
+                  <Font name="TH Sarabun New" size="20.0" />
+               </font>
+            </Text>
+            <Text layoutX="239.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: bold;" text="ข้าวผัดพริกเผา">
+               <font>
+                  <Font name="TH Sarabun New" size="25.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="NW_RESIZE" />
+               </cursor>
+            </Text>
+         </children>
+      </Pane>
+      <Pane layoutX="405.0" layoutY="323.0" prefHeight="215.0" prefWidth="364.0" style="-fx-border-radius: 5; -fx-border-color: #e7ba1f#e7ba1f #e7ba1f#e7ba1f;">
+         <children>
+            <ImageView fitHeight="215.0" fitWidth="251.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/abv_breakfast_boredom_busters_20130926_0299-16-Edit.jpg" />
+               </image>
+            </ImageView>
+            <JFXProgressBar layoutX="256.0" layoutY="193.0" prefHeight="8.0" prefWidth="94.0" progress="0.78" />
+            <Text fill="#110d01" layoutX="224.0" layoutY="201.0" strokeType="OUTSIDE" strokeWidth="0.0" text="10%" />
+            <Text layoutX="290.0" layoutY="183.0" strokeType="OUTSIDE" strokeWidth="0.0" text="วัตถุดิบที่ใช้">
+               <font>
+                  <Font name="TH Sarabun New" size="20.0" />
+               </font>
+            </Text>
+            <Text layoutX="239.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: bold;" text="ข้าวผัดพริกเผา">
+               <font>
+                  <Font name="TH Sarabun New" size="25.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="NW_RESIZE" />
+               </cursor>
+            </Text>
+         </children>
+      </Pane>
+      <Pane layoutX="32.0" layoutY="322.0" prefHeight="215.0" prefWidth="364.0" style="-fx-background-color: none; -fx-background-radius: 5; -fx-border-color: #e7ba1f#e7ba1f #e7ba1f#e7ba1f; -fx-border-radius: 5;">
+         <children>
+            <ImageView fitHeight="215.0" fitWidth="251.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/abv_breakfast_boredom_busters_20130926_0299-16-Edit.jpg" />
+               </image>
+            </ImageView>
+            <JFXProgressBar layoutX="256.0" layoutY="191.0" prefHeight="8.0" prefWidth="94.0" progress="0.57" />
+            <Text fill="#110d01" layoutX="226.0" layoutY="199.0" strokeType="OUTSIDE" strokeWidth="0.0" text="10%" />
+            <Text layoutX="290.0" layoutY="181.0" strokeType="OUTSIDE" strokeWidth="0.0" text="วัตถุดิบที่ใช้">
+               <font>
+                  <Font name="TH Sarabun New" size="20.0" />
+               </font>
+            </Text>
+            <Text layoutX="239.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: bold;" text="ข้าวผัดพริกเผา">
+               <font>
+                  <Font name="TH Sarabun New" size="25.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="NW_RESIZE" />
+               </cursor>
+            </Text>
+         </children>
+      </Pane>
+      <Text fill="#cdb141" layoutX="289.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: bold;" text="M E A L B A R N">
+         <font>
+            <Font name="Audrey Normal" size="30.0" />
+         </font>
+      </Text>
+      <Pane layoutY="564.0" prefHeight="36.0" prefWidth="804.0" style="-fx-background-color: #cdb141#cdb141;" />
+      <Line endX="100.0" layoutX="140.0" layoutY="51.0" startX="-100.0" stroke="#4a4545" strokeWidth="0.5" />
+   </children>
+</Pane>
