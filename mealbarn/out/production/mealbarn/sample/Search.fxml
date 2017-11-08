@@ -18,7 +18,7 @@
          </image>
       </ImageView>
       <Pane layoutX="84.0" layoutY="204.0" opacity="0.63" prefHeight="269.0" prefWidth="651.0" style="-fx-background-color: #ffffff; -fx-background-radius: 10;" />
-      <TextArea layoutX="137.0" layoutY="319.0" opacity="0.74" prefHeight="127.0" prefWidth="539.0" style="-fx-border-radius: 20;" />
+      <TextArea fx:id="IngredientsChoosedArea" layoutX="137.0" layoutY="319.0" opacity="0.74" prefHeight="127.0" prefWidth="539.0" style="-fx-border-radius: 20;" />
       <JFXCheckBox layoutX="112.0" layoutY="282.0" text="A la cate">
          <font>
             <Font size="15.0" />
@@ -43,7 +43,7 @@
          <font>
             <Font size="15.0" />
          </font></JFXCheckBox>
-      <JFXTextField alignment="CENTER" layoutX="135.0" layoutY="217.0" prefHeight="37.0" prefWidth="549.0" promptText="INGREDIENTS" style="-fx-background-color: none; -fx-background-radius: 5;">
+      <JFXTextField fx:id="IngredientType" layoutX="135.0" layoutY="217.0" onKeyTyped="#IngredientsTypeAction" prefHeight="37.0" prefWidth="549.0" promptText="  INGREDIENTS" style="-fx-background-color: none; -fx-background-radius: 5;">
          <font>
             <Font size="15.0" />
          </font>
@@ -53,7 +53,7 @@
             <Font size="15.0" />
          </font>
       </JFXButton>
-      <JFXButton layoutX="620.0" layoutY="223.0" style="-fx-background-color: #ffb31a#ffb31a;" text="search" />
+      <JFXButton fx:id="addButton" layoutX="620.0" layoutY="223.0" onAction="#addButtonAction" style="-fx-background-color: #ffb31a#ffb31a;" text="add" />
       <ImageView fx:id="closeButton" fitHeight="32.0" fitWidth="30.0" layoutX="757.0" layoutY="9.0" onMouseClicked="#closeButtonAction" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../img/exit-search.png" />
