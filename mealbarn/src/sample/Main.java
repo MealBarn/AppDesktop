@@ -16,7 +16,7 @@ public class Main extends Application {
     public void start(Stage primaryStage) throws Exception{
         priStage = primaryStage;
 
-        Parent Login = FXMLLoader.load(getClass().getResource("Search.fxml"));  /// 1
+        Parent Login = FXMLLoader.load(getClass().getResource("Login.fxml"));  /// 1
 //        Parent Search = FXMLLoader.load(getClass().getResource("Search.fxml"));
         this.Login = new Scene(Login); /// 2
         priStage.initStyle(StageStyle.TRANSPARENT);//utt
