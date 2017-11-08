@@ -69,6 +69,11 @@ public class Food implements Serializable {
     public void setRecipe(String recipe) {
         this.recipe = recipe;
     }
+
+    @Override
+    public String toString() {
+        return String.format("%d,%s",this.id,this.name);
+    }
     
     
     
