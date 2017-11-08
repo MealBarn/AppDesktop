@@ -45,6 +45,17 @@ public class SearchController {
 
     @FXML
     void addButtonAction(ActionEvent event) {
+        addIngredientsBox();
+    }
+
+    @FXML
+    void IngredientsPressEnterAction(KeyEvent event) {
+        if (event.getCode() == KeyCode.ENTER) {
+            addIngredientsBox();
+        }
+    }
+
+    void addIngredientsBox(){
         if(IngredientType.getText().length() != 0){
             choosed.add(IngredientType.getText());
             String temp = "";
