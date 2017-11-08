@@ -7,7 +7,7 @@ import javafx.scene.control.Button;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 
-public class Controller {
+public class LoginController {
 
     @FXML
     private Button loginButton;
