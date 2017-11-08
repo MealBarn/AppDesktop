@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+
+
+<Pane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Select">
+   <children>
+      <ImageView fitHeight="453.0" fitWidth="491.0" layoutX="-93.0" layoutY="125.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/Slide-2A.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="477.0" fitWidth="509.0" layoutX="399.0" layoutY="125.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/Slide-1B.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</Pane>

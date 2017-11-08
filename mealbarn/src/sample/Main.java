@@ -5,6 +5,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import javafx.stage.StageStyle;
 
 public class Main extends Application {
     public static Stage priStage;
@@ -15,9 +16,11 @@ public class Main extends Application {
     public void start(Stage primaryStage) throws Exception{
         priStage = primaryStage;
 
-        Parent Login = FXMLLoader.load(getClass().getResource("Login.fxml"));  /// 1
+        Parent Login = FXMLLoader.load(getClass().getResource("Search.fxml"));  /// 1
 //        Parent Search = FXMLLoader.load(getClass().getResource("Search.fxml"));
         this.Login = new Scene(Login); /// 2
+        priStage.initStyle(StageStyle.TRANSPARENT);//utt
+
 //        Parent root = FXMLLoader.load(getClass().getResource("Login.fxml"));
         priStage.setTitle("MealBarn");
 //        primaryStage.setScene(new Scene(root, 300, 275));
