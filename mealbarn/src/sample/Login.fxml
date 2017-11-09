@@ -75,7 +75,7 @@
             <Image url="@../img/icons8-play_button_circled_filled.png" />
          </image>
       </ImageView>
-      <Pane layoutX="1007.0" layoutY="-2.0" prefHeight="763.0" prefWidth="198.0" style="-fx-background-color: #ffffff; -fx-border-color: #464646; -fx-border-width: 0.3;">
+      <Pane layoutX="1007.0" layoutY="-2.0" prefHeight="763.0" prefWidth="198.0" style="-fx-background-color: #ffffff; -fx-border-color: #464646; -fx-border-width: 0.3;" visible="false">
          <children>
             <Text fill="#464646" layoutX="38.0" layoutY="159.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" Search Ingredients">
                <font>
