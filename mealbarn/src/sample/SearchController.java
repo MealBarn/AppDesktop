@@ -1,10 +1,14 @@
 package sample;
 
 import com.jfoenix.controls.JFXButton;
+import com.jfoenix.controls.JFXListView;
 import com.jfoenix.controls.JFXTextField;
 import javafx.application.Platform;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.scene.control.ListView;
 import javafx.scene.control.TextArea;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.KeyCode;
@@ -25,13 +29,14 @@ public class SearchController {
     private ImageView closeButton;
 
     @FXML
-    private TextArea IngredientsChoosedArea;
-
-    @FXML
     private JFXButton addButton;
 
-    ArrayList <String> choosed = new ArrayList<String>();
+    @FXML
+    private ListView<String> list;
+
+    ObservableList<String> choosedList = FXCollections.observableArrayList();
     String[] IngredientsList = {"Hai","Hello","ant"};
+    String tempList;
 
     @FXML
     void closeButtonAction(MouseEvent event) {
@@ -46,6 +51,21 @@ public class SearchController {
     @FXML
     void addButtonAction(ActionEvent event) {
         addIngredientsBox();
+    }
+
+    @FXML
+    void deleteIngredientsList (MouseEvent event) {
+        if(event.getClickCount() > 1){
+            int index = 0;
+            tempList = list.getSelectionModel().getSelectedItem();
+            for(String name : choosedList){
+                if (name.equals(tempList)) {
+                    choosedList.remove(index);
+                    break;
+                }
+                index++;
+            }
+        }
     }
 
     @FXML
@@ -64,16 +84,10 @@ public class SearchController {
                 }
             }
             if(checkMatch == true) {
-                choosed.add(IngredientType.getText());
-                String temp = "";
-                for (String i : choosed) {
-                    temp = temp + i + "\n";
-                }
-                IngredientsChoosedArea.setText(temp);
+                list.setItems(choosedList);
+                choosedList.add(IngredientType.getText());
                 IngredientType.clear();
             }
         }
     }
-
-
 }

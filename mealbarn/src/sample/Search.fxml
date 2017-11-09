@@ -3,7 +3,7 @@
 <?import com.jfoenix.controls.JFXButton?>
 <?import com.jfoenix.controls.JFXCheckBox?>
 <?import com.jfoenix.controls.JFXTextField?>
-<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.ListView?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.Pane?>
@@ -17,8 +17,10 @@
             <Image url="@../img/pexels-photo-236812.jpg" />
          </image>
       </ImageView>
-      <Pane layoutX="84.0" layoutY="204.0" opacity="0.63" prefHeight="269.0" prefWidth="651.0" style="-fx-background-color: #ffffff; -fx-background-radius: 10;" />
-      <TextArea fx:id="IngredientsChoosedArea" editable="false" layoutX="137.0" layoutY="319.0" opacity="0.74" prefHeight="127.0" prefWidth="539.0" style="-fx-border-radius: 20;" />
+      <Pane layoutX="84.0" layoutY="204.0" opacity="0.63" prefHeight="269.0" prefWidth="651.0" style="-fx-background-color: #ffffff; -fx-background-radius: 10;">
+         <children>
+            <ListView fx:id="list" layoutX="28.0" layoutY="105.0" onMouseClicked="#deleteIngredientsList" prefHeight="150.0" prefWidth="581.0" />
+         </children></Pane>
       <JFXCheckBox layoutX="112.0" layoutY="282.0" text="A la cate">
          <font>
             <Font size="15.0" />
