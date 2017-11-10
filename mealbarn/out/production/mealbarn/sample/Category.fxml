@@ -1,133 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.Cursor?>
+<?import com.jfoenix.controls.JFXButton?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
-<?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.paint.LinearGradient?>
-<?import javafx.scene.paint.Stop?>
-<?import javafx.scene.shape.Line?>
+<?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.CategoryController">
+<Pane prefHeight="760.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.CategoryController">
    <children>
-      <ImageView fitHeight="147.0" fitWidth="521.0" layoutX="52.0" layoutY="85.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../img/la.png" />
-         </image>
-         <cursor>
-            <Cursor fx:constant="SE_RESIZE" />
-         </cursor>
-      </ImageView>
-      <ImageView fitHeight="147.0" fitWidth="521.0" layoutX="418.0" layoutY="251.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../img/appe.png" />
-         </image>
-      </ImageView>
-      <Text layoutX="283.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MealBarn">
+      <Text layoutX="379.0" layoutY="105.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MealBarn">
          <font>
-            <Font name="Selima" size="70.0" />
+            <Font name="Selima" size="130.0" />
          </font>
-         <fill>
-            <LinearGradient endX="0.8028846153846154" endY="1.0" startX="0.03365384615384615">
-               <stops>
-                  <Stop color="#bc2b2b" />
-                  <Stop color="#bc2b2b" offset="0.05947955390334572" />
-                  <Stop color="#ebe291" offset="0.21890813243649837" />
-                  <Stop color="#5a7537" offset="0.32441471571906355" />
-                  <Stop color="#6e79ae" offset="0.5448023771928733" />
-                  <Stop color="#942255" offset="0.6755852842809366" />
-                  <Stop color="#680d0d" offset="0.8365058248685209" />
-                  <Stop color="#b21717" offset="1.0" />
-               </stops>
-            </LinearGradient>
-         </fill>
       </Text>
-      <Line endX="100.0" layoutX="151.0" layoutY="71.0" opacity="0.61" startX="-100.0">
-         <cursor>
-            <Cursor fx:constant="S_RESIZE" />
-         </cursor>
-      </Line>
-      <Line endX="100.0" layoutX="352.0" layoutY="71.0" opacity="0.61" startX="-100.0">
-         <cursor>
-            <Cursor fx:constant="S_RESIZE" />
-         </cursor>
-      </Line>
-      <ImageView fitHeight="31.0" fitWidth="36.0" layoutX="511.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../img/fork.png" />
-         </image>
-      </ImageView>
-      <Line endX="100.0" layoutX="553.0" layoutY="71.0" opacity="0.61" startX="-100.0">
-         <cursor>
-            <Cursor fx:constant="S_RESIZE" />
-         </cursor>
-      </Line>
-      <Line endX="100.0" layoutX="643.0" layoutY="71.0" opacity="0.61" startX="-100.0">
-         <cursor>
-            <Cursor fx:constant="S_RESIZE" />
-         </cursor>
-      </Line>
-      <ImageView fitHeight="148.0" fitWidth="342.0" layoutX="53.0" layoutY="250.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../img/Maincourse/52-Num%20prik%20pla%20kapong.png" />
-         </image>
-      </ImageView>
-      <ImageView fitHeight="150.0" fitWidth="345.0" layoutX="418.0" layoutY="86.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../img/Soup/65-soup%20hed.png" />
-         </image>
-      </ImageView>
-      <ImageView fitHeight="150.0" fitWidth="345.0" layoutX="52.0" layoutY="413.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../img/Dessert/34-Pudding%20Chocolate.png" />
-         </image>
-      </ImageView>
-      <ImageView fitHeight="150.0" fitWidth="345.0" layoutX="418.0" layoutY="412.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../img/Drink/สตรอว์เบอร์รีชีสเค้กแฟรบปูชิโน่/Straberry%20Cheese%20Cake.png" />
-         </image>
-      </ImageView>
-      <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="713.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../img/home.png" />
-         </image>
-      </ImageView>
-      <ImageView fx:id="CloseButton" fitHeight="30.0" fitWidth="30.0" layoutX="748.0" layoutY="17.0" onMouseClicked="#CloseButtonAction" pickOnBounds="true" preserveRatio="true">
+      <Pane layoutX="24.0" layoutY="170.0" prefHeight="570.0" prefWidth="184.0" style="-fx-background-color: #df9fbf#df9fbf;">
+         <children>
+            <JFXButton prefHeight="570.0" prefWidth="184.0" text="Appetizer" />
+         </children>
+      </Pane>
+      <Pane layoutX="218.0" layoutY="170.0" prefHeight="570.0" prefWidth="184.0" style="-fx-background-color: #df9fbf#df9fbf;">
+         <children>
+            <JFXButton prefHeight="570.0" prefWidth="184.0" text="Maincourse" />
+         </children>
+      </Pane>
+      <Pane layoutX="412.0" layoutY="170.0" prefHeight="570.0" prefWidth="184.0" style="-fx-background-color: #df9fbf#df9fbf;">
+         <children>
+            <JFXButton prefHeight="570.0" prefWidth="184.0" text="Dessert" />
+         </children>
+      </Pane>
+      <Pane layoutX="605.0" layoutY="170.0" prefHeight="570.0" prefWidth="184.0" style="-fx-background-color: #df9fbf#df9fbf;">
+         <children>
+            <JFXButton prefHeight="570.0" prefWidth="184.0" text="Soup" />
+         </children>
+      </Pane>
+      <Pane layoutX="798.0" layoutY="170.0" prefHeight="570.0" prefWidth="184.0" style="-fx-background-color: #df9fbf#df9fbf;">
+         <children>
+            <JFXButton layoutX="1.0" prefHeight="570.0" prefWidth="184.0" text="Drink" />
+         </children>
+      </Pane>
+      <Pane layoutX="991.0" layoutY="170.0" prefHeight="570.0" prefWidth="184.0" style="-fx-background-color: #df9fbf#df9fbf;">
+         <children>
+            <JFXButton prefHeight="570.0" prefWidth="184.0" text="Alacarte" />
+         </children>
+      </Pane>
+      <Text layoutX="510.0" layoutY="144.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Search">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text fill="#91945c" layoutX="620.0" layoutY="144.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Category">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="48.0" fitWidth="46.0" layoutX="1123.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../img/exit-white.png" />
          </image>
       </ImageView>
-      <Text fill="WHITE" layoutX="201.0" layoutY="218.0" strokeType="OUTSIDE" strokeWidth="0.0" text="A la carte">
-         <font>
-            <Font name="Selima" size="60.0" />
-         </font>
-      </Text>
-      <Text fill="#1b0404" layoutX="668.0" layoutY="218.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Soup">
-         <font>
-            <Font name="Selima" size="60.0" />
-         </font>
-      </Text>
-      <Text fill="WHITE" layoutX="173.0" layoutY="383.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MainCourse">
-         <font>
-            <Font name="Selima" size="60.0" />
-         </font>
-      </Text>
-      <Text fill="WHITE" layoutX="566.0" layoutY="383.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Appetizer">
-         <font>
-            <Font name="Selima" size="60.0" />
-         </font>
-      </Text>
-      <Text fill="WHITE" layoutX="255.0" layoutY="544.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dessert">
-         <font>
-            <Font name="Selima" size="60.0" />
-         </font>
-      </Text>
-      <Text fill="WHITE" layoutX="637.0" layoutY="545.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Drink">
-         <font>
-            <Font name="Selima" size="60.0" />
-         </font>
-      </Text>
    </children>
-</AnchorPane>
+</Pane>
