@@ -11,15 +11,21 @@ public class Main extends Application {
     public static Stage priStage;
     public static Scene Login;
     public static Scene Search;
+    public static Scene Select;
+    public static Scene Category;
 
     @Override
     public void start(Stage primaryStage) throws Exception{
         priStage = primaryStage;
 
         Parent Login = FXMLLoader.load(getClass().getResource("Login.fxml"));  /// 1
-//        Parent Search = FXMLLoader.load(getClass().getResource("Search.fxml"));
+        Parent Search = FXMLLoader.load(getClass().getResource("Search.fxml"));
+        Parent Select = FXMLLoader.load(getClass().getResource("Select.fxml"));
+        Parent Category = FXMLLoader.load(getClass().getResource("Category.fxml"));
         this.Login = new Scene(Login); /// 2
-        priStage.initStyle(StageStyle.TRANSPARENT);//utt
+        this.Search = new Scene(Search);
+        this.Select = new Scene(Select);
+        this.Category = new Scene(Category);
 
 //        Parent root = FXMLLoader.load(getClass().getResource("Login.fxml"));
         priStage.setTitle("MealBarn");

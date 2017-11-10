@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import com.jfoenix.controls.JFXPasswordField?>
 <?import com.jfoenix.controls.JFXTextField?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.image.Image?>
@@ -9,7 +10,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.LoginController">
    <children>
       <ImageView fitHeight="720.0" fitWidth="576.0" layoutX="-3.0" layoutY="-6.0" pickOnBounds="true" preserveRatio="true">
          <image>
@@ -28,11 +29,6 @@
                   <Font size="15.0" />
                </font>
             </JFXTextField>
-            <JFXTextField layoutX="97.0" layoutY="169.0" prefHeight="27.0" prefWidth="190.0" promptText="Password">
-               <font>
-                  <Font size="15.0" />
-               </font>
-            </JFXTextField>
             <ImageView fitHeight="40.0" fitWidth="29.0" layoutX="58.0" layoutY="123.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../img/userLogin.png" />
@@ -43,6 +39,11 @@
                   <Image url="@../img/kn.png" />
                </image>
             </ImageView>
+            <JFXPasswordField layoutX="94.0" layoutY="174.0" prefHeight="25.0" prefWidth="190.0" promptText="Password">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXPasswordField>
          </children>
       </Pane>
       <Text fill="#f8ff21" layoutX="45.0" layoutY="184.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MealBarn">
@@ -50,12 +51,12 @@
             <Font name="Selima" size="120.0" />
          </font>
       </Text>
-      <Button layoutX="167.0" layoutY="478.0" mnemonicParsing="false" opacity="0.88" prefHeight="46.0" prefWidth="137.0" style="-fx-background-color: #ffff33; -fx-background-radius: 10;" text="Login">
+      <Button fx:id="loginButton" layoutX="167.0" layoutY="478.0" mnemonicParsing="false" onAction="#loginButtonAction" opacity="0.88" prefHeight="46.0" prefWidth="137.0" style="-fx-background-color: #ffff33; -fx-background-radius: 10;" text="Login">
          <font>
             <Font size="18.0" />
          </font>
       </Button>
-      <ImageView fitHeight="42.0" fitWidth="45.0" layoutX="739.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="closeButton" fitHeight="42.0" fitWidth="45.0" layoutX="739.0" layoutY="14.0" onMouseClicked="#closeButtonAction" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../img/exit.png" />
          </image>
