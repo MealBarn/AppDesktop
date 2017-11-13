@@ -2,6 +2,7 @@ package ooad;
 
 import sample.Test;
 import sample.TestAcc;
+import sample.TestFood;
 
 import javax.persistence.*;
 import java.util.*;
@@ -17,18 +18,25 @@ public class Main {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+
+        Test ob = Test.getInstance();
+        List<Component> componentList = ob.getComponentList();
+        for (Component component : componentList){
+            System.out.println(component.getIdprimary());
+        }
+
         //Scanner input = new Scanner (System.in);
         //Test ob = Test.getInstance();
-        TestAcc ob = TestAcc.getInstance();
-        ArrayList<String> acc = ob.getAccount();
-        for (String user : acc){
-            System.out.println(user);
-        }
-        String user = "Suzy";
-        String pass = "1234678";
-        String uTest = String.format("%s %s",user,pass);
-        System.out.println("This User :" + uTest);
-        System.out.println(acc.contains(uTest));
+//        TestAcc ob = TestAcc.getInstance();
+//        ArrayList<String> acc = ob.getAccount();
+//        for (String user : acc){
+//            System.out.println(user);
+//        }
+//        String user = "Suzy";
+//        String pass = "1234678";
+//        String uTest = String.format("%s %s",user,pass);
+//        System.out.println("This User :" + uTest);
+//        System.out.println(acc.contains(uTest));
 
         //ArrayList<String> ingre = new ArrayList<String>();
         //ArrayList<String> uni = ob.getUniqueIngredient();

@@ -63,6 +63,10 @@ public class LoginController {
         loginButton.setCursor(Cursor.HAND);
     }
 
-
+    @FXML
+    void autoInput(MouseEvent event){
+        userType.setText("Suzy");
+        passType.setText("58011348");
+    }
 
 }

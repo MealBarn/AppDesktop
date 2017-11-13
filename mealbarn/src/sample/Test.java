@@ -8,6 +8,7 @@ import java.util.*;
 public class Test {
     private ArrayList<String> uniqueIngredient;
     private ArrayList<String> matchIngredient;
+    private List<Component> componentList;
     private static Test instance = new Test();
     private Test() {
         uniqueIngredient = new ArrayList<String>();
@@ -18,7 +19,7 @@ public class Test {
 
         TypedQuery<Component> query =
                 em.createQuery("SELECT a FROM Component a", Component.class);
-        List<Component> results = query.getResultList();
+        componentList = query.getResultList();
         em.close();
         emf.close();
         ArrayList<String> countIng = new ArrayList<String>();
@@ -26,8 +27,8 @@ public class Test {
         int prev = -1;
         int count = 0;
         boolean unique;
-        for (Component a : results) {
-            now = a.getId();
+        for (Component component : componentList) {
+            now = component.getId();
             if(now!=prev)
             {
                 countIng.add(""+count);
@@ -37,7 +38,7 @@ public class Test {
                 count++;
             }
             unique = true;
-            String tmp = a.getComponent();
+            String tmp = component.getComponent();
             for(String ingTmp : uniqueIngredient)
             {
                 if(ingTmp.compareTo(tmp)==0)
@@ -71,5 +72,9 @@ public class Test {
             }
         }
         return matchIngredient;
+    }
+    public List<Component> getComponentList()
+    {
+        return componentList;
     }
 }
