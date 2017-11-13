@@ -35,8 +35,8 @@ public class SearchController {
     private ListView<String> list;
 
     ObservableList<String> choosedList = FXCollections.observableArrayList();
-    Test test = Test.getInstance();
-    String[] IngredientsList = {};
+    Data data = Data.getData();
+    String[] componentList = {};
     String tempList;
 
     @FXML
@@ -46,10 +46,10 @@ public class SearchController {
 
     @FXML
     void IngredientsTypeAction(KeyEvent event) {
-        String subString = IngredientType.getText();
-        ArrayList<String> matchIngredient = test.getMatchIngredient(subString);
-        IngredientsList = matchIngredient.toArray(new String[matchIngredient.size()]);
-        TextFields.bindAutoCompletion(IngredientType,IngredientsList);
+        String inputStr = IngredientType.getText();
+        ArrayList<String> matchComponent = data.getMatchComponent(inputStr);
+        componentList = matchComponent.toArray(new String[matchComponent.size()]);
+        TextFields.bindAutoCompletion(IngredientType,componentList);
     }
 
     @FXML
@@ -82,7 +82,7 @@ public class SearchController {
     void addIngredientsBox(){
         if(IngredientType.getText().length() != 0){
             boolean checkMatch = false;
-            for(String i : IngredientsList){
+            for(String i : componentList){
                 if(i.equals(IngredientType.getText())){
                     checkMatch = true;
                 }

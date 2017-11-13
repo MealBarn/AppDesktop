@@ -35,8 +35,8 @@ public class LoginController {
 
     @FXML
     void loginButtonAction(ActionEvent event) {
-        TestAcc ob = TestAcc.getInstance();
-        ArrayList<String> acc = ob.getAccount();
+        Data data = Data.getData();
+        ArrayList<String> acc = data.getAccountStr();
         for (String user : acc){
             System.out.println(user);
         }

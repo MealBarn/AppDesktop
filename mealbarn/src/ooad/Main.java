@@ -1,8 +1,6 @@
 package ooad;
 
-import sample.Test;
-import sample.TestAcc;
-import sample.TestFood;
+import sample.Data;
 
 import javax.persistence.*;
 import java.util.*;
@@ -18,12 +16,14 @@ public class Main {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-
-        Test ob = Test.getInstance();
-        List<Component> componentList = ob.getComponentList();
-        for (Component component : componentList){
-            System.out.println(component.getIdprimary());
-        }
+        Data ob = Data.getData();
+        //List<Food> f = ob.getFoodsList();
+        //System.out.println(f.get(25).toString());
+//        Test ob = Test.getInstance();
+//        List<Component> componentList = ob.getComponentList();
+//        for (Component component : componentList){
+//            System.out.println(component.getIdprimary());
+//        }
 
         //Scanner input = new Scanner (System.in);
         //Test ob = Test.getInstance();
@@ -91,19 +91,6 @@ public class Main {
 //        }
 //       // System.out.println(ingre.size());
 //       // System.out.println(ingretmp.size());
-
-
-        EntityManagerFactory emf2 = Persistence.createEntityManagerFactory("./src/ODB/Food.odb");
-        EntityManager em2 = emf2.createEntityManager();
-
-        TypedQuery<Food> query2 =
-                em2.createQuery("SELECT a FROM Food a", Food.class);
-        List<ooad.Food> results2 = query2.getResultList();
-        for (Food a : results2) {
-            //System.out.println(a.toString());
-        }
-        em2.close();
-        emf2.close();
 
         //System.out.println(results2.get(1));
     }
