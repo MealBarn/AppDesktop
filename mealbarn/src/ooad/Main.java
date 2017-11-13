@@ -1,6 +1,11 @@
 package ooad;
 
+<<<<<<< HEAD
 import sample.Data;
+=======
+import sample.Test;
+import sample.TestAcc;
+>>>>>>> UI
 
 import javax.persistence.*;
 import java.util.*;
@@ -16,6 +21,7 @@ public class Main {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+<<<<<<< HEAD
         Data ob = Data.getData();
         //List<Food> f = ob.getFoodsList();
         //System.out.println(f.get(25).toString());
@@ -37,6 +43,20 @@ public class Main {
 //        String uTest = String.format("%s %s",user,pass);
 //        System.out.println("This User :" + uTest);
 //        System.out.println(acc.contains(uTest));
+=======
+        //Scanner input = new Scanner (System.in);
+        //Test ob = Test.getInstance();
+        TestAcc ob = TestAcc.getInstance();
+        ArrayList<String> acc = ob.getAccount();
+        for (String user : acc){
+            System.out.println(user);
+        }
+        String user = "Suzy";
+        String pass = "1234678";
+        String uTest = String.format("%s %s",user,pass);
+        System.out.println("This User :" + uTest);
+        System.out.println(acc.contains(uTest));
+>>>>>>> UI
 
         //ArrayList<String> ingre = new ArrayList<String>();
         //ArrayList<String> uni = ob.getUniqueIngredient();
@@ -92,6 +112,22 @@ public class Main {
 //       // System.out.println(ingre.size());
 //       // System.out.println(ingretmp.size());
 
+<<<<<<< HEAD
+=======
+
+        EntityManagerFactory emf2 = Persistence.createEntityManagerFactory("./src/ODB/Food.odb");
+        EntityManager em2 = emf2.createEntityManager();
+
+        TypedQuery<Food> query2 =
+                em2.createQuery("SELECT a FROM Food a", Food.class);
+        List<ooad.Food> results2 = query2.getResultList();
+        for (Food a : results2) {
+            //System.out.println(a.toString());
+        }
+        em2.close();
+        emf2.close();
+
+>>>>>>> UI
         //System.out.println(results2.get(1));
     }
 }   
