@@ -50,7 +50,7 @@
             <Font size="15.0" />
          </font>
       </JFXTextField>
-      <JFXButton layoutX="358.0" layoutY="482.0" prefHeight="43.0" prefWidth="90.0" style="-fx-background-color: #29ccc3; -fx-background-radius: 10;" text="SUBMIT">
+      <JFXButton fx:id="submitButton" layoutX="358.0" layoutY="482.0" onAction="#submitAction" prefHeight="43.0" prefWidth="90.0" style="-fx-background-color: #29ccc3; -fx-background-radius: 10;" text="SUBMIT">
          <font>
             <Font size="15.0" />
          </font>

@@ -14,10 +14,14 @@ import javafx.scene.image.ImageView;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
 import javafx.scene.input.MouseEvent;
+import ooad.FoodShow;
+import ooad.Component;
 import org.controlsfx.control.textfield.TextFields;
 
 
+import java.awt.*;
 import java.util.ArrayList;
+import java.util.List;
 
 
 public class SearchController {
@@ -58,6 +62,22 @@ public class SearchController {
     }
 
     @FXML
+    void submitAction(ActionEvent event) {
+        System.out.println("submit");
+        ArrayList<FoodShow> foodShowsList = data.getFoodShowsList();
+        List<Component> componentList = data.getComponentList();
+        for (String choose : choosedList){
+            for (Component component : componentList){
+                if(component.getComponent().compareTo(choose)==0){
+                    int id = component.getId()-1;
+                    FoodShow food = foodShowsList.get(id);
+                    food.addPerfect();
+                }
+            }
+        }
+    }
+
+    @FXML
     void deleteIngredientsList (MouseEvent event) {
         if(event.getClickCount() > 1){
             int index = 0;
@@ -94,4 +114,6 @@ public class SearchController {
             }
         }
     }
+
+
 }

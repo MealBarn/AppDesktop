@@ -24,9 +24,10 @@
          <fill>
             <LinearGradient endX="1.0" endY="1.0">
                <stops>
-                  <Stop color="#32210b" />
-                  <Stop color="#b58947" offset="0.49498327759197325" />
-                  <Stop color="#ffe95c" offset="1.0" />
+                  <Stop color="BLACK" />
+                  <Stop color="BLACK" offset="0.007434944237918215" />
+                  <Stop color="#656060" offset="0.4028297546965722" />
+                  <Stop color="#dd9d4f" offset="1.0" />
                </stops>
             </LinearGradient>
          </fill>
