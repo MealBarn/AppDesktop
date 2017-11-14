@@ -22,7 +22,7 @@
       </ImageView>
       <Pane layoutX="458.0" layoutY="254.0" opacity="0.73" prefHeight="374.0" prefWidth="547.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 15;">
          <children>
-            <JFXTextField layoutX="123.0" layoutY="72.0" prefHeight="40.0" prefWidth="366.0" promptText="Username">
+            <JFXTextField fx:id="userType" layoutX="123.0" layoutY="72.0" onMouseClicked="#autoInput"  prefHeight="40.0" prefWidth="366.0" promptText="Username">
                <font>
                   <Font size="20.0" />
                </font>
@@ -37,7 +37,7 @@
                   <Image url="@../img/icons8-dining_room_filled.png" />
                </image>
             </ImageView>
-            <JFXPasswordField layoutX="123.0" layoutY="145.0" prefHeight="40.0" prefWidth="363.0" promptText="Password">
+            <JFXPasswordField fx:id="passType" layoutX="123.0" layoutY="145.0" prefHeight="40.0" prefWidth="363.0" promptText="Password">
                <font>
                   <Font size="20.0" />
                </font>

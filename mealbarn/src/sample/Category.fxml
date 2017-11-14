@@ -10,14 +10,14 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<Pane prefHeight="760.0" prefWidth="1200.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.CategoryController">
+<Pane prefHeight="760.0" prefWidth="1200.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.CategoryController">
    <children>
       <ImageView fitHeight="760.0" fitWidth="1202.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../img/Marble%20-%20Copy.jpg" />
          </image>
       </ImageView>
-      <Text layoutX="376.0" layoutY="105.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MealBarn">
+      <Text layoutX="412.0" layoutY="120.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MealBarn">
          <font>
             <Font name="Selima" size="130.0" />
          </font>
@@ -40,7 +40,7 @@
                </image>
             </ImageView>
             <Pane layoutY="248.0" opacity="0.35" prefHeight="70.0" prefWidth="171.0" style="-fx-background-color: black;" />
-            <JFXButton prefHeight="552.0" prefWidth="174.0" text="Appetizer" textFill="WHITE">
+            <JFXButton onAction="#appetizerSelect" prefHeight="552.0" prefWidth="174.0" text="Appetizer" textFill="WHITE">
                <font>
                   <Font name="Audrey Bold" size="25.0" />
                </font>
@@ -55,7 +55,7 @@
                </image>
             </ImageView>
             <Pane layoutY="248.0" opacity="0.35" prefHeight="70.0" prefWidth="171.0" style="-fx-background-color: black;" />
-            <JFXButton prefHeight="552.0" prefWidth="174.0" text="Maincourse" textFill="WHITE">
+            <JFXButton onAction="#maincourseSelect" prefHeight="552.0" prefWidth="174.0" text="Maincourse" textFill="WHITE">
                <font>
                   <Font name="Audrey Bold" size="25.0" />
                </font>
@@ -70,7 +70,7 @@
                </image>
             </ImageView>
             <Pane layoutY="248.0" opacity="0.35" prefHeight="70.0" prefWidth="171.0" style="-fx-background-color: black;" />
-            <JFXButton prefHeight="552.0" prefWidth="174.0" text="Dessert" textFill="WHITE">
+            <JFXButton onAction="#dessertSelect" prefHeight="552.0" prefWidth="174.0" text="Dessert" textFill="WHITE">
                <font>
                   <Font name="Audrey Bold" size="25.0" />
                </font>
@@ -85,7 +85,7 @@
                </image>
             </ImageView>
             <Pane layoutY="248.0" opacity="0.35" prefHeight="70.0" prefWidth="171.0" style="-fx-background-color: black;" />
-            <JFXButton prefHeight="552.0" prefWidth="174.0" text="Soup" textFill="WHITE">
+            <JFXButton onAction="#soupSelect" prefHeight="552.0" prefWidth="174.0" text="Soup" textFill="WHITE">
                <font>
                   <Font name="Audrey Bold" size="25.0" />
                </font>
@@ -100,7 +100,7 @@
                </image>
             </ImageView>
             <Pane layoutY="248.0" opacity="0.35" prefHeight="70.0" prefWidth="171.0" style="-fx-background-color: black;" />
-            <JFXButton layoutX="1.0" prefHeight="552.0" prefWidth="174.0" text="Drink" textFill="WHITE">
+            <JFXButton layoutX="1.0" onAction="#drinkSelect" prefHeight="552.0" prefWidth="174.0" text="Drink" textFill="WHITE">
                <font>
                   <Font name="Audrey Bold" size="25.0" />
                </font>
@@ -115,7 +115,7 @@
                </image>
             </ImageView>
             <Pane layoutY="248.0" opacity="0.35" prefHeight="70.0" prefWidth="171.0" style="-fx-background-color: black;" />
-            <JFXButton prefHeight="552.0" prefWidth="174.0" text="Alacarte" textFill="WHITE">
+            <JFXButton onAction="#alacarteSelect" prefHeight="552.0" prefWidth="174.0" text="Alacarte" textFill="WHITE">
                <font>
                   <Font name="Audrey Bold" size="25.0" />
                </font>
@@ -147,7 +147,7 @@
             </Text>
          </children>
       </Pane>
-      <Text fill="#4d4848" layoutX="510.0" layoutY="144.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Search">
+      <Text fill="#4d4848" layoutX="510.0" layoutY="144.0" onMouseClicked="#searchSelect" strokeType="OUTSIDE" strokeWidth="0.0" text="Search">
          <font>
             <Font name="Audrey Bold" size="25.0" />
          </font>

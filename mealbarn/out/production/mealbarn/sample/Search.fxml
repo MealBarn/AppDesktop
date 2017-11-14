@@ -8,66 +8,80 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
-<?import javafx.scene.text.Text?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.SearchController">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="760.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.SearchController">
    <children>
-      <ImageView fitHeight="658.0" fitWidth="981.0" layoutX="-134.0" layoutY="-9.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="761.0" fitWidth="1207.0" layoutX="-7.0" layoutY="8.0" pickOnBounds="true">
          <image>
-            <Image url="@../img/pexels-photo-236812.jpg" />
+            <Image url="@../img/logoo.jpg" />
          </image>
       </ImageView>
-      <Pane layoutX="84.0" layoutY="204.0" opacity="0.63" prefHeight="269.0" prefWidth="651.0" style="-fx-background-color: #ffffff; -fx-background-radius: 10;">
+      <Pane layoutX="18.0" layoutY="420.0" prefHeight="325.0" prefWidth="1167.0" style="-fx-background-color: #ffffff; -fx-background-radius: 5;">
          <children>
-            <ListView fx:id="list" layoutX="28.0" layoutY="105.0" onMouseClicked="#deleteIngredientsList" prefHeight="150.0" prefWidth="581.0" />
+            <ListView fx:id="list" layoutX="238.0" layoutY="124.0" onMouseClicked="#deleteIngredientsList" prefHeight="118.0" prefWidth="682.0" />
+            <JFXCheckBox fx:id="isAlacarte" layoutX="198.0" layoutY="78.0" text="A la carte">
+               <font>
+                  <Font name="Audrey Normal" size="25.0" />
+               </font>
+            </JFXCheckBox>
+            <JFXCheckBox fx:id="isDrink" layoutX="628.0" layoutY="78.0" text="Drink">
+               <font>
+                  <Font name="Audrey Normal" size="25.0" />
+               </font>
+            </JFXCheckBox>
+            <JFXCheckBox fx:id="isAppetizer" layoutX="339.0" layoutY="78.0" text="Appetizer">
+               <font>
+                  <Font name="Audrey Normal" size="25.0" />
+               </font>
+            </JFXCheckBox>
+            <JFXCheckBox fx:id="isDessert" layoutX="493.0" layoutY="78.0" text="Dessert">
+               <font>
+                  <Font name="Audrey Normal" size="25.0" />
+               </font>
+            </JFXCheckBox>
+            <JFXCheckBox fx:id="isMainCourse" layoutX="735.0" layoutY="78.0" text="MainCourse">
+               <font>
+                  <Font name="Audrey Normal" size="25.0" />
+               </font>
+            </JFXCheckBox>
+            <JFXCheckBox fx:id="isSoup" layoutX="912.0" layoutY="78.0" text="Soup">
+               <font>
+                  <Font name="Audrey Normal" size="25.0" />
+               </font>
+            </JFXCheckBox>
+            <JFXTextField fx:id="IngredientType" layoutX="239.0" layoutY="18.0" onKeyPressed="#IngredientsPressEnterAction" onKeyTyped="#IngredientsTypeAction" prefHeight="40.0" prefWidth="585.0" promptText="PLEASE TYPE YOUR INGREDIENTS HERE" style="-fx-background-color: none; -fx-background-radius: 5;">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </JFXTextField>
+            <JFXButton fx:id="addButton" layoutX="836.0" layoutY="17.0" onAction="#addButtonAction" prefHeight="45.0" prefWidth="87.0" style="-fx-background-color: #f8c760;" text="Add">
+               <font>
+                  <Font name="Audrey Normal" size="20.0" />
+               </font>
+            </JFXButton>
          </children></Pane>
-      <JFXCheckBox layoutX="112.0" layoutY="282.0" text="A la cate">
-         <font>
-            <Font size="15.0" />
-         </font></JFXCheckBox>
-      <JFXCheckBox layoutX="428.0" layoutY="282.0" text="Drink">
-         <font>
-            <Font size="15.0" />
-         </font></JFXCheckBox>
-      <JFXCheckBox layoutX="222.0" layoutY="282.0" text="Appetizer">
-         <font>
-            <Font size="15.0" />
-         </font></JFXCheckBox>
-      <JFXCheckBox layoutX="325.0" layoutY="282.0" text="Dessert">
-         <font>
-            <Font size="15.0" />
-         </font></JFXCheckBox>
-      <JFXCheckBox layoutX="505.0" layoutY="282.0" text="MainCourse">
-         <font>
-            <Font size="15.0" />
-         </font></JFXCheckBox>
-      <JFXCheckBox layoutX="633.0" layoutY="281.0" text="Soup">
-         <font>
-            <Font size="15.0" />
-         </font></JFXCheckBox>
-      <JFXTextField fx:id="IngredientType" layoutX="135.0" layoutY="217.0" onKeyPressed="#IngredientsPressEnterAction" onKeyTyped="#IngredientsTypeAction" prefHeight="37.0" prefWidth="549.0" promptText="PLEASE TYPE YOUR INGREDIENTS HERE" style="-fx-background-color: none; -fx-background-radius: 5;">
-         <font>
-            <Font size="15.0" />
-         </font>
-      </JFXTextField>
-      <JFXButton layoutX="358.0" layoutY="482.0" prefHeight="43.0" prefWidth="90.0" style="-fx-background-color: #29ccc3; -fx-background-radius: 10;" text="SUBMIT">
-         <font>
-            <Font size="15.0" />
-         </font>
-      </JFXButton>
-      <JFXButton fx:id="addButton" layoutX="641.0" layoutY="220.0" onAction="#addButtonAction" style="-fx-background-color: #ffb31a#ffb31a;" text="add">
+      <JFXButton fx:id="submitButton" layoutX="450.0" layoutY="675.0" onAction="#submitAction" prefHeight="56.0" prefWidth="290.0" style="-fx-background-color: black; -fx-background-radius: 7;" text="Search" textFill="WHITE">
          <font>
             <Font size="15.0" />
          </font></JFXButton>
-      <ImageView fx:id="closeButton" fitHeight="32.0" fitWidth="30.0" layoutX="757.0" layoutY="9.0" onMouseClicked="#closeButtonAction" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../img/exit-search.png" />
-         </image>
-      </ImageView>
-      <Text fill="#29ccc3" layoutX="199.0" layoutY="192.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MealBarn">
-         <font>
-            <Font name="Selima" size="130.0" />
-         </font>
-      </Text>
+      <Pane layoutX="-5.0" layoutY="-8.0" prefHeight="67.0" prefWidth="1214.0" style="-fx-background-color: black;">
+         <children>
+            <JFXButton layoutX="283.0" layoutY="2.0" prefHeight="66.0" prefWidth="320.0" text="Search Ingredients" textFill="#f8c760">
+               <font>
+                  <Font name="Audrey Normal" size="30.0" />
+               </font>
+            </JFXButton>
+            <ImageView fx:id="closeButton" fitHeight="32.0" fitWidth="30.0" layoutX="1147.0" layoutY="21.0" onMouseClicked="#closeButtonAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/exit-search.png" />
+               </image>
+            </ImageView>
+            <JFXButton layoutX="616.0" layoutY="2.0" onAction="#categorySelect" prefHeight="66.0" prefWidth="320.0" text="Category" textFill="WHITE">
+               <font>
+                  <Font name="Audrey Normal" size="30.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </Pane>
    </children>
 </Pane>
