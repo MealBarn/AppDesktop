@@ -6,6 +6,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.paint.LinearGradient?>
 <?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
@@ -13,9 +14,9 @@
    <children>
       <Pane prefHeight="760.0" prefWidth="1200.0" style="-fx-background-color: #ffffe6;">
          <children>
-            <ImageView fitHeight="771.0" fitWidth="1202.0" layoutY="-12.0" pickOnBounds="true">
+            <ImageView fitHeight="771.0" fitWidth="1202.0" layoutY="-11.0" pickOnBounds="true">
                <image>
-                  <Image url="@../img/bg-showmenu.jpg" />
+                  <Image url="@../img/bgShowfood.jpg" />
                </image>
             </ImageView>
             <Pane layoutX="56.0" layoutY="230.0" prefHeight="203.0" prefWidth="349.0" style="-fx-background-color: #ffffff;">
@@ -142,46 +143,48 @@
                   <Font size="20.0" />
                </font>
             </JFXButton>
-            <Pane prefHeight="67.0" prefWidth="1200.0" style="-fx-background-color: black;">
-               <children>
-                  <JFXButton layoutX="283.0" layoutY="-1.0" prefHeight="66.0" prefWidth="320.0" styleClass="contentFont" text="Search Ingredients" textFill="#f8c760">
-                     <font>
-                        <Font name="Audrey Normal" size="30.0" />
-                     </font>
-                  </JFXButton>
-                  <ImageView fx:id="closeButton" fitHeight="32.0" fitWidth="30.0" layoutX="1147.0" layoutY="21.0" onMouseClicked="#closeButtonAction" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../img/exit-search.png" />
-                     </image>
-                  </ImageView>
-                  <JFXButton layoutX="616.0" prefHeight="66.0" prefWidth="320.0" styleClass="contentFont" text="Category" textFill="WHITE">
-                     <font>
-                        <Font name="Audrey Normal" size="30.0" />
-                     </font>
-                  </JFXButton>
-               </children>
-            </Pane>
             <Text layoutX="439.0" layoutY="200.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="contentFontBold" text="- - Appetizer - -">
                <font>
                   <Font name="Audrey Normal" size="44.0" />
                </font>
             </Text>
-            <Text layoutX="404.0" layoutY="155.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: selima;" styleClass="customFont" text="Mealbarn">
-               <font>
-                  <Font name="AdobeDevanagari-Regular" size="130.0" />
-               </font>
-               <fill>
-                  <LinearGradient endX="1.0" endY="1.0">
-                     <stops>
-                        <Stop color="#40311d" />
-                        <Stop color="#40311d" offset="0.14126394052044602" />
-                        <Stop color="#513810" offset="0.4857082468202558" />
-                        <Stop color="#bfa780" offset="1.0" />
-                     </stops>
-                  </LinearGradient>
-               </fill>
-            </Text>
          </children>
       </Pane>
+      <Pane prefHeight="91.0" prefWidth="1200.0" style="-fx-background-color: white;">
+         <children>
+            <JFXButton layoutX="46.0" layoutY="20.0" prefHeight="66.0" prefWidth="320.0" text="Search Ingredients">
+               <font>
+                  <Font name="Audrey Normal" size="30.0" />
+               </font>
+            </JFXButton>
+            <ImageView fx:id="closeButton" fitHeight="32.0" fitWidth="30.0" layoutX="1147.0" layoutY="21.0" onMouseClicked="#closeButtonAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/exit-search.png" />
+               </image>
+            </ImageView>
+            <JFXButton layoutX="838.0" layoutY="20.0" prefHeight="66.0" prefWidth="303.0" text="Category">
+               <font>
+                  <Font name="Audrey Normal" size="30.0" />
+               </font>
+            </JFXButton>
+            <Line endX="100.0" layoutX="276.0" layoutY="86.0" startX="-250.0" />
+            <Line endX="100.0" layoutX="1079.0" layoutY="86.0" startX="-250.0" />
+         </children>
+      </Pane>
+      <Text layoutX="407.0" layoutY="113.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="customFont" text="Mealbarn">
+         <font>
+            <Font name="Selima" size="130.0" />
+         </font>
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#40311d" />
+                  <Stop color="#40311d" offset="0.14126394052044602" />
+                  <Stop color="#513810" offset="0.4857082468202558" />
+                  <Stop color="#bfa780" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Text>
    </children>
 </Pane>
