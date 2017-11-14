@@ -28,6 +28,10 @@ public class Data {
         this.showIDList = showIDList;
     }
 
+    public void setFoodShowsList(ArrayList<FoodShow> foodShowsList) {
+        this.foodShowsList = foodShowsList;
+    }
+
     public void setShowIDList() {
         showIDList.clear();
         for (FoodShow food : foodShowsList){
@@ -35,7 +39,6 @@ public class Data {
                 showIDList.add(food.getId().toString());
             }
         }
-
     }
 
 
@@ -48,7 +51,6 @@ public class Data {
         allComponent = new ArrayList<String>();
         matchComponent = new ArrayList<String>();
         foodShowsList = new ArrayList<FoodShow>();
-        foodStr = new ArrayList<String>();
         alacarteIDList = new ArrayList<String>();
         appetizerIDList = new ArrayList<String>();
         dessertIDList = new ArrayList<String>();
@@ -56,7 +58,6 @@ public class Data {
         mainCourseIDList = new ArrayList<String>();
         soupIDList = new ArrayList<String>();
         showIDList = new ArrayList<String>();
-        selectIDList = new ArrayList<String>();
         EntityManagerFactory emf;
         EntityManager em;
         emf = Persistence.createEntityManagerFactory("./src/ODB/Account.odb");
@@ -152,6 +153,40 @@ public class Data {
 
     public static Data getData(){return data;}
 
+    public void sortPerfect(){
+        System.out.println("--------------");
+        int n = showIDList.size();
+        boolean isSwitch;
+        do{
+            isSwitch = false;
+            int idNow;
+            int idPrev;
+            float perfectNow;
+            float perfectPrev;
+            for(int i = 1 ;i<n;i++)
+            {
+                idNow = Integer.parseInt(showIDList.get(i));
+                idPrev= Integer.parseInt(showIDList.get(i-1));
+                perfectNow = foodShowsList.get(idNow-1).getPerfect();
+                perfectPrev = foodShowsList.get(idPrev-1).getPerfect();
+                if(perfectPrev<perfectNow){
+                    Collections.swap(showIDList,i,i-1);
+                    isSwitch =true;
+                }
+            }
+            n=n-1;
+        }while (isSwitch);
+        printFood();
+    }
+
+    public void printFood(){
+        int id;
+        for (String foodId : showIDList){
+            id = Integer.parseInt(foodId)-1;
+            System.out.println((id+1)+"\t"+foodShowsList.get(id).getPerfect());
+        }
+    }
+
     public ArrayList<String> getAccountStr() { return accountStr; }
 
     public ArrayList<String> getAlacateIDList() {
@@ -207,5 +242,10 @@ public class Data {
 
         }
         return matchComponent;
+    }
+    public void clearPerfectFood(){
+        for (FoodShow foodShow : foodShowsList){
+            foodShow.clearPerfect();
+        }
     }
 }

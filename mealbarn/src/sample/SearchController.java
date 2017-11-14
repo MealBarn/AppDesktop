@@ -82,6 +82,8 @@ public class SearchController {
 
     @FXML
     void submitAction(ActionEvent event) {
+        System.out.println("=================================================================");
+        data.clearPerfectFood();
         ArrayList<FoodShow> foodShowsList = data.getFoodShowsList();
         List<Component> componentList = data.getComponentList();
         ArrayList<String> select = new ArrayList<String>();
@@ -103,20 +105,19 @@ public class SearchController {
         if(isSoup.isSelected()){
             select.addAll(data.getSoupIDList());
         }
-        for (String s : select) {
-            System.out.println(s);
-        }
         for (String choose : choosedList){
             for (Component component : componentList){
-                if (select.contains(component.getId())) {
+                if (select.contains(component.getId().toString())) {
                     if (component.getComponent().compareTo(choose) == 0) {
                         int id = component.getId() - 1;
-                        FoodShow food = foodShowsList.get(id);
-                        food.addPerfect();
+                        foodShowsList.get(id).addPerfect();
                     }
                 }
             }
         }
+        data.setFoodShowsList(foodShowsList);
+        data.setShowIDList();
+        data.sortPerfect();
     }
 
     @FXML
@@ -156,6 +157,7 @@ public class SearchController {
             }
         }
     }
+
 
 
 }
