@@ -18,7 +18,7 @@
       </ImageView>
       <Pane prefHeight="67.0" prefWidth="1200.0" style="-fx-background-color: black;">
          <children>
-            <JFXButton layoutX="283.0" layoutY="2.0" prefHeight="66.0" prefWidth="320.0" text="Search Ingredients" textFill="#f8c760">
+            <JFXButton layoutX="283.0" layoutY="-1.0" prefHeight="66.0" prefWidth="320.0" styleClass="contentFontBold" text="Search Ingredients" textFill="#f8c760">
                <font>
                   <Font name="Audrey Normal" size="30.0" />
                </font>
@@ -28,7 +28,7 @@
                   <Image url="@../img/exit-search.png" />
                </image>
             </ImageView>
-            <JFXButton layoutX="616.0" layoutY="2.0" prefHeight="66.0" prefWidth="320.0" text="Category" textFill="WHITE">
+            <JFXButton layoutX="616.0" prefHeight="66.0" prefWidth="320.0" styleClass="contentFontBold" text="Category" textFill="WHITE">
                <font>
                   <Font name="Audrey Normal" size="30.0" />
                </font>
@@ -39,12 +39,15 @@
          <children>
             <Pane layoutX="17.0" layoutY="101.0" prefHeight="486.0" prefWidth="417.0" style="-fx-background-color: #734d26; -fx-background-radius: 10;">
                <children>
-                  <Pane layoutY="18.0" prefHeight="53.0" prefWidth="416.0" style="-fx-background-color: #513810;" />
-                  <Text fill="WHITE" layoutX="118.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="  ราดหน้าหมู" wrappingWidth="220.3100346443693">
-                     <font>
-                        <Font name="TH Sarabun New" size="47.0" />
-                     </font>
-                  </Text>
+                  <Pane layoutY="18.0" prefHeight="53.0" prefWidth="416.0" style="-fx-background-color: #513810;">
+                     <children>
+                        <Text fill="WHITE" layoutX="141.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Sarabun;" styleClass="SarabunFont" text="ราดหน้าหมู" wrappingWidth="220.3100346443693">
+                           <font>
+                              <Font name="TH Sarabun New" size="30.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
                   <ImageView fitHeight="446.0" fitWidth="382.0" layoutX="18.0" layoutY="82.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../img/Alacarte/12.png" />
@@ -74,18 +77,18 @@
                         <Image url="@../img/food/test-sol2-1.jpg" />
                      </image>
                   </ImageView>
-                  <JFXButton layoutX="599.0" layoutY="471.0" text="Next">
+                  <JFXButton layoutX="599.0" layoutY="471.0" styleClass="contentFontBold" text="Next">
                      <font>
                         <Font name="Audrey Bold" size="20.0" />
                      </font></JFXButton>
                </children>
             </Pane>
-            <JFXButton layoutX="748.0" layoutY="48.0" prefHeight="44.0" prefWidth="152.0" style="-fx-background-color: #513810; -fx-background-radius: 8;" text="Ingredient" textFill="WHITE">
+            <JFXButton layoutX="748.0" layoutY="48.0" prefHeight="44.0" prefWidth="152.0" style="-fx-background-color: #513810; -fx-background-radius: 8;" styleClass="contentFontBold" text="Ingredient" textFill="WHITE">
                <font>
                   <Font name="Audrey Bold" size="22.0" />
                </font>
             </JFXButton>
-            <JFXButton layoutX="925.0" layoutY="48.0" prefHeight="44.0" prefWidth="152.0" style="-fx-background-color: #bfa780; -fx-background-radius: 8;" text="Directions" textFill="WHITE">
+            <JFXButton layoutX="925.0" layoutY="48.0" prefHeight="44.0" prefWidth="152.0" style="-fx-background-color: #bfa780; -fx-background-radius: 8;" styleClass="contentFontBold" text="Directions" textFill="WHITE">
                <font>
                   <Font name="Audrey Bold" size="22.0" />
                </font>

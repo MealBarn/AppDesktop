@@ -23,3 +23,12 @@
 .contentFontBold {
     -fx-font-family: 'Audrey';
 }
+
+
+@font-face {
+   font-family: Sarabun;
+   src: url("THSarabunNew.ttf");
+}
+.SarabunFont {
+    -fx-font-family: 'Sarabun';
+}
