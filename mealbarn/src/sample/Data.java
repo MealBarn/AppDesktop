@@ -3,7 +3,10 @@ package sample;
 import ooad.Account;
 import ooad.Component;
 import ooad.Food;
+<<<<<<< HEAD
 import ooad.FoodShow;
+=======
+>>>>>>> UI
 
 import javax.persistence.*;
 import java.util.*;
@@ -15,7 +18,10 @@ public class Data {
     private ArrayList<String> foodStr;
     private List<Component> componentList;
     private List<Food> foodsList;
+<<<<<<< HEAD
     private ArrayList<FoodShow> foodShowsList;
+=======
+>>>>>>> UI
     private List<Account> accountList;
     private static Data data = new Data();
     private Data()
@@ -23,7 +29,10 @@ public class Data {
         accountStr = new ArrayList<String>();
         allComponent = new ArrayList<String>();
         matchComponent = new ArrayList<String>();
+<<<<<<< HEAD
         foodShowsList = new ArrayList<FoodShow>();
+=======
+>>>>>>> UI
         foodStr = new ArrayList<String>();
         EntityManagerFactory emf;
         EntityManager em;
@@ -90,12 +99,19 @@ public class Data {
         /////////////////////////////////////////////////////////////////
         for (int i = 0;i<foodsList.size();i++) {
             Food food = foodsList.get(i);
+<<<<<<< HEAD
             int amount = Integer.parseInt(amountComponent.get(i));
             Long id = food.getId();
             String name = food.getName();
             String perfect = "0";
             FoodShow foodShow = new FoodShow(id,name,amount);
             foodShowsList.add(foodShow);
+=======
+            String amount = amountComponent.get(i);
+            Long id = food.getId();
+            String name = food.getName();
+            String perfect = "0";
+>>>>>>> UI
             String details = String.format("%d %s %s %s", id, name, amount, perfect);
             foodStr.add(details);
             /////////////////////////////////////////////////////////////////
@@ -107,7 +123,10 @@ public class Data {
     public ArrayList<String> getAccountStr() { return accountStr; }
     public ArrayList<String> getAllComponent(){ return allComponent; }
     public ArrayList<String> getFoodStr() { return foodStr; }
+<<<<<<< HEAD
     public ArrayList<FoodShow> getFoodShowsList() { return foodShowsList; }
+=======
+>>>>>>> UI
     public List<Component> getComponentList() { return componentList; }
     public List<Food> getFoodsList() { return foodsList; }
     public List<Account> getAccountList() { return accountList; }
