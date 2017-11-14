@@ -71,6 +71,11 @@ public class SearchController {
     void IngredientsTypeAction(KeyEvent event) {
         String inputStr = IngredientType.getText();
         ArrayList<String> matchComponent = data.getMatchComponent(inputStr);
+        for (String component : choosedList){
+            if (matchComponent.contains(component)){
+                matchComponent.remove(component);
+            }
+        }
         componentList = matchComponent.toArray(new String[matchComponent.size()]);
         TextFields.bindAutoCompletion(IngredientType,componentList);
     }
@@ -143,7 +148,7 @@ public class SearchController {
     }
 
     void addIngredientsBox(){
-        if(IngredientType.getText().length() != 0){
+        if((IngredientType.getText().length() != 0)&&!choosedList.contains(IngredientType.getText())){
             boolean checkMatch = false;
             for(String i : componentList){
                 if(i.equals(IngredientType.getText())){
