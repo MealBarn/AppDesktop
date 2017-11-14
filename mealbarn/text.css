@@ -18,7 +18,6 @@
 @font-face {
    font-family: Audrey;
    src: url("Audrey-Normal.otf");
-   font-size: 30px;
 }
 .contentFontBold {
     -fx-font-family: 'Audrey';
