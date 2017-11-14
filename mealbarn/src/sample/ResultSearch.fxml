@@ -24,9 +24,9 @@
                   <Image url="@../img/Alacarte/1.png" />
                </image>
             </ImageView>
-            <Text layoutX="247.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ก๋วยจั๊บ">
+            <Text layoutX="251.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="thaiFont" text="ก๋วยจั๊บ">
                <font>
-                  <Font name="TH Sarabun New" size="30.0" />
+                  <Font name="TH Sarabun New" size="18.0" />
                </font>
             </Text>
             <JFXProgressBar layoutX="251.0" layoutY="136.0" prefHeight="4.0" prefWidth="80.0" progress="0.79" />
@@ -209,7 +209,7 @@
       </JFXButton>
       <Pane prefHeight="67.0" prefWidth="1200.0" style="-fx-background-color: black;">
          <children>
-            <JFXButton layoutX="283.0" layoutY="2.0" prefHeight="66.0" prefWidth="320.0" text="Search Ingredients" textFill="#f8c760">
+            <JFXButton layoutX="283.0" prefHeight="66.0" prefWidth="320.0" styleClass="contentFontBold" text="Search Ingredients" textFill="#f8c760">
                <font>
                   <Font name="Audrey Normal" size="30.0" />
                </font>
@@ -219,19 +219,19 @@
                   <Image url="@../img/exit-search.png" />
                </image>
             </ImageView>
-            <JFXButton layoutX="616.0" layoutY="2.0" prefHeight="66.0" prefWidth="320.0" text="Category" textFill="WHITE">
+            <JFXButton layoutX="616.0" prefHeight="66.0" prefWidth="320.0" styleClass="contentFontBold" text="Category" textFill="WHITE">
                <font>
                   <Font name="Audrey Normal" size="30.0" />
                </font>
             </JFXButton>
          </children>
       </Pane>
-      <Text layoutX="506.0" layoutY="192.0" strokeType="OUTSIDE" strokeWidth="0.0" text="- - เมนูอาหารที่ทำได้ - -">
+      <Text layoutX="354.0" layoutY="202.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="contentFont" text="- - This is your recipe- -">
          <font>
-            <Font name="TH Sarabun New" size="36.0" />
+            <Font name="Audrey Normal" size="45.0" />
          </font>
       </Text>
-      <Text layoutX="415.0" layoutY="155.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mealbarn">
+      <Text layoutX="415.0" layoutY="155.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="customFont" text="Mealbarn">
          <font>
             <Font name="Selima" size="130.0" />
          </font>

@@ -24,11 +24,11 @@
     -fx-font-family: 'Audrey';
 }
 
-
 @font-face {
    font-family: Sarabun;
    src: url("THSarabunNew.ttf");
+   font-weight: normal;
 }
-.SarabunFont {
+.thaiFont {
     -fx-font-family: 'Sarabun';
 }
