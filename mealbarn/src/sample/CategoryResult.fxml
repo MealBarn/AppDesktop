@@ -9,7 +9,6 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-
 <Pane prefHeight="760.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.CategoryResult">
    <children>
       <Pane prefHeight="760.0" prefWidth="1200.0" style="-fx-background-color: #ffffe6;">
@@ -145,7 +144,7 @@
             </JFXButton>
             <Pane prefHeight="67.0" prefWidth="1200.0" style="-fx-background-color: black;">
                <children>
-                  <JFXButton layoutX="283.0" layoutY="2.0" prefHeight="66.0" prefWidth="320.0" text="Search Ingredients" textFill="#f8c760">
+                  <JFXButton layoutX="283.0" layoutY="-1.0" prefHeight="66.0" prefWidth="320.0" styleClass="contentFont" text="Search Ingredients" textFill="#f8c760">
                      <font>
                         <Font name="Audrey Normal" size="30.0" />
                      </font>
@@ -155,21 +154,21 @@
                         <Image url="@../img/exit-search.png" />
                      </image>
                   </ImageView>
-                  <JFXButton layoutX="616.0" layoutY="2.0" prefHeight="66.0" prefWidth="320.0" text="Category" textFill="WHITE">
+                  <JFXButton layoutX="616.0" prefHeight="66.0" prefWidth="320.0" styleClass="contentFont" text="Category" textFill="WHITE">
                      <font>
                         <Font name="Audrey Normal" size="30.0" />
                      </font>
                   </JFXButton>
                </children>
             </Pane>
-            <Text layoutX="506.0" layoutY="192.0" strokeType="OUTSIDE" strokeWidth="0.0" text="- - Appetizer - -">
+            <Text layoutX="439.0" layoutY="200.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="contentFontBold" text="- - Appetizer - -">
                <font>
-                  <Font name="TH Sarabun New" size="44.0" />
+                  <Font name="Audrey Normal" size="44.0" />
                </font>
             </Text>
-            <Text layoutX="415.0" layoutY="155.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mealbarn">
+            <Text layoutX="404.0" layoutY="155.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: selima;" styleClass="customFont" text="Mealbarn">
                <font>
-                  <Font name="Selima" size="130.0" />
+                  <Font name="AdobeDevanagari-Regular" size="130.0" />
                </font>
                <fill>
                   <LinearGradient endX="1.0" endY="1.0">
