@@ -133,17 +133,7 @@
                   </JFXButton>
                </children>
             </Pane>
-            <JFXButton layoutX="615.0" layoutY="675.0" text="next &gt;&gt;">
-               <font>
-                  <Font size="20.0" />
-               </font>
-            </JFXButton>
-            <JFXButton layoutX="453.0" layoutY="675.0" text="&lt;&lt; previous">
-               <font>
-                  <Font size="20.0" />
-               </font>
-            </JFXButton>
-            <Text layoutX="439.0" layoutY="200.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="contentFontBold" text="- - Appetizer - -">
+            <Text layoutX="517.0" layoutY="183.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="contentFontBold" text="Appetizer">
                <font>
                   <Font name="Audrey Normal" size="44.0" />
                </font>
@@ -186,5 +176,25 @@
             </LinearGradient>
          </fill>
       </Text>
+      <JFXButton layoutX="488.0" layoutY="677.0" text=" Previous">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </JFXButton>
+      <ImageView fitHeight="28.0" fitWidth="87.0" layoutX="724.0" layoutY="683.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/right-spoon.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="28.0" fitWidth="87.0" layoutX="424.0" layoutY="685.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/left-fork.png" />
+         </image>
+      </ImageView>
+      <JFXButton layoutX="651.0" layoutY="677.0" text="Next">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </JFXButton>
    </children>
 </Pane>
