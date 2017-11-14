@@ -76,7 +76,7 @@
                   <Image url="@../img/exit-search.png" />
                </image>
             </ImageView>
-            <JFXButton layoutX="616.0" layoutY="2.0" prefHeight="66.0" prefWidth="320.0" text="Category" textFill="WHITE">
+            <JFXButton layoutX="616.0" layoutY="2.0" onAction="#categorySelect" prefHeight="66.0" prefWidth="320.0" text="Category" textFill="WHITE">
                <font>
                   <Font name="Audrey Normal" size="30.0" />
                </font>

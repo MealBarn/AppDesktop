@@ -163,6 +163,10 @@ public class SearchController {
         }
     }
 
+    @FXML
+    void categorySelect(ActionEvent event) {
+        Main.priStage.setScene(Main.Category);
+    }
 
 
 }

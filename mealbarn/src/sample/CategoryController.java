@@ -59,4 +59,9 @@ public class CategoryController {
         }
     }
 
+    @FXML
+    void searchSelect(MouseEvent event) {
+        Main.priStage.setScene(Main.Search);
+    }
+
 }
