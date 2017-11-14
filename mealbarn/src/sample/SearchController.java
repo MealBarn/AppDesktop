@@ -9,6 +9,9 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.ListView;
 import javafx.scene.control.TextArea;
 import javafx.scene.image.ImageView;
@@ -21,6 +24,7 @@ import org.controlsfx.control.textfield.TextFields;
 
 
 import java.awt.*;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -86,7 +90,7 @@ public class SearchController {
     }
 
     @FXML
-    void submitAction(ActionEvent event) {
+    void submitAction(ActionEvent event) throws IOException {
         System.out.println("=================================================================");
         data.clearPerfectFood();
         ArrayList<FoodShow> foodShowsList = data.getFoodShowsList();
@@ -123,6 +127,10 @@ public class SearchController {
         data.setFoodShowsList(foodShowsList);
         data.setShowIDList();
         data.sortPerfect();
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("ResultSearch.fxml"));
+        ResultSearchController resultSearchController = loader.getController();
+        //resultSearchController.openData();
+        Main.priStage.setScene(Main.ResultSearch);
     }
 
     @FXML

@@ -29,6 +29,12 @@ public class LoginController {
     private JFXPasswordField passType;
 
     @FXML
+    void initialize() {
+        userType.setText("Korn");
+        passType.setText("58010316");
+    }
+
+    @FXML
     void closeButtonAction(MouseEvent event) {
         Platform.exit();
     }
@@ -42,7 +48,7 @@ public class LoginController {
         String uTest = String.format("%s %s",user,pass);
         boolean canLog = acc.contains(uTest);
         if(canLog) {
-            Main.priStage.setScene(Main.Select);
+            Main.priStage.setScene(Main.Search);
         }
         else {
             passType.clear();
@@ -56,12 +62,6 @@ public class LoginController {
     @FXML
     void loginCursor(MouseEvent event) {
         loginButton.setCursor(Cursor.HAND);
-    }
-
-    @FXML
-    void autoInput(MouseEvent event){
-        userType.setText("Suzy");
-        passType.setText("58011348");
     }
 
 }
