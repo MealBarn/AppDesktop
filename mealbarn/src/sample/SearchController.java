@@ -1,6 +1,7 @@
 package sample;
 
 import com.jfoenix.controls.JFXButton;
+import com.jfoenix.controls.JFXCheckBox;
 import com.jfoenix.controls.JFXListView;
 import com.jfoenix.controls.JFXTextField;
 import javafx.application.Platform;
@@ -38,6 +39,24 @@ public class SearchController {
     @FXML
     private ListView<String> list;
 
+    @FXML
+    private JFXCheckBox isAlacarte;
+
+    @FXML
+    private JFXCheckBox isDrink;
+
+    @FXML
+    private JFXCheckBox isAppetizer;
+
+    @FXML
+    private JFXCheckBox isDessert;
+
+    @FXML
+    private JFXCheckBox isMainCourse;
+
+    @FXML
+    private JFXCheckBox isSoup;
+
     ObservableList<String> choosedList = FXCollections.observableArrayList();
     Data data = Data.getData();
     String[] componentList = {};
@@ -63,15 +82,38 @@ public class SearchController {
 
     @FXML
     void submitAction(ActionEvent event) {
-        System.out.println("submit");
         ArrayList<FoodShow> foodShowsList = data.getFoodShowsList();
         List<Component> componentList = data.getComponentList();
+        ArrayList<String> select = new ArrayList<String>();
+        if(isAlacarte.isSelected()){
+            select.addAll(data.getAlacateIDList());
+        }
+        if(isAppetizer.isSelected()){
+            select.addAll(data.getAppetizerIDList());
+        }
+        if(isDessert.isSelected()){
+            select.addAll(data.getDessertIDList());
+        }
+        if(isDrink.isSelected()){
+            select.addAll(data.getDrinkIDList());
+        }
+        if(isMainCourse.isSelected()){
+            select.addAll(data.getMainCourseIDList());
+        }
+        if(isSoup.isSelected()){
+            select.addAll(data.getSoupIDList());
+        }
+        for (String s : select) {
+            System.out.println(s);
+        }
         for (String choose : choosedList){
             for (Component component : componentList){
-                if(component.getComponent().compareTo(choose)==0){
-                    int id = component.getId()-1;
-                    FoodShow food = foodShowsList.get(id);
-                    food.addPerfect();
+                if (select.contains(component.getId())) {
+                    if (component.getComponent().compareTo(choose) == 0) {
+                        int id = component.getId() - 1;
+                        FoodShow food = foodShowsList.get(id);
+                        food.addPerfect();
+                    }
                 }
             }
         }

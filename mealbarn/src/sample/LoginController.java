@@ -37,14 +37,9 @@ public class LoginController {
     void loginButtonAction(ActionEvent event) {
         Data data = Data.getData();
         ArrayList<String> acc = data.getAccountStr();
-        for (String user : acc){
-            System.out.println(user);
-        }
         String user = userType.getText();
         String pass = passType.getText();
         String uTest = String.format("%s %s",user,pass);
-        System.out.println("This User :" + uTest);
-        System.out.println(acc.contains(uTest));
         boolean canLog = acc.contains(uTest);
         if(canLog) {
             Main.priStage.setScene(Main.Select);

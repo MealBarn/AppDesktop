@@ -3,10 +3,7 @@ package sample;
 import ooad.Account;
 import ooad.Component;
 import ooad.Food;
-<<<<<<< HEAD
 import ooad.FoodShow;
-=======
->>>>>>> UI
 
 import javax.persistence.*;
 import java.util.*;
@@ -18,22 +15,48 @@ public class Data {
     private ArrayList<String> foodStr;
     private List<Component> componentList;
     private List<Food> foodsList;
-<<<<<<< HEAD
     private ArrayList<FoodShow> foodShowsList;
-=======
->>>>>>> UI
     private List<Account> accountList;
+    private ArrayList<String> alacarteIDList;
+    private ArrayList<String> appetizerIDList;
+    private ArrayList<String> dessertIDList;
+    private ArrayList<String> drinkIDList;
+    private ArrayList<String> mainCourseIDList;
+    private ArrayList<String> soupIDList;
+
+    public void setShowIDList(ArrayList<String> showIDList) {
+        this.showIDList = showIDList;
+    }
+
+    public void setShowIDList() {
+        showIDList.clear();
+        for (FoodShow food : foodShowsList){
+            if(food.getPerfect()>0){
+                showIDList.add(food.getId().toString());
+            }
+        }
+
+    }
+
+
+    private ArrayList<String> showIDList;
+    private ArrayList<String> selectIDList;
     private static Data data = new Data();
     private Data()
     {
         accountStr = new ArrayList<String>();
         allComponent = new ArrayList<String>();
         matchComponent = new ArrayList<String>();
-<<<<<<< HEAD
         foodShowsList = new ArrayList<FoodShow>();
-=======
->>>>>>> UI
         foodStr = new ArrayList<String>();
+        alacarteIDList = new ArrayList<String>();
+        appetizerIDList = new ArrayList<String>();
+        dessertIDList = new ArrayList<String>();
+        drinkIDList = new ArrayList<String>();
+        mainCourseIDList = new ArrayList<String>();
+        soupIDList = new ArrayList<String>();
+        showIDList = new ArrayList<String>();
+        selectIDList = new ArrayList<String>();
         EntityManagerFactory emf;
         EntityManager em;
         emf = Persistence.createEntityManagerFactory("./src/ODB/Account.odb");
@@ -99,37 +122,82 @@ public class Data {
         /////////////////////////////////////////////////////////////////
         for (int i = 0;i<foodsList.size();i++) {
             Food food = foodsList.get(i);
-<<<<<<< HEAD
             int amount = Integer.parseInt(amountComponent.get(i));
             Long id = food.getId();
             String name = food.getName();
             String perfect = "0";
             FoodShow foodShow = new FoodShow(id,name,amount);
             foodShowsList.add(foodShow);
-=======
-            String amount = amountComponent.get(i);
-            Long id = food.getId();
-            String name = food.getName();
-            String perfect = "0";
->>>>>>> UI
-            String details = String.format("%d %s %s %s", id, name, amount, perfect);
-            foodStr.add(details);
-            /////////////////////////////////////////////////////////////////
+            String type = food.getType();
+            if(type.compareTo("appetizer")==0){
+                appetizerIDList.add(id.toString());
+            }else
+            if(type.compareTo("dessert")==0){
+                dessertIDList.add(id.toString());
+            }else
+            if(type.compareTo("drink")==0){
+                drinkIDList.add(id.toString());
+            }else
+            if(type.compareTo("main course")==0){
+                mainCourseIDList.add(id.toString());
+            }else
+            if(type.compareTo("soup")==0){
+                soupIDList.add(id.toString());
+            }else
+            if(type.compareTo("a la carte")==0){
+                alacarteIDList.add(id.toString());
+            }
         }
-
     }
+
     public static Data getData(){return data;}
 
     public ArrayList<String> getAccountStr() { return accountStr; }
+
+    public ArrayList<String> getAlacateIDList() {
+        return alacarteIDList;
+    }
+
+    public ArrayList<String> getAppetizerIDList() {
+        return appetizerIDList;
+    }
+
+    public ArrayList<String> getDessertIDList() {
+        return dessertIDList;
+    }
+
+    public ArrayList<String> getDrinkIDList() {
+        return drinkIDList;
+    }
+
+    public ArrayList<String> getMainCourseIDList() {
+        return mainCourseIDList;
+    }
+
+    public ArrayList<String> getSoupIDList() {
+        return soupIDList;
+    }
+
+    public ArrayList<String> getShowIDList() {
+        return showIDList;
+    }
+
+    public ArrayList<String> getSelectIDList() {
+        return selectIDList;
+    }
+
     public ArrayList<String> getAllComponent(){ return allComponent; }
+
     public ArrayList<String> getFoodStr() { return foodStr; }
-<<<<<<< HEAD
+
     public ArrayList<FoodShow> getFoodShowsList() { return foodShowsList; }
-=======
->>>>>>> UI
+
     public List<Component> getComponentList() { return componentList; }
+
     public List<Food> getFoodsList() { return foodsList; }
+
     public List<Account> getAccountList() { return accountList; }
+
     public ArrayList<String> getMatchComponent(String inputComp) {
         matchComponent.clear();
         for (String component : allComponent){
