@@ -51,7 +51,7 @@ public class PicturePath implements Serializable {
 
     @Override
     public String toString() {
-        return "PicturePath{" + "pathPicture=" + pathPicture + '}';
+        return String.format("%s",this.pathPicture);
     }
 
     

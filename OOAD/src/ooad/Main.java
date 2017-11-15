@@ -17,10 +17,12 @@ public class Main {
         // TODO code application logic here
         //Scanner input = new Scanner (System.in);
 
-        String nameFile = "Food.odb";
+        String nameFile = "objectdb://192.168.43.19:80/PicturePath.odb;user=admin;password=admin";
+       // String nameFile ="Account.odb";
         EntityManagerFactory emf = Persistence.createEntityManagerFactory(nameFile);
         EntityManager em = emf.createEntityManager();
-            
+       // insertDBAccount(em,"Ham","58011173");
+            printAll(em);
          em.close();
         emf.close();
          
@@ -29,9 +31,9 @@ public class Main {
     /*For displaying list Food*/
     public static void printAll(EntityManager em)
     {
-              TypedQuery<Food> query = em.createQuery("SELECT p FROM Food p", Food.class);
-        List<Food> results = query.getResultList();
-        for (Food p : results) {
+              TypedQuery<PicturePath> query = em.createQuery("SELECT p FROM PicturePath p", PicturePath.class);
+        List<PicturePath> results = query.getResultList();
+        for (PicturePath p : results) {
             System.out.println(p);
         }
     }
