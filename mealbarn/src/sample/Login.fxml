@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
 <?import com.jfoenix.controls.JFXPasswordField?>
 <?import com.jfoenix.controls.JFXTextField?>
 <?import javafx.scene.Cursor?>
@@ -42,11 +43,16 @@
                   <Font size="20.0" />
                </font>
             </JFXPasswordField>
-            <JFXButton fx:id="loginButton" layoutX="140.0" layoutY="241.0" onAction="#loginButtonAction" onMouseMoved="#loginCursor" prefHeight="52.0" prefWidth="281.0" style="-fx-background-color: #ffff33; -fx-background-radius: 10;" text="LOGIN">
+            <JFXButton fx:id="loginButton" layoutX="140.0" layoutY="263.0" onAction="#loginButtonAction" onMouseMoved="#loginCursor" prefHeight="52.0" prefWidth="281.0" style="-fx-background-color: #ffff33; -fx-background-radius: 10;" text="LOGIN">
                <font>
                   <Font size="20.0" />
                </font>
             </JFXButton>
+            <JFXCheckBox layoutX="126.0" layoutY="211.0" text="Remember Me">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </JFXCheckBox>
          </children>
       </Pane>
       <ImageView fitHeight="94.0" fitWidth="73.0" layoutX="60.0" pickOnBounds="true" preserveRatio="true">

@@ -64,4 +64,9 @@ public class CategoryController {
         Main.priStage.setScene(Main.Search);
     }
 
+    @FXML
+    void closeButtonAction (MouseEvent event) {
+
+    }
+
 }
