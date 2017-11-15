@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="760.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.SearchController">
+   <children>
+      <ImageView fitHeight="761.0" fitWidth="1207.0" layoutX="-7.0" layoutY="8.0" pickOnBounds="true">
+         <image>
+            <Image url="@../img/bg-test.jpg" />
+         </image>
+      </ImageView>
+      <Pane layoutX="-7.0" layoutY="420.0" prefHeight="325.0" prefWidth="1212.0" style="-fx-background-color: #ffffff; -fx-background-radius: 5;">
+         <children>
+            <ListView fx:id="list" layoutX="311.0" layoutY="124.0" onMouseClicked="#deleteIngredientsList" prefHeight="118.0" prefWidth="573.0" />
+            <JFXCheckBox fx:id="isAlacarte" layoutX="191.0" layoutY="78.0" text="A la carte">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </JFXCheckBox>
+            <JFXCheckBox fx:id="isDrink" layoutX="625.0" layoutY="78.0" text="Drink">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </JFXCheckBox>
+            <JFXCheckBox fx:id="isAppetizer" layoutX="337.0" layoutY="78.0" text="Appetizer">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </JFXCheckBox>
+            <JFXCheckBox fx:id="isDessert" layoutX="490.0" layoutY="78.0" text="Dessert">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </JFXCheckBox>
+            <JFXCheckBox fx:id="isMainCourse" layoutX="732.0" layoutY="78.0" text="MainCourse">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </JFXCheckBox>
+            <JFXCheckBox fx:id="isSoup" layoutX="912.0" layoutY="78.0" text="Soup">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </JFXCheckBox>
+            <JFXTextField fx:id="IngredientType" layoutX="297.0" layoutY="21.0" onKeyPressed="#IngredientsPressEnterAction" onKeyTyped="#IngredientsTypeAction" prefHeight="40.0" prefWidth="585.0" promptText="PLEASE TYPE YOUR INGREDIENTS HERE" style="-fx-background-color: none; -fx-background-radius: 5;">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </JFXTextField>
+            <JFXButton fx:id="addButton" layoutX="899.0" layoutY="18.0" onAction="#addButtonAction" prefHeight="45.0" prefWidth="87.0" style="-fx-background-color: #f8c760;" text="Add">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </JFXButton>
+         </children></Pane>
+      <JFXButton fx:id="submitButton" layoutX="450.0" layoutY="675.0" onAction="#submitAction" prefHeight="56.0" prefWidth="290.0" style="-fx-background-color: black; -fx-background-radius: 7;" text="Search" textFill="WHITE">
+         <font>
+            <Font size="25.0" />
+         </font></JFXButton>
+      <Pane layoutX="-5.0" layoutY="-8.0" prefHeight="67.0" prefWidth="1214.0" style="-fx-background-color: black;">
+         <children>
+            <JFXButton layoutX="283.0" layoutY="2.0" prefHeight="66.0" prefWidth="320.0" text="Search Ingredients" textFill="#f8c760">
+               <font>
+                  <Font size="28.0" />
+               </font>
+            </JFXButton>
+            <ImageView fx:id="closeButton" fitHeight="32.0" fitWidth="30.0" layoutX="1147.0" layoutY="21.0" onMouseClicked="#closeButtonAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/exit-search.png" />
+               </image>
+            </ImageView>
+            <JFXButton layoutX="616.0" layoutY="2.0" onAction="#categorySelect" prefHeight="66.0" prefWidth="320.0" text="Category" textFill="WHITE">
+               <font>
+                  <Font size="28.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </Pane>
+   </children>
+</Pane>
