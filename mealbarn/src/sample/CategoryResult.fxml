@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane prefHeight="760.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.CategoryResult">
+   <children>
+      <Pane prefHeight="760.0" prefWidth="1200.0" style="-fx-background-color: #ffffe6;">
+         <children>
+            <ImageView fitHeight="771.0" fitWidth="1202.0" layoutY="-11.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../img/bgShowfood.jpg" />
+               </image>
+            </ImageView>
+            <Pane layoutX="56.0" layoutY="230.0" prefHeight="203.0" prefWidth="349.0" style="-fx-background-color: #ffffff;">
+               <children>
+                  <ImageView fitHeight="203.0" fitWidth="208.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/Alacarte/1.png" />
+                     </image>
+                  </ImageView>
+                  <Text layoutX="247.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ก๋วยจั๊บ">
+                     <font>
+                        <Font name="TH Sarabun New" size="30.0" />
+                     </font>
+                  </Text>
+                  <JFXButton layoutX="232.0" layoutY="153.0" prefHeight="34.0" prefWidth="91.0" style="-fx-background-color: #993366;" text="Recipe" textFill="WHITE">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </Pane>
+            <Pane layoutX="427.0" layoutY="230.0" prefHeight="203.0" prefWidth="349.0" style="-fx-background-color: #ffffff;">
+               <children>
+                  <ImageView fitHeight="203.0" fitWidth="208.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/Alacarte/1.png" />
+                     </image>
+                  </ImageView>
+                  <Text layoutX="247.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ก๋วยจั๊บ">
+                     <font>
+                        <Font name="TH Sarabun New" size="30.0" />
+                     </font>
+                  </Text>
+                  <JFXButton layoutX="232.0" layoutY="153.0" prefHeight="34.0" prefWidth="91.0" style="-fx-background-color: #993366;" text="Recipe" textFill="WHITE">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </Pane>
+            <Pane layoutX="799.0" layoutY="229.0" prefHeight="203.0" prefWidth="349.0" style="-fx-background-color: #ffffff;">
+               <children>
+                  <ImageView fitHeight="203.0" fitWidth="208.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/Alacarte/1.png" />
+                     </image>
+                  </ImageView>
+                  <Text layoutX="247.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ก๋วยจั๊บ">
+                     <font>
+                        <Font name="TH Sarabun New" size="30.0" />
+                     </font>
+                  </Text>
+                  <JFXButton layoutX="232.0" layoutY="153.0" prefHeight="34.0" prefWidth="91.0" style="-fx-background-color: #993366;" text="Recipe" textFill="WHITE">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </Pane>
+            <Pane layoutX="53.0" layoutY="458.0" prefHeight="203.0" prefWidth="349.0" style="-fx-background-color: #ffffff;">
+               <children>
+                  <ImageView fitHeight="203.0" fitWidth="208.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/Alacarte/1.png" />
+                     </image>
+                  </ImageView>
+                  <Text layoutX="247.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ก๋วยจั๊บ">
+                     <font>
+                        <Font name="TH Sarabun New" size="30.0" />
+                     </font>
+                  </Text>
+                  <JFXButton layoutX="232.0" layoutY="153.0" prefHeight="34.0" prefWidth="91.0" style="-fx-background-color: #993366;" text="Recipe" textFill="WHITE">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </Pane>
+            <Pane layoutX="424.0" layoutY="458.0" prefHeight="203.0" prefWidth="349.0" style="-fx-background-color: #ffffff;">
+               <children>
+                  <ImageView fitHeight="203.0" fitWidth="208.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/Alacarte/1.png" />
+                     </image>
+                  </ImageView>
+                  <Text layoutX="247.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ไข่เจียว">
+                     <font>
+                        <Font name="TH Sarabun New" size="30.0" />
+                     </font>
+                  </Text>
+                  <JFXButton layoutX="232.0" layoutY="153.0" prefHeight="34.0" prefWidth="91.0" style="-fx-background-color: #993366;" text="Recipe" textFill="WHITE">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </Pane>
+            <Pane layoutX="796.0" layoutY="457.0" prefHeight="203.0" prefWidth="349.0" style="-fx-background-color: #ffffff;">
+               <children>
+                  <ImageView fitHeight="203.0" fitWidth="208.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/Alacarte/1.png" />
+                     </image>
+                  </ImageView>
+                  <Text layoutX="247.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ก๋วยจั๊บ">
+                     <font>
+                        <Font name="TH Sarabun New" size="30.0" />
+                     </font>
+                  </Text>
+                  <JFXButton layoutX="232.0" layoutY="153.0" prefHeight="34.0" prefWidth="91.0" style="-fx-background-color: #993366;" text="Recipe" textFill="WHITE">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </Pane>
+            <Text layoutX="517.0" layoutY="183.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="contentFontBold" text="Appetizer">
+               <font>
+                  <Font name="Audrey Normal" size="44.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <Pane prefHeight="91.0" prefWidth="1200.0" style="-fx-background-color: white;">
+         <children>
+            <JFXButton layoutX="46.0" layoutY="20.0" prefHeight="66.0" prefWidth="320.0" text="Search Ingredients">
+               <font>
+                  <Font name="Audrey Normal" size="30.0" />
+               </font>
+            </JFXButton>
+            <ImageView fx:id="closeButton" fitHeight="32.0" fitWidth="30.0" layoutX="1147.0" layoutY="21.0" onMouseClicked="#closeButtonAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/exit-search.png" />
+               </image>
+            </ImageView>
+            <JFXButton layoutX="838.0" layoutY="20.0" prefHeight="66.0" prefWidth="303.0" text="Category">
+               <font>
+                  <Font name="Audrey Normal" size="30.0" />
+               </font>
+            </JFXButton>
+            <Line endX="100.0" layoutX="276.0" layoutY="86.0" startX="-250.0" />
+            <Line endX="100.0" layoutX="1079.0" layoutY="86.0" startX="-250.0" />
+         </children>
+      </Pane>
+      <Text layoutX="407.0" layoutY="113.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="customFont" text="Mealbarn">
+         <font>
+            <Font name="Selima" size="130.0" />
+         </font>
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#40311d" />
+                  <Stop color="#40311d" offset="0.14126394052044602" />
+                  <Stop color="#513810" offset="0.4857082468202558" />
+                  <Stop color="#bfa780" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Text>
+      <JFXButton layoutX="488.0" layoutY="677.0" text=" Previous">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </JFXButton>
+      <ImageView fitHeight="28.0" fitWidth="87.0" layoutX="724.0" layoutY="683.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/right-spoon.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="28.0" fitWidth="87.0" layoutX="424.0" layoutY="685.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/left-fork.png" />
+         </image>
+      </ImageView>
+      <JFXButton layoutX="651.0" layoutY="677.0" text="Next">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </JFXButton>
+   </children>
+</Pane>

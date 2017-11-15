@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane prefHeight="760.0" prefWidth="1200.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.CategoryController">
+   <children>
+      <ImageView fitHeight="760.0" fitWidth="1202.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/Marble%20-%20Copy.jpg" />
+         </image>
+      </ImageView>
+      <Pane accessibleRole="IMAGE_VIEW" layoutX="24.0" layoutY="170.0" prefHeight="551.0" prefWidth="174.0" style="-fx-background-color: none;">
+         <children>
+            <ImageView fitHeight="570.0" fitWidth="184.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/photo_Category/p-Appetizer.png" />
+               </image>
+            </ImageView>
+            <Pane layoutY="248.0" opacity="0.35" prefHeight="70.0" prefWidth="171.0" style="-fx-background-color: black;" />
+            <JFXButton onAction="#appetizerSelect" prefHeight="552.0" prefWidth="174.0" text="Appetizer" textFill="WHITE">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </Pane>
+      <Pane layoutX="218.0" layoutY="170.0" prefHeight="551.0" prefWidth="172.0" style="-fx-background-color: none;">
+         <children>
+            <ImageView fitHeight="570.0" fitWidth="184.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/photo_Category/p-Maincourse2.png" />
+               </image>
+            </ImageView>
+            <Pane layoutY="248.0" opacity="0.35" prefHeight="70.0" prefWidth="171.0" style="-fx-background-color: black;" />
+            <JFXButton onAction="#maincourseSelect" prefHeight="552.0" prefWidth="174.0" text="Maincourse" textFill="WHITE">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </Pane>
+      <Pane layoutX="412.0" layoutY="170.0" prefHeight="554.0" prefWidth="176.0" style="-fx-background-color: none;">
+         <children>
+            <ImageView fitHeight="570.0" fitWidth="184.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/photo_Category/p-Dessert.png" />
+               </image>
+            </ImageView>
+            <Pane layoutY="248.0" opacity="0.35" prefHeight="70.0" prefWidth="171.0" style="-fx-background-color: black;" />
+            <JFXButton onAction="#dessertSelect" prefHeight="552.0" prefWidth="174.0" text="Dessert" textFill="WHITE">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </Pane>
+      <Pane layoutX="605.0" layoutY="170.0" prefHeight="549.0" prefWidth="172.0" style="-fx-background-color: none;">
+         <children>
+            <ImageView fitHeight="570.0" fitWidth="184.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/photo_Category/p-Soup.png" />
+               </image>
+            </ImageView>
+            <Pane layoutY="248.0" opacity="0.35" prefHeight="70.0" prefWidth="171.0" style="-fx-background-color: black;" />
+            <JFXButton onAction="#soupSelect" prefHeight="552.0" prefWidth="174.0" text="Soup" textFill="WHITE">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </Pane>
+      <Pane layoutX="798.0" layoutY="170.0" prefHeight="570.0" prefWidth="184.0" style="-fx-background-color: none;">
+         <children>
+            <ImageView fitHeight="570.0" fitWidth="184.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/photo_Category/p-Drink.png" />
+               </image>
+            </ImageView>
+            <Pane layoutY="248.0" opacity="0.35" prefHeight="70.0" prefWidth="171.0" style="-fx-background-color: black;" />
+            <JFXButton layoutX="1.0" onAction="#drinkSelect" prefHeight="552.0" prefWidth="174.0" text="Drink" textFill="WHITE">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </Pane>
+      <Pane layoutX="991.0" layoutY="170.0" prefHeight="548.0" prefWidth="172.0" style="-fx-background-color: none;">
+         <children>
+            <ImageView fitHeight="570.0" fitWidth="184.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/photo_Category/p-ALaCarte1.png" />
+               </image>
+            </ImageView>
+            <Pane layoutY="248.0" opacity="0.35" prefHeight="70.0" prefWidth="171.0" style="-fx-background-color: black;" />
+            <JFXButton onAction="#alacarteSelect" prefHeight="552.0" prefWidth="174.0" text="Alacarte" textFill="WHITE">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </Pane>
+      <Pane layoutX="10.0" layoutY="6.0" prefHeight="114.0" prefWidth="271.0" visible="false">
+         <children>
+            <ImageView fitHeight="84.0" fitWidth="77.0" layoutX="23.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/member-suzy.jpg" />
+               </image>
+            </ImageView>
+            <Text fill="#4d4848" layoutX="117.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name  : Suzy">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <Text fill="#4d4848" layoutX="118.0" layoutY="82.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Status : User">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <Line endX="100.0" layoutX="144.0" layoutY="99.0" startX="-30.0" stroke="#c99e4c" />
+            <Text layoutX="115.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Member">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <Pane prefHeight="91.0" prefWidth="1200.0" style="-fx-background-color: white;">
+         <children>
+            <JFXButton layoutX="46.0" layoutY="20.0" prefHeight="66.0" prefWidth="320.0" text="Search Ingredients">
+               <font>
+                  <Font name="Audrey Normal" size="30.0" />
+               </font>
+            </JFXButton>
+            <ImageView fx:id="closeButton" fitHeight="32.0" fitWidth="30.0" layoutX="1147.0" layoutY="21.0" onMouseClicked="#closeButtonAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/exit-search.png" />
+               </image>
+            </ImageView>
+            <JFXButton layoutX="838.0" layoutY="20.0" prefHeight="66.0" prefWidth="303.0" text="Category">
+               <font>
+                  <Font name="Audrey Normal" size="30.0" />
+               </font>
+            </JFXButton>
+            <Line endX="100.0" layoutX="276.0" layoutY="86.0" startX="-250.0" />
+            <Line endX="100.0" layoutX="1079.0" layoutY="86.0" startX="-250.0" />
+         </children>
+      </Pane>
+      <Text layoutX="407.0" layoutY="113.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="customFont" text="Mealbarn">
+         <font>
+            <Font name="Selima" size="130.0" />
+         </font>
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#40311d" />
+                  <Stop color="#40311d" offset="0.14126394052044602" />
+                  <Stop color="#513810" offset="0.4857082468202558" />
+                  <Stop color="#bfa780" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Text>
+   </children>
+</Pane>
