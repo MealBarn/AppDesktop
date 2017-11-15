@@ -265,33 +265,45 @@ public class ResultSearchController {
     }
 
     @FXML
-    void foodRecipe1(ActionEvent event) {
-
+    void foodRecipe1(ActionEvent event) throws IOException {
+        int idFood = Integer.parseInt(idShow.get((page*6)+0))-1;
+        data.setIdFood(idFood);
+        SceneShowFood();
     }
 
     @FXML
-    void foodRecipe2(ActionEvent event) {
-
+    void foodRecipe2(ActionEvent event) throws IOException {
+        int idFood = Integer.parseInt(idShow.get((page*6)+1))-1;
+        data.setIdFood(idFood);
+        SceneShowFood();
     }
 
     @FXML
-    void foodRecipe3(ActionEvent event) {
-
+    void foodRecipe3(ActionEvent event) throws IOException {
+        int idFood = Integer.parseInt(idShow.get((page*6)+2))-1;
+        data.setIdFood(idFood);
+        SceneShowFood();
     }
 
     @FXML
-    void foodRecipe4(ActionEvent event) {
-
+    void foodRecipe4(ActionEvent event) throws IOException {
+        int idFood = Integer.parseInt(idShow.get((page*6)+3))-1;
+        data.setIdFood(idFood);
+        SceneShowFood();
     }
 
     @FXML
-    void foodRecipe5(ActionEvent event) {
-
+    void foodRecipe5(ActionEvent event) throws IOException {
+        int idFood = Integer.parseInt(idShow.get((page*6)+4))-1;
+        data.setIdFood(idFood);
+        SceneShowFood();
     }
 
     @FXML
-    void foodRecipe6(ActionEvent event) {
-
+    void foodRecipe6(ActionEvent event) throws IOException {
+        int idFood = Integer.parseInt(idShow.get((page*6)+5))-1;
+        data.setIdFood(idFood);
+        SceneShowFood();
     }
 
     @FXML
@@ -322,6 +334,14 @@ public class ResultSearchController {
     private void SceneSearch() throws IOException {
         Stage stage = (Stage) this.closeButton.getScene().getWindow();
         Parent search = FXMLLoader.load(getClass().getResource("Search.fxml"));
+        Scene scene = new Scene(search);
+        stage.setScene(scene);
+        stage.show();
+    }
+
+    private void SceneShowFood() throws IOException {
+        Stage stage = (Stage) this.closeButton.getScene().getWindow();
+        Parent search = FXMLLoader.load(getClass().getResource("ShowFood.fxml"));
         Scene scene = new Scene(search);
         stage.setScene(scene);
         stage.show();

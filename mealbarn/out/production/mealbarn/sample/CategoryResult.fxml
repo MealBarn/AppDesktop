@@ -157,11 +157,6 @@
                   <Font name="Audrey Normal" size="30.0" />
                </font>
             </JFXButton>
-            <ImageView fx:id="closeButton" fitHeight="32.0" fitWidth="30.0" layoutX="1147.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../img/exit-search.png" />
-               </image>
-            </ImageView>
             <JFXButton layoutX="838.0" layoutY="20.0" onAction="#categoryPage" prefHeight="66.0" prefWidth="303.0" text="Category">
                <font>
                   <Font name="Audrey Normal" size="30.0" />
@@ -206,5 +201,10 @@
             <Font size="20.0" />
          </font>
       </JFXButton>
+      <ImageView fx:id="closeButton" fitHeight="32.0" fitWidth="30.0" layoutX="1157.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/exit-search.png" />
+         </image>
+      </ImageView>
    </children>
 </Pane>

@@ -22,7 +22,17 @@ public class Data {
     private ArrayList<String> dessertIDList;
     private ArrayList<String> drinkIDList;
     private ArrayList<String> mainCourseIDList;
+
+    public int getIdFood() {
+        return idFood;
+    }
+
+    public void setIdFood(int idFood) {
+        this.idFood = idFood;
+    }
+
     private ArrayList<String> soupIDList;
+    private int idFood;
 
     public void setShowIDList(ArrayList<String> showIDList) {
         this.showIDList = showIDList;

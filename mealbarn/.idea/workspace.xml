@@ -28,7 +28,7 @@
       <file leaf-file-name="CategoryController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sample/CategoryController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
+            <state relative-caret-position="612">
               <caret line="76" column="0" lean-forward="false" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -40,70 +40,26 @@
       <file leaf-file-name="CategoryResultController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sample/CategoryResultController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="118">
-              <caret line="256" column="26" lean-forward="false" selection-start-line="256" selection-start-column="9" selection-end-line="256" selection-end-column="26" />
+            <state relative-caret-position="221">
+              <caret line="121" column="38" lean-forward="true" selection-start-line="116" selection-start-column="12" selection-end-line="121" selection-end-column="38" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#6091#6092#0" expanded="true" />
-                <element signature="e#6122#6123#0" expanded="true" />
+                <element signature="e#6931#6932#0" expanded="true" />
+                <element signature="e#6962#6963#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CategoryResult.fxml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/sample/CategoryResult.fxml">
-          <provider editor-type-id="JavaFX-Scene-Builder">
-            <state />
-          </provider>
+      <file leaf-file-name="ShowFoodController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/sample/ShowFoodController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="205" column="51" lean-forward="true" selection-start-line="205" selection-start-column="51" selection-end-line="205" selection-end-column="51" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ResultSearch.fxml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sample/ResultSearch.fxml">
-          <provider editor-type-id="JavaFX-Scene-Builder">
-            <state />
-          </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
-              <caret line="218" column="22" lean-forward="true" selection-start-line="218" selection-start-column="22" selection-end-line="218" selection-end-column="22" />
+            <state relative-caret-position="182">
+              <caret line="60" column="35" lean-forward="true" selection-start-line="60" selection-start-column="35" selection-end-line="60" selection-end-column="35" />
               <folding>
-                <element signature="n#ImageView#0;n#children#0;n#Pane#0;n#!!top" expanded="false" />
-                <element signature="n#image#0;n#ImageView#0;n#children#0;n#Pane#0;n#!!top" expanded="false" />
-                <element signature="n#Pane#0;n#children#0;n#Pane#0;n#!!top" expanded="false" />
-                <element signature="n#Pane#1;n#children#0;n#Pane#0;n#!!top" expanded="false" />
-                <element signature="n#Pane#2;n#children#0;n#Pane#0;n#!!top" expanded="false" />
-                <element signature="n#Pane#3;n#children#0;n#Pane#0;n#!!top" expanded="false" />
-                <element signature="n#Pane#4;n#children#0;n#Pane#0;n#!!top" expanded="false" />
-                <element signature="n#Pane#5;n#children#0;n#Pane#0;n#!!top" expanded="false" />
-                <element signature="n#Text#0;n#children#0;n#Pane#5;n#children#0;n#Pane#0;n#!!top" expanded="false" />
-                <element signature="n#Text#1;n#children#0;n#Pane#5;n#children#0;n#Pane#0;n#!!top" expanded="false" />
-                <element signature="n#font#0;n#Text#1;n#children#0;n#Pane#5;n#children#0;n#Pane#0;n#!!top" expanded="false" />
-                <element signature="n#JFXButton#0;n#children#0;n#Pane#5;n#children#0;n#Pane#0;n#!!top" expanded="false" />
-                <element signature="n#Text#2;n#children#0;n#Pane#5;n#children#0;n#Pane#0;n#!!top" expanded="false" />
-                <marker date="1510760547077" expanded="true" signature="11358:11440" ph="..." />
-                <marker date="1510760547077" expanded="true" signature="11613:11743" ph="..." />
-                <marker date="1510760547077" expanded="true" signature="11635:11718" ph="..." />
-                <marker date="1510760547077" expanded="true" signature="12077:12178" ph="..." />
-                <marker date="1510760547077" expanded="true" signature="12093:12164" ph="..." />
-                <marker date="1510760547077" expanded="true" signature="12302:12800" ph="..." />
-                <marker date="1510760547077" expanded="true" signature="12318:12383" ph="..." />
-                <marker date="1510760547077" expanded="true" signature="12399:12786" ph="..." />
-                <marker date="1510760547077" expanded="true" signature="12450:12769" ph="..." />
-                <marker date="1510760547077" expanded="true" signature="12473:12739" ph="..." />
-                <marker date="1510760547077" expanded="true" signature="12924:13030" ph="..." />
-                <marker date="1510760547077" expanded="true" signature="12941:13011" ph="..." />
-                <marker date="1510760547077" expanded="true" signature="13154:13258" ph="..." />
-                <marker date="1510760547077" expanded="true" signature="13171:13239" ph="..." />
-                <marker date="1510760547077" expanded="true" signature="13366:13446" ph="..." />
-                <marker date="1510760547077" expanded="true" signature="13382:13432" ph="..." />
-                <marker date="1510760547077" expanded="true" signature="13607:13687" ph="..." />
-                <marker date="1510760547077" expanded="true" signature="13623:13673" ph="..." />
+                <element signature="imports" expanded="true" />
+                <element signature="e#992#993#0" expanded="true" />
+                <element signature="e#1023#1024#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -112,12 +68,27 @@
       <file leaf-file-name="ResultSearchController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sample/ResultSearchController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="107">
-              <caret line="261" column="4" lean-forward="false" selection-start-line="261" selection-start-column="4" selection-end-line="264" selection-end-column="5" />
+            <state relative-caret-position="102">
+              <caret line="266" column="4" lean-forward="false" selection-start-line="266" selection-start-column="4" selection-end-line="306" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#6846#6847#0" expanded="true" />
                 <element signature="e#6877#6878#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Data.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sample/Data.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="27" column="5" lean-forward="true" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
+              <folding>
+                <element signature="e#762#763#0" expanded="true" />
+                <element signature="e#791#792#0" expanded="true" />
+                <element signature="e#832#833#0" expanded="true" />
+                <element signature="e#868#869#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -140,10 +111,10 @@
       <find>searchSelect</find>
       <find>mea</find>
       <find>out</find>
-      <find>clos</find>
-      <find>clo</find>
       <find>closebuttona</find>
       <find>closebutton</find>
+      <find>clos</find>
+      <find>clo</find>
       <find>close</find>
     </findStrings>
   </component>
@@ -158,7 +129,6 @@
         <option value="$PROJECT_DIR$/src/sample/Search.fxml" />
         <option value="$PROJECT_DIR$/src/sample/ResultSearch.fxml" />
         <option value="$PROJECT_DIR$/src/sample/Category.fxml" />
-        <option value="$PROJECT_DIR$/src/sample/ShowFood.fxml" />
         <option value="$PROJECT_DIR$/src/sample/LoginController.java" />
         <option value="$PROJECT_DIR$/src/sample/SelectController.java" />
         <option value="$PROJECT_DIR$/src/ooad/PicturePath.java" />
@@ -166,11 +136,13 @@
         <option value="$PROJECT_DIR$/text.css" />
         <option value="$PROJECT_DIR$/src/sample/Main.java" />
         <option value="$PROJECT_DIR$/src/sample/SearchController.java" />
-        <option value="$PROJECT_DIR$/src/sample/Data.java" />
         <option value="$PROJECT_DIR$/src/sample/CategoryController.java" />
+        <option value="$PROJECT_DIR$/src/sample/CategoryResult.fxml" />
+        <option value="$PROJECT_DIR$/src/sample/ShowFood.fxml" />
+        <option value="$PROJECT_DIR$/src/sample/Data.java" />
         <option value="$PROJECT_DIR$/src/sample/ResultSearchController.java" />
         <option value="$PROJECT_DIR$/src/sample/CategoryResultController.java" />
-        <option value="$PROJECT_DIR$/src/sample/CategoryResult.fxml" />
+        <option value="$PROJECT_DIR$/src/sample/ShowFoodController.java" />
       </list>
     </option>
   </component>
@@ -180,7 +152,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="81" />
     <option name="width" value="653" />
     <option name="height" value="775" />
@@ -367,15 +339,15 @@
       <workItem from="1510649549099" duration="3876000" />
       <workItem from="1510661859904" duration="12686000" />
       <workItem from="1510707351219" duration="2712000" />
-      <workItem from="1510711097831" duration="18249000" />
+      <workItem from="1510711097831" duration="20282000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="60941000" />
+    <option name="totallyTimeSpent" value="62974000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="80" y="-8" width="1294" height="784" extended-state="7" />
+    <frame x="80" y="-8" width="1294" height="784" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -386,7 +358,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32935917" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32786885" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32786885" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -734,25 +706,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/ShowFood.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="155" lean-forward="false" selection-start-line="12" selection-start-column="137" selection-end-line="12" selection-end-column="155" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/ShowFoodController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="31" lean-forward="false" selection-start-line="2" selection-start-column="31" selection-end-line="2" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/Search.fxml">
       <provider editor-type-id="JavaFX-Scene-Builder">
         <state />
@@ -828,14 +781,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Data.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="19" column="45" lean-forward="false" selection-start-line="19" selection-start-column="45" selection-end-line="19" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ooad/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -866,28 +811,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/ResultSearchController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="107">
-          <caret line="261" column="4" lean-forward="false" selection-start-line="261" selection-start-column="4" selection-end-line="264" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#6846#6847#0" expanded="true" />
-            <element signature="e#6877#6878#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/CategoryController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="76" column="0" lean-forward="false" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/ResultSearch.fxml">
       <provider editor-type-id="JavaFX-Scene-Builder">
         <state />
@@ -909,36 +832,6 @@
             <element signature="n#font#0;n#Text#1;n#children#0;n#Pane#5;n#children#0;n#Pane#0;n#!!top" expanded="false" />
             <element signature="n#JFXButton#0;n#children#0;n#Pane#5;n#children#0;n#Pane#0;n#!!top" expanded="false" />
             <element signature="n#Text#2;n#children#0;n#Pane#5;n#children#0;n#Pane#0;n#!!top" expanded="false" />
-            <marker date="1510760547077" expanded="true" signature="11358:11440" ph="..." />
-            <marker date="1510760547077" expanded="true" signature="11613:11743" ph="..." />
-            <marker date="1510760547077" expanded="true" signature="11635:11718" ph="..." />
-            <marker date="1510760547077" expanded="true" signature="12077:12178" ph="..." />
-            <marker date="1510760547077" expanded="true" signature="12093:12164" ph="..." />
-            <marker date="1510760547077" expanded="true" signature="12302:12800" ph="..." />
-            <marker date="1510760547077" expanded="true" signature="12318:12383" ph="..." />
-            <marker date="1510760547077" expanded="true" signature="12399:12786" ph="..." />
-            <marker date="1510760547077" expanded="true" signature="12450:12769" ph="..." />
-            <marker date="1510760547077" expanded="true" signature="12473:12739" ph="..." />
-            <marker date="1510760547077" expanded="true" signature="12924:13030" ph="..." />
-            <marker date="1510760547077" expanded="true" signature="12941:13011" ph="..." />
-            <marker date="1510760547077" expanded="true" signature="13154:13258" ph="..." />
-            <marker date="1510760547077" expanded="true" signature="13171:13239" ph="..." />
-            <marker date="1510760547077" expanded="true" signature="13366:13446" ph="..." />
-            <marker date="1510760547077" expanded="true" signature="13382:13432" ph="..." />
-            <marker date="1510760547077" expanded="true" signature="13607:13687" ph="..." />
-            <marker date="1510760547077" expanded="true" signature="13623:13673" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/CategoryResultController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="118">
-          <caret line="256" column="26" lean-forward="false" selection-start-line="256" selection-start-column="9" selection-end-line="256" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#6091#6092#0" expanded="true" />
-            <element signature="e#6122#6123#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -951,6 +844,76 @@
         <state relative-caret-position="378">
           <caret line="205" column="51" lean-forward="true" selection-start-line="205" selection-start-column="51" selection-end-line="205" selection-end-column="51" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/ShowFood.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-884">
+          <caret line="23" column="97" lean-forward="false" selection-start-line="23" selection-start-column="97" selection-end-line="23" selection-end-column="97" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/Data.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="27" column="5" lean-forward="true" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
+          <folding>
+            <element signature="e#762#763#0" expanded="true" />
+            <element signature="e#791#792#0" expanded="true" />
+            <element signature="e#832#833#0" expanded="true" />
+            <element signature="e#868#869#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/ResultSearchController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="266" column="4" lean-forward="false" selection-start-line="266" selection-start-column="4" selection-end-line="306" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#6846#6847#0" expanded="true" />
+            <element signature="e#6877#6878#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/CategoryController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="76" column="0" lean-forward="false" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/CategoryResultController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="121" column="38" lean-forward="true" selection-start-line="116" selection-start-column="12" selection-end-line="121" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#6931#6932#0" expanded="true" />
+            <element signature="e#6962#6963#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/ShowFoodController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="60" column="35" lean-forward="true" selection-start-line="60" selection-start-column="35" selection-end-line="60" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#992#993#0" expanded="true" />
+            <element signature="e#1023#1024#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

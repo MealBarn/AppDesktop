@@ -10,7 +10,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<Pane prefHeight="760.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ShowFoodController">
+<Pane prefHeight="760.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ShowFoodController">
    <children>
       <ImageView fitHeight="760.0" fitWidth="1202.0" pickOnBounds="true" preserveRatio="true">
          <image>
@@ -23,14 +23,14 @@
                <children>
                   <Pane layoutX="2.0" layoutY="24.0" prefHeight="73.0" prefWidth="414.0" style="-fx-background-color: #513810;">
                      <children>
-                        <Text fill="WHITE" layoutX="18.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Sarabun;" styleClass="SarabunFont" text="ราดหน้าหมู" textAlignment="CENTER" wrappingWidth="372.2988804695646">
+                        <Text fx:id="foodName" fill="WHITE" layoutX="18.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Sarabun;" styleClass="SarabunFont" text="ราดหน้าหมู" textAlignment="CENTER" wrappingWidth="372.2988804695646">
                            <font>
                               <Font name="TH Sarabun New" size="30.0" />
                            </font>
                         </Text>
                      </children>
                   </Pane>
-                  <ImageView fitHeight="410.0" fitWidth="382.0" layoutX="19.0" layoutY="125.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="foodImg" fitHeight="410.0" fitWidth="382.0" layoutX="19.0" layoutY="125.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../img/Alacarte/12.png" />
                      </image>
@@ -39,12 +39,12 @@
             </Pane>
             <Pane layoutX="452.0" layoutY="102.0" prefHeight="527.0" prefWidth="684.0">
                <children>
-                  <ImageView fitHeight="481.0" fitWidth="620.0" layoutX="19.0" layoutY="-9.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="imgDetail" fitHeight="481.0" fitWidth="620.0" layoutX="19.0" layoutY="-9.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../img/food/test-sol2-1.jpg" />
                      </image>
                   </ImageView>
-                  <JFXButton layoutX="227.0" layoutY="475.0" text=" Previous">
+                  <JFXButton fx:id="prevButton" layoutX="227.0" layoutY="475.0" onAction="#prevPage" text=" Previous">
                      <font>
                         <Font size="20.0" />
                      </font>
@@ -59,19 +59,19 @@
                         <Image url="@../img/left-fork.png" />
                      </image>
                   </ImageView>
-                  <JFXButton layoutX="390.0" layoutY="475.0" text="Next">
+                  <JFXButton fx:id="nextButton" layoutX="390.0" layoutY="475.0" onAction="#nextPage" text="Next">
                      <font>
                         <Font size="20.0" />
                      </font>
                   </JFXButton>
                </children>
             </Pane>
-            <JFXButton layoutX="774.0" layoutY="48.0" prefHeight="44.0" prefWidth="152.0" style="-fx-background-color: #513810; -fx-background-radius: 8;" styleClass="contentFontBold" text="Ingredient" textFill="WHITE">
+            <JFXButton fx:id="ingButton" layoutX="774.0" layoutY="48.0" onAction="#ingMode" prefHeight="44.0" prefWidth="152.0" style="-fx-background-color: #513810; -fx-background-radius: 8;" styleClass="contentFontBold" text="Ingredient" textFill="WHITE">
                <font>
                   <Font name="Audrey Bold" size="22.0" />
                </font>
             </JFXButton>
-            <JFXButton layoutX="938.0" layoutY="48.0" prefHeight="44.0" prefWidth="152.0" style="-fx-background-color: #bfa780; -fx-background-radius: 8;" styleClass="contentFontBold" text="Directions" textFill="WHITE">
+            <JFXButton fx:id="dirButton" layoutX="938.0" layoutY="48.0" onAction="#dirMode" prefHeight="44.0" prefWidth="152.0" style="-fx-background-color: #bfa780; -fx-background-radius: 8;" styleClass="contentFontBold" text="Directions" textFill="WHITE">
                <font>
                   <Font name="Audrey Bold" size="22.0" />
                </font>
@@ -80,17 +80,17 @@
       </Pane>
       <Pane prefHeight="91.0" prefWidth="1200.0" style="-fx-background-color: white;">
          <children>
-            <JFXButton layoutX="46.0" layoutY="20.0" prefHeight="66.0" prefWidth="320.0" text="Search Ingredients">
+            <JFXButton layoutX="46.0" layoutY="20.0" onAction="#searchPage" prefHeight="66.0" prefWidth="320.0" text="Search Ingredients">
                <font>
                   <Font name="Audrey Normal" size="30.0" />
                </font>
             </JFXButton>
-            <ImageView fx:id="closeButton" fitHeight="32.0" fitWidth="30.0" layoutX="1147.0" layoutY="21.0" onMouseClicked="#closeButtonAction" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="closeButton" fitHeight="32.0" fitWidth="30.0" layoutX="1147.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../img/exit-search.png" />
                </image>
             </ImageView>
-            <JFXButton layoutX="838.0" layoutY="20.0" prefHeight="66.0" prefWidth="303.0" text="Category">
+            <JFXButton layoutX="838.0" layoutY="20.0" onAction="#categoryPage" prefHeight="66.0" prefWidth="303.0" text="Category">
                <font>
                   <Font name="Audrey Normal" size="30.0" />
                </font>
