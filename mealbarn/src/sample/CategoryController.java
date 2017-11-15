@@ -3,70 +3,81 @@ package sample;
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
+import javafx.stage.Stage;
+
+import java.io.IOException;
 
 public class CategoryController {
     Data data = Data.getData();
 
     @FXML
-    private ImageView CloseButton;
+    private ImageView closeButton;
 
     @FXML
-    void CloseButtonAction(MouseEvent event) {
-        Platform.exit();
-    }
-
-    @FXML
-    void alacarteSelect(ActionEvent event) {
+    void alacarteSelect(ActionEvent event) throws IOException {
         data.setShowIDList(data.getAlacateIDList());
-        printId();
+        SceneResult();
     }
 
     @FXML
-    void appetizerSelect(ActionEvent event) {
+    void appetizerSelect(ActionEvent event) throws IOException {
         data.setShowIDList(data.getAppetizerIDList());
-        printId();
+        SceneResult();
     }
 
     @FXML
-    void dessertSelect(ActionEvent event) {
+    void dessertSelect(ActionEvent event) throws IOException {
         data.setShowIDList(data.getDessertIDList());
-        printId();
+        SceneResult();
     }
 
     @FXML
-    void drinkSelect(ActionEvent event) {
+    void drinkSelect(ActionEvent event) throws IOException {
         data.setShowIDList(data.getDrinkIDList());
-        printId();
+        SceneResult();
     }
 
     @FXML
-    void maincourseSelect(ActionEvent event) {
+    void maincourseSelect(ActionEvent event) throws IOException {
         data.setShowIDList(data.getMainCourseIDList());
-        printId();
+        SceneResult();
     }
 
     @FXML
-    void soupSelect(ActionEvent event) {
+    void soupSelect(ActionEvent event) throws IOException {
         data.setShowIDList(data.getSoupIDList());
-        printId();
-    }
-
-    void printId(){
-        for (String s : data.getShowIDList()){
-            System.out.println(s);
-        }
+        SceneResult();
     }
 
     @FXML
-    void searchSelect(MouseEvent event) {
-        Main.priStage.setScene(Main.Search);
+    void search(ActionEvent event) throws IOException {
+        SceneSearch();
     }
 
     @FXML
     void closeButtonAction (MouseEvent event) {
+        Platform.exit();
+    }
 
+    private void SceneSearch() throws IOException {
+        Stage stage = (Stage) this.closeButton.getScene().getWindow();
+        Parent search = FXMLLoader.load(getClass().getResource("Search.fxml"));
+        Scene scene = new Scene(search);
+        stage.setScene(scene);
+        stage.show();
+    }
+
+    private void SceneResult() throws IOException {
+        Stage stage = (Stage) this.closeButton.getScene().getWindow();
+        Parent result = FXMLLoader.load(getClass().getResource("CategoryResult.fxml"));
+        Scene scene = new Scene(result);
+        stage.setScene(scene);
+        stage.show();
     }
 
 }

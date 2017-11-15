@@ -1,9 +1,9 @@
 @font-face {
    font-family: Selima;
-   src: url("selima.otf");
+   src: url("Selima.otf");
 }
 .customFont {
-    -fx-font-family: 'selima';
+    -fx-font-family: 'Selima';
 }
 
 

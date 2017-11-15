@@ -60,6 +60,7 @@ public class Data {
         showIDList = new ArrayList<String>();
         EntityManagerFactory emf;
         EntityManager em;
+//        emf = Persistence.createEntityManagerFactory("objectdb://192.168.43.229:80/Account.odb;user=admin;password=admin");
         emf = Persistence.createEntityManagerFactory("./src/ODB/Account.odb");
         em = emf.createEntityManager();
         TypedQuery<Account> queryAccount =
@@ -68,6 +69,7 @@ public class Data {
         em.close();
         emf.close();
         //////////////////////////////////////////////////////////////////
+//        emf = Persistence.createEntityManagerFactory("objectdb://192.168.43.229:80/Account.odb;user=admin;password=admin");
         emf = Persistence.createEntityManagerFactory("./src/ODB/Food.odb");
         em = emf.createEntityManager();
         TypedQuery<Food> queryFood =
@@ -76,6 +78,7 @@ public class Data {
         em.close();
         emf.close();
         /////////////////////////////////////////////////////////////////
+//        emf = Persistence.createEntityManagerFactory("objectdb://192.168.43.229:80/Account.odb;user=admin;password=admin");
         emf = Persistence.createEntityManagerFactory("./src/ODB/Component.odb");
         em = emf.createEntityManager();
         TypedQuery<Component> queryComponent =
@@ -154,7 +157,6 @@ public class Data {
     public static Data getData(){return data;}
 
     public void sortPerfect(){
-        System.out.println("--------------");
         int n = showIDList.size();
         boolean isSwitch;
         do{
@@ -176,15 +178,6 @@ public class Data {
             }
             n=n-1;
         }while (isSwitch);
-        printFood();
-    }
-
-    public void printFood(){
-        int id;
-        for (String foodId : showIDList){
-            id = Integer.parseInt(foodId)-1;
-            System.out.println((id+1)+"\t"+foodShowsList.get(id).getPerfect());
-        }
     }
 
     public ArrayList<String> getAccountStr() { return accountStr; }

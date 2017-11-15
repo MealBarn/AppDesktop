@@ -18,6 +18,7 @@ import javafx.scene.image.ImageView;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
 import javafx.scene.input.MouseEvent;
+import javafx.stage.Stage;
 import ooad.FoodShow;
 import ooad.Component;
 import org.controlsfx.control.textfield.TextFields;
@@ -67,6 +68,11 @@ public class SearchController {
     String tempList;
 
     @FXML
+    void initialize() {
+
+    }
+
+    @FXML
     void closeButtonAction(MouseEvent event) {
         Platform.exit();
     }
@@ -91,7 +97,6 @@ public class SearchController {
 
     @FXML
     void submitAction(ActionEvent event) throws IOException {
-        System.out.println("=================================================================");
         data.clearPerfectFood();
         ArrayList<FoodShow> foodShowsList = data.getFoodShowsList();
         List<Component> componentList = data.getComponentList();
@@ -127,10 +132,14 @@ public class SearchController {
         data.setFoodShowsList(foodShowsList);
         data.setShowIDList();
         data.sortPerfect();
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("ResultSearch.fxml"));
-        ResultSearchController resultSearchController = loader.getController();
-        //resultSearchController.openData();
-        Main.priStage.setScene(Main.ResultSearch);
+        choosedList.clear();
+        isSoup.setSelected(false);
+        isMainCourse.setSelected(false);
+        isDrink.setSelected(false);
+        isDessert.setSelected(false);
+        isAppetizer.setSelected(false);
+        isAlacarte.setSelected(false);
+        SceneResult();
     }
 
     @FXML
@@ -172,8 +181,24 @@ public class SearchController {
     }
 
     @FXML
-    void categorySelect(ActionEvent event) {
-        Main.priStage.setScene(Main.Category);
+    void categorySelect(ActionEvent event) throws IOException {
+        SceneCategory();
+    }
+
+    private void SceneCategory() throws IOException {
+        Stage stage = (Stage) this.closeButton.getScene().getWindow();
+        Parent result = FXMLLoader.load(getClass().getResource("Category.fxml"));
+        Scene scene = new Scene(result);
+        stage.setScene(scene);
+        stage.show();
+    }
+
+    private void SceneResult() throws IOException {
+        Stage stage = (Stage) this.closeButton.getScene().getWindow();
+        Parent result = FXMLLoader.load(getClass().getResource("ResultSearch.fxml"));
+        Scene scene = new Scene(result);
+        stage.setScene(scene);
+        stage.show();
     }
 
 
