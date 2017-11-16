@@ -47,6 +47,10 @@ public class Point implements Serializable {
         this.point = point++;
     }
 
+     @Override
+    public String toString() {
+        return String.format("(%d, %d)", this.idprimary, this.point);
+    }
     
     
     

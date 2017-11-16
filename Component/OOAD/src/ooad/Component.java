@@ -4,7 +4,6 @@
  * and open the template in the editor.
  */
 package ooad;
-
 import java.io.Serializable;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -52,6 +51,11 @@ public class Component implements Serializable {
 
     public void setComponent(String component) {
         this.component = component;
+    }
+    
+     @Override
+    public String toString() {
+        return String.format("%s" ,  this.component);
     }
     
     
