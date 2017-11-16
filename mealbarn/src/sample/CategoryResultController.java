@@ -120,6 +120,7 @@ public class CategoryResultController {
             String sorce1 = "./img/imgFood/"+idShow.get(id)+".png";
             Image image1 = new Image(sorce1);
             foodImg1.setImage(image1);
+            System.out.println(food1.toString()+"\t"+idFood+"\t"+image1.getUrl());
         }else {
             food1.setVisible(false);
         }
@@ -133,6 +134,7 @@ public class CategoryResultController {
             String sorce2 = "./img/imgFood/"+idShow.get(id)+".png";
             Image image2 = new Image(sorce2);
             foodImg2.setImage(image2);
+            System.out.println(food2.toString()+"\t"+idFood+"\t"+image2.getUrl());
         }else {
             food2.setVisible(false);
         }
@@ -146,20 +148,22 @@ public class CategoryResultController {
             String sorce3 = "./img/imgFood/"+idShow.get(id)+".png";
             Image image3 = new Image(sorce3);
             foodImg3.setImage(image3);
-
+            System.out.println(food3.toString()+"\t"+idFood+"\t"+image3.getUrl());
         }else {
             food3.setVisible(false);
         }
-        ///////////////////////////////////////////--4
+        /////////////////////////////////////////--4
         id = (page*6)+3;
         if(id<size) {
             food4.setVisible(true);
             idFood = Integer.parseInt(idShow.get(id))-1;
             FoodShow food4 = data.getFoodShowsList().get(idFood);
+//            foodName4.setText(food4.getName());
             foodName4.setText(food4.getName());
             String sorce4 = "./img/imgFood/"+idShow.get(id)+".png";
             Image image4 = new Image(sorce4);
             foodImg4.setImage(image4);
+            System.out.println(food4.toString()+"\t"+idFood+"\t"+image4.getUrl());
         }else {
             food4.setVisible(false);
         }
@@ -173,6 +177,7 @@ public class CategoryResultController {
             String sorce5 = "./img/imgFood/"+idShow.get(id)+".png";
             Image image5 = new Image(sorce5);
             foodImg5.setImage(image5);
+            System.out.println(food5.toString()+"\t"+idFood+"\t"+image5.getUrl());
         }else {
             food5.setVisible(false);
         }
@@ -186,6 +191,7 @@ public class CategoryResultController {
             String sorce6 = "./img/imgFood/"+idShow.get(id)+".png";
             Image image6 = new Image(sorce6);
             foodImg6.setImage(image6);
+            System.out.println(food6.toString()+"\t"+idFood+"\t"+image6.getUrl());
         }else {
             food6.setVisible(false);
         }
