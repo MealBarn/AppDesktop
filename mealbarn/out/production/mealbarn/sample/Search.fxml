@@ -39,12 +39,12 @@
                   <Font size="23.0" />
                </font>
             </JFXCheckBox>
-            <JFXCheckBox fx:id="isMainCourse" disable="true" layoutX="732.0" layoutY="78.0" text="MainCourse">
+            <JFXCheckBox fx:id="isMainCourse" layoutX="732.0" layoutY="78.0" text="MainCourse">
                <font>
                   <Font size="23.0" />
                </font>
             </JFXCheckBox>
-            <JFXCheckBox fx:id="isSoup" disable="true" layoutX="912.0" layoutY="78.0" text="Soup">
+            <JFXCheckBox fx:id="isSoup" layoutX="912.0" layoutY="78.0" text="Soup">
                <font>
                   <Font size="23.0" />
                </font>

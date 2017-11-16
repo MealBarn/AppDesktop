@@ -40,7 +40,7 @@
                </image>
             </ImageView>
             <Pane layoutY="248.0" opacity="0.35" prefHeight="70.0" prefWidth="171.0" style="-fx-background-color: black;" />
-            <JFXButton disable="true" onAction="#maincourseSelect" prefHeight="552.0" prefWidth="174.0" text="Maincourse" textFill="WHITE">
+            <JFXButton onAction="#maincourseSelect" prefHeight="552.0" prefWidth="174.0" text="Maincourse" textFill="WHITE">
                <font>
                   <Font size="25.0" />
                </font>
@@ -70,7 +70,7 @@
                </image>
             </ImageView>
             <Pane layoutY="248.0" opacity="0.35" prefHeight="70.0" prefWidth="171.0" style="-fx-background-color: black;" />
-            <JFXButton disable="true" onAction="#soupSelect" prefHeight="552.0" prefWidth="174.0" text="Soup" textFill="WHITE">
+            <JFXButton onAction="#soupSelect" prefHeight="552.0" prefWidth="174.0" text="Soup" textFill="WHITE">
                <font>
                   <Font size="25.0" />
                </font>
