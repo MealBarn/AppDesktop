@@ -13,12 +13,11 @@ public class Main {
     /**
      * @param args the command line arguments
      */
-
     public static void main(String[] args) {
         // TODO code application logic here
         //Scanner input = new Scanner (System.in);
 
-        String nameFile = "objectdb://192.168.43.229:80/PicturePath.odb;user=admin;password=admin";
+        String nameFile = "objectdb://192.168.43.19:80/PicturePath.odb;user=admin;password=admin";
        // String nameFile ="Account.odb";
         EntityManagerFactory emf = Persistence.createEntityManagerFactory(nameFile);
         EntityManager em = emf.createEntityManager();

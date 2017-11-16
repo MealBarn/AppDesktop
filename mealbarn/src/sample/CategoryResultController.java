@@ -117,7 +117,7 @@ public class CategoryResultController {
             idFood = Integer.parseInt(idShow.get(id))-1;
             FoodShow food1 = data.getFoodShowsList().get(idFood);
             foodName1.setText(food1.getName());
-            String sorce1 = "./img/Alacarte/1.png";
+            String sorce1 = "./img/imgFood/"+idShow.get(id)+".png";
             Image image1 = new Image(sorce1);
             foodImg1.setImage(image1);
         }else {
@@ -130,7 +130,7 @@ public class CategoryResultController {
             idFood = Integer.parseInt(idShow.get(id))-1;
             FoodShow food2 = data.getFoodShowsList().get(idFood);
             foodName2.setText(food2.getName());
-            String sorce2 = "./img/Alacarte/2.png";
+            String sorce2 = "./img/imgFood/"+idShow.get(id)+".png";
             Image image2 = new Image(sorce2);
             foodImg2.setImage(image2);
         }else {
@@ -143,7 +143,7 @@ public class CategoryResultController {
             idFood = Integer.parseInt(idShow.get(id))-1;
             FoodShow food3 = data.getFoodShowsList().get(idFood);
             foodName3.setText(food3.getName());
-            String sorce3 = "./img/Alacarte/3.png";
+            String sorce3 = "./img/imgFood/"+idShow.get(id)+".png";
             Image image3 = new Image(sorce3);
             foodImg3.setImage(image3);
 
@@ -157,7 +157,7 @@ public class CategoryResultController {
             idFood = Integer.parseInt(idShow.get(id))-1;
             FoodShow food4 = data.getFoodShowsList().get(idFood);
             foodName4.setText(food4.getName());
-            String sorce4 = "./img/Alacarte/4.png";
+            String sorce4 = "./img/imgFood/"+idShow.get(id)+".png";
             Image image4 = new Image(sorce4);
             foodImg4.setImage(image4);
         }else {
@@ -170,7 +170,7 @@ public class CategoryResultController {
             idFood = Integer.parseInt(idShow.get(id))-1;
             FoodShow food5 = data.getFoodShowsList().get(idFood);
             foodName5.setText(food5.getName());
-            String sorce5 = "./img/Alacarte/5.png";
+            String sorce5 = "./img/imgFood/"+idShow.get(id)+".png";
             Image image5 = new Image(sorce5);
             foodImg5.setImage(image5);
         }else {
@@ -183,7 +183,7 @@ public class CategoryResultController {
             idFood = Integer.parseInt(idShow.get(id))-1;
             FoodShow food6 = data.getFoodShowsList().get(idFood);
             foodName6.setText(food6.getName());
-            String sorce6 = "./img/Alacarte/6.png";
+            String sorce6 = "./img/imgFood/"+idShow.get(id)+".png";
             Image image6 = new Image(sorce6);
             foodImg6.setImage(image6);
         }else {
@@ -265,10 +265,10 @@ public class CategoryResultController {
         SceneSearch();
     }
 
-    @FXML
-    void closeButtonAction(MouseEvent event) {
-        Platform.exit();
-    }
+//    @FXML
+//    void closeButtonAction(MouseEvent event) {
+//        Platform.exit();
+//    }
 
     private void SceneCategory() throws IOException {
         Stage stage = (Stage) this.closeButton.getScene().getWindow();
@@ -295,9 +295,6 @@ public class CategoryResultController {
     }
 
     @FXML
-    void closeAction(MouseEvent event) {
-
+    public void closeButtonAction(MouseEvent event) {
     }
-
-
 }

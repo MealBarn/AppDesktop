@@ -22,7 +22,7 @@ public class PicturePath implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
-    private Integer idFood;
+    private Long idFood;
     private String pathPicture;
 
     public Long getId() {
@@ -33,11 +33,11 @@ public class PicturePath implements Serializable {
         this.id = id;
     }
 
-    public Integer getIdFood() {
+    public Long getIdFood() {
         return idFood;
     }
 
-    public void setIdFood(Integer idFood) {
+    public void setIdFood(Long idFood) {
         this.idFood = idFood;
     }
 
@@ -51,7 +51,7 @@ public class PicturePath implements Serializable {
 
     @Override
     public String toString() {
-        return String.format("%s", pathPicture);
+        return String.format("%s",this.pathPicture);
     }
 
     

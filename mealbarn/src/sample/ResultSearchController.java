@@ -160,7 +160,7 @@ public class ResultSearchController {
             FoodShow food1 = data.getFoodShowsList().get(idFood);
             foodName1.setText(food1.getName());
             foodPerfect1.setText(food1.getPerfect() + "%");
-            String sorce1 = "./img/Alacarte/1.png";
+            String sorce1 = "./img/imgFood/"+idShow.get(id)+".png";
             Image image1 = new Image(sorce1);
             foodImg1.setImage(image1);
             foodScale1.setProgress(food1.getPerfect() / 100);
@@ -175,7 +175,7 @@ public class ResultSearchController {
             FoodShow food2 = data.getFoodShowsList().get(idFood);
             foodName2.setText(food2.getName());
             foodPerfect2.setText(food2.getPerfect() + "%");
-            String sorce2 = "./img/Alacarte/2.png";
+            String sorce2 = "./img/imgFood/"+idShow.get(id)+".png";
             Image image2 = new Image(sorce2);
             foodImg2.setImage(image2);
             foodScale2.setProgress(food2.getPerfect() / 100);
@@ -190,7 +190,7 @@ public class ResultSearchController {
             FoodShow food3 = data.getFoodShowsList().get(idFood);
             foodName3.setText(food3.getName());
             foodPerfect3.setText(food3.getPerfect() + "%");
-            String sorce3 = "./img/Alacarte/3.png";
+            String sorce3 = "./img/imgFood/"+idShow.get(id)+".png";
             Image image3 = new Image(sorce3);
             foodImg3.setImage(image3);
             foodScale3.setProgress(food3.getPerfect() / 100);
@@ -205,7 +205,7 @@ public class ResultSearchController {
             FoodShow food4 = data.getFoodShowsList().get(idFood);
             foodName4.setText(food4.getName());
             foodPerfect4.setText(food4.getPerfect() + "%");
-            String sorce4 = "./img/Alacarte/4.png";
+            String sorce4 = "./img/imgFood/"+idShow.get(id)+".png";
             Image image4 = new Image(sorce4);
             foodImg4.setImage(image4);
             foodScale4.setProgress(food4.getPerfect() / 100);
@@ -220,7 +220,7 @@ public class ResultSearchController {
             FoodShow food5 = data.getFoodShowsList().get(idFood);
             foodName5.setText(food5.getName());
             foodPerfect5.setText(food5.getPerfect() + "%");
-            String sorce5 = "./img/Alacarte/5.png";
+            String sorce5 = "./img/imgFood/"+idShow.get(id)+".png";
             Image image5 = new Image(sorce5);
             foodImg5.setImage(image5);
             foodScale5.setProgress(food5.getPerfect() / 100);
@@ -235,7 +235,7 @@ public class ResultSearchController {
             FoodShow food6 = data.getFoodShowsList().get(idFood);
             foodName6.setText(food6.getName());
             foodPerfect6.setText(food6.getPerfect() + "%");
-            String sorce6 = "./img/Alacarte/6.png";
+            String sorce6 = "./img/imgFood/"+idShow.get(id)+".png";
             Image image6 = new Image(sorce6);
             foodImg6.setImage(image6);
             foodScale6.setProgress(food6.getPerfect() / 100);

@@ -54,7 +54,7 @@ public class ShowFoodController {
 
     @FXML
     void dirMode(ActionEvent event) {
-        String sorceD = "./img/Alacarte/2.png";
+        String sorceD = "./img/food/test-sol.jpg";
         Image imageD = new Image(sorceD);
         imgDetail.setImage(imageD);
         ingButton.setDisable(false);
@@ -63,7 +63,7 @@ public class ShowFoodController {
 
     @FXML
     void ingMode(ActionEvent event) {
-        String sorceD = "./img/Alacarte/1.png";
+        String sorceD = "./img/food/test-ingre.jpg";
         Image imageD = new Image(sorceD);
         imgDetail.setImage(imageD);
         ingButton.setDisable(true);
@@ -92,10 +92,10 @@ public class ShowFoodController {
         int idFood = data.getIdFood();
         FoodShow food1 = data.getFoodShowsList().get(idFood);
         foodName.setText(food1.getName());
-        String sorceF = "./img/Alacarte/1.png";
+        String sorceF = String.format("./img/imgFood/%d.png",idFood+1);
         Image imageF = new Image(sorceF);
         foodImg.setImage(imageF);
-        String sorceD = "./img/Alacarte/1.png";
+        String sorceD = "./img/Appetizer/13.png";
         Image imageD = new Image(sorceD);
         imgDetail.setImage(imageD);
         ingButton.setDisable(true);
