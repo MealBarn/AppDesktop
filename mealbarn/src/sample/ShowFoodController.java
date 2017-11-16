@@ -54,30 +54,38 @@ public class ShowFoodController {
 
     @FXML
     void dirMode(ActionEvent event) {
-        String sorceD = String.format("./img/foodRecipe/%d-2-1.png",data.getIdFood()+1);
-        Image imageD = new Image(sorceD);
-        imgDetail.setImage(imageD);
+        pageSize = sizeDir;
+        page = 1;
+        mode = 2;
+        setImg();
+        updateButton();
         ingButton.setDisable(false);
         dirButton.setDisable(true);
     }
 
     @FXML
     void ingMode(ActionEvent event) {
-        String sorceD = String.format("./img/foodRecipe/%d-1-1.png",data.getIdFood()+1);
-        Image imageD = new Image(sorceD);
-        imgDetail.setImage(imageD);
+        pageSize = sizeIng;
+        page =1;
+        mode = 1;
+        setImg();
+        updateButton();
         ingButton.setDisable(true);
         dirButton.setDisable(false);
     }
 
     @FXML
     void nextPage(ActionEvent event) {
-
+        page++;
+        setImg();
+        updateButton();
     }
 
     @FXML
     void prevPage(ActionEvent event) {
-
+        page--;
+        setImg();
+        updateButton();
     }
 
     @FXML
@@ -86,18 +94,47 @@ public class ShowFoodController {
     }
 
     Data data = Data.getData();
+    Integer[] recipeIng = data.getRecipeIng();
+    Integer[] recipeDir = data.getRecipeDir();
+    int idFood = data.getIdFood();
+    int sizeIng = recipeIng[idFood];
+    int sizeDir = recipeDir[idFood];
+    int pageSize;
+    int page;
+    int mode;
+
+    void updateButton(){
+        if(page==1){
+            prevButton.setVisible(false);
+        }else {
+            prevButton.setVisible(true);
+        }
+        if(page==pageSize){
+            nextButton.setVisible(false);
+        }else {
+            nextButton.setVisible(true);
+        }
+    }
+
+    void setImg(){
+        String sorceD = String.format("./img/foodRecipe/%d-%d-%d.png",idFood+1,mode,page);
+        Image imageD = new Image(sorceD);
+        imgDetail.setImage(imageD);
+    }
 
     @FXML
     void initialize() {
-        int idFood = data.getIdFood();
+        page = 1;
+        pageSize = sizeIng;
+        mode = 1;
+        System.out.println(String.format("%d\t%d\t%d",idFood,sizeIng,sizeDir));
         FoodShow food1 = data.getFoodShowsList().get(idFood);
         foodName.setText(food1.getName());
         String sorceF = String.format("./img/imgFood/%d.png",idFood+1);
         Image imageF = new Image(sorceF);
         foodImg.setImage(imageF);
-        String sorceD = String.format("./img/foodRecipe/%d-1-1.png",idFood+1);
-        Image imageD = new Image(sorceD);
-        imgDetail.setImage(imageD);
+        setImg();
+        updateButton();
         ingButton.setDisable(true);
     }
 
