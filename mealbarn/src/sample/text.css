@@ -19,7 +19,7 @@
 }
 
 
-.contentFont {
+#contentFont .text{
     -fx-font-family: 'Audrey';
     -fx-font-size: 30px;
 }
