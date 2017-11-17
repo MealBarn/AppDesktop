@@ -1,9 +1,9 @@
-@@font-face {
-  src :url("resource.font/fonts/THSarabunNew.ttf");
-  src :url("resource.font/fonts/THSarabunNew-Bold.ttf");
-  src: url("resource.font/fonts/Selima.otf");
-  src: url("resource.font/fonts/Audrey-Bold.otf");
-  src: url("resource.font/fonts/Audrey-Normal.otf");
+@font-face {
+  src :url("resource/font/THSarabunNew.ttf");
+  src :url("resource/font/THSarabunNew Bold.ttf");
+  src: url("resource/font/Selima .otf");
+  src: url("resource/font/Audrey-Bold.otf");
+  src: url("resource/font/Audrey-Normal.otf");
 
 }
 
