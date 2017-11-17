@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.Pane?>
@@ -48,6 +49,9 @@
                      <font>
                         <Font size="20.0" />
                      </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
                   </JFXButton>
                   <ImageView fitHeight="28.0" fitWidth="87.0" layoutX="463.0" layoutY="481.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -63,6 +67,9 @@
                      <font>
                         <Font size="20.0" />
                      </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
                   </JFXButton>
                </children>
             </Pane>
@@ -70,11 +77,17 @@
                <font>
                   <Font name="Audrey Bold" size="22.0" />
                </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
             </JFXButton>
             <JFXButton fx:id="dirButton" layoutX="938.0" layoutY="48.0" onAction="#dirMode" prefHeight="44.0" prefWidth="152.0" style="-fx-background-color: #bfa780; -fx-background-radius: 8;" styleClass="contentFontBold" text="Directions" textFill="WHITE">
                <font>
                   <Font name="Audrey Bold" size="22.0" />
                </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
             </JFXButton>
          </children>
       </Pane>
@@ -84,16 +97,25 @@
                <font>
                   <Font name="Audrey Normal" size="30.0" />
                </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
             </JFXButton>
-            <ImageView fx:id="closeButton" fitHeight="32.0" fitWidth="30.0" layoutX="1147.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="closeButton" fitHeight="32.0" fitWidth="30.0" layoutX="1147.0" layoutY="21.0" onMouseClicked="#closeButtonAction" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../img/exit-search.png" />
                </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
             </ImageView>
             <JFXButton layoutX="838.0" layoutY="20.0" onAction="#categoryPage" prefHeight="66.0" prefWidth="303.0" text="Category">
                <font>
                   <Font name="Audrey Normal" size="30.0" />
                </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
             </JFXButton>
             <Line endX="100.0" layoutX="276.0" layoutY="86.0" startX="-250.0" />
             <Line endX="100.0" layoutX="1079.0" layoutY="86.0" startX="-250.0" />

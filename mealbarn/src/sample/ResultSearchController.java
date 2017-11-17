@@ -29,91 +29,94 @@ public class ResultSearchController {
     private Pane food1;
 
     @FXML
-    private ImageView foodImg1;
-
-    @FXML
-    private Text foodName1;
-
-    @FXML
-    private JFXProgressBar foodScale1;
-
-    @FXML
-    private Text foodPerfect1;
-
-    @FXML
     private Pane food2;
-
-    @FXML
-    private ImageView foodImg2;
-
-    @FXML
-    private Text foodName2;
-
-    @FXML
-    private JFXProgressBar foodScale2;
-
-    @FXML
-    private Text foodPerfect2;
 
     @FXML
     private Pane food3;
 
     @FXML
-    private ImageView foodImg3;
-
-    @FXML
-    private Text foodName3;
-
-    @FXML
-    private JFXProgressBar foodScale3;
-
-    @FXML
-    private Text foodPerfect3;
-
-    @FXML
     private Pane food4;
-
-    @FXML
-    private ImageView foodImg4;
-
-    @FXML
-    private Text foodName4;
-
-    @FXML
-    private JFXProgressBar foodScale4;
-
-    @FXML
-    private Text foodPerfect4;
 
     @FXML
     private Pane food5;
 
     @FXML
-    private ImageView foodImg5;
-
-    @FXML
-    private Text foodName5;
-
-    @FXML
-    private JFXProgressBar foodScale5;
-
-    @FXML
-    private Text foodPerfect5;
-
-    @FXML
     private Pane food6;
+
+    @FXML
+    private ImageView foodImg1;
+
+    @FXML
+    private ImageView foodImg2;
+
+    @FXML
+    private ImageView foodImg3;
+
+    @FXML
+    private ImageView foodImg4;
+
+    @FXML
+    private ImageView foodImg5;
 
     @FXML
     private ImageView foodImg6;
 
     @FXML
+    private Text foodName1;
+
+    @FXML
+    private Text foodName2;
+
+    @FXML
+    private Text foodName3;
+
+    @FXML
+    private Text foodName4;
+
+    @FXML
+    private Text foodName5;
+
+    @FXML
     private Text foodName6;
+
+    @FXML
+    private JFXProgressBar foodScale1;
+
+    @FXML
+    private JFXProgressBar foodScale2;
+
+    @FXML
+    private JFXProgressBar foodScale3;
+
+    @FXML
+    private JFXProgressBar foodScale4;
+
+    @FXML
+    private JFXProgressBar foodScale5;
 
     @FXML
     private JFXProgressBar foodScale6;
 
     @FXML
+    private Text foodPerfect1;
+
+    @FXML
+    private Text foodPerfect2;
+
+    @FXML
+    private Text foodPerfect3;
+
+    @FXML
+    private Text foodPerfect4;
+
+    @FXML
+    private Text foodPerfect5;
+
+    @FXML
     private Text foodPerfect6;
+
+    @FXML
+    private ImageView closeButton;
 
     @FXML
     private JFXButton nextButton;
@@ -121,21 +124,80 @@ public class ResultSearchController {
     @FXML
     private JFXButton prevButton;
 
-
-    @FXML
-    private ImageView closeButton;
-
     @FXML
     private Text pageId;
 
     @FXML
     private Text recipeCount;
 
-    int page;
-    int size;
-    ArrayList<String> idShow;
+    @FXML
+    void categoryPage(ActionEvent event) throws IOException {
+        SceneCategory();
+    }
 
-    Data data = Data.getData();
+    @FXML
+    void closeButtonAction(MouseEvent event) {
+        Platform.exit();
+    }
+
+    @FXML
+    void foodRecipe1(ActionEvent event) throws IOException {
+        int idFood = Integer.parseInt(idShow.get((page*6)+0))-1;
+        data.setIdFood(idFood);
+        SceneShowFood();
+    }
+
+    @FXML
+    void foodRecipe2(ActionEvent event) throws IOException {
+        int idFood = Integer.parseInt(idShow.get((page*6)+1))-1;
+        data.setIdFood(idFood);
+        SceneShowFood();
+    }
+
+    @FXML
+    void foodRecipe3(ActionEvent event) throws IOException {
+        int idFood = Integer.parseInt(idShow.get((page*6)+2))-1;
+        data.setIdFood(idFood);
+        SceneShowFood();
+    }
+
+    @FXML
+    void foodRecipe4(ActionEvent event) throws IOException {
+        int idFood = Integer.parseInt(idShow.get((page*6)+3))-1;
+        data.setIdFood(idFood);
+        SceneShowFood();
+    }
+
+    @FXML
+    void foodRecipe5(ActionEvent event) throws IOException {
+        int idFood = Integer.parseInt(idShow.get((page*6)+4))-1;
+        data.setIdFood(idFood);
+        SceneShowFood();
+    }
+
+    @FXML
+    void foodRecipe6(ActionEvent event) throws IOException {
+        int idFood = Integer.parseInt(idShow.get((page*6)+5))-1;
+        data.setIdFood(idFood);
+        SceneShowFood();
+    }
+
+    @FXML
+    void nextPage(ActionEvent event) {
+        page++;
+        updateData();
+    }
+
+    @FXML
+    void prevPage(ActionEvent event) {
+        page--;
+        updateData();
+    }
+
+    @FXML
+    void searchPage(ActionEvent event) throws IOException {
+        SceneSearch();
+    }
 
     @FXML
     void initialize() {
@@ -145,6 +207,12 @@ public class ResultSearchController {
         recipeCount.setText(String.format("Total %d Recipes",size));
         updateData();
     }
+
+    int page;
+    int size;
+    ArrayList<String> idShow;
+
+    Data data = Data.getData();
 
     void updateData(){
         int id;
@@ -252,75 +320,6 @@ public class ResultSearchController {
         }else {
             nextButton.setVisible(true);
         }
-    }
-
-    @FXML
-    void categoryPage(ActionEvent event) throws IOException {
-        SceneCategory();
-    }
-
-    @FXML
-    void closeButtonAction(MouseEvent event) {
-        Platform.exit();
-    }
-
-    @FXML
-    void foodRecipe1(ActionEvent event) throws IOException {
-        int idFood = Integer.parseInt(idShow.get((page*6)+0))-1;
-        data.setIdFood(idFood);
-        SceneShowFood();
-    }
-
-    @FXML
-    void foodRecipe2(ActionEvent event) throws IOException {
-        int idFood = Integer.parseInt(idShow.get((page*6)+1))-1;
-        data.setIdFood(idFood);
-        SceneShowFood();
-    }
-
-    @FXML
-    void foodRecipe3(ActionEvent event) throws IOException {
-        int idFood = Integer.parseInt(idShow.get((page*6)+2))-1;
-        data.setIdFood(idFood);
-        SceneShowFood();
-    }
-
-    @FXML
-    void foodRecipe4(ActionEvent event) throws IOException {
-        int idFood = Integer.parseInt(idShow.get((page*6)+3))-1;
-        data.setIdFood(idFood);
-        SceneShowFood();
-    }
-
-    @FXML
-    void foodRecipe5(ActionEvent event) throws IOException {
-        int idFood = Integer.parseInt(idShow.get((page*6)+4))-1;
-        data.setIdFood(idFood);
-        SceneShowFood();
-    }
-
-    @FXML
-    void foodRecipe6(ActionEvent event) throws IOException {
-        int idFood = Integer.parseInt(idShow.get((page*6)+5))-1;
-        data.setIdFood(idFood);
-        SceneShowFood();
-    }
-
-    @FXML
-    void nextPage(ActionEvent event) {
-        page++;
-        updateData();
-    }
-
-    @FXML
-    void prevPage(ActionEvent event) {
-        page--;
-        updateData();
-    }
-
-    @FXML
-    void searchPage(ActionEvent event) throws IOException {
-        SceneSearch();
     }
 
     private void SceneCategory() throws IOException {

@@ -9,14 +9,19 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+import javafx.scene.input.MouseEvent;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 import ooad.FoodShow;
-
-import java.awt.event.MouseEvent;
 import java.io.IOException;
 
 public class ShowFoodController {
+
+    @FXML
+    private ImageView closeButton;
+
+    @FXML
+    private JFXButton dirButton;
 
     @FXML
     private Text foodName;
@@ -28,19 +33,13 @@ public class ShowFoodController {
     private ImageView imgDetail;
 
     @FXML
+    private JFXButton ingButton;
+
+    @FXML
     private JFXButton prevButton;
 
     @FXML
     private JFXButton nextButton;
-
-    @FXML
-    private JFXButton ingButton;
-
-    @FXML
-    private JFXButton dirButton;
-
-    @FXML
-    private ImageView closeButton;
 
     @FXML
     void categoryPage(ActionEvent event) throws IOException {
@@ -93,6 +92,22 @@ public class ShowFoodController {
         SceneSearch();
     }
 
+    @FXML
+    void initialize() {
+        page = 1;
+        pageSize = sizeIng;
+        mode = 1;
+        System.out.println(String.format("%d\t%d\t%d",idFood,sizeIng,sizeDir));
+        FoodShow food1 = data.getFoodShowsList().get(idFood);
+        foodName.setText(food1.getName());
+        String sorceF = String.format("./img/imgFood/%d.png",idFood+1);
+        Image imageF = new Image(sorceF);
+        foodImg.setImage(imageF);
+        setImg();
+        updateButton();
+        ingButton.setDisable(true);
+    }
+
     Data data = Data.getData();
     Integer[] recipeIng = data.getRecipeIng();
     Integer[] recipeDir = data.getRecipeDir();
@@ -120,22 +135,6 @@ public class ShowFoodController {
         String sorceD = String.format("./img/foodRecipe/%d-%d-%d.png",idFood+1,mode,page);
         Image imageD = new Image(sorceD);
         imgDetail.setImage(imageD);
-    }
-
-    @FXML
-    void initialize() {
-        page = 1;
-        pageSize = sizeIng;
-        mode = 1;
-        System.out.println(String.format("%d\t%d\t%d",idFood,sizeIng,sizeDir));
-        FoodShow food1 = data.getFoodShowsList().get(idFood);
-        foodName.setText(food1.getName());
-        String sorceF = String.format("./img/imgFood/%d.png",idFood+1);
-        Image imageF = new Image(sorceF);
-        foodImg.setImage(imageF);
-        setImg();
-        updateButton();
-        ingButton.setDisable(true);
     }
 
     private void SceneCategory() throws IOException {

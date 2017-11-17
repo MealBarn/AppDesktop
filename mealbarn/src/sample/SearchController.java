@@ -10,6 +10,7 @@ import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Cursor;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.ListView;
@@ -69,7 +70,7 @@ public class SearchController {
 
     @FXML
     void initialize() {
-
+        listCursor();
     }
 
     @FXML
@@ -155,6 +156,7 @@ public class SearchController {
                 index++;
             }
         }
+        listCursor();
     }
 
     @FXML
@@ -178,6 +180,7 @@ public class SearchController {
                 IngredientType.clear();
             }
         }
+        listCursor();
     }
 
     @FXML
@@ -199,6 +202,14 @@ public class SearchController {
         Scene scene = new Scene(result);
         stage.setScene(scene);
         stage.show();
+    }
+
+    private void listCursor(){
+        if(choosedList.isEmpty()){
+            list.setCursor(Cursor.NONE);
+        }else {
+            list.setCursor(Cursor.HAND);
+        }
     }
 
 

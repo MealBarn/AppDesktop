@@ -2,6 +2,7 @@
 
 <?import com.jfoenix.controls.JFXButton?>
 <?import com.jfoenix.controls.JFXProgressBar?>
+<?import javafx.scene.Cursor?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.Pane?>
@@ -40,6 +41,9 @@
                <font>
                   <Font size="15.0" />
                </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
             </JFXButton>
             <Text layoutX="244.0" layoutY="118.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ingredients">
                <font>
@@ -70,6 +74,9 @@
                <font>
                   <Font size="15.0" />
                </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
             </JFXButton>
             <Text layoutX="244.0" layoutY="118.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ingredients">
                <font>
@@ -100,6 +107,9 @@
                <font>
                   <Font size="15.0" />
                </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
             </JFXButton>
             <Text layoutX="244.0" layoutY="118.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ingredients">
                <font>
@@ -130,6 +140,9 @@
                <font>
                   <Font size="15.0" />
                </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
             </JFXButton>
             <Text layoutX="244.0" layoutY="118.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ingredients">
                <font>
@@ -160,6 +173,9 @@
                <font>
                   <Font size="15.0" />
                </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
             </JFXButton>
             <Text layoutX="244.0" layoutY="118.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ingredients">
                <font>
@@ -190,6 +206,9 @@
                <font>
                   <Font size="15.0" />
                </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
             </JFXButton>
             <Text layoutX="244.0" layoutY="118.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ingredients">
                <font>
@@ -202,11 +221,17 @@
          <font>
             <Font size="20.0" />
          </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
       </JFXButton>
       <JFXButton fx:id="prevButton" layoutX="453.0" layoutY="675.0" onAction="#prevPage" text="&lt;&lt; previous">
          <font>
             <Font size="20.0" />
          </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
       </JFXButton>
       <Pane prefHeight="67.0" prefWidth="1200.0" style="-fx-background-color: black;">
          <children>
@@ -214,16 +239,25 @@
                <font>
                   <Font name="Audrey Normal" size="30.0" />
                </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
             </JFXButton>
-            <ImageView fx:id="closeButton" fitHeight="32.0" fitWidth="30.0" layoutX="1147.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="closeButton" fitHeight="32.0" fitWidth="30.0" layoutX="1147.0" layoutY="21.0" onMouseClicked="#closeButtonAction" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../img/exit-search.png" />
                </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
             </ImageView>
             <JFXButton layoutX="616.0" layoutY="2.0" onAction="#categoryPage" prefHeight="66.0" prefWidth="320.0" text="Category" textFill="WHITE">
                <font>
                   <Font name="Audrey Normal" size="30.0" />
                </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
             </JFXButton>
             <Line endX="100.0" layoutX="276.0" layoutY="86.0" startX="-250.0" />
             <Line endX="100.0" layoutX="1079.0" layoutY="86.0" startX="-250.0" />
