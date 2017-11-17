@@ -12,7 +12,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<Pane prefHeight="760.0" prefWidth="1200.0" style="-fx-background-color: #ffffe6;" stylesheets="@text.css" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ResultSearchController">
+<Pane prefHeight="760.0" prefWidth="1200.0" style="-fx-background-color: #ffffe6;" stylesheets="@text.css" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ResultSearchController">
    <children>
       <ImageView fitHeight="771.0" fitWidth="1202.0" layoutY="-12.0" pickOnBounds="true">
          <image>
@@ -295,5 +295,13 @@
             </LinearGradient>
          </fill>
       </Text>
+      <ImageView fx:id="closeButton" fitHeight="32.0" fitWidth="30.0" layoutX="1157.0" layoutY="31.0" onMouseClicked="#closeButtonAction" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/exit-search.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
    </children>
 </Pane>
