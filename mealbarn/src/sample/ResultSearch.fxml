@@ -12,7 +12,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<Pane prefHeight="760.0" prefWidth="1200.0" style="-fx-background-color: #ffffe6;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ResultSearchController">
+<Pane prefHeight="760.0" prefWidth="1200.0" style="-fx-background-color: #ffffe6;" stylesheets="@text.css" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ResultSearchController">
    <children>
       <ImageView fitHeight="771.0" fitWidth="1202.0" layoutY="-12.0" pickOnBounds="true">
          <image>
@@ -26,9 +26,9 @@
                   <Image url="@../img/Alacarte/1.png" />
                </image>
             </ImageView>
-            <Text fx:id="foodName1" layoutX="247.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ก๋วยจั๊บ">
+            <Text fx:id="foodName1" layoutX="247.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="thaiFont" text="ก๋วยจั๊บ">
                <font>
-                  <Font name="TH Sarabun New" size="18.0" />
+                  <Font name="TH Sarabun New" size="30.0" />
                </font>
             </Text>
             <JFXProgressBar fx:id="foodScale1" layoutX="251.0" layoutY="136.0" prefHeight="4.0" prefWidth="80.0" progress="0.66" />
@@ -217,7 +217,7 @@
             </Text>
          </children>
       </Pane>
-      <JFXButton fx:id="nextButton" layoutX="615.0" layoutY="675.0" onAction="#nextPage" text="next &gt;&gt;">
+      <JFXButton fx:id="nextButton" layoutX="639.0" layoutY="676.0" onAction="#nextPage" text="next ">
          <font>
             <Font size="20.0" />
          </font>
@@ -225,7 +225,7 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </JFXButton>
-      <JFXButton fx:id="prevButton" layoutX="453.0" layoutY="675.0" onAction="#prevPage" text="&lt;&lt; previous">
+      <JFXButton fx:id="prevButton" layoutX="473.0" layoutY="676.0" onAction="#prevPage" text=" previous">
          <font>
             <Font size="20.0" />
          </font>
@@ -233,9 +233,34 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </JFXButton>
-      <Pane prefHeight="67.0" prefWidth="1200.0" style="-fx-background-color: black;">
+      <Text layoutX="505.0" layoutY="176.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="contentFont" text="this is your recipe">
+         <font>
+            <Font name="Audrey Normal" size="45.0" />
+         </font>
+      </Text>
+      <ImageView fx:id="nextImg" fitHeight="28.0" fitWidth="87.0" layoutX="701.0" layoutY="683.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/right-spoon.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="prevImg" fitHeight="28.0" fitWidth="87.0" layoutX="414.0" layoutY="685.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/left-fork.png" />
+         </image>
+      </ImageView>
+      <Text fx:id="pageId" layoutX="604.0" layoutY="705.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Text>
+      <Text fx:id="recipeCount" layoutX="53.0" layoutY="123.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total 0 Recipes" wrappingWidth="209.57617338001728">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Text>
+      <Pane prefHeight="91.0" prefWidth="1200.0" style="-fx-background-color: white;">
          <children>
-            <JFXButton layoutX="283.0" layoutY="2.0" onAction="#searchPage" prefHeight="66.0" prefWidth="320.0" text="Search Ingredients" textFill="#f8c760">
+            <JFXButton layoutX="46.0" layoutY="20.0" onAction="#searchPage" prefHeight="66.0" prefWidth="320.0" styleClass="contentFont" text="Search Ingredients">
                <font>
                   <Font name="Audrey Normal" size="30.0" />
                </font>
@@ -243,15 +268,7 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </JFXButton>
-            <ImageView fx:id="closeButton" fitHeight="32.0" fitWidth="30.0" layoutX="1147.0" layoutY="21.0" onMouseClicked="#closeButtonAction" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../img/exit-search.png" />
-               </image>
-               <cursor>
-                  <Cursor fx:constant="HAND" />
-               </cursor>
-            </ImageView>
-            <JFXButton layoutX="616.0" layoutY="2.0" onAction="#categoryPage" prefHeight="66.0" prefWidth="320.0" text="Category" textFill="WHITE">
+            <JFXButton layoutX="838.0" layoutY="20.0" onAction="#categoryPage" prefHeight="66.0" prefWidth="303.0" styleClass="contentFont" text="Category">
                <font>
                   <Font name="Audrey Normal" size="30.0" />
                </font>
@@ -263,12 +280,7 @@
             <Line endX="100.0" layoutX="1079.0" layoutY="86.0" startX="-250.0" />
          </children>
       </Pane>
-      <Text layoutX="425.0" layoutY="181.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="contentFont" text="this is your recipe">
-         <font>
-            <Font name="Audrey Normal" size="45.0" />
-         </font>
-      </Text>
-      <Text layoutX="404.0" layoutY="113.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="customFont" text="Mealbarn">
+      <Text layoutX="417.0" layoutY="123.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="customFont" text="Mealbarn">
          <font>
             <Font name="Selima" size="130.0" />
          </font>
@@ -282,26 +294,6 @@
                </stops>
             </LinearGradient>
          </fill>
-      </Text>
-      <ImageView fx:id="nextImg" fitHeight="28.0" fitWidth="87.0" layoutX="714.0" layoutY="683.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../img/right-spoon.png" />
-         </image>
-      </ImageView>
-      <ImageView fx:id="prevImg" fitHeight="28.0" fitWidth="87.0" layoutX="414.0" layoutY="685.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../img/left-fork.png" />
-         </image>
-      </ImageView>
-      <Text fx:id="pageId" layoutX="595.0" layoutY="706.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
-         <font>
-            <Font size="23.0" />
-         </font>
-      </Text>
-      <Text fx:id="recipeCount" layoutX="53.0" layoutY="123.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total 0 Recipes" wrappingWidth="209.57617338001728">
-         <font>
-            <Font size="21.0" />
-         </font>
       </Text>
    </children>
 </Pane>

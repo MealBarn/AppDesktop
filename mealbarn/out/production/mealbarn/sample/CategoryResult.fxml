@@ -11,7 +11,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<Pane prefHeight="760.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.CategoryResultController">
+<Pane prefHeight="760.0" prefWidth="1200.0" stylesheets="@text.css" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.CategoryResultController">
    <children>
       <Pane prefHeight="760.0" prefWidth="1200.0" style="-fx-background-color: #ffffe6;">
          <children>
@@ -27,7 +27,7 @@
                         <Image url="@../img/Alacarte/1.png" />
                      </image>
                   </ImageView>
-                  <Text fx:id="foodName1" layoutX="247.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ก๋วยจั๊บ">
+                  <Text fx:id="foodName1" layoutX="247.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="foodname1" text="ก๋วยจั๊บ">
                      <font>
                         <Font name="TH Sarabun New" size="30.0" />
                      </font>
@@ -49,7 +49,7 @@
                         <Image url="@../img/Alacarte/1.png" />
                      </image>
                   </ImageView>
-                  <Text fx:id="foodName2" layoutX="247.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ก๋วยจั๊บ">
+                  <Text fx:id="foodName2" layoutX="247.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="foodname2" text="ก๋วยจั๊บ">
                      <font>
                         <Font name="TH Sarabun New" size="30.0" />
                      </font>
@@ -71,7 +71,7 @@
                         <Image url="@../img/Alacarte/1.png" />
                      </image>
                   </ImageView>
-                  <Text fx:id="foodName3" layoutX="247.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ก๋วยจั๊บ">
+                  <Text fx:id="foodName3" layoutX="247.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="foodname3" text="ก๋วยจั๊บ">
                      <font>
                         <Font name="TH Sarabun New" size="30.0" />
                      </font>
@@ -93,7 +93,7 @@
                         <Image url="@../img/Alacarte/1.png" />
                      </image>
                   </ImageView>
-                  <Text fx:id="foodName4" layoutX="247.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ก๋วยจั๊บ">
+                  <Text fx:id="foodName4" layoutX="247.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="foodname4" text="ก๋วยจั๊บ">
                      <font>
                         <Font name="TH Sarabun New" size="30.0" />
                      </font>
@@ -115,7 +115,7 @@
                         <Image url="@../img/Alacarte/1.png" />
                      </image>
                   </ImageView>
-                  <Text fx:id="foodName5" layoutX="247.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ไข่เจียว">
+                  <Text fx:id="foodName5" layoutX="247.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="foodname5" text="ไข่เจียว">
                      <font>
                         <Font name="TH Sarabun New" size="30.0" />
                      </font>
@@ -137,7 +137,7 @@
                         <Image url="@../img/Alacarte/1.png" />
                      </image>
                   </ImageView>
-                  <Text fx:id="foodName6" layoutX="247.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ก๋วยจั๊บ">
+                  <Text fx:id="foodName6" layoutX="247.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="foodname6" text="ก๋วยจั๊บ">
                      <font>
                         <Font name="TH Sarabun New" size="30.0" />
                      </font>
@@ -152,7 +152,7 @@
                   </JFXButton>
                </children>
             </Pane>
-            <Text layoutX="517.0" layoutY="183.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="contentFontBold" text="Appetizer">
+            <Text layoutX="394.0" layoutY="187.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="category" text="Category : Appetizer">
                <font>
                   <Font name="Audrey Normal" size="44.0" />
                </font>
@@ -191,7 +191,7 @@
             <Line endX="100.0" layoutX="1079.0" layoutY="86.0" startX="-250.0" />
          </children>
       </Pane>
-      <Text layoutX="407.0" layoutY="113.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="customFont" text="Mealbarn">
+      <Text layoutX="407.0" layoutY="113.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="logo" text="Mealbarn">
          <font>
             <Font name="Selima" size="130.0" />
          </font>

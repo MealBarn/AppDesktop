@@ -2,23 +2,40 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="44b06991-95b1-488a-9180-dedd2dfb1da5" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Audrey-Bold.otf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Audrey-Normal.otf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Selima .otf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/text.css" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/mealbarn/img/34-Pudding Chocolate.png" afterPath="$PROJECT_DIR$/out/production/mealbarn/img/34-Pudding Chocolate.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/mealbarn/img/45-Hormokpla.png" afterPath="$PROJECT_DIR$/out/production/mealbarn/img/45-Hormokpla.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/mealbarn/img/65-souphed.png" afterPath="$PROJECT_DIR$/out/production/mealbarn/img/65-souphed.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/mealbarn/img/C_alacarte.png" afterPath="$PROJECT_DIR$/out/production/mealbarn/img/C_alacarte.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/mealbarn/img/StraberryCheese Cake.png" afterPath="$PROJECT_DIR$/out/production/mealbarn/img/StraberryCheese Cake.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/mealbarn/img/photo_Category/ALaCarte.png" afterPath="$PROJECT_DIR$/out/production/mealbarn/img/photo_Category/ALaCarte.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/mealbarn/img/photo_Category/ALaCarte2.png" afterPath="$PROJECT_DIR$/out/production/mealbarn/img/photo_Category/ALaCarte2.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/mealbarn/img/photo_Category/Appetizer.png" afterPath="$PROJECT_DIR$/out/production/mealbarn/img/photo_Category/Appetizer.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/mealbarn/img/photo_Category/Appetizer2.png" afterPath="$PROJECT_DIR$/out/production/mealbarn/img/photo_Category/Appetizer2.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/mealbarn/img/photo_Category/Dessert.png" afterPath="$PROJECT_DIR$/out/production/mealbarn/img/photo_Category/Dessert.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/mealbarn/img/photo_Category/Dessert2.png" afterPath="$PROJECT_DIR$/out/production/mealbarn/img/photo_Category/Dessert2.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/mealbarn/img/photo_Category/Dessert3.png" afterPath="$PROJECT_DIR$/out/production/mealbarn/img/photo_Category/Dessert3.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/mealbarn/img/photo_Category/Drink.png" afterPath="$PROJECT_DIR$/out/production/mealbarn/img/photo_Category/Drink.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/mealbarn/img/photo_Category/Drink2.png" afterPath="$PROJECT_DIR$/out/production/mealbarn/img/photo_Category/Drink2.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/mealbarn/img/photo_Category/Maincourse.png" afterPath="$PROJECT_DIR$/out/production/mealbarn/img/photo_Category/Maincourse.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/mealbarn/img/photo_Category/Maincourse2.png" afterPath="$PROJECT_DIR$/out/production/mealbarn/img/photo_Category/Maincourse2.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/mealbarn/img/photo_Category/Soup.png" afterPath="$PROJECT_DIR$/out/production/mealbarn/img/photo_Category/Soup.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/mealbarn/img/photo_Category/Soup2.png" afterPath="$PROJECT_DIR$/out/production/mealbarn/img/photo_Category/Soup2.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/mealbarn/img/photo_Category/Soup3.png" afterPath="$PROJECT_DIR$/out/production/mealbarn/img/photo_Category/Soup3.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/mealbarn/img/square.png" afterPath="$PROJECT_DIR$/out/production/mealbarn/img/square.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ODB/Account.odb" afterPath="$PROJECT_DIR$/src/ODB/Account.odb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ODB/Component.odb" afterPath="$PROJECT_DIR$/src/ODB/Component.odb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ODB/Food.odb" afterPath="$PROJECT_DIR$/src/ODB/Food.odb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/odb20171117.log" afterPath="$PROJECT_DIR$/log/odb20171117.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sample/Category.fxml" afterPath="$PROJECT_DIR$/src/sample/Category.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sample/CategoryController.java" afterPath="$PROJECT_DIR$/src/sample/CategoryController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sample/CategoryResult.fxml" afterPath="$PROJECT_DIR$/src/sample/CategoryResult.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sample/CategoryResultController.java" afterPath="$PROJECT_DIR$/src/sample/CategoryResultController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sample/Data.java" afterPath="$PROJECT_DIR$/src/sample/Data.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sample/LoginController.java" afterPath="$PROJECT_DIR$/src/sample/LoginController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sample/Main.java" afterPath="$PROJECT_DIR$/src/sample/Main.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sample/Login.fxml" afterPath="$PROJECT_DIR$/src/sample/Login.fxml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sample/ResultSearch.fxml" afterPath="$PROJECT_DIR$/src/sample/ResultSearch.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sample/ResultSearchController.java" afterPath="$PROJECT_DIR$/src/sample/ResultSearchController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sample/Search.fxml" afterPath="$PROJECT_DIR$/src/sample/Search.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sample/SearchController.java" afterPath="$PROJECT_DIR$/src/sample/SearchController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sample/ShowFood.fxml" afterPath="$PROJECT_DIR$/src/sample/ShowFood.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sample/ShowFoodController.java" afterPath="$PROJECT_DIR$/src/sample/ShowFoodController.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -36,7 +53,7 @@
       <file leaf-file-name="CategoryResultController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sample/CategoryResultController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
+            <state relative-caret-position="3435">
               <caret line="289" column="16" lean-forward="false" selection-start-line="289" selection-start-column="12" selection-end-line="289" selection-end-column="16" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -62,9 +79,10 @@
       <file leaf-file-name="ShowFoodController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sample/ShowFoodController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="138" column="37" lean-forward="true" selection-start-line="138" selection-start-column="37" selection-end-line="138" selection-end-column="37" />
+            <state relative-caret-position="1620">
+              <caret line="138" column="37" lean-forward="false" selection-start-line="138" selection-start-column="37" selection-end-line="138" selection-end-column="37" />
               <folding>
+                <element signature="imports" expanded="true" />
                 <element signature="method#categoryPage#0;class#ShowFoodController#0" expanded="false" />
                 <element signature="method#dirMode#0;class#ShowFoodController#0" expanded="false" />
                 <element signature="method#ingMode#0;class#ShowFoodController#0" expanded="false" />
@@ -79,14 +97,26 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Data.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Search.fxml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sample/Search.fxml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="393">
+              <caret line="68" column="22" lean-forward="true" selection-start-line="68" selection-start-column="22" selection-end-line="68" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="JavaFX-Scene-Builder">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Data.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sample/Data.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="155">
-              <caret line="117" column="11" lean-forward="true" selection-start-line="117" selection-start-column="11" selection-end-line="117" selection-end-column="11" />
+            <state relative-caret-position="65">
+              <caret line="111" column="75" lean-forward="false" selection-start-line="111" selection-start-column="75" selection-end-line="111" selection-end-column="75" />
               <folding>
-                <element signature="e#8347#8348#0" expanded="true" />
-                <element signature="e#8382#8383#0" expanded="true" />
+                <element signature="e#4670#4678#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -95,8 +125,8 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="23" lean-forward="true" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
+            <state relative-caret-position="120">
+              <caret line="12" column="23" lean-forward="false" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -107,12 +137,11 @@
       <file leaf-file-name="ResultSearchController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sample/ResultSearchController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3162">
+            <state relative-caret-position="3060">
               <caret line="246" column="52" lean-forward="false" selection-start-line="246" selection-start-column="52" selection-end-line="246" selection-end-column="52" />
               <folding>
+                <element signature="imports" expanded="true" />
                 <element signature="method#categoryPage#0;class#ResultSearchController#0" expanded="false" />
-                <element signature="e#2363#2364#0" expanded="true" />
-                <element signature="e#2394#2395#0" expanded="true" />
                 <element signature="method#foodRecipe1#0;class#ResultSearchController#0" expanded="false" />
                 <element signature="method#foodRecipe2#0;class#ResultSearchController#0" expanded="false" />
                 <element signature="method#foodRecipe3#0;class#ResultSearchController#0" expanded="false" />
@@ -134,8 +163,8 @@
       <file leaf-file-name="SearchController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sample/SearchController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="157" column="24" lean-forward="true" selection-start-line="157" selection-start-column="24" selection-end-line="157" selection-end-column="24" />
+            <state relative-caret-position="415">
+              <caret line="32" column="40" lean-forward="true" selection-start-line="32" selection-start-column="40" selection-end-line="32" selection-end-column="40" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#addIngredientsBox#0;class#SearchController#0" expanded="false" />
@@ -144,6 +173,31 @@
                 <element signature="method#listCursor#0;class#SearchController#0" expanded="false" />
               </folding>
             </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LoginController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/sample/LoginController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="205">
+              <caret line="60" column="32" lean-forward="true" selection-start-line="60" selection-start-column="32" selection-end-line="60" selection-end-column="32" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ShowFood.fxml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sample/ShowFood.fxml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" column="36" lean-forward="false" selection-start-line="5" selection-start-column="36" selection-end-line="5" selection-end-column="36" />
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="JavaFX-Scene-Builder">
+            <state />
           </provider>
         </entry>
       </file>
@@ -189,6 +243,7 @@
         <option value="$PROJECT_DIR$/src/sample/CategoryResultController.java" />
         <option value="$PROJECT_DIR$/src/sample/ResultSearchController.java" />
         <option value="$PROJECT_DIR$/src/sample/Data.java" />
+        <option value="$PROJECT_DIR$/text.css" />
       </list>
     </option>
   </component>
@@ -198,10 +253,11 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="81" />
-    <option name="width" value="653" />
-    <option name="height" value="775" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="7" />
+    <option name="y" value="23" />
+    <option name="width" value="976" />
+    <option name="height" value="817" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -219,10 +275,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="PackagesPane" />
       <pane id="AndroidView" />
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -245,6 +300,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -390,7 +446,7 @@
     <option name="totallyTimeSpent" value="97793000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="80" y="-8" width="1294" height="784" extended-state="6" />
+    <frame x="7" y="23" width="976" height="817" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -401,25 +457,25 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32935917" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3218232" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3219076" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26604068" sideWeight="0.6703755" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.40364027" sideWeight="0.6703755" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39940387" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -474,11 +530,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/img/imgFood/4.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/img/imgFood/5.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -675,42 +726,10 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/ShowFood.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="36" lean-forward="false" selection-start-line="5" selection-start-column="36" selection-end-line="5" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/CategoryResult.fxml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3254">
           <caret line="237" column="17" lean-forward="true" selection-start-line="237" selection-start-column="17" selection-end-line="237" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/LoginController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="969">
-          <caret line="59" column="0" lean-forward="true" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Search.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1156">
-          <caret line="68" column="22" lean-forward="true" selection-start-line="68" selection-start-column="22" selection-end-line="68" selection-end-column="22" />
           <folding />
         </state>
       </provider>
@@ -746,51 +765,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/SearchController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="157" column="24" lean-forward="true" selection-start-line="157" selection-start-column="24" selection-end-line="157" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#addIngredientsBox#0;class#SearchController#0" expanded="false" />
-            <element signature="method#SceneCategory#0;class#SearchController#0" expanded="false" />
-            <element signature="method#SceneResult#0;class#SearchController#0" expanded="false" />
-            <element signature="method#listCursor#0;class#SearchController#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="23" lean-forward="true" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
+        <state relative-caret-position="120">
+          <caret line="12" column="23" lean-forward="false" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/ShowFoodController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="138" column="37" lean-forward="true" selection-start-line="138" selection-start-column="37" selection-end-line="138" selection-end-column="37" />
-          <folding>
-            <element signature="method#categoryPage#0;class#ShowFoodController#0" expanded="false" />
-            <element signature="method#dirMode#0;class#ShowFoodController#0" expanded="false" />
-            <element signature="method#ingMode#0;class#ShowFoodController#0" expanded="false" />
-            <element signature="method#nextPage#0;class#ShowFoodController#0" expanded="false" />
-            <element signature="method#prevPage#0;class#ShowFoodController#0" expanded="false" />
-            <element signature="method#searchPage#0;class#ShowFoodController#0" expanded="false" />
-            <element signature="method#setImg#0;class#ShowFoodController#0" expanded="false" />
-            <element signature="method#SceneCategory#0;class#ShowFoodController#0" expanded="false" />
-            <element signature="method#SceneSearch#0;class#ShowFoodController#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/CategoryResultController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
+        <state relative-caret-position="3435">
           <caret line="289" column="16" lean-forward="false" selection-start-line="289" selection-start-column="12" selection-end-line="289" selection-end-column="16" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -812,14 +799,86 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/Data.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="65">
+          <caret line="111" column="75" lean-forward="false" selection-start-line="111" selection-start-column="75" selection-end-line="111" selection-end-column="75" />
+          <folding>
+            <element signature="e#4670#4678#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/text.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/Search.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="393">
+          <caret line="68" column="22" lean-forward="true" selection-start-line="68" selection-start-column="22" selection-end-line="68" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/ShowFood.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="36" lean-forward="false" selection-start-line="5" selection-start-column="36" selection-end-line="5" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/ShowFoodController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1620">
+          <caret line="138" column="37" lean-forward="false" selection-start-line="138" selection-start-column="37" selection-end-line="138" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#categoryPage#0;class#ShowFoodController#0" expanded="false" />
+            <element signature="method#dirMode#0;class#ShowFoodController#0" expanded="false" />
+            <element signature="method#ingMode#0;class#ShowFoodController#0" expanded="false" />
+            <element signature="method#nextPage#0;class#ShowFoodController#0" expanded="false" />
+            <element signature="method#prevPage#0;class#ShowFoodController#0" expanded="false" />
+            <element signature="method#searchPage#0;class#ShowFoodController#0" expanded="false" />
+            <element signature="method#setImg#0;class#ShowFoodController#0" expanded="false" />
+            <element signature="method#SceneCategory#0;class#ShowFoodController#0" expanded="false" />
+            <element signature="method#SceneSearch#0;class#ShowFoodController#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/SearchController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="415">
+          <caret line="32" column="40" lean-forward="true" selection-start-line="32" selection-start-column="40" selection-end-line="32" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#addIngredientsBox#0;class#SearchController#0" expanded="false" />
+            <element signature="method#SceneCategory#0;class#SearchController#0" expanded="false" />
+            <element signature="method#SceneResult#0;class#SearchController#0" expanded="false" />
+            <element signature="method#listCursor#0;class#SearchController#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/ResultSearchController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3162">
+        <state relative-caret-position="3060">
           <caret line="246" column="52" lean-forward="false" selection-start-line="246" selection-start-column="52" selection-end-line="246" selection-end-column="52" />
           <folding>
+            <element signature="imports" expanded="true" />
             <element signature="method#categoryPage#0;class#ResultSearchController#0" expanded="false" />
-            <element signature="e#2363#2364#0" expanded="true" />
-            <element signature="e#2394#2395#0" expanded="true" />
             <element signature="method#foodRecipe1#0;class#ResultSearchController#0" expanded="false" />
             <element signature="method#foodRecipe2#0;class#ResultSearchController#0" expanded="false" />
             <element signature="method#foodRecipe3#0;class#ResultSearchController#0" expanded="false" />
@@ -837,13 +896,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Data.java">
+    <entry file="file://$PROJECT_DIR$/src/sample/LoginController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
-          <caret line="117" column="11" lean-forward="true" selection-start-line="117" selection-start-column="11" selection-end-line="117" selection-end-column="11" />
+        <state relative-caret-position="205">
+          <caret line="60" column="32" lean-forward="true" selection-start-line="60" selection-start-column="32" selection-end-line="60" selection-end-column="32" />
           <folding>
-            <element signature="e#8347#8348#0" expanded="true" />
-            <element signature="e#8382#8383#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
