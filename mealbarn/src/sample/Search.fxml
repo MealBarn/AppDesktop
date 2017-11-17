@@ -92,7 +92,7 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </JFXButton>
-            <JFXButton id="contentFont" fx:id="submitButton" layoutX="502.0" layoutY="258.0" onAction="#submitAction" prefHeight="51.0" prefWidth="223.0" style="-fx-background-color: #262626; -fx-background-radius: 7;" styleClass="contentFont" text="Search" textFill="WHITE">
+            <JFXButton id="contentFont" fx:id="submitButton" layoutX="498.0" layoutY="258.0" onAction="#submitAction" prefHeight="51.0" prefWidth="223.0" style="-fx-background-color: #262626; -fx-background-radius: 7;" styleClass="contentFont" text="Search" textFill="WHITE">
                <font>
                   <Font size="25.0" />
                </font>
@@ -103,7 +103,7 @@
                   <Insets bottom="2.0" left="2.0" right="2.0" top="-5.0" />
                </padding>
             </JFXButton>
-            <JFXButton id="contentFont" layoutX="911.0" layoutY="22.0" onAction="#addButtonAction" prefHeight="45.0" prefWidth="87.0" style="-fx-background-color: #ff8c1a; -fx-background-radius: 7;" styleClass="contentFont" text="Clear">
+            <JFXButton layoutX="911.0" layoutY="22.0" onAction="#addButtonAction" prefHeight="45.0" prefWidth="87.0" style="-fx-background-color: #ff8c1a; -fx-background-radius: 7;" text="Clear">
                <font>
                   <Font size="20.0" />
                </font>
