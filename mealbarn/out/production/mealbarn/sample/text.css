@@ -1,9 +1,9 @@
 @@font-face {
-  src :url("src/fonts/THSarabunNew.ttf");
-  src :url("src/fonts/THSarabunNew-Bold.ttf");
-  src: url("src/fonts/Selima.otf");
-  src: url("src/fonts/Audrey-Bold.otf");
-  src: url("src/fonts/Audrey-Normal.otf");
+  src :url("resource/fonts/THSarabunNew.ttf");
+  src :url("resource/fonts/THSarabunNew-Bold.ttf");
+  src: url("resource/fonts/Selima.otf");
+  src: url("resource/fonts/Audrey-Bold.otf");
+  src: url("resource/fonts/Audrey-Normal.otf");
 
 }
 
@@ -19,7 +19,7 @@
 }
 
 
-.contentFont {
+#contentFont .text{
     -fx-font-family: 'Audrey';
     -fx-font-size: 30px;
 }

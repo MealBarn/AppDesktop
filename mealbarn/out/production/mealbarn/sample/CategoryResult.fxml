@@ -11,7 +11,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<Pane prefHeight="760.0" prefWidth="1200.0" stylesheets="@text.css" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.CategoryResultController">
+<Pane prefHeight="760.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.CategoryResultController">
    <children>
       <Pane prefHeight="760.0" prefWidth="1200.0" style="-fx-background-color: #ffffe6;">
          <children>
@@ -27,7 +27,7 @@
                         <Image url="@../img/Alacarte/1.png" />
                      </image>
                   </ImageView>
-                  <Text fx:id="foodName1" layoutX="247.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="foodname1" text="ก๋วยจั๊บ">
+                  <Text fx:id="foodName1" layoutX="247.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ก๋วยจั๊บ">
                      <font>
                         <Font name="TH Sarabun New" size="30.0" />
                      </font>
@@ -40,6 +40,21 @@
                         <Cursor fx:constant="HAND" />
                      </cursor>
                   </JFXButton>
+                  <Line endX="100.0" layoutX="230.0" layoutY="55.0" startX="-10.0" />
+                  <Pane layoutX="216.0" layoutY="107.0" prefHeight="43.0" prefWidth="123.0">
+                     <children>
+                        <ImageView fitHeight="34.0" fitWidth="30.0" layoutX="77.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/icons8-like_filled.png" />
+                           </image>
+                        </ImageView>
+                        <Text layoutX="52.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="25">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
                </children>
             </Pane>
             <Pane fx:id="food2" layoutX="427.0" layoutY="230.0" prefHeight="203.0" prefWidth="349.0" style="-fx-background-color: #ffffff;">
@@ -49,7 +64,7 @@
                         <Image url="@../img/Alacarte/1.png" />
                      </image>
                   </ImageView>
-                  <Text fx:id="foodName2" layoutX="247.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="foodname2" text="ก๋วยจั๊บ">
+                  <Text fx:id="foodName2" layoutX="247.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ก๋วยจั๊บ">
                      <font>
                         <Font name="TH Sarabun New" size="30.0" />
                      </font>
@@ -62,6 +77,21 @@
                         <Cursor fx:constant="HAND" />
                      </cursor>
                   </JFXButton>
+                  <Line endX="100.0" layoutX="230.0" layoutY="55.0" startX="-10.0" />
+                  <Pane layoutX="216.0" layoutY="107.0" prefHeight="43.0" prefWidth="123.0">
+                     <children>
+                        <ImageView fitHeight="34.0" fitWidth="30.0" layoutX="77.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/icons8-like.png" />
+                           </image>
+                        </ImageView>
+                        <Text layoutX="52.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="25">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
                </children>
             </Pane>
             <Pane fx:id="food3" layoutX="799.0" layoutY="229.0" prefHeight="203.0" prefWidth="349.0" style="-fx-background-color: #ffffff;">
@@ -71,7 +101,7 @@
                         <Image url="@../img/Alacarte/1.png" />
                      </image>
                   </ImageView>
-                  <Text fx:id="foodName3" layoutX="247.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="foodname3" text="ก๋วยจั๊บ">
+                  <Text fx:id="foodName3" layoutX="247.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ก๋วยจั๊บ">
                      <font>
                         <Font name="TH Sarabun New" size="30.0" />
                      </font>
@@ -84,6 +114,21 @@
                         <Cursor fx:constant="HAND" />
                      </cursor>
                   </JFXButton>
+                  <Line endX="100.0" layoutX="230.0" layoutY="55.0" startX="-10.0" />
+                  <Pane layoutX="216.0" layoutY="107.0" prefHeight="43.0" prefWidth="123.0">
+                     <children>
+                        <ImageView fitHeight="34.0" fitWidth="30.0" layoutX="77.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/icons8-like.png" />
+                           </image>
+                        </ImageView>
+                        <Text layoutX="52.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="25">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
                </children>
             </Pane>
             <Pane fx:id="food4" layoutX="53.0" layoutY="458.0" prefHeight="203.0" prefWidth="349.0" style="-fx-background-color: #ffffff;">
@@ -93,7 +138,7 @@
                         <Image url="@../img/Alacarte/1.png" />
                      </image>
                   </ImageView>
-                  <Text fx:id="foodName4" layoutX="247.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="foodname4" text="ก๋วยจั๊บ">
+                  <Text fx:id="foodName4" layoutX="247.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ก๋วยจั๊บ">
                      <font>
                         <Font name="TH Sarabun New" size="30.0" />
                      </font>
@@ -106,6 +151,21 @@
                         <Cursor fx:constant="HAND" />
                      </cursor>
                   </JFXButton>
+                  <Line endX="100.0" layoutX="230.0" layoutY="55.0" startX="-10.0" />
+                  <Pane layoutX="216.0" layoutY="107.0" prefHeight="43.0" prefWidth="123.0">
+                     <children>
+                        <ImageView fitHeight="34.0" fitWidth="30.0" layoutX="77.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/icons8-like.png" />
+                           </image>
+                        </ImageView>
+                        <Text layoutX="52.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="25">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
                </children>
             </Pane>
             <Pane fx:id="food5" layoutX="424.0" layoutY="458.0" prefHeight="203.0" prefWidth="349.0" style="-fx-background-color: #ffffff;">
@@ -115,7 +175,7 @@
                         <Image url="@../img/Alacarte/1.png" />
                      </image>
                   </ImageView>
-                  <Text fx:id="foodName5" layoutX="247.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="foodname5" text="ไข่เจียว">
+                  <Text fx:id="foodName5" layoutX="247.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ไข่เจียว">
                      <font>
                         <Font name="TH Sarabun New" size="30.0" />
                      </font>
@@ -128,6 +188,21 @@
                         <Cursor fx:constant="HAND" />
                      </cursor>
                   </JFXButton>
+                  <Line endX="100.0" layoutX="230.0" layoutY="55.0" startX="-10.0" />
+                  <Pane layoutX="216.0" layoutY="107.0" prefHeight="43.0" prefWidth="123.0">
+                     <children>
+                        <ImageView fitHeight="34.0" fitWidth="30.0" layoutX="77.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/icons8-like_filled.png" />
+                           </image>
+                        </ImageView>
+                        <Text layoutX="52.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="25">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
                </children>
             </Pane>
             <Pane fx:id="food6" layoutX="796.0" layoutY="457.0" prefHeight="203.0" prefWidth="349.0" style="-fx-background-color: #ffffff;">
@@ -137,7 +212,7 @@
                         <Image url="@../img/Alacarte/1.png" />
                      </image>
                   </ImageView>
-                  <Text fx:id="foodName6" layoutX="247.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="foodname6" text="ก๋วยจั๊บ">
+                  <Text fx:id="foodName6" layoutX="247.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ก๋วยจั๊บ">
                      <font>
                         <Font name="TH Sarabun New" size="30.0" />
                      </font>
@@ -150,9 +225,24 @@
                         <Cursor fx:constant="HAND" />
                      </cursor>
                   </JFXButton>
+                  <Line endX="100.0" layoutX="230.0" layoutY="55.0" startX="-10.0" />
+                  <Pane layoutX="216.0" layoutY="107.0" prefHeight="43.0" prefWidth="123.0">
+                     <children>
+                        <ImageView fitHeight="34.0" fitWidth="30.0" layoutX="77.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/icons8-like.png" />
+                           </image>
+                        </ImageView>
+                        <Text layoutX="52.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="25">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
                </children>
             </Pane>
-            <Text layoutX="394.0" layoutY="187.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="category" text="Category : Appetizer">
+            <Text layoutX="517.0" layoutY="183.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="contentFont" text="Appetizer">
                <font>
                   <Font name="Audrey Normal" size="44.0" />
                </font>
@@ -171,7 +261,7 @@
       </Pane>
       <Pane prefHeight="91.0" prefWidth="1200.0" style="-fx-background-color: white;">
          <children>
-            <JFXButton layoutX="46.0" layoutY="20.0" onAction="#searchPage" prefHeight="66.0" prefWidth="320.0" text="Search Ingredients">
+            <JFXButton layoutX="46.0" layoutY="20.0" onAction="#searchPage" prefHeight="66.0" prefWidth="320.0" styleClass="contentFont" text="Search Ingredients">
                <font>
                   <Font name="Audrey Normal" size="30.0" />
                </font>
@@ -179,7 +269,7 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </JFXButton>
-            <JFXButton layoutX="838.0" layoutY="20.0" onAction="#categoryPage" prefHeight="66.0" prefWidth="303.0" text="Category">
+            <JFXButton layoutX="838.0" layoutY="20.0" onAction="#categoryPage" prefHeight="66.0" prefWidth="303.0" styleClass="contentFont" text="Category">
                <font>
                   <Font name="Audrey Normal" size="30.0" />
                </font>
@@ -191,7 +281,7 @@
             <Line endX="100.0" layoutX="1079.0" layoutY="86.0" startX="-250.0" />
          </children>
       </Pane>
-      <Text layoutX="407.0" layoutY="113.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="logo" text="Mealbarn">
+      <Text layoutX="407.0" layoutY="113.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="customFont" text="Mealbarn">
          <font>
             <Font name="Selima" size="130.0" />
          </font>

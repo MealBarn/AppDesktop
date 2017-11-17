@@ -12,7 +12,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<Pane prefHeight="760.0" prefWidth="1200.0" style="-fx-background-color: #ffffe6;" stylesheets="@text.css" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ResultSearchController">
+<Pane prefHeight="760.0" prefWidth="1200.0" style="-fx-background-color: #ffffe6;" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ResultSearchController">
    <children>
       <ImageView fitHeight="771.0" fitWidth="1202.0" layoutY="-12.0" pickOnBounds="true">
          <image>
@@ -31,8 +31,8 @@
                   <Font name="TH Sarabun New" size="30.0" />
                </font>
             </Text>
-            <JFXProgressBar fx:id="foodScale1" layoutX="251.0" layoutY="136.0" prefHeight="4.0" prefWidth="80.0" progress="0.66" />
-            <Text fx:id="foodPerfect1" layoutX="219.0" layoutY="141.0" strokeType="OUTSIDE" strokeWidth="0.0" text="80%">
+            <JFXProgressBar fx:id="foodScale1" layoutX="251.0" layoutY="101.0" prefHeight="4.0" prefWidth="80.0" progress="0.66" />
+            <Text fx:id="foodPerfect1" layoutX="219.0" layoutY="106.0" strokeType="OUTSIDE" strokeWidth="0.0" text="80%">
                <font>
                   <Font name="TH Sarabun New" size="20.0" />
                </font>
@@ -45,11 +45,26 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </JFXButton>
-            <Text layoutX="244.0" layoutY="118.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ingredients">
+            <Text layoutX="244.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ingredients">
                <font>
                   <Font name="TH Sarabun New" size="25.0" />
                </font>
             </Text>
+            <Line endX="100.0" layoutX="230.0" layoutY="55.0" startX="-10.0" />
+            <Pane layoutX="216.0" layoutY="111.0" prefHeight="43.0" prefWidth="123.0">
+               <children>
+                  <ImageView fitHeight="34.0" fitWidth="30.0" layoutX="77.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/icons8-like_filled.png" />
+                     </image>
+                  </ImageView>
+                  <Text layoutX="52.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="54">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
          </children>
       </Pane>
       <Pane fx:id="food2" layoutX="427.0" layoutY="230.0" prefHeight="203.0" prefWidth="349.0" style="-fx-background-color: #ffffff;">
@@ -64,8 +79,8 @@
                   <Font name="TH Sarabun New" size="30.0" />
                </font>
             </Text>
-            <JFXProgressBar fx:id="foodScale2" layoutX="251.0" layoutY="136.0" prefHeight="4.0" prefWidth="80.0" progress="0.61" />
-            <Text fx:id="foodPerfect2" layoutX="219.0" layoutY="141.0" strokeType="OUTSIDE" strokeWidth="0.0" text="60%">
+            <JFXProgressBar fx:id="foodScale2" layoutX="251.0" layoutY="101.0" prefHeight="4.0" prefWidth="80.0" progress="0.61" />
+            <Text fx:id="foodPerfect2" layoutX="219.0" layoutY="106.0" strokeType="OUTSIDE" strokeWidth="0.0" text="60%">
                <font>
                   <Font name="TH Sarabun New" size="20.0" />
                </font>
@@ -78,11 +93,26 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </JFXButton>
-            <Text layoutX="244.0" layoutY="118.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ingredients">
+            <Text layoutX="244.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ingredients">
                <font>
                   <Font name="TH Sarabun New" size="25.0" />
                </font>
             </Text>
+            <Line endX="100.0" layoutX="230.0" layoutY="55.0" startX="-10.0" />
+            <Pane layoutX="216.0" layoutY="111.0" prefHeight="43.0" prefWidth="123.0">
+               <children>
+                  <ImageView fitHeight="34.0" fitWidth="30.0" layoutX="77.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/icons8-like.png" />
+                     </image>
+                  </ImageView>
+                  <Text layoutX="52.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="25">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
          </children>
       </Pane>
       <Pane fx:id="food3" layoutX="799.0" layoutY="229.0" prefHeight="203.0" prefWidth="349.0" style="-fx-background-color: #ffffff;">
@@ -97,8 +127,8 @@
                   <Font name="TH Sarabun New" size="30.0" />
                </font>
             </Text>
-            <JFXProgressBar fx:id="foodScale3" layoutX="251.0" layoutY="136.0" prefHeight="4.0" prefWidth="80.0" progress="0.54" />
-            <Text fx:id="foodPerfect3" layoutX="219.0" layoutY="141.0" strokeType="OUTSIDE" strokeWidth="0.0" text="50%">
+            <JFXProgressBar fx:id="foodScale3" layoutX="251.0" layoutY="101.0" prefHeight="4.0" prefWidth="80.0" progress="0.54" />
+            <Text fx:id="foodPerfect3" layoutX="219.0" layoutY="106.0" strokeType="OUTSIDE" strokeWidth="0.0" text="50%">
                <font>
                   <Font name="TH Sarabun New" size="20.0" />
                </font>
@@ -111,11 +141,26 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </JFXButton>
-            <Text layoutX="244.0" layoutY="118.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ingredients">
+            <Text layoutX="244.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ingredients">
                <font>
                   <Font name="TH Sarabun New" size="25.0" />
                </font>
             </Text>
+            <Line endX="100.0" layoutX="230.0" layoutY="55.0" startX="-10.0" />
+            <Pane layoutX="216.0" layoutY="111.0" prefHeight="43.0" prefWidth="123.0">
+               <children>
+                  <ImageView fitHeight="34.0" fitWidth="30.0" layoutX="77.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/icons8-like_filled.png" />
+                     </image>
+                  </ImageView>
+                  <Text layoutX="52.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="33">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
          </children>
       </Pane>
       <Pane fx:id="food4" layoutX="53.0" layoutY="458.0" prefHeight="203.0" prefWidth="349.0" style="-fx-background-color: #ffffff;">
@@ -130,8 +175,8 @@
                   <Font name="TH Sarabun New" size="30.0" />
                </font>
             </Text>
-            <JFXProgressBar fx:id="foodScale4" layoutX="251.0" layoutY="136.0" prefHeight="4.0" prefWidth="80.0" progress="0.3" />
-            <Text fx:id="foodPerfect4" layoutX="219.0" layoutY="141.0" strokeType="OUTSIDE" strokeWidth="0.0" text="30%">
+            <JFXProgressBar fx:id="foodScale4" layoutX="251.0" layoutY="101.0" prefHeight="4.0" prefWidth="80.0" progress="0.3" />
+            <Text fx:id="foodPerfect4" layoutX="219.0" layoutY="106.0" strokeType="OUTSIDE" strokeWidth="0.0" text="30%">
                <font>
                   <Font name="TH Sarabun New" size="20.0" />
                </font>
@@ -144,11 +189,26 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </JFXButton>
-            <Text layoutX="244.0" layoutY="118.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ingredients">
+            <Text layoutX="244.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ingredients">
                <font>
                   <Font name="TH Sarabun New" size="25.0" />
                </font>
             </Text>
+            <Line endX="100.0" layoutX="230.0" layoutY="55.0" startX="-10.0" />
+            <Pane layoutX="216.0" layoutY="111.0" prefHeight="43.0" prefWidth="123.0">
+               <children>
+                  <ImageView fitHeight="34.0" fitWidth="30.0" layoutX="77.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/icons8-like.png" />
+                     </image>
+                  </ImageView>
+                  <Text layoutX="52.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="25">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
          </children>
       </Pane>
       <Pane fx:id="food5" layoutX="424.0" layoutY="458.0" prefHeight="203.0" prefWidth="349.0" style="-fx-background-color: #ffffff;">
@@ -163,8 +223,8 @@
                   <Font name="TH Sarabun New" size="30.0" />
                </font>
             </Text>
-            <JFXProgressBar fx:id="foodScale5" layoutX="251.0" layoutY="136.0" prefHeight="4.0" prefWidth="80.0" progress="0.3" />
-            <Text fx:id="foodPerfect5" layoutX="219.0" layoutY="141.0" strokeType="OUTSIDE" strokeWidth="0.0" text="30%">
+            <JFXProgressBar fx:id="foodScale5" layoutX="251.0" layoutY="101.0" prefHeight="4.0" prefWidth="80.0" progress="0.3" />
+            <Text fx:id="foodPerfect5" layoutX="219.0" layoutY="106.0" strokeType="OUTSIDE" strokeWidth="0.0" text="30%">
                <font>
                   <Font name="TH Sarabun New" size="20.0" />
                </font>
@@ -177,11 +237,26 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </JFXButton>
-            <Text layoutX="244.0" layoutY="118.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ingredients">
+            <Text layoutX="244.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ingredients">
                <font>
                   <Font name="TH Sarabun New" size="25.0" />
                </font>
             </Text>
+            <Line endX="100.0" layoutX="230.0" layoutY="55.0" startX="-10.0" />
+            <Pane layoutX="216.0" layoutY="111.0" prefHeight="43.0" prefWidth="123.0">
+               <children>
+                  <ImageView fitHeight="34.0" fitWidth="30.0" layoutX="77.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/icons8-like_filled.png" />
+                     </image>
+                  </ImageView>
+                  <Text layoutX="52.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="10">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
          </children>
       </Pane>
       <Pane fx:id="food6" layoutX="796.0" layoutY="457.0" prefHeight="203.0" prefWidth="349.0" style="-fx-background-color: #ffffff;">
@@ -196,8 +271,8 @@
                   <Font name="TH Sarabun New" size="30.0" />
                </font>
             </Text>
-            <JFXProgressBar fx:id="foodScale6" layoutX="251.0" layoutY="136.0" prefHeight="4.0" prefWidth="80.0" progress="0.38" />
-            <Text fx:id="foodPerfect6" layoutX="219.0" layoutY="141.0" strokeType="OUTSIDE" strokeWidth="0.0" text="10%">
+            <JFXProgressBar fx:id="foodScale6" layoutX="251.0" layoutY="101.0" prefHeight="4.0" prefWidth="80.0" progress="0.38" />
+            <Text fx:id="foodPerfect6" layoutX="219.0" layoutY="106.0" strokeType="OUTSIDE" strokeWidth="0.0" text="10%">
                <font>
                   <Font name="TH Sarabun New" size="20.0" />
                </font>
@@ -210,11 +285,26 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </JFXButton>
-            <Text layoutX="244.0" layoutY="118.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ingredients">
+            <Text layoutX="244.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ingredients">
                <font>
                   <Font name="TH Sarabun New" size="25.0" />
                </font>
             </Text>
+            <Line endX="100.0" layoutX="230.0" layoutY="55.0" startX="-10.0" />
+            <Pane layoutX="216.0" layoutY="111.0" prefHeight="43.0" prefWidth="123.0">
+               <children>
+                  <ImageView fitHeight="34.0" fitWidth="30.0" layoutX="77.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/icons8-like.png" />
+                     </image>
+                  </ImageView>
+                  <Text layoutX="52.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="25">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
          </children>
       </Pane>
       <JFXButton fx:id="nextButton" layoutX="639.0" layoutY="676.0" onAction="#nextPage" text="next ">
@@ -233,7 +323,7 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </JFXButton>
-      <Text layoutX="505.0" layoutY="176.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="contentFont" text="this is your recipe">
+      <Text layoutX="426.0" layoutY="184.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="contentFont" text="this is your recipe">
          <font>
             <Font name="Audrey Normal" size="45.0" />
          </font>

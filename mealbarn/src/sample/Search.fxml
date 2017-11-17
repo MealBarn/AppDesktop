@@ -22,7 +22,7 @@
             <Image url="@../img/bg-searchhh.jpg" />
          </image>
       </ImageView>
-      <Pane layoutX="-8.0" layoutY="420.0" prefHeight="319.0" prefWidth="1214.0" style="-fx-background-color: #ffffff;">
+      <Pane layoutX="-8.0" layoutY="420.0" prefHeight="319.0" prefWidth="1208.0" style="-fx-background-color: #ffffff;">
          <children>
             <ListView fx:id="list" layoutX="311.0" layoutY="124.0" onMouseClicked="#deleteIngredientsList" prefHeight="118.0" prefWidth="606.0">
                <cursor>
@@ -103,7 +103,7 @@
                   <Insets bottom="2.0" left="2.0" right="2.0" top="-5.0" />
                </padding>
             </JFXButton>
-            <JFXButton layoutX="911.0" layoutY="22.0" onAction="#addButtonAction" prefHeight="45.0" prefWidth="87.0" style="-fx-background-color: #ff8c1a; -fx-background-radius: 7;" text="Clear">
+            <JFXButton id="contentFont" layoutX="911.0" layoutY="22.0" onAction="#addButtonAction" prefHeight="45.0" prefWidth="87.0" style="-fx-background-color: #ff8c1a; -fx-background-radius: 7;" styleClass="contentFont" text="Clear">
                <font>
                   <Font size="20.0" />
                </font>
