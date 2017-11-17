@@ -1,26 +1,28 @@
 package sample;
 
-import com.jfoenix.controls.JFXButton;
 import com.jfoenix.controls.JFXPasswordField;
 import com.jfoenix.controls.JFXTextField;
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.scene.Cursor;
-import javafx.scene.control.Button;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
+import javafx.scene.text.Text;
+import javafx.stage.Stage;
 
+import java.io.IOException;
 import java.util.ArrayList;
 
 public class LoginController {
 
-
-    @FXML
-    private JFXButton loginButton;
-
     @FXML
     private ImageView closeButton;
+
+    @FXML
+    private Text warningPass;
 
     @FXML
     private JFXTextField userType;
@@ -34,7 +36,7 @@ public class LoginController {
     }
 
     @FXML
-    void loginButtonAction(ActionEvent event) {
+    void loginButtonAction(ActionEvent event) throws IOException {
         Data data = Data.getData();
         ArrayList<String> acc = data.getAccountStr();
         String user = userType.getText();
@@ -42,26 +44,26 @@ public class LoginController {
         String uTest = String.format("%s %s",user,pass);
         boolean canLog = acc.contains(uTest);
         if(canLog) {
-            Main.priStage.setScene(Main.Select);
+            SceneSearch();
         }
         else {
             passType.clear();
+            warningPass.setVisible(true);
         }
     }
-    @FXML
-    void closeCursor(MouseEvent event) {
-        closeButton.setCursor(Cursor.HAND);
-    }
 
     @FXML
-    void loginCursor(MouseEvent event) {
-        loginButton.setCursor(Cursor.HAND);
+    void initialize() {
+        userType.setText("Korn");
+        passType.setText("58010316");
     }
 
-    @FXML
-    void autoInput(MouseEvent event){
-        userType.setText("Suzy");
-        passType.setText("58011348");
+    private void SceneSearch() throws IOException {
+        Stage stage = (Stage) this.closeButton.getScene().getWindow();
+        Parent login = FXMLLoader.load(getClass().getResource("Search.fxml"));
+        Scene scene = new Scene(login);
+        stage.setScene(scene);
+        stage.show();
     }
 
 }

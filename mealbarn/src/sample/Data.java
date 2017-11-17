@@ -10,9 +10,7 @@ import java.util.*;
 
 public class Data {
     private ArrayList<String> allComponent;
-    private ArrayList<String> matchComponent;
     private ArrayList<String> accountStr;
-    private ArrayList<String> foodStr;
     private List<Component> componentList;
     private List<Food> foodsList;
     private ArrayList<FoodShow> foodShowsList;
@@ -22,7 +20,19 @@ public class Data {
     private ArrayList<String> dessertIDList;
     private ArrayList<String> drinkIDList;
     private ArrayList<String> mainCourseIDList;
+    private Integer[] recipeIng;
+    private Integer[] recipeDir;
+
+    public int getIdFood() {
+        return idFood;
+    }
+
+    public void setIdFood(int idFood) {
+        this.idFood = idFood;
+    }
+
     private ArrayList<String> soupIDList;
+    private int idFood;
 
     public void setShowIDList(ArrayList<String> showIDList) {
         this.showIDList = showIDList;
@@ -45,11 +55,19 @@ public class Data {
     private ArrayList<String> showIDList;
     private ArrayList<String> selectIDList;
     private static Data data = new Data();
+
+    public Integer[] getRecipeIng() {
+        return recipeIng;
+    }
+
+    public Integer[] getRecipeDir() {
+        return recipeDir;
+    }
+
     private Data()
     {
         accountStr = new ArrayList<String>();
         allComponent = new ArrayList<String>();
-        matchComponent = new ArrayList<String>();
         foodShowsList = new ArrayList<FoodShow>();
         alacarteIDList = new ArrayList<String>();
         appetizerIDList = new ArrayList<String>();
@@ -60,6 +78,7 @@ public class Data {
         showIDList = new ArrayList<String>();
         EntityManagerFactory emf;
         EntityManager em;
+//        emf = Persistence.createEntityManagerFactory("objectdb://192.168.43.229:80/Account.odb;user=admin;password=admin");
         emf = Persistence.createEntityManagerFactory("./src/ODB/Account.odb");
         em = emf.createEntityManager();
         TypedQuery<Account> queryAccount =
@@ -68,6 +87,7 @@ public class Data {
         em.close();
         emf.close();
         //////////////////////////////////////////////////////////////////
+//        emf = Persistence.createEntityManagerFactory("objectdb://192.168.43.229:80/Account.odb;user=admin;password=admin");
         emf = Persistence.createEntityManagerFactory("./src/ODB/Food.odb");
         em = emf.createEntityManager();
         TypedQuery<Food> queryFood =
@@ -76,6 +96,7 @@ public class Data {
         em.close();
         emf.close();
         /////////////////////////////////////////////////////////////////
+//        emf = Persistence.createEntityManagerFactory("objectdb://192.168.43.229:80/Account.odb;user=admin;password=admin");
         emf = Persistence.createEntityManagerFactory("./src/ODB/Component.odb");
         em = emf.createEntityManager();
         TypedQuery<Component> queryComponent =
@@ -88,6 +109,13 @@ public class Data {
             accountStr.add(account.toString());
         }
         /////////////////////////////////////////////////////////////////
+        recipeIng = new Integer[]{2,3,1,1,2,2,1,2,2,1,2,1,2,1,1,2,1,1,2,2,2,1,1,1,1,1,1,1,1,1,1,2,1,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,1,1,2,1,1,1,1,2,1,1,1,1,1,1,1,2,2,2,1,2,2,2,2,1,2,2,3};
+        recipeDir = new Integer[]{1,5,1,2,1,2,2,1,1,1,1,1,2,1,3,5,1,2,2,4,2,1,1,1,1,1,1,2,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,1,1,2,3,1,1,1,2,3,1,2,3,4};
+//        System.out.println(recipeIng.length);
+//        System.out.println(recipeDir.length);
+//        for (int i = 0;i<recipeIng.length;i++){
+//            System.out.println(String.format("%d\t%d\t%d",i+1,recipeIng[i],recipeDir[i]));
+//        }
         ArrayList<String> amountComponent = new ArrayList<String>();
         int nowId;
         int prevId = -1;
@@ -95,6 +123,7 @@ public class Data {
         boolean unique;
         for (Component component : componentList) {
             nowId = component.getId();
+
             if(nowId!=prevId)
             {
                 amountComponent.add(""+count);
@@ -154,7 +183,6 @@ public class Data {
     public static Data getData(){return data;}
 
     public void sortPerfect(){
-        System.out.println("--------------");
         int n = showIDList.size();
         boolean isSwitch;
         do{
@@ -176,15 +204,6 @@ public class Data {
             }
             n=n-1;
         }while (isSwitch);
-        printFood();
-    }
-
-    public void printFood(){
-        int id;
-        for (String foodId : showIDList){
-            id = Integer.parseInt(foodId)-1;
-            System.out.println((id+1)+"\t"+foodShowsList.get(id).getPerfect());
-        }
     }
 
     public ArrayList<String> getAccountStr() { return accountStr; }
@@ -223,7 +242,7 @@ public class Data {
 
     public ArrayList<String> getAllComponent(){ return allComponent; }
 
-    public ArrayList<String> getFoodStr() { return foodStr; }
+//    public ArrayList<String> getFoodStr() { return foodStr; }
 
     public ArrayList<FoodShow> getFoodShowsList() { return foodShowsList; }
 
@@ -233,16 +252,6 @@ public class Data {
 
     public List<Account> getAccountList() { return accountList; }
 
-    public ArrayList<String> getMatchComponent(String inputComp) {
-        matchComponent.clear();
-        for (String component : allComponent){
-            if (component.indexOf(inputComp)==0){
-                matchComponent.add(component);
-            }
-
-        }
-        return matchComponent;
-    }
     public void clearPerfectFood(){
         for (FoodShow foodShow : foodShowsList){
             foodShow.clearPerfect();
