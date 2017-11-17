@@ -13,7 +13,6 @@ import javafx.scene.input.MouseEvent;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
-//import javax.xml.soap.Text;
 import java.io.IOException;
 import java.util.ArrayList;
 

@@ -42,6 +42,12 @@ public class ShowFoodController {
     private JFXButton nextButton;
 
     @FXML
+    private ImageView prevImg;
+
+    @FXML
+    private ImageView nextImg;
+
+    @FXML
     void categoryPage(ActionEvent event) throws IOException {
         SceneCategory();
     }
@@ -97,7 +103,6 @@ public class ShowFoodController {
         page = 1;
         pageSize = sizeIng;
         mode = 1;
-        System.out.println(String.format("%d\t%d\t%d",idFood,sizeIng,sizeDir));
         FoodShow food1 = data.getFoodShowsList().get(idFood);
         foodName.setText(food1.getName());
         String sorceF = String.format("./img/imgFood/%d.png",idFood+1);
@@ -121,13 +126,17 @@ public class ShowFoodController {
     void updateButton(){
         if(page==1){
             prevButton.setVisible(false);
+            prevImg.setVisible(false);
         }else {
             prevButton.setVisible(true);
+            prevImg.setVisible(true);
         }
         if(page==pageSize){
             nextButton.setVisible(false);
+            nextImg.setVisible(false);
         }else {
             nextButton.setVisible(true);
+            nextImg.setVisible(true);
         }
     }
 

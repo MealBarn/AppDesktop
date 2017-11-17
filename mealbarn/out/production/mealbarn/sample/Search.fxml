@@ -71,12 +71,12 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </JFXCheckBox>
-            <JFXTextField fx:id="IngredientType" layoutX="297.0" layoutY="21.0" onKeyPressed="#IngredientsPressEnterAction" onKeyTyped="#IngredientsTypeAction" prefHeight="40.0" prefWidth="585.0" promptText="PLEASE TYPE YOUR INGREDIENTS HERE" style="-fx-background-color: none; -fx-background-radius: 5;">
+            <JFXTextField fx:id="IngredientType" layoutX="297.0" layoutY="21.0" onKeyPressed="#IngredientsPressEnterAction" prefHeight="40.0" prefWidth="585.0" promptText="PLEASE TYPE YOUR INGREDIENTS HERE" style="-fx-background-color: none; -fx-background-radius: 5;">
                <font>
                   <Font size="20.0" />
                </font>
             </JFXTextField>
-            <JFXButton fx:id="addButton" layoutX="899.0" layoutY="18.0" onAction="#addButtonAction" prefHeight="45.0" prefWidth="87.0" style="-fx-background-color: #f8c760;" text="Add">
+            <JFXButton layoutX="899.0" layoutY="18.0" onAction="#addButtonAction" prefHeight="45.0" prefWidth="87.0" style="-fx-background-color: #f8c760;" text="Add">
                <font>
                   <Font size="20.0" />
                </font>
@@ -107,7 +107,7 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </ImageView>
-            <JFXButton layoutX="616.0" layoutY="2.0" onAction="#categorySelect" prefHeight="66.0" prefWidth="320.0" text="Category" textFill="WHITE">
+            <JFXButton layoutX="616.0" layoutY="2.0" onAction="#categoryPage" prefHeight="66.0" prefWidth="320.0" text="Category" textFill="WHITE">
                <font>
                   <Font size="28.0" />
                </font>

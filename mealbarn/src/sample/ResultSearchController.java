@@ -20,7 +20,6 @@ import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.Pane;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
-import ooad.Food;
 import ooad.FoodShow;
 
 public class ResultSearchController {
@@ -123,6 +122,12 @@ public class ResultSearchController {
 
     @FXML
     private JFXButton prevButton;
+
+    @FXML
+    private ImageView prevImg;
+
+    @FXML
+    private ImageView nextImg;
 
     @FXML
     private Text pageId;
@@ -312,13 +317,17 @@ public class ResultSearchController {
         }
         if(page==0){
             prevButton.setVisible(false);
+            prevImg.setVisible(false);
         }else {
             prevButton.setVisible(true);
+            prevImg.setVisible(true);
         }
         if(page==((size-1)/6)){
             nextButton.setVisible(false);
+            nextImg.setVisible(false);
         }else {
             nextButton.setVisible(true);
+            nextImg.setVisible(true);
         }
     }
 

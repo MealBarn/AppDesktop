@@ -53,12 +53,12 @@
                         <Cursor fx:constant="HAND" />
                      </cursor>
                   </JFXButton>
-                  <ImageView fitHeight="28.0" fitWidth="87.0" layoutX="463.0" layoutY="481.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="nextImg" fitHeight="28.0" fitWidth="87.0" layoutX="463.0" layoutY="481.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../img/right-spoon.png" />
                      </image>
                   </ImageView>
-                  <ImageView fitHeight="28.0" fitWidth="87.0" layoutX="163.0" layoutY="483.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="prevImg" fitHeight="28.0" fitWidth="87.0" layoutX="163.0" layoutY="483.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../img/left-fork.png" />
                      </image>

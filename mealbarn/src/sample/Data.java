@@ -10,9 +10,7 @@ import java.util.*;
 
 public class Data {
     private ArrayList<String> allComponent;
-    private ArrayList<String> matchComponent;
     private ArrayList<String> accountStr;
-    private ArrayList<String> foodStr;
     private List<Component> componentList;
     private List<Food> foodsList;
     private ArrayList<FoodShow> foodShowsList;
@@ -70,7 +68,6 @@ public class Data {
     {
         accountStr = new ArrayList<String>();
         allComponent = new ArrayList<String>();
-        matchComponent = new ArrayList<String>();
         foodShowsList = new ArrayList<FoodShow>();
         alacarteIDList = new ArrayList<String>();
         appetizerIDList = new ArrayList<String>();
@@ -114,11 +111,11 @@ public class Data {
         /////////////////////////////////////////////////////////////////
         recipeIng = new Integer[]{2,3,1,1,2,2,1,2,2,1,2,1,2,1,1,2,1,1,2,2,2,1,1,1,1,1,1,1,1,1,1,2,1,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,1,1,2,1,1,1,1,2,1,1,1,1,1,1,1,2,2,2,1,2,2,2,2,1,2,2,3};
         recipeDir = new Integer[]{1,5,1,2,1,2,2,1,1,1,1,1,2,1,3,5,1,2,2,4,2,1,1,1,1,1,1,2,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,1,1,2,3,1,1,1,2,3,1,2,3,4};
-        System.out.println(recipeIng.length);
-        System.out.println(recipeDir.length);
-        for (int i = 0;i<recipeIng.length;i++){
-            System.out.println(String.format("%d\t%d\t%d",i+1,recipeIng[i],recipeDir[i]));
-        }
+//        System.out.println(recipeIng.length);
+//        System.out.println(recipeDir.length);
+//        for (int i = 0;i<recipeIng.length;i++){
+//            System.out.println(String.format("%d\t%d\t%d",i+1,recipeIng[i],recipeDir[i]));
+//        }
         ArrayList<String> amountComponent = new ArrayList<String>();
         int nowId;
         int prevId = -1;
@@ -245,7 +242,7 @@ public class Data {
 
     public ArrayList<String> getAllComponent(){ return allComponent; }
 
-    public ArrayList<String> getFoodStr() { return foodStr; }
+//    public ArrayList<String> getFoodStr() { return foodStr; }
 
     public ArrayList<FoodShow> getFoodShowsList() { return foodShowsList; }
 
@@ -255,16 +252,6 @@ public class Data {
 
     public List<Account> getAccountList() { return accountList; }
 
-    public ArrayList<String> getMatchComponent(String inputComp) {
-        matchComponent.clear();
-        for (String component : allComponent){
-            if (component.indexOf(inputComp)==0){
-                matchComponent.add(component);
-            }
-
-        }
-        return matchComponent;
-    }
     public void clearPerfectFood(){
         for (FoodShow foodShow : foodShowsList){
             foodShow.clearPerfect();

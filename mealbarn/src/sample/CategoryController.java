@@ -59,7 +59,7 @@ public class CategoryController {
     }
 
     @FXML
-    void search(ActionEvent event) throws IOException {
+    void searchPage(ActionEvent event) throws IOException {
         SceneSearch();
     }
 

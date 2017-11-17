@@ -283,12 +283,12 @@
             </LinearGradient>
          </fill>
       </Text>
-      <ImageView fitHeight="28.0" fitWidth="87.0" layoutX="714.0" layoutY="683.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="nextImg" fitHeight="28.0" fitWidth="87.0" layoutX="714.0" layoutY="683.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../img/right-spoon.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="28.0" fitWidth="87.0" layoutX="414.0" layoutY="685.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="prevImg" fitHeight="28.0" fitWidth="87.0" layoutX="414.0" layoutY="685.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../img/left-fork.png" />
          </image>
