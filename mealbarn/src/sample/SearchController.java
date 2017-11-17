@@ -1,26 +1,28 @@
 package sample;
 
-import com.jfoenix.controls.JFXButton;
 import com.jfoenix.controls.JFXCheckBox;
-import com.jfoenix.controls.JFXListView;
 import com.jfoenix.controls.JFXTextField;
 import javafx.application.Platform;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Cursor;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.ListView;
-import javafx.scene.control.TextArea;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
 import javafx.scene.input.MouseEvent;
+import javafx.stage.Stage;
 import ooad.FoodShow;
 import ooad.Component;
 import org.controlsfx.control.textfield.TextFields;
 
 
-import java.awt.*;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -32,9 +34,6 @@ public class SearchController {
 
     @FXML
     private ImageView closeButton;
-
-    @FXML
-    private JFXButton addButton;
 
     @FXML
     private ListView<String> list;
@@ -59,25 +58,18 @@ public class SearchController {
 
     ObservableList<String> choosedList = FXCollections.observableArrayList();
     Data data = Data.getData();
-    String[] componentList = {};
-    String tempList;
+    ArrayList<String> allComponent;
+
+    @FXML
+    void initialize() {
+        listCursor();
+        allComponent = data.getAllComponent();
+        TextFields.bindAutoCompletion(IngredientType,allComponent);
+    }
 
     @FXML
     void closeButtonAction(MouseEvent event) {
         Platform.exit();
-    }
-
-    @FXML
-    void IngredientsTypeAction(KeyEvent event) {
-        String inputStr = IngredientType.getText();
-        ArrayList<String> matchComponent = data.getMatchComponent(inputStr);
-        for (String component : choosedList){
-            if (matchComponent.contains(component)){
-                matchComponent.remove(component);
-            }
-        }
-        componentList = matchComponent.toArray(new String[matchComponent.size()]);
-        TextFields.bindAutoCompletion(IngredientType,componentList);
     }
 
     @FXML
@@ -86,8 +78,7 @@ public class SearchController {
     }
 
     @FXML
-    void submitAction(ActionEvent event) {
-        System.out.println("=================================================================");
+    void submitAction(ActionEvent event) throws IOException {
         data.clearPerfectFood();
         ArrayList<FoodShow> foodShowsList = data.getFoodShowsList();
         List<Component> componentList = data.getComponentList();
@@ -123,21 +114,22 @@ public class SearchController {
         data.setFoodShowsList(foodShowsList);
         data.setShowIDList();
         data.sortPerfect();
+        choosedList.clear();
+        isSoup.setSelected(false);
+        isMainCourse.setSelected(false);
+        isDrink.setSelected(false);
+        isDessert.setSelected(false);
+        isAppetizer.setSelected(false);
+        isAlacarte.setSelected(false);
+        SceneResult();
     }
 
     @FXML
     void deleteIngredientsList (MouseEvent event) {
         if(event.getClickCount() > 1){
-            int index = 0;
-            tempList = list.getSelectionModel().getSelectedItem();
-            for(String name : choosedList){
-                if (name.equals(tempList)) {
-                    choosedList.remove(index);
-                    break;
-                }
-                index++;
-            }
+            choosedList.remove(list.getSelectionModel().getSelectedItem());
         }
+        listCursor();
     }
 
     @FXML
@@ -148,24 +140,46 @@ public class SearchController {
     }
 
     void addIngredientsBox(){
-        if((IngredientType.getText().length() != 0)&&!choosedList.contains(IngredientType.getText())){
-            boolean checkMatch = false;
-            for(String i : componentList){
-                if(i.equals(IngredientType.getText())){
-                    checkMatch = true;
-                }
-            }
-            if(checkMatch == true) {
+        String input = IngredientType.getText();
+        if((input.length() != 0)&&!choosedList.contains(input)){
+            if(allComponent.contains(input)) {
                 list.setItems(choosedList);
-                choosedList.add(IngredientType.getText());
+                choosedList.add(input);
                 IngredientType.clear();
             }
+        }else {
+            IngredientType.clear();
         }
+        listCursor();
     }
 
     @FXML
-    void categorySelect(ActionEvent event) {
-        Main.priStage.setScene(Main.Category);
+    void categoryPage(ActionEvent event) throws IOException {
+        SceneCategory();
+    }
+
+    private void SceneCategory() throws IOException {
+        Stage stage = (Stage) this.closeButton.getScene().getWindow();
+        Parent result = FXMLLoader.load(getClass().getResource("Category.fxml"));
+        Scene scene = new Scene(result);
+        stage.setScene(scene);
+        stage.show();
+    }
+
+    private void SceneResult() throws IOException {
+        Stage stage = (Stage) this.closeButton.getScene().getWindow();
+        Parent result = FXMLLoader.load(getClass().getResource("ResultSearch.fxml"));
+        Scene scene = new Scene(result);
+        stage.setScene(scene);
+        stage.show();
+    }
+
+    private void listCursor(){
+        if(choosedList.isEmpty()){
+            list.setCursor(Cursor.NONE);
+        }else {
+            list.setCursor(Cursor.HAND);
+        }
     }
 
 

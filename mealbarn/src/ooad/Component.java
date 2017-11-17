@@ -8,7 +8,9 @@ package ooad;
 import java.io.Serializable;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import static java.nio.charset.StandardCharsets.*;
 
 /**
  *
@@ -51,7 +53,6 @@ public class Component implements Serializable {
     public void setComponent(String component) {
         this.component = component;
     }
-    public String toString(){return String.format("%d,%d,%s",this.idprimary,this.id,this.component);}
     
     
     
