@@ -1,12 +1,11 @@
-@@font-face {
-  src :url("resource/font/THSarabunNew.ttf");
-  src :url("resource/font/THSarabunNew-Bold.ttf");
-  src: url("resource/font/Selima.otf");
-  src: url("resource/font/Audrey-Bold.otf");
-  src: url("resource/font/Audrey-Normal.otf");
+@font-face {
+  src : url("resource/font/THSarabunNew.ttf");
+  src : url("resource/font/THSarabunNew-Bold.ttf");
+  src : url("resource/font/Selima.otf");
+  src : url("resource/font/Audrey-Bold.otf");
+  src : url("resource/font/Audrey-Normal.otf");
 
 }
-
 
 .logo {
     -fx-font-family: 'Selima';
