@@ -13,7 +13,10 @@ import javafx.scene.input.MouseEvent;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 import ooad.FoodShow;
+import ooad.ImageSize;
+
 import java.io.IOException;
+import java.util.List;
 
 public class ShowFoodController {
 
@@ -114,11 +117,10 @@ public class ShowFoodController {
     }
 
     Data data = Data.getData();
-    Integer[] recipeIng = data.getRecipeIng();
-    Integer[] recipeDir = data.getRecipeDir();
+    List<ImageSize> imageSizeList = data.getImageSizeList();
     int idFood = data.getIdFood();
-    int sizeIng = recipeIng[idFood];
-    int sizeDir = recipeDir[idFood];
+    int sizeIng = imageSizeList.get(idFood).getImgSize();
+    int sizeDir = imageSizeList.get(idFood).getDirSize();
     int pageSize;
     int page;
     int mode;

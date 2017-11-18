@@ -1,9 +1,6 @@
 package sample;
 
-import ooad.Account;
-import ooad.Component;
-import ooad.Food;
-import ooad.FoodShow;
+import ooad.*;
 
 import javax.persistence.*;
 import java.util.*;
@@ -15,13 +12,12 @@ public class Data {
     private List<Food> foodsList;
     private ArrayList<FoodShow> foodShowsList;
     private List<Account> accountList;
+    private List<ImageSize> imageSizeList;
     private ArrayList<String> alacarteIDList;
     private ArrayList<String> appetizerIDList;
     private ArrayList<String> dessertIDList;
     private ArrayList<String> drinkIDList;
     private ArrayList<String> mainCourseIDList;
-    private Integer[] recipeIng;
-    private Integer[] recipeDir;
 
     public int getIdFood() {
         return idFood;
@@ -56,18 +52,15 @@ public class Data {
     private ArrayList<String> selectIDList;
     private static Data data = new Data();
 
-    public Integer[] getRecipeIng() {
-        return recipeIng;
-    }
-
-    public Integer[] getRecipeDir() {
-        return recipeDir;
+    public List<ImageSize> getImageSizeList() {
+        return imageSizeList;
     }
 
     private Data()
     {
         accountStr = new ArrayList<String>();
         allComponent = new ArrayList<String>();
+
         foodShowsList = new ArrayList<FoodShow>();
         alacarteIDList = new ArrayList<String>();
         appetizerIDList = new ArrayList<String>();
@@ -91,8 +84,16 @@ public class Data {
         emf = Persistence.createEntityManagerFactory("./src/ODB/Food.odb");
         em = emf.createEntityManager();
         TypedQuery<Food> queryFood =
-                em.createQuery("SELECT a FROM Food a", Food.class);
+                em.createQuery("SELECT a FROM ooad.Food a", Food.class);
         foodsList = queryFood.getResultList();
+        em.close();
+        emf.close();
+        /////////////////////////////////////////////////////////////////
+        emf = Persistence.createEntityManagerFactory("./src/ODB/ImageSize.odb");
+        em = emf.createEntityManager();
+        TypedQuery<ImageSize> querySize =
+                em.createQuery("SELECT a FROM ooad.ImageSize a", ImageSize.class);
+        imageSizeList = querySize.getResultList();
         em.close();
         emf.close();
         /////////////////////////////////////////////////////////////////
@@ -100,7 +101,7 @@ public class Data {
         emf = Persistence.createEntityManagerFactory("./src/ODB/Component.odb");
         em = emf.createEntityManager();
         TypedQuery<Component> queryComponent =
-                em.createQuery("SELECT a FROM Component a", Component.class);
+                em.createQuery("SELECT a FROM ooad.Component a", Component.class);
         componentList = queryComponent.getResultList();
         em.close();
         emf.close();
@@ -109,13 +110,6 @@ public class Data {
             accountStr.add(account.toString());
         }
         /////////////////////////////////////////////////////////////////
-        recipeIng = new Integer[]{2,3,1,1,2,2,1,2,2,1,2,1,2,1,1,2,1,1,2,2,2,1,1,1,1,1,1,1,1,1,1,2,1,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,1,1,2,1,1,1,1,2,1,1,1,1,1,1,1,2,2,2,1,2,2,2,2,1,2,2,3};
-        recipeDir = new Integer[]{1,5,1,2,1,2,2,1,1,1,1,1,2,1,3,5,1,2,2,4,2,1,1,1,1,1,1,2,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,1,1,2,3,1,1,1,2,3,1,2,3,4};
-//        System.out.println(recipeIng.length);
-//        System.out.println(recipeDir.length);
-//        for (int i = 0;i<recipeIng.length;i++){
-//            System.out.println(String.format("%d\t%d\t%d",i+1,recipeIng[i],recipeDir[i]));
-//        }
         ArrayList<String> amountComponent = new ArrayList<String>();
         int nowId;
         int prevId = -1;
@@ -133,6 +127,7 @@ public class Data {
                 count++;
             }
             unique = true;
+
             String componentTmp = component.getComponent();
             for(String componetSamp : allComponent)
             {
