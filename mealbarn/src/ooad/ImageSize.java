@@ -16,14 +16,15 @@ import javax.persistence.Id;
  * @author Panisa
  */
 @Entity
-public class PicturePath implements Serializable {
+public class ImageSize implements Serializable {
 
     private static final long serialVersionUID = 1L;
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
-    private Long idFood;
-    private String pathPicture;
+    private int imgSize;
+    private int dirSize;
+    
 
     public Long getId() {
         return id;
@@ -33,26 +34,26 @@ public class PicturePath implements Serializable {
         this.id = id;
     }
 
-    public Long getIdFood() {
-        return idFood;
+    public int getImgSize() {
+        return imgSize;
     }
 
-    public void setIdFood(Long idFood) {
-        this.idFood = idFood;
+    public void setImgSize(int imgSize) {
+        this.imgSize = imgSize;
     }
 
-    public String getPathPicture() {
-        return pathPicture;
+    public int getDirSize() {
+        return dirSize;
     }
 
-    public void setPathPicture(String pathPicture) {
-        this.pathPicture = pathPicture;
+    public void setDirSize(int dirSize) {
+        this.dirSize = dirSize;
     }
+
 
     @Override
     public String toString() {
-        return String.format("%s",this.pathPicture);
+        return String.format("%d,%d,%d",this.id,this.imgSize,this.dirSize);
     }
-
     
 }

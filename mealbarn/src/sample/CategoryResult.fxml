@@ -11,7 +11,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<Pane prefHeight="760.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.CategoryResultController">
+<Pane prefHeight="760.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.CategoryResultController">
    <children>
       <Pane prefHeight="760.0" prefWidth="1200.0" style="-fx-background-color: #ffffe6;">
          <children>
@@ -40,6 +40,21 @@
                         <Cursor fx:constant="HAND" />
                      </cursor>
                   </JFXButton>
+                  <Line endX="100.0" layoutX="230.0" layoutY="55.0" startX="-10.0" />
+                  <Pane layoutX="216.0" layoutY="107.0" prefHeight="43.0" prefWidth="123.0">
+                     <children>
+                        <ImageView fitHeight="34.0" fitWidth="30.0" layoutX="77.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/icons8-like_filled.png" />
+                           </image>
+                        </ImageView>
+                        <Text layoutX="52.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="25">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
                </children>
             </Pane>
             <Pane fx:id="food2" layoutX="427.0" layoutY="230.0" prefHeight="203.0" prefWidth="349.0" style="-fx-background-color: #ffffff;">
@@ -62,6 +77,21 @@
                         <Cursor fx:constant="HAND" />
                      </cursor>
                   </JFXButton>
+                  <Line endX="100.0" layoutX="230.0" layoutY="55.0" startX="-10.0" />
+                  <Pane layoutX="216.0" layoutY="107.0" prefHeight="43.0" prefWidth="123.0">
+                     <children>
+                        <ImageView fitHeight="34.0" fitWidth="30.0" layoutX="77.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/icons8-like.png" />
+                           </image>
+                        </ImageView>
+                        <Text layoutX="52.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="25">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
                </children>
             </Pane>
             <Pane fx:id="food3" layoutX="799.0" layoutY="229.0" prefHeight="203.0" prefWidth="349.0" style="-fx-background-color: #ffffff;">
@@ -84,6 +114,21 @@
                         <Cursor fx:constant="HAND" />
                      </cursor>
                   </JFXButton>
+                  <Line endX="100.0" layoutX="230.0" layoutY="55.0" startX="-10.0" />
+                  <Pane layoutX="216.0" layoutY="107.0" prefHeight="43.0" prefWidth="123.0">
+                     <children>
+                        <ImageView fitHeight="34.0" fitWidth="30.0" layoutX="77.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/icons8-like.png" />
+                           </image>
+                        </ImageView>
+                        <Text layoutX="52.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="25">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
                </children>
             </Pane>
             <Pane fx:id="food4" layoutX="53.0" layoutY="458.0" prefHeight="203.0" prefWidth="349.0" style="-fx-background-color: #ffffff;">
@@ -106,6 +151,21 @@
                         <Cursor fx:constant="HAND" />
                      </cursor>
                   </JFXButton>
+                  <Line endX="100.0" layoutX="230.0" layoutY="55.0" startX="-10.0" />
+                  <Pane layoutX="216.0" layoutY="107.0" prefHeight="43.0" prefWidth="123.0">
+                     <children>
+                        <ImageView fitHeight="34.0" fitWidth="30.0" layoutX="77.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/icons8-like.png" />
+                           </image>
+                        </ImageView>
+                        <Text layoutX="52.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="25">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
                </children>
             </Pane>
             <Pane fx:id="food5" layoutX="424.0" layoutY="458.0" prefHeight="203.0" prefWidth="349.0" style="-fx-background-color: #ffffff;">
@@ -128,6 +188,21 @@
                         <Cursor fx:constant="HAND" />
                      </cursor>
                   </JFXButton>
+                  <Line endX="100.0" layoutX="230.0" layoutY="55.0" startX="-10.0" />
+                  <Pane layoutX="216.0" layoutY="107.0" prefHeight="43.0" prefWidth="123.0">
+                     <children>
+                        <ImageView fitHeight="34.0" fitWidth="30.0" layoutX="77.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/icons8-like_filled.png" />
+                           </image>
+                        </ImageView>
+                        <Text layoutX="52.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="25">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
                </children>
             </Pane>
             <Pane fx:id="food6" layoutX="796.0" layoutY="457.0" prefHeight="203.0" prefWidth="349.0" style="-fx-background-color: #ffffff;">
@@ -150,9 +225,24 @@
                         <Cursor fx:constant="HAND" />
                      </cursor>
                   </JFXButton>
+                  <Line endX="100.0" layoutX="230.0" layoutY="55.0" startX="-10.0" />
+                  <Pane layoutX="216.0" layoutY="107.0" prefHeight="43.0" prefWidth="123.0">
+                     <children>
+                        <ImageView fitHeight="34.0" fitWidth="30.0" layoutX="77.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/icons8-like.png" />
+                           </image>
+                        </ImageView>
+                        <Text layoutX="52.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="25">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
                </children>
             </Pane>
-            <Text layoutX="517.0" layoutY="183.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="contentFontBold" text="Appetizer">
+            <Text layoutX="517.0" layoutY="183.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="contentFont" text="Appetizer">
                <font>
                   <Font name="Audrey Normal" size="44.0" />
                </font>
@@ -171,7 +261,7 @@
       </Pane>
       <Pane prefHeight="91.0" prefWidth="1200.0" style="-fx-background-color: white;">
          <children>
-            <JFXButton layoutX="46.0" layoutY="20.0" onAction="#searchPage" prefHeight="66.0" prefWidth="320.0" text="Search Ingredients">
+            <JFXButton layoutX="46.0" layoutY="20.0" onAction="#searchPage" prefHeight="66.0" prefWidth="320.0" styleClass="contentFont" text="Search Ingredients">
                <font>
                   <Font name="Audrey Normal" size="30.0" />
                </font>
@@ -179,7 +269,7 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </JFXButton>
-            <JFXButton layoutX="838.0" layoutY="20.0" onAction="#categoryPage" prefHeight="66.0" prefWidth="303.0" text="Category">
+            <JFXButton layoutX="838.0" layoutY="20.0" onAction="#categoryPage" prefHeight="66.0" prefWidth="303.0" styleClass="contentFont" text="Category">
                <font>
                   <Font name="Audrey Normal" size="30.0" />
                </font>

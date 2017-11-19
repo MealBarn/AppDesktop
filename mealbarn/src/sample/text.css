@@ -1,0 +1,98 @@
+@font-face {
+  src :url("resource/font/THSarabunNew.ttf");
+  src :url("resource/font/THSarabunNew Bold.ttf");
+  src: url("resource/font/Selima .otf");
+  src: url("resource/font/Audrey-Bold.otf");
+  src: url("resource/font/Audrey-Normal.otf");
+
+}
+
+
+.logo {
+    -fx-font-family: 'Selima';
+    -fx-font-size: 130px;
+}
+
+.logoLogin {
+    -fx-font-family: 'Selima';
+    -fx-font-size: 180px;
+}
+
+
+#contentFont .text{
+    -fx-font-family: 'Audrey';
+    -fx-font-size: 30px;
+}
+
+.thaiFont {
+    -fx-font-family: 'TH Sarabun New';
+}
+
+.foodname1{
+  -fx-font-family: 'TH Sarabun New';
+  -fx-font-size: 30px;
+}
+
+.foodname2{
+  -fx-font-family: 'TH Sarabun New';
+  -fx-font-size: 30px;
+}
+
+.foodname3{
+  -fx-font-family: 'TH Sarabun New';
+  -fx-font-size: 30px;
+}
+
+.foodname4{
+  -fx-font-family: 'TH Sarabun New';
+  -fx-font-size: 30px;
+}
+
+.foodname5{
+  -fx-font-family: 'TH Sarabun New';
+  -fx-font-size: 30px;
+}
+
+.foodname6{
+  -fx-font-family: 'TH Sarabun New';
+  -fx-font-size: 30px;
+}
+
+.ingredient{
+  -fx-font-family: 'TH Sarabun New';
+  -fx-font-size: 25px;
+}
+
+.ingredientbutton{
+  -fx-font-family: 'Audrey';
+  -fx-font-size: 22px;
+  -fx-font-weight: bold;
+}
+
+.directionbutton{
+  -fx-font-family: 'Audrey';
+  -fx-font-size: 22px;
+  -fx-font-weight: bold;
+}
+
+.percent{
+  -fx-font-family: 'TH Sarabun New';
+  -fx-font-size: 20px;
+}
+
+.category{
+  -fx-font-family: 'Audrey';
+  -fx-font-size: 44px;
+}
+
+.resultFoodname{
+  -fx-font-family: 'TH Sarabun New';
+  -fx-font-size: 45px;
+  -fx-font-weight: bold;
+}
+
+.selectCategory{
+  -fx-font-family: 'Audrey';
+  -fx-font-size: 25px;
+  -fx-font-weight: bold;
+}
