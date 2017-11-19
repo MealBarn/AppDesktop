@@ -13,7 +13,11 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
+<<<<<<< Updated upstream
 <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="760.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.LoginController">
+=======
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="760.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.LoginController">
+>>>>>>> Stashed changes
    <children>
       <ImageView fitHeight="760.0" fitWidth="1200.0" pickOnBounds="true">
          <image>
@@ -22,7 +26,11 @@
       </ImageView>
       <Pane layoutX="458.0" layoutY="254.0" opacity="0.73" prefHeight="374.0" prefWidth="547.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 15;">
          <children>
+<<<<<<< Updated upstream
             <JFXTextField fx:id="userType" layoutX="123.0" layoutY="72.0" prefHeight="40.0" prefWidth="366.0" promptText="Username">
+=======
+            <JFXTextField fx:id="userType" layoutX="123.0" layoutY="72.0" onMouseClicked="#autoInput"  prefHeight="40.0" prefWidth="366.0" promptText="Username">
+>>>>>>> Stashed changes
                <font>
                   <Font size="20.0" />
                </font>
@@ -42,6 +50,7 @@
                   <Font size="20.0" />
                </font>
             </JFXPasswordField>
+<<<<<<< Updated upstream
             <JFXButton layoutX="140.0" layoutY="263.0" onAction="#loginButtonAction" prefHeight="52.0" prefWidth="281.0" style="-fx-background-color: #ffff33; -fx-background-radius: 10;" text="LOGIN">
                <font>
                   <Font size="20.0" />
@@ -55,6 +64,13 @@
                   <Font name="System Bold" size="18.0" />
                </font>
             </Text>
+=======
+            <JFXButton fx:id="loginButton" layoutX="140.0" layoutY="241.0" onAction="#loginButtonAction" onMouseMoved="#loginCursor" prefHeight="52.0" prefWidth="281.0" style="-fx-background-color: #ffff33; -fx-background-radius: 10;" text="LOGIN">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </JFXButton>
+>>>>>>> Stashed changes
          </children>
       </Pane>
       <ImageView fitHeight="94.0" fitWidth="73.0" layoutX="60.0" pickOnBounds="true" preserveRatio="true">
@@ -132,7 +148,11 @@
             <Pane disable="true" layoutX="8.0" layoutY="11.0" prefHeight="49.0" prefWidth="181.0" style="-fx-border-color: #4d3300; -fx-border-radius: 2;" />
          </children>
       </Pane>
+<<<<<<< Updated upstream
       <Text disable="true" layoutX="457.0" layoutY="261.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="logoLogin" text="Mealbarn">
+=======
+      <Text disable="true" layoutX="457.0" layoutY="261.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mealbarn">
+>>>>>>> Stashed changes
          <font>
             <Font name="Selima" size="180.0" />
          </font>
@@ -147,6 +167,7 @@
             </LinearGradient>
          </fill>
       </Text>
+<<<<<<< Updated upstream
       <ImageView fx:id="closeButton" fitHeight="36.0" fitWidth="36.0" layoutX="1118.0" layoutY="27.0" onMouseClicked="#closeButtonAction" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../img/icons8-delete_sign_filled.png" />
@@ -154,6 +175,12 @@
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor>
+=======
+      <ImageView fx:id="closeButton" fitHeight="36.0" fitWidth="36.0" layoutX="1118.0" layoutY="27.0" onMouseClicked="#closeButtonAction" onMouseMoved="#closeCursor" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/icons8-delete_sign_filled.png" />
+         </image>
+>>>>>>> Stashed changes
       </ImageView>
       <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="1089.0" layoutY="660.0" pickOnBounds="true" preserveRatio="true">
          <image>

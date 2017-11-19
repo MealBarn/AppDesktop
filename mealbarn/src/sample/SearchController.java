@@ -1,28 +1,46 @@
 package sample;
 
+<<<<<<< Updated upstream
 import com.jfoenix.controls.JFXCheckBox;
+=======
+import com.jfoenix.controls.JFXButton;
+import com.jfoenix.controls.JFXCheckBox;
+import com.jfoenix.controls.JFXListView;
+>>>>>>> Stashed changes
 import com.jfoenix.controls.JFXTextField;
 import javafx.application.Platform;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+<<<<<<< Updated upstream
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Cursor;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.ListView;
+=======
+import javafx.scene.control.ListView;
+import javafx.scene.control.TextArea;
+>>>>>>> Stashed changes
 import javafx.scene.image.ImageView;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
 import javafx.scene.input.MouseEvent;
+<<<<<<< Updated upstream
 import javafx.stage.Stage;
+=======
+>>>>>>> Stashed changes
 import ooad.FoodShow;
 import ooad.Component;
 import org.controlsfx.control.textfield.TextFields;
 
 
+<<<<<<< Updated upstream
 import java.io.IOException;
+=======
+import java.awt.*;
+>>>>>>> Stashed changes
 import java.util.ArrayList;
 import java.util.List;
 
@@ -36,6 +54,12 @@ public class SearchController {
     private ImageView closeButton;
 
     @FXML
+<<<<<<< Updated upstream
+=======
+    private JFXButton addButton;
+
+    @FXML
+>>>>>>> Stashed changes
     private ListView<String> list;
 
     @FXML
@@ -58,6 +82,7 @@ public class SearchController {
 
     ObservableList<String> choosedList = FXCollections.observableArrayList();
     Data data = Data.getData();
+<<<<<<< Updated upstream
     ArrayList<String> allComponent;
 
     @FXML
@@ -70,6 +95,27 @@ public class SearchController {
     @FXML
     void closeButtonAction(MouseEvent event) {
         Platform.exit();
+=======
+    String[] componentList = {};
+    String tempList;
+
+    @FXML
+    void closeButtonAction(MouseEvent event) {
+        Platform.exit();
+    }
+
+    @FXML
+    void IngredientsTypeAction(KeyEvent event) {
+        String inputStr = IngredientType.getText();
+        ArrayList<String> matchComponent = data.getMatchComponent(inputStr);
+        for (String component : choosedList){
+            if (matchComponent.contains(component)){
+                matchComponent.remove(component);
+            }
+        }
+        componentList = matchComponent.toArray(new String[matchComponent.size()]);
+        TextFields.bindAutoCompletion(IngredientType,componentList);
+>>>>>>> Stashed changes
     }
 
     @FXML
@@ -78,7 +124,12 @@ public class SearchController {
     }
 
     @FXML
+<<<<<<< Updated upstream
     void submitAction(ActionEvent event) throws IOException {
+=======
+    void submitAction(ActionEvent event) {
+        System.out.println("=================================================================");
+>>>>>>> Stashed changes
         data.clearPerfectFood();
         ArrayList<FoodShow> foodShowsList = data.getFoodShowsList();
         List<Component> componentList = data.getComponentList();
@@ -114,6 +165,7 @@ public class SearchController {
         data.setFoodShowsList(foodShowsList);
         data.setShowIDList();
         data.sortPerfect();
+<<<<<<< Updated upstream
         choosedList.clear();
         isSoup.setSelected(false);
         isMainCourse.setSelected(false);
@@ -122,14 +174,29 @@ public class SearchController {
         isAppetizer.setSelected(false);
         isAlacarte.setSelected(false);
         SceneResult();
+=======
+>>>>>>> Stashed changes
     }
 
     @FXML
     void deleteIngredientsList (MouseEvent event) {
         if(event.getClickCount() > 1){
+<<<<<<< Updated upstream
             choosedList.remove(list.getSelectionModel().getSelectedItem());
         }
         listCursor();
+=======
+            int index = 0;
+            tempList = list.getSelectionModel().getSelectedItem();
+            for(String name : choosedList){
+                if (name.equals(tempList)) {
+                    choosedList.remove(index);
+                    break;
+                }
+                index++;
+            }
+        }
+>>>>>>> Stashed changes
     }
 
     @FXML
@@ -140,6 +207,7 @@ public class SearchController {
     }
 
     void addIngredientsBox(){
+<<<<<<< Updated upstream
         String input = IngredientType.getText();
         if((input.length() != 0)&&!choosedList.contains(input)){
             if(allComponent.contains(input)) {
@@ -180,6 +248,26 @@ public class SearchController {
         }else {
             list.setCursor(Cursor.HAND);
         }
+=======
+        if((IngredientType.getText().length() != 0)&&!choosedList.contains(IngredientType.getText())){
+            boolean checkMatch = false;
+            for(String i : componentList){
+                if(i.equals(IngredientType.getText())){
+                    checkMatch = true;
+                }
+            }
+            if(checkMatch == true) {
+                list.setItems(choosedList);
+                choosedList.add(IngredientType.getText());
+                IngredientType.clear();
+            }
+        }
+    }
+
+    @FXML
+    void categorySelect(ActionEvent event) {
+        Main.priStage.setScene(Main.Category);
+>>>>>>> Stashed changes
     }
 
 

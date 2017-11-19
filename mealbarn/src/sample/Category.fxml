@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import com.jfoenix.controls.JFXButton?>
+<<<<<<< Updated upstream
 <?import javafx.scene.Cursor?>
+=======
+>>>>>>> Stashed changes
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.Pane?>
@@ -11,7 +14,11 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
+<<<<<<< Updated upstream
 <Pane prefHeight="760.0" prefWidth="1200.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.CategoryController">
+=======
+<Pane prefHeight="760.0" prefWidth="1200.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.CategoryController">
+>>>>>>> Stashed changes
    <children>
       <ImageView fitHeight="760.0" fitWidth="1202.0" pickOnBounds="true" preserveRatio="true">
          <image>
@@ -26,6 +33,7 @@
                </image>
             </ImageView>
             <Pane layoutY="248.0" opacity="0.35" prefHeight="70.0" prefWidth="171.0" style="-fx-background-color: black;" />
+<<<<<<< Updated upstream
             <JFXButton onAction="#appetizerSelect" prefHeight="552.0" prefWidth="174.0" styleClass="selectCategory" text="Appetizer" textFill="WHITE">
                <font>
                   <Font size="25.0" />
@@ -33,6 +41,12 @@
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor>
+=======
+            <JFXButton onAction="#appetizerSelect" prefHeight="552.0" prefWidth="174.0" text="Appetizer" textFill="WHITE">
+               <font>
+                  <Font size="25.0" />
+               </font>
+>>>>>>> Stashed changes
             </JFXButton>
          </children>
       </Pane>
@@ -44,6 +58,7 @@
                </image>
             </ImageView>
             <Pane layoutY="248.0" opacity="0.35" prefHeight="70.0" prefWidth="171.0" style="-fx-background-color: black;" />
+<<<<<<< Updated upstream
             <JFXButton onAction="#maincourseSelect" prefHeight="552.0" prefWidth="174.0" styleClass="selectCategory" text="Maincourse" textFill="WHITE">
                <font>
                   <Font size="25.0" />
@@ -51,6 +66,12 @@
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor>
+=======
+            <JFXButton onAction="#maincourseSelect" prefHeight="552.0" prefWidth="174.0" text="Maincourse" textFill="WHITE">
+               <font>
+                  <Font size="25.0" />
+               </font>
+>>>>>>> Stashed changes
             </JFXButton>
          </children>
       </Pane>
@@ -62,6 +83,7 @@
                </image>
             </ImageView>
             <Pane layoutY="248.0" opacity="0.35" prefHeight="70.0" prefWidth="171.0" style="-fx-background-color: black;" />
+<<<<<<< Updated upstream
             <JFXButton onAction="#dessertSelect" prefHeight="552.0" prefWidth="174.0" styleClass="selectCategory" text="Dessert" textFill="WHITE">
                <font>
                   <Font size="25.0" />
@@ -69,6 +91,12 @@
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor>
+=======
+            <JFXButton onAction="#dessertSelect" prefHeight="552.0" prefWidth="174.0" text="Dessert" textFill="WHITE">
+               <font>
+                  <Font size="25.0" />
+               </font>
+>>>>>>> Stashed changes
             </JFXButton>
          </children>
       </Pane>
@@ -80,6 +108,7 @@
                </image>
             </ImageView>
             <Pane layoutY="248.0" opacity="0.35" prefHeight="70.0" prefWidth="171.0" style="-fx-background-color: black;" />
+<<<<<<< Updated upstream
             <JFXButton onAction="#soupSelect" prefHeight="552.0" prefWidth="174.0" styleClass="selectCategory" text="Soup" textFill="WHITE">
                <font>
                   <Font size="25.0" />
@@ -87,6 +116,12 @@
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor>
+=======
+            <JFXButton onAction="#soupSelect" prefHeight="552.0" prefWidth="174.0" text="Soup" textFill="WHITE">
+               <font>
+                  <Font size="25.0" />
+               </font>
+>>>>>>> Stashed changes
             </JFXButton>
          </children>
       </Pane>
@@ -98,6 +133,7 @@
                </image>
             </ImageView>
             <Pane layoutY="248.0" opacity="0.35" prefHeight="70.0" prefWidth="171.0" style="-fx-background-color: black;" />
+<<<<<<< Updated upstream
             <JFXButton layoutX="1.0" onAction="#drinkSelect" prefHeight="552.0" prefWidth="174.0" styleClass="selectCategory" text="Drink" textFill="WHITE">
                <font>
                   <Font size="25.0" />
@@ -105,6 +141,12 @@
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor>
+=======
+            <JFXButton layoutX="1.0" onAction="#drinkSelect" prefHeight="552.0" prefWidth="174.0" text="Drink" textFill="WHITE">
+               <font>
+                  <Font size="25.0" />
+               </font>
+>>>>>>> Stashed changes
             </JFXButton>
          </children>
       </Pane>
@@ -116,6 +158,7 @@
                </image>
             </ImageView>
             <Pane layoutY="248.0" opacity="0.35" prefHeight="70.0" prefWidth="171.0" style="-fx-background-color: black;" />
+<<<<<<< Updated upstream
             <JFXButton onAction="#alacarteSelect" prefHeight="552.0" prefWidth="174.0" styleClass="selectCategory" text="Alacarte" textFill="WHITE">
                <font>
                   <Font size="25.0" />
@@ -123,6 +166,12 @@
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor>
+=======
+            <JFXButton onAction="#alacarteSelect" prefHeight="552.0" prefWidth="174.0" text="Alacarte" textFill="WHITE">
+               <font>
+                  <Font size="25.0" />
+               </font>
+>>>>>>> Stashed changes
             </JFXButton>
          </children>
       </Pane>
@@ -153,6 +202,7 @@
       </Pane>
       <Pane prefHeight="91.0" prefWidth="1200.0" style="-fx-background-color: white;">
          <children>
+<<<<<<< Updated upstream
             <JFXButton layoutX="46.0" layoutY="20.0" onAction="#searchPage" prefHeight="66.0" prefWidth="320.0" styleClass="contentFont" text="Search Ingredients">
                <font>
                   <Font name="Audrey Normal" size="30.0" />
@@ -162,6 +212,19 @@
                </cursor>
             </JFXButton>
             <JFXButton disable="true" layoutX="838.0" layoutY="20.0" prefHeight="66.0" prefWidth="303.0" styleClass="contentFont" text="Category">
+=======
+            <JFXButton layoutX="46.0" layoutY="20.0" prefHeight="66.0" prefWidth="320.0" text="Search Ingredients">
+               <font>
+                  <Font name="Audrey Normal" size="30.0" />
+               </font>
+            </JFXButton>
+            <ImageView fx:id="closeButton" fitHeight="32.0" fitWidth="30.0" layoutX="1147.0" layoutY="21.0" onMouseClicked="#closeButtonAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/exit-search.png" />
+               </image>
+            </ImageView>
+            <JFXButton layoutX="838.0" layoutY="20.0" prefHeight="66.0" prefWidth="303.0" text="Category">
+>>>>>>> Stashed changes
                <font>
                   <Font name="Audrey Normal" size="30.0" />
                </font>
@@ -170,7 +233,11 @@
             <Line endX="100.0" layoutX="1079.0" layoutY="86.0" startX="-250.0" />
          </children>
       </Pane>
+<<<<<<< Updated upstream
       <Text fx:id="topicName" layoutX="407.0" layoutY="113.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="logo" text="Mealbarn">
+=======
+      <Text layoutX="407.0" layoutY="113.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="customFont" text="Mealbarn">
+>>>>>>> Stashed changes
          <font>
             <Font name="Selima" size="130.0" />
          </font>
@@ -185,6 +252,7 @@
             </LinearGradient>
          </fill>
       </Text>
+<<<<<<< Updated upstream
       <ImageView fx:id="closeButton" fitHeight="32.0" fitWidth="30.0" layoutX="1157.0" layoutY="31.0" onMouseClicked="#closeButtonAction" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../img/exit-search.png" />
@@ -193,5 +261,7 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </ImageView>
+=======
+>>>>>>> Stashed changes
    </children>
 </Pane>

@@ -2,41 +2,67 @@
 
 <?import com.jfoenix.controls.JFXButton?>
 <?import com.jfoenix.controls.JFXProgressBar?>
+<<<<<<< Updated upstream
 <?import javafx.scene.Cursor?>
+=======
+>>>>>>> Stashed changes
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.paint.LinearGradient?>
 <?import javafx.scene.paint.Stop?>
+<<<<<<< Updated upstream
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
 <Pane prefHeight="760.0" prefWidth="1200.0" style="-fx-background-color: #ffffe6;" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ResultSearchController">
+=======
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane prefHeight="760.0" prefWidth="1200.0" style="-fx-background-color: #ffffe6;" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ResultSearch">
+>>>>>>> Stashed changes
    <children>
       <ImageView fitHeight="771.0" fitWidth="1202.0" layoutY="-12.0" pickOnBounds="true">
          <image>
             <Image url="@../img/bg-show.jpg" />
          </image>
       </ImageView>
+<<<<<<< Updated upstream
       <Pane fx:id="food1" layoutX="56.0" layoutY="230.0" prefHeight="203.0" prefWidth="349.0" style="-fx-background-color: #ffffff;">
          <children>
             <ImageView fx:id="foodImg1" fitHeight="203.0" fitWidth="208.0" pickOnBounds="true" preserveRatio="true">
+=======
+      <Pane layoutX="56.0" layoutY="230.0" prefHeight="203.0" prefWidth="349.0" style="-fx-background-color: #ffffff;">
+         <children>
+            <ImageView fitHeight="203.0" fitWidth="208.0" pickOnBounds="true" preserveRatio="true">
+>>>>>>> Stashed changes
                <image>
                   <Image url="@../img/Alacarte/1.png" />
                </image>
             </ImageView>
+<<<<<<< Updated upstream
             <Text fx:id="foodName1" layoutX="247.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="thaiFont" text="ก๋วยจั๊บ">
+=======
+            <Text layoutX="247.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ก๋วยจั๊บ">
+>>>>>>> Stashed changes
                <font>
                   <Font name="TH Sarabun New" size="30.0" />
                </font>
             </Text>
+<<<<<<< Updated upstream
             <JFXProgressBar fx:id="foodScale1" layoutX="251.0" layoutY="101.0" prefHeight="4.0" prefWidth="80.0" progress="0.66" />
             <Text fx:id="foodPerfect1" layoutX="219.0" layoutY="106.0" strokeType="OUTSIDE" strokeWidth="0.0" text="80%">
+=======
+            <JFXProgressBar layoutX="251.0" layoutY="136.0" prefHeight="4.0" prefWidth="80.0" progress="0.79" />
+            <Text layoutX="219.0" layoutY="141.0" strokeType="OUTSIDE" strokeWidth="0.0" text="80%">
+>>>>>>> Stashed changes
                <font>
                   <Font name="TH Sarabun New" size="20.0" />
                </font>
             </Text>
+<<<<<<< Updated upstream
             <JFXButton layoutX="232.0" layoutY="153.0" onAction="#foodRecipe1" prefHeight="34.0" prefWidth="91.0" style="-fx-background-color: #993366;" text="Recipe" textFill="WHITE">
                <font>
                   <Font size="15.0" />
@@ -46,10 +72,19 @@
                </cursor>
             </JFXButton>
             <Text layoutX="244.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ingredients">
+=======
+            <JFXButton layoutX="232.0" layoutY="153.0" prefHeight="34.0" prefWidth="91.0" style="-fx-background-color: #993366;" text="Recipe" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXButton>
+            <Text layoutX="244.0" layoutY="118.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ingredients">
+>>>>>>> Stashed changes
                <font>
                   <Font name="TH Sarabun New" size="25.0" />
                </font>
             </Text>
+<<<<<<< Updated upstream
             <Line endX="100.0" layoutX="230.0" layoutY="55.0" startX="-10.0" />
             <Pane layoutX="216.0" layoutY="111.0" prefHeight="43.0" prefWidth="123.0">
                <children>
@@ -70,21 +105,38 @@
       <Pane fx:id="food2" layoutX="427.0" layoutY="230.0" prefHeight="203.0" prefWidth="349.0" style="-fx-background-color: #ffffff;">
          <children>
             <ImageView fx:id="foodImg2" fitHeight="203.0" fitWidth="208.0" pickOnBounds="true" preserveRatio="true">
+=======
+         </children>
+      </Pane>
+      <Pane layoutX="427.0" layoutY="230.0" prefHeight="203.0" prefWidth="349.0" style="-fx-background-color: #ffffff;">
+         <children>
+            <ImageView fitHeight="203.0" fitWidth="208.0" pickOnBounds="true" preserveRatio="true">
+>>>>>>> Stashed changes
                <image>
                   <Image url="@../img/Alacarte/1.png" />
                </image>
             </ImageView>
+<<<<<<< Updated upstream
             <Text fx:id="foodName2" layoutX="247.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ก๋วยจั๊บ">
+=======
+            <Text layoutX="247.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ก๋วยจั๊บ">
+>>>>>>> Stashed changes
                <font>
                   <Font name="TH Sarabun New" size="30.0" />
                </font>
             </Text>
+<<<<<<< Updated upstream
             <JFXProgressBar fx:id="foodScale2" layoutX="251.0" layoutY="101.0" prefHeight="4.0" prefWidth="80.0" progress="0.61" />
             <Text fx:id="foodPerfect2" layoutX="219.0" layoutY="106.0" strokeType="OUTSIDE" strokeWidth="0.0" text="60%">
+=======
+            <JFXProgressBar layoutX="251.0" layoutY="136.0" prefHeight="4.0" prefWidth="80.0" progress="0.61" />
+            <Text layoutX="219.0" layoutY="141.0" strokeType="OUTSIDE" strokeWidth="0.0" text="60%">
+>>>>>>> Stashed changes
                <font>
                   <Font name="TH Sarabun New" size="20.0" />
                </font>
             </Text>
+<<<<<<< Updated upstream
             <JFXButton layoutX="232.0" layoutY="153.0" onAction="#foodRecipe2" prefHeight="34.0" prefWidth="91.0" style="-fx-background-color: #993366;" text="Recipe" textFill="WHITE">
                <font>
                   <Font size="15.0" />
@@ -94,10 +146,19 @@
                </cursor>
             </JFXButton>
             <Text layoutX="244.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ingredients">
+=======
+            <JFXButton layoutX="232.0" layoutY="153.0" prefHeight="34.0" prefWidth="91.0" style="-fx-background-color: #993366;" text="Recipe" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXButton>
+            <Text layoutX="244.0" layoutY="118.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ingredients">
+>>>>>>> Stashed changes
                <font>
                   <Font name="TH Sarabun New" size="25.0" />
                </font>
             </Text>
+<<<<<<< Updated upstream
             <Line endX="100.0" layoutX="230.0" layoutY="55.0" startX="-10.0" />
             <Pane layoutX="216.0" layoutY="111.0" prefHeight="43.0" prefWidth="123.0">
                <children>
@@ -118,21 +179,38 @@
       <Pane fx:id="food3" layoutX="799.0" layoutY="229.0" prefHeight="203.0" prefWidth="349.0" style="-fx-background-color: #ffffff;">
          <children>
             <ImageView fx:id="foodImg3" fitHeight="203.0" fitWidth="208.0" pickOnBounds="true" preserveRatio="true">
+=======
+         </children>
+      </Pane>
+      <Pane layoutX="799.0" layoutY="229.0" prefHeight="203.0" prefWidth="349.0" style="-fx-background-color: #ffffff;">
+         <children>
+            <ImageView fitHeight="203.0" fitWidth="208.0" pickOnBounds="true" preserveRatio="true">
+>>>>>>> Stashed changes
                <image>
                   <Image url="@../img/Alacarte/1.png" />
                </image>
             </ImageView>
+<<<<<<< Updated upstream
             <Text fx:id="foodName3" layoutX="247.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ก๋วยจั๊บ">
+=======
+            <Text layoutX="247.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ก๋วยจั๊บ">
+>>>>>>> Stashed changes
                <font>
                   <Font name="TH Sarabun New" size="30.0" />
                </font>
             </Text>
+<<<<<<< Updated upstream
             <JFXProgressBar fx:id="foodScale3" layoutX="251.0" layoutY="101.0" prefHeight="4.0" prefWidth="80.0" progress="0.54" />
             <Text fx:id="foodPerfect3" layoutX="219.0" layoutY="106.0" strokeType="OUTSIDE" strokeWidth="0.0" text="50%">
+=======
+            <JFXProgressBar layoutX="251.0" layoutY="136.0" prefHeight="4.0" prefWidth="80.0" progress="0.54" />
+            <Text layoutX="219.0" layoutY="141.0" strokeType="OUTSIDE" strokeWidth="0.0" text="50%">
+>>>>>>> Stashed changes
                <font>
                   <Font name="TH Sarabun New" size="20.0" />
                </font>
             </Text>
+<<<<<<< Updated upstream
             <JFXButton layoutX="232.0" layoutY="153.0" onAction="#foodRecipe3" prefHeight="34.0" prefWidth="91.0" style="-fx-background-color: #993366;" text="Recipe" textFill="WHITE">
                <font>
                   <Font size="15.0" />
@@ -142,10 +220,19 @@
                </cursor>
             </JFXButton>
             <Text layoutX="244.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ingredients">
+=======
+            <JFXButton layoutX="232.0" layoutY="153.0" prefHeight="34.0" prefWidth="91.0" style="-fx-background-color: #993366;" text="Recipe" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXButton>
+            <Text layoutX="244.0" layoutY="118.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ingredients">
+>>>>>>> Stashed changes
                <font>
                   <Font name="TH Sarabun New" size="25.0" />
                </font>
             </Text>
+<<<<<<< Updated upstream
             <Line endX="100.0" layoutX="230.0" layoutY="55.0" startX="-10.0" />
             <Pane layoutX="216.0" layoutY="111.0" prefHeight="43.0" prefWidth="123.0">
                <children>
@@ -166,21 +253,38 @@
       <Pane fx:id="food4" layoutX="53.0" layoutY="458.0" prefHeight="203.0" prefWidth="349.0" style="-fx-background-color: #ffffff;">
          <children>
             <ImageView fx:id="foodImg4" fitHeight="203.0" fitWidth="208.0" pickOnBounds="true" preserveRatio="true">
+=======
+         </children>
+      </Pane>
+      <Pane layoutX="53.0" layoutY="458.0" prefHeight="203.0" prefWidth="349.0" style="-fx-background-color: #ffffff;">
+         <children>
+            <ImageView fitHeight="203.0" fitWidth="208.0" pickOnBounds="true" preserveRatio="true">
+>>>>>>> Stashed changes
                <image>
                   <Image url="@../img/Alacarte/1.png" />
                </image>
             </ImageView>
+<<<<<<< Updated upstream
             <Text fx:id="foodName4" layoutX="247.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ก๋วยจั๊บ">
+=======
+            <Text layoutX="247.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ก๋วยจั๊บ">
+>>>>>>> Stashed changes
                <font>
                   <Font name="TH Sarabun New" size="30.0" />
                </font>
             </Text>
+<<<<<<< Updated upstream
             <JFXProgressBar fx:id="foodScale4" layoutX="251.0" layoutY="101.0" prefHeight="4.0" prefWidth="80.0" progress="0.3" />
             <Text fx:id="foodPerfect4" layoutX="219.0" layoutY="106.0" strokeType="OUTSIDE" strokeWidth="0.0" text="30%">
+=======
+            <JFXProgressBar layoutX="251.0" layoutY="136.0" prefHeight="4.0" prefWidth="80.0" progress="0.3" />
+            <Text layoutX="219.0" layoutY="141.0" strokeType="OUTSIDE" strokeWidth="0.0" text="30%">
+>>>>>>> Stashed changes
                <font>
                   <Font name="TH Sarabun New" size="20.0" />
                </font>
             </Text>
+<<<<<<< Updated upstream
             <JFXButton layoutX="232.0" layoutY="153.0" onAction="#foodRecipe4" prefHeight="34.0" prefWidth="91.0" style="-fx-background-color: #993366;" text="Recipe" textFill="WHITE">
                <font>
                   <Font size="15.0" />
@@ -190,10 +294,19 @@
                </cursor>
             </JFXButton>
             <Text layoutX="244.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ingredients">
+=======
+            <JFXButton layoutX="232.0" layoutY="153.0" prefHeight="34.0" prefWidth="91.0" style="-fx-background-color: #993366;" text="Recipe" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXButton>
+            <Text layoutX="244.0" layoutY="118.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ingredients">
+>>>>>>> Stashed changes
                <font>
                   <Font name="TH Sarabun New" size="25.0" />
                </font>
             </Text>
+<<<<<<< Updated upstream
             <Line endX="100.0" layoutX="230.0" layoutY="55.0" startX="-10.0" />
             <Pane layoutX="216.0" layoutY="111.0" prefHeight="43.0" prefWidth="123.0">
                <children>
@@ -214,21 +327,38 @@
       <Pane fx:id="food5" layoutX="424.0" layoutY="458.0" prefHeight="203.0" prefWidth="349.0" style="-fx-background-color: #ffffff;">
          <children>
             <ImageView fx:id="foodImg5" fitHeight="203.0" fitWidth="208.0" pickOnBounds="true" preserveRatio="true">
+=======
+         </children>
+      </Pane>
+      <Pane layoutX="424.0" layoutY="458.0" prefHeight="203.0" prefWidth="349.0" style="-fx-background-color: #ffffff;">
+         <children>
+            <ImageView fitHeight="203.0" fitWidth="208.0" pickOnBounds="true" preserveRatio="true">
+>>>>>>> Stashed changes
                <image>
                   <Image url="@../img/Alacarte/1.png" />
                </image>
             </ImageView>
+<<<<<<< Updated upstream
             <Text fx:id="foodName5" layoutX="247.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ไข่เจียว">
+=======
+            <Text layoutX="247.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ไข่เจียว">
+>>>>>>> Stashed changes
                <font>
                   <Font name="TH Sarabun New" size="30.0" />
                </font>
             </Text>
+<<<<<<< Updated upstream
             <JFXProgressBar fx:id="foodScale5" layoutX="251.0" layoutY="101.0" prefHeight="4.0" prefWidth="80.0" progress="0.3" />
             <Text fx:id="foodPerfect5" layoutX="219.0" layoutY="106.0" strokeType="OUTSIDE" strokeWidth="0.0" text="30%">
+=======
+            <JFXProgressBar layoutX="251.0" layoutY="136.0" prefHeight="4.0" prefWidth="80.0" progress="0.3" />
+            <Text layoutX="219.0" layoutY="141.0" strokeType="OUTSIDE" strokeWidth="0.0" text="30%">
+>>>>>>> Stashed changes
                <font>
                   <Font name="TH Sarabun New" size="20.0" />
                </font>
             </Text>
+<<<<<<< Updated upstream
             <JFXButton layoutX="232.0" layoutY="153.0" onAction="#foodRecipe5" prefHeight="34.0" prefWidth="91.0" style="-fx-background-color: #993366;" text="Recipe" textFill="WHITE">
                <font>
                   <Font size="15.0" />
@@ -238,10 +368,19 @@
                </cursor>
             </JFXButton>
             <Text layoutX="244.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ingredients">
+=======
+            <JFXButton layoutX="232.0" layoutY="153.0" prefHeight="34.0" prefWidth="91.0" style="-fx-background-color: #993366;" text="Recipe" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXButton>
+            <Text layoutX="244.0" layoutY="118.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ingredients">
+>>>>>>> Stashed changes
                <font>
                   <Font name="TH Sarabun New" size="25.0" />
                </font>
             </Text>
+<<<<<<< Updated upstream
             <Line endX="100.0" layoutX="230.0" layoutY="55.0" startX="-10.0" />
             <Pane layoutX="216.0" layoutY="111.0" prefHeight="43.0" prefWidth="123.0">
                <children>
@@ -262,21 +401,38 @@
       <Pane fx:id="food6" layoutX="796.0" layoutY="457.0" prefHeight="203.0" prefWidth="349.0" style="-fx-background-color: #ffffff;">
          <children>
             <ImageView fx:id="foodImg6" fitHeight="203.0" fitWidth="208.0" pickOnBounds="true" preserveRatio="true">
+=======
+         </children>
+      </Pane>
+      <Pane layoutX="796.0" layoutY="457.0" prefHeight="203.0" prefWidth="349.0" style="-fx-background-color: #ffffff;">
+         <children>
+            <ImageView fitHeight="203.0" fitWidth="208.0" pickOnBounds="true" preserveRatio="true">
+>>>>>>> Stashed changes
                <image>
                   <Image url="@../img/Alacarte/1.png" />
                </image>
             </ImageView>
+<<<<<<< Updated upstream
             <Text fx:id="foodName6" layoutX="247.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ก๋วยจั๊บ">
+=======
+            <Text layoutX="247.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ก๋วยจั๊บ">
+>>>>>>> Stashed changes
                <font>
                   <Font name="TH Sarabun New" size="30.0" />
                </font>
             </Text>
+<<<<<<< Updated upstream
             <JFXProgressBar fx:id="foodScale6" layoutX="251.0" layoutY="101.0" prefHeight="4.0" prefWidth="80.0" progress="0.38" />
             <Text fx:id="foodPerfect6" layoutX="219.0" layoutY="106.0" strokeType="OUTSIDE" strokeWidth="0.0" text="10%">
+=======
+            <JFXProgressBar layoutX="251.0" layoutY="136.0" prefHeight="4.0" prefWidth="80.0" progress="0.38" />
+            <Text layoutX="219.0" layoutY="141.0" strokeType="OUTSIDE" strokeWidth="0.0" text="10%">
+>>>>>>> Stashed changes
                <font>
                   <Font name="TH Sarabun New" size="20.0" />
                </font>
             </Text>
+<<<<<<< Updated upstream
             <JFXButton layoutX="232.0" layoutY="153.0" onAction="#foodRecipe6" prefHeight="34.0" prefWidth="91.0" style="-fx-background-color: #993366;" text="Recipe" textFill="WHITE">
                <font>
                   <Font size="15.0" />
@@ -286,10 +442,19 @@
                </cursor>
             </JFXButton>
             <Text layoutX="244.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ingredients">
+=======
+            <JFXButton layoutX="232.0" layoutY="153.0" prefHeight="34.0" prefWidth="91.0" style="-fx-background-color: #993366;" text="Recipe" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXButton>
+            <Text layoutX="244.0" layoutY="118.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ingredients">
+>>>>>>> Stashed changes
                <font>
                   <Font name="TH Sarabun New" size="25.0" />
                </font>
             </Text>
+<<<<<<< Updated upstream
             <Line endX="100.0" layoutX="230.0" layoutY="55.0" startX="-10.0" />
             <Pane layoutX="216.0" layoutY="111.0" prefHeight="43.0" prefWidth="123.0">
                <children>
@@ -371,6 +536,45 @@
          </children>
       </Pane>
       <Text layoutX="417.0" layoutY="123.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="customFont" text="Mealbarn">
+=======
+         </children>
+      </Pane>
+      <JFXButton layoutX="615.0" layoutY="675.0" text="next &gt;&gt;">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="453.0" layoutY="675.0" text="&lt;&lt; previous">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </JFXButton>
+      <Pane prefHeight="67.0" prefWidth="1200.0" style="-fx-background-color: black;">
+         <children>
+            <JFXButton layoutX="283.0" layoutY="2.0" prefHeight="66.0" prefWidth="320.0" text="Search Ingredients" textFill="#f8c760">
+               <font>
+                  <Font name="Audrey Normal" size="30.0" />
+               </font>
+            </JFXButton>
+            <ImageView fx:id="closeButton" fitHeight="32.0" fitWidth="30.0" layoutX="1147.0" layoutY="21.0" onMouseClicked="#closeButtonAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/exit-search.png" />
+               </image>
+            </ImageView>
+            <JFXButton layoutX="616.0" layoutY="2.0" prefHeight="66.0" prefWidth="320.0" text="Category" textFill="WHITE">
+               <font>
+                  <Font name="Audrey Normal" size="30.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </Pane>
+      <Text layoutX="506.0" layoutY="192.0" strokeType="OUTSIDE" strokeWidth="0.0" text="- - เมนูอาหารที่ทำได้ - -">
+         <font>
+            <Font name="TH Sarabun New" size="36.0" />
+         </font>
+      </Text>
+      <Text layoutX="415.0" layoutY="155.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mealbarn">
+>>>>>>> Stashed changes
          <font>
             <Font name="Selima" size="130.0" />
          </font>
@@ -385,6 +589,7 @@
             </LinearGradient>
          </fill>
       </Text>
+<<<<<<< Updated upstream
       <ImageView fx:id="closeButton" fitHeight="32.0" fitWidth="30.0" layoutX="1157.0" layoutY="31.0" onMouseClicked="#closeButtonAction" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../img/exit-search.png" />
@@ -393,5 +598,7 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </ImageView>
+=======
+>>>>>>> Stashed changes
    </children>
 </Pane>
