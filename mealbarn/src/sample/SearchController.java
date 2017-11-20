@@ -8,6 +8,7 @@ import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.geometry.Insets;
 import javafx.scene.Cursor;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
@@ -16,6 +17,11 @@ import javafx.scene.image.ImageView;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
 import javafx.scene.input.MouseEvent;
+import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.Background;
+import javafx.scene.layout.BackgroundFill;
+import javafx.scene.layout.CornerRadii;
+import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 import ooad.FoodShow;
 import ooad.Component;
@@ -55,6 +61,8 @@ public class SearchController {
 
     @FXML
     private JFXCheckBox isSoup;
+    @FXML
+//    private AnchorPane testPane;
 
     ObservableList<String> choosedList = FXCollections.observableArrayList();
     Data data = Data.getData();
@@ -78,7 +86,13 @@ public class SearchController {
     }
 
     @FXML
+    void clearButtonAction(ActionEvent event){list.getItems().clear();}
+
+    @FXML
     void submitAction(ActionEvent event) throws IOException {
+
+//        testPane.setStyle("-fx-background-color: #ffffff; -fx-background-radius: 10;");
+
         data.clearPerfectFood();
         ArrayList<FoodShow> foodShowsList = data.getFoodShowsList();
         List<Component> componentList = data.getComponentList();
@@ -99,6 +113,15 @@ public class SearchController {
             select.addAll(data.getMainCourseIDList());
         }
         if(isSoup.isSelected()){
+            select.addAll(data.getSoupIDList());
+        }
+
+        if(!(isAlacarte.isSelected()) && !(isAppetizer.isSelected()) && !(isDessert.isSelected()) && !(isDrink.isSelected()) && !(isMainCourse.isSelected()) && !(isSoup.isSelected()) ){
+            select.addAll(data.getAlacateIDList());
+            select.addAll(data.getAppetizerIDList());
+            select.addAll(data.getDessertIDList());
+            select.addAll(data.getDrinkIDList());
+            select.addAll(data.getMainCourseIDList());
             select.addAll(data.getSoupIDList());
         }
         for (String choose : choosedList){
@@ -181,6 +204,11 @@ public class SearchController {
             list.setCursor(Cursor.HAND);
         }
     }
+//    @FXML
+//    private void clickTest(){
+//        testPane.setStyle("-fx-background-color: #ffffff; -fx-background-radius: 10;");
+//
+//    }
 
 
 }

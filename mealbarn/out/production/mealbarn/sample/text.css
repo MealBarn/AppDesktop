@@ -4,9 +4,17 @@
   src: url("resource/font/Selima .otf");
   src: url("resource/font/Audrey-Bold.otf");
   src: url("resource/font/Audrey-Normal.otf");
+<<<<<<< HEAD
+=======
+  src: url("resource/font/Prisma.otf");
+>>>>>>> UI
 
 }
 
+.testFont {
+    -fx-font-family: 'Prisma';
+    -fx-font-size: 20px;
+}
 
 .logo {
     -fx-font-family: 'Selima';
