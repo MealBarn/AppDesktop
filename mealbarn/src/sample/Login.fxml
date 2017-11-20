@@ -23,29 +23,29 @@
       </ImageView>
       <Pane layoutX="458.0" layoutY="254.0" opacity="0.87" prefHeight="374.0" prefWidth="547.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 15;">
          <children>
-            <JFXTextField fx:id="userType" layoutX="123.0" layoutY="72.0" prefHeight="40.0" prefWidth="366.0" promptText="Username">
+            <JFXTextField fx:id="userType" layoutX="115.0" layoutY="68.0" prefHeight="40.0" prefWidth="366.0" promptText="Username">
                <font>
                   <Font size="20.0" />
                </font>
             </JFXTextField>
-            <ImageView fitHeight="36.0" fitWidth="36.0" layoutX="76.0" layoutY="74.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="36.0" fitWidth="36.0" layoutX="68.0" layoutY="70.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../img/icons8-groom_filled.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="34.0" fitWidth="34.0" layoutX="76.0" layoutY="147.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="34.0" fitWidth="34.0" layoutX="68.0" layoutY="143.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../img/icons8-dining_room_filled.png" />
                </image>
             </ImageView>
-            <JFXPasswordField fx:id="passType" layoutX="123.0" layoutY="145.0" prefHeight="40.0" prefWidth="363.0" promptText="Password">
+            <JFXPasswordField fx:id="passType" layoutX="115.0" layoutY="141.0" prefHeight="40.0" prefWidth="363.0" promptText="Password">
                <font>
                   <Font size="20.0" />
                </font>
             </JFXPasswordField>
-            <JFXButton layoutX="123.0" layoutY="262.0" onAction="#loginButtonAction" prefHeight="52.0" prefWidth="167.0" style="-fx-background-color: #ffff33; -fx-background-radius: 10;" text="LOGIN">
+            <JFXButton layoutX="115.0" layoutY="258.0" onAction="#loginButtonAction" prefHeight="52.0" prefWidth="167.0" style="-fx-background-color: #ffff33; -fx-background-radius: 10;" text="LOGIN">
                <font>
-                  <Font size="20.0" />
+                  <Font size="18.0" />
                </font>
                <cursor>
                   <Cursor fx:constant="HAND" />
@@ -56,20 +56,20 @@
                   <Font name="System Bold" size="18.0" />
                </font>
             </Text>
-            <JFXCheckBox layoutX="123.0" layoutY="214.0" text="Remember Me">
+            <JFXCheckBox layoutX="115.0" layoutY="210.0" text="Remember Me">
                <font>
                   <Font size="20.0" />
                </font>
             </JFXCheckBox>
-            <JFXButton layoutX="311.0" layoutY="207.0" text="Forget Password" textFill="#51a2ae">
+            <JFXButton layoutX="303.0" layoutY="203.0" text="Forget Password" textFill="#51a2ae">
                <font>
                   <Font size="19.5" />
                </font>
             </JFXButton>
-            <Line endX="100.0" layoutX="385.0" layoutY="240.0" startX="-70.0" stroke="#51a2ae" />
-            <JFXButton layoutX="308.0" layoutY="262.0" onAction="#loginButtonAction" prefHeight="52.0" prefWidth="167.0" style="-fx-background-color: #80ffd4; -fx-background-radius: 10;" text="SIGN UP">
+            <Line endX="100.0" layoutX="370.0" layoutY="240.0" startX="-50.0" stroke="#51a2ae" />
+            <JFXButton layoutX="300.0" layoutY="258.0" onAction="#loginButtonAction" prefHeight="52.0" prefWidth="167.0" style="-fx-background-color: #ff9999; -fx-background-radius: 10;" text="SIGN UP">
                <font>
-                  <Font size="20.0" />
+                  <Font size="18.0" />
                </font>
                <cursor>
                   <Cursor fx:constant="HAND" />
@@ -180,7 +180,7 @@
             <Image url="@../img/icons8-ellipsis_filled.png" />
          </image>
       </ImageView>
-      <Text disable="true" fill="#b9e1ff" layoutX="528.0" layoutY="663.0" strokeType="OUTSIDE" strokeWidth="0.0" text=". . . . . . . . . w h a t ' s   t o d a y   m e n u ? . . . . . . . . .">
+      <Text disable="true" fill="#73abd3" layoutX="528.0" layoutY="663.0" strokeType="OUTSIDE" strokeWidth="0.0" text=". . . . . . . . . w h a t ' s   t o d a y   m e n u ? . . . . . . . . .">
          <font>
             <Font name="Al Tarikh Regular" size="20.0" />
          </font>
