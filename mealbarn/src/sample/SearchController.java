@@ -101,6 +101,14 @@ public class SearchController {
         if(isSoup.isSelected()){
             select.addAll(data.getSoupIDList());
         }
+        if(!(isAlacarte.isSelected()) && !(isAppetizer.isSelected()) && !(isDessert.isSelected()) && !(isDrink.isSelected()) && !(isMainCourse.isSelected()) && !(isSoup.isSelected()) ){
+            select.addAll(data.getAlacateIDList());
+            select.addAll(data.getAppetizerIDList());
+            select.addAll(data.getDessertIDList());
+            select.addAll(data.getDrinkIDList());
+            select.addAll(data.getMainCourseIDList());
+            select.addAll(data.getSoupIDList());
+        }
         for (String choose : choosedList){
             for (Component component : componentList){
                 if (select.contains(component.getId().toString())) {
