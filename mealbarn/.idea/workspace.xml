@@ -56,11 +56,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Category.fxml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Category.fxml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sample/Category.fxml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="86">
-              <caret line="153" column="55" lean-forward="false" selection-start-line="153" selection-start-column="55" selection-end-line="153" selection-end-column="55" />
+            <state relative-caret-position="101">
+              <caret line="154" column="19" lean-forward="true" selection-start-line="154" selection-start-column="19" selection-end-line="154" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -69,29 +69,16 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ResultSearchController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sample/ResultSearchController.java">
+      <file leaf-file-name="ResultSearch.fxml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/sample/ResultSearch.fxml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3060">
-              <caret line="246" column="52" lean-forward="false" selection-start-line="246" selection-start-column="52" selection-end-line="246" selection-end-column="52" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#categoryPage#0;class#ResultSearchController#0" expanded="false" />
-                <element signature="method#foodRecipe1#0;class#ResultSearchController#0" expanded="false" />
-                <element signature="method#foodRecipe2#0;class#ResultSearchController#0" expanded="false" />
-                <element signature="method#foodRecipe3#0;class#ResultSearchController#0" expanded="false" />
-                <element signature="method#foodRecipe4#0;class#ResultSearchController#0" expanded="false" />
-                <element signature="method#foodRecipe5#0;class#ResultSearchController#0" expanded="false" />
-                <element signature="method#foodRecipe6#0;class#ResultSearchController#0" expanded="false" />
-                <element signature="method#nextPage#0;class#ResultSearchController#0" expanded="false" />
-                <element signature="method#prevPage#0;class#ResultSearchController#0" expanded="false" />
-                <element signature="method#searchPage#0;class#ResultSearchController#0" expanded="false" />
-                <element signature="method#initialize#0;class#ResultSearchController#0" expanded="false" />
-                <element signature="method#SceneCategory#0;class#ResultSearchController#0" expanded="false" />
-                <element signature="method#SceneSearch#0;class#ResultSearchController#0" expanded="false" />
-                <element signature="method#SceneShowFood#0;class#ResultSearchController#0" expanded="false" />
-              </folding>
+            <state relative-caret-position="164">
+              <caret line="225" column="68" lean-forward="false" selection-start-line="225" selection-start-column="68" selection-end-line="225" selection-end-column="68" />
+              <folding />
             </state>
+          </provider>
+          <provider editor-type-id="JavaFX-Scene-Builder">
+            <state />
           </provider>
         </entry>
       </file>
@@ -209,7 +196,6 @@
         <option value="$PROJECT_DIR$/src/sample/ResultSearch.fxml" />
         <option value="$PROJECT_DIR$/src/sample/CategoryResult.fxml" />
         <option value="$PROJECT_DIR$/src/sample/Main.java" />
-        <option value="$PROJECT_DIR$/src/sample/Category.fxml" />
         <option value="$PROJECT_DIR$/src/sample/CategoryController.java" />
         <option value="$PROJECT_DIR$/src/sample/ShowFoodController.java" />
         <option value="$PROJECT_DIR$/src/sample/CategoryResultController.java" />
@@ -221,6 +207,7 @@
         <option value="$PROJECT_DIR$/src/sample/LoginController.java" />
         <option value="$PROJECT_DIR$/src/sample/Login.fxml" />
         <option value="$PROJECT_DIR$/src/sample/Search.fxml" />
+        <option value="$PROJECT_DIR$/src/sample/Category.fxml" />
       </list>
     </option>
   </component>
@@ -436,7 +423,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="8" y="23" width="1414" height="775" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32889965" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -450,7 +436,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15889212" sideWeight="0.6703755" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15889212" sideWeight="0.6703755" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -689,17 +675,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/ResultSearch.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="715">
-          <caret line="253" column="54" lean-forward="false" selection-start-line="253" selection-start-column="54" selection-end-line="253" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -880,8 +855,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/Category.fxml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="86">
-          <caret line="153" column="55" lean-forward="false" selection-start-line="153" selection-start-column="55" selection-end-line="153" selection-end-column="55" />
+        <state relative-caret-position="101">
+          <caret line="154" column="19" lean-forward="true" selection-start-line="154" selection-start-column="19" selection-end-line="154" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/ResultSearch.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="225" column="68" lean-forward="false" selection-start-line="225" selection-start-column="68" selection-end-line="225" selection-end-column="68" />
           <folding />
         </state>
       </provider>
