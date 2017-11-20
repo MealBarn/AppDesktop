@@ -78,6 +78,9 @@ public class SearchController {
     }
 
     @FXML
+    void clearButtonAction(ActionEvent event){list.getItems().clear();}
+
+    @FXML
     void submitAction(ActionEvent event) throws IOException {
         data.clearPerfectFood();
         ArrayList<FoodShow> foodShowsList = data.getFoodShowsList();
@@ -101,6 +104,7 @@ public class SearchController {
         if(isSoup.isSelected()){
             select.addAll(data.getSoupIDList());
         }
+
         if(!(isAlacarte.isSelected()) && !(isAppetizer.isSelected()) && !(isDessert.isSelected()) && !(isDrink.isSelected()) && !(isMainCourse.isSelected()) && !(isSoup.isSelected()) ){
             select.addAll(data.getAlacateIDList());
             select.addAll(data.getAppetizerIDList());
