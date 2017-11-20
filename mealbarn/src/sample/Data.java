@@ -49,7 +49,6 @@ public class Data {
 
 
     private ArrayList<String> showIDList;
-    private ArrayList<String> selectIDList;
     private static Data data = new Data();
 
     public List<ImageSize> getImageSizeList() {
@@ -229,10 +228,6 @@ public class Data {
 
     public ArrayList<String> getShowIDList() {
         return showIDList;
-    }
-
-    public ArrayList<String> getSelectIDList() {
-        return selectIDList;
     }
 
     public ArrayList<String> getAllComponent(){ return allComponent; }

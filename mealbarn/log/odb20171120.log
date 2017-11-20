@@ -74,3 +74,203 @@ Type ooad.Component is not enhanced.
 [2017-11-20 12:33:34 #12 store] 
 Database '/Users/sutarat/Documents/GitHub/AppDesktop/mealbarn/src/ODB/Component.odb' is closed by 2505@sutarats-MacBook-Air.local
 
+------------------------------------------------------------------------------------------------------------------------
+
+[2017-11-20 19:17:08 #1 store] 
+Database 'D:\edit\AppDesktop\mealbarn\src\ODB\Account.odb' is opened by 5856@DESKTOP-FUGN7L0
+
+[2017-11-20 19:17:08 #2 store] 
+Configuration path: ?
+
+[2017-11-20 19:17:08 #3 type] 
+Type ooad.Account is not enhanced.
+
+[2017-11-20 19:17:08 #4 type] 
+Type ooad.Food is not enhanced.
+
+[2017-11-20 19:17:09 #5 store] 
+Database 'D:\edit\AppDesktop\mealbarn\src\ODB\Account.odb' is closed by 5856@DESKTOP-FUGN7L0
+
+[2017-11-20 19:17:09 #6 store] 
+Database 'D:\edit\AppDesktop\mealbarn\src\ODB\Food.odb' is opened by 5856@DESKTOP-FUGN7L0
+
+[2017-11-20 19:17:09 #7 store] 
+Configuration path: ?
+
+[2017-11-20 19:17:10 #8 store] 
+Database 'D:\edit\AppDesktop\mealbarn\src\ODB\Food.odb' is closed by 5856@DESKTOP-FUGN7L0
+
+[2017-11-20 19:17:10 #9 store] 
+Database 'D:\edit\AppDesktop\mealbarn\src\ODB\ImageSize.odb' is opened by 5856@DESKTOP-FUGN7L0
+
+[2017-11-20 19:17:10 #10 store] 
+Configuration path: ?
+
+[2017-11-20 19:17:10 #11 type] 
+Type ooad.ImageSize is not enhanced.
+
+[2017-11-20 19:17:10 #12 store] 
+Database 'D:\edit\AppDesktop\mealbarn\src\ODB\ImageSize.odb' is closed by 5856@DESKTOP-FUGN7L0
+
+[2017-11-20 19:17:10 #13 store] 
+Database 'D:\edit\AppDesktop\mealbarn\src\ODB\Component.odb' is opened by 5856@DESKTOP-FUGN7L0
+
+[2017-11-20 19:17:10 #14 store] 
+Configuration path: ?
+
+[2017-11-20 19:17:10 #15 type] 
+Type ooad.Component is not enhanced.
+
+[2017-11-20 19:17:10 #16 store] 
+Database 'D:\edit\AppDesktop\mealbarn\src\ODB\Component.odb' is closed by 5856@DESKTOP-FUGN7L0
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2017-11-20 19:18:40 #1 store] 
+Database 'D:\edit\AppDesktop\mealbarn\src\ODB\Account.odb' is opened by 19784@DESKTOP-FUGN7L0
+
+[2017-11-20 19:18:40 #2 store] 
+Configuration path: ?
+
+[2017-11-20 19:18:40 #3 type] 
+Type ooad.Account is not enhanced.
+
+[2017-11-20 19:18:40 #4 type] 
+Type ooad.Food is not enhanced.
+
+[2017-11-20 19:18:40 #5 store] 
+Database 'D:\edit\AppDesktop\mealbarn\src\ODB\Account.odb' is closed by 19784@DESKTOP-FUGN7L0
+
+[2017-11-20 19:18:40 #6 store] 
+Database 'D:\edit\AppDesktop\mealbarn\src\ODB\Food.odb' is opened by 19784@DESKTOP-FUGN7L0
+
+[2017-11-20 19:18:40 #7 store] 
+Configuration path: ?
+
+[2017-11-20 19:18:41 #8 store] 
+Database 'D:\edit\AppDesktop\mealbarn\src\ODB\Food.odb' is closed by 19784@DESKTOP-FUGN7L0
+
+[2017-11-20 19:18:41 #9 store] 
+Database 'D:\edit\AppDesktop\mealbarn\src\ODB\ImageSize.odb' is opened by 19784@DESKTOP-FUGN7L0
+
+[2017-11-20 19:18:41 #10 store] 
+Configuration path: ?
+
+[2017-11-20 19:18:41 #11 type] 
+Type ooad.ImageSize is not enhanced.
+
+[2017-11-20 19:18:41 #12 store] 
+Database 'D:\edit\AppDesktop\mealbarn\src\ODB\ImageSize.odb' is closed by 19784@DESKTOP-FUGN7L0
+
+[2017-11-20 19:18:41 #13 store] 
+Database 'D:\edit\AppDesktop\mealbarn\src\ODB\Component.odb' is opened by 19784@DESKTOP-FUGN7L0
+
+[2017-11-20 19:18:41 #14 store] 
+Configuration path: ?
+
+[2017-11-20 19:18:41 #15 type] 
+Type ooad.Component is not enhanced.
+
+[2017-11-20 19:18:42 #16 store] 
+Database 'D:\edit\AppDesktop\mealbarn\src\ODB\Component.odb' is closed by 19784@DESKTOP-FUGN7L0
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2017-11-20 19:19:30 #1 store] 
+Database 'D:\edit\AppDesktop\mealbarn\src\ODB\Account.odb' is opened by 8408@DESKTOP-FUGN7L0
+
+[2017-11-20 19:19:30 #2 store] 
+Configuration path: ?
+
+[2017-11-20 19:19:30 #3 type] 
+Type ooad.Account is not enhanced.
+
+[2017-11-20 19:19:30 #4 type] 
+Type ooad.Food is not enhanced.
+
+[2017-11-20 19:19:30 #5 store] 
+Database 'D:\edit\AppDesktop\mealbarn\src\ODB\Account.odb' is closed by 8408@DESKTOP-FUGN7L0
+
+[2017-11-20 19:19:31 #6 store] 
+Database 'D:\edit\AppDesktop\mealbarn\src\ODB\Food.odb' is opened by 8408@DESKTOP-FUGN7L0
+
+[2017-11-20 19:19:31 #7 store] 
+Configuration path: ?
+
+[2017-11-20 19:19:31 #8 store] 
+Database 'D:\edit\AppDesktop\mealbarn\src\ODB\Food.odb' is closed by 8408@DESKTOP-FUGN7L0
+
+[2017-11-20 19:19:31 #9 store] 
+Database 'D:\edit\AppDesktop\mealbarn\src\ODB\ImageSize.odb' is opened by 8408@DESKTOP-FUGN7L0
+
+[2017-11-20 19:19:31 #10 store] 
+Configuration path: ?
+
+[2017-11-20 19:19:31 #11 type] 
+Type ooad.ImageSize is not enhanced.
+
+[2017-11-20 19:19:31 #12 store] 
+Database 'D:\edit\AppDesktop\mealbarn\src\ODB\ImageSize.odb' is closed by 8408@DESKTOP-FUGN7L0
+
+[2017-11-20 19:19:31 #13 store] 
+Database 'D:\edit\AppDesktop\mealbarn\src\ODB\Component.odb' is opened by 8408@DESKTOP-FUGN7L0
+
+[2017-11-20 19:19:31 #14 store] 
+Configuration path: ?
+
+[2017-11-20 19:19:31 #15 type] 
+Type ooad.Component is not enhanced.
+
+[2017-11-20 19:19:31 #16 store] 
+Database 'D:\edit\AppDesktop\mealbarn\src\ODB\Component.odb' is closed by 8408@DESKTOP-FUGN7L0
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2017-11-20 19:20:58 #1 store] 
+Database 'D:\edit\AppDesktop\mealbarn\src\ODB\Account.odb' is opened by 17876@DESKTOP-FUGN7L0
+
+[2017-11-20 19:20:58 #2 store] 
+Configuration path: ?
+
+[2017-11-20 19:20:58 #3 type] 
+Type ooad.Account is not enhanced.
+
+[2017-11-20 19:20:58 #4 type] 
+Type ooad.Food is not enhanced.
+
+[2017-11-20 19:20:58 #5 store] 
+Database 'D:\edit\AppDesktop\mealbarn\src\ODB\Account.odb' is closed by 17876@DESKTOP-FUGN7L0
+
+[2017-11-20 19:20:59 #6 store] 
+Database 'D:\edit\AppDesktop\mealbarn\src\ODB\Food.odb' is opened by 17876@DESKTOP-FUGN7L0
+
+[2017-11-20 19:20:59 #7 store] 
+Configuration path: ?
+
+[2017-11-20 19:20:59 #8 store] 
+Database 'D:\edit\AppDesktop\mealbarn\src\ODB\Food.odb' is closed by 17876@DESKTOP-FUGN7L0
+
+[2017-11-20 19:20:59 #9 store] 
+Database 'D:\edit\AppDesktop\mealbarn\src\ODB\ImageSize.odb' is opened by 17876@DESKTOP-FUGN7L0
+
+[2017-11-20 19:20:59 #10 store] 
+Configuration path: ?
+
+[2017-11-20 19:20:59 #11 type] 
+Type ooad.ImageSize is not enhanced.
+
+[2017-11-20 19:20:59 #12 store] 
+Database 'D:\edit\AppDesktop\mealbarn\src\ODB\ImageSize.odb' is closed by 17876@DESKTOP-FUGN7L0
+
+[2017-11-20 19:20:59 #13 store] 
+Database 'D:\edit\AppDesktop\mealbarn\src\ODB\Component.odb' is opened by 17876@DESKTOP-FUGN7L0
+
+[2017-11-20 19:20:59 #14 store] 
+Configuration path: ?
+
+[2017-11-20 19:20:59 #15 type] 
+Type ooad.Component is not enhanced.
+
+[2017-11-20 19:20:59 #16 store] 
+Database 'D:\edit\AppDesktop\mealbarn\src\ODB\Component.odb' is closed by 17876@DESKTOP-FUGN7L0
+

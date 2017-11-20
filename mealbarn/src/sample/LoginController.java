@@ -1,16 +1,15 @@
 package sample;
 
-import com.jfoenix.controls.JFXPasswordField;
-import com.jfoenix.controls.JFXTextField;
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Alert;
+import javafx.scene.control.TextField;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
-import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -21,14 +20,16 @@ public class LoginController {
     @FXML
     private ImageView closeButton;
 
-    @FXML
-    private Text warningPass;
+//    @FXML
+//    private Text warningPass;
 
     @FXML
-    private JFXTextField userType;
+    private TextField userType;
 
     @FXML
-    private JFXPasswordField passType;
+    private TextField passType;
+
+    Data data = Data.getData();
 
     @FXML
     void closeButtonAction(MouseEvent event) {
@@ -37,7 +38,6 @@ public class LoginController {
 
     @FXML
     void loginButtonAction(ActionEvent event) throws IOException {
-        Data data = Data.getData();
         ArrayList<String> acc = data.getAccountStr();
         String user = userType.getText();
         String pass = passType.getText();
@@ -48,7 +48,12 @@ public class LoginController {
         }
         else {
             passType.clear();
-            warningPass.setVisible(true);
+            Alert alert = new Alert(Alert.AlertType.ERROR);
+            alert.setTitle("Login error");
+            alert.setHeaderText("The user name or password is incorrect");
+            alert.setContentText("Check you user name ,then type your password again.");
+            alert.showAndWait();
+//            warningPass.setVisible(true);
         }
     }
 

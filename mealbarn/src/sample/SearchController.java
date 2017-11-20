@@ -86,7 +86,7 @@ public class SearchController {
     }
 
     @FXML
-    void clearButtonAction(ActionEvent event){list.getItems().clear();}
+    void clearButtonAction(ActionEvent event){choosedList.clear();listCursor();}
 
     @FXML
     void submitAction(ActionEvent event) throws IOException {
