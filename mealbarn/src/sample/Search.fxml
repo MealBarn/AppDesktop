@@ -17,7 +17,7 @@
 
 <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="760.0" prefWidth="1200.0" stylesheets="@text.css" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.SearchController">
    <children>
-      <ImageView fitHeight="770.0" fitWidth="1213.0" layoutY="-2.0" pickOnBounds="true">
+      <ImageView fitHeight="770.0" fitWidth="1206.0" layoutY="-2.0" pickOnBounds="true">
          <image>
             <Image url="@../img/bg-searchs.jpg" />
          </image>
@@ -120,7 +120,7 @@
          </children></Pane>
       <Pane prefHeight="91.0" prefWidth="1200.0" style="-fx-background-color: white;">
          <children>
-            <JFXButton layoutX="46.0" layoutY="20.0" onAction="#searchPage" prefHeight="66.0" prefWidth="320.0" styleClass="contentFont" text="Search Ingredients">
+            <JFXButton layoutX="46.0" layoutY="15.0" onAction="#searchPage" prefHeight="66.0" prefWidth="320.0" styleClass="contentFont" text="Search Ingredients">
                <font>
                   <Font name="Audrey Normal" size="30.0" />
                </font>
@@ -128,7 +128,7 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </JFXButton>
-            <JFXButton layoutX="838.0" layoutY="20.0" onAction="#categoryPage" prefHeight="66.0" prefWidth="303.0" styleClass="contentFont" text="Category">
+            <JFXButton layoutX="838.0" layoutY="15.0" onAction="#categoryPage" prefHeight="66.0" prefWidth="303.0" styleClass="contentFont" text="Category">
                <font>
                   <Font name="Audrey Normal" size="30.0" />
                </font>
@@ -138,7 +138,7 @@
             </JFXButton>
             <Line endX="100.0" layoutX="276.0" layoutY="86.0" startX="-250.0" />
             <Line endX="100.0" layoutX="1079.0" layoutY="86.0" startX="-250.0" />
-            <ImageView fx:id="closeButton" fitHeight="32.0" fitWidth="30.0" layoutX="1165.0" layoutY="6.0" onMouseClicked="#closeButtonAction" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="closeButton" fitHeight="32.0" fitWidth="30.0" layoutX="1167.0" layoutY="7.0" onMouseClicked="#closeButtonAction" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../img/exit-search.png" />
                </image>
@@ -152,16 +152,16 @@
          <font>
             <Font name="Selima" size="130.0" />
          </font>
-         <fill>
-            <LinearGradient endX="1.0" endY="1.0">
-               <stops>
-                  <Stop color="#40311d" />
-                  <Stop color="#40311d" offset="0.14126394052044602" />
-                  <Stop color="#513810" offset="0.4857082468202558" />
-                  <Stop color="#bfa780" offset="1.0" />
-               </stops>
-            </LinearGradient>
-         </fill>
+            <fill>
+               <LinearGradient endX="1.0" endY="1.0">
+                  <stops>
+                     <Stop color="#40311d" />
+                     <Stop color="#40311d" offset="0.14126394052044602" />
+                     <Stop color="#513810" offset="0.4857082468202558" />
+                     <Stop color="#bfa780" offset="1.0" />
+                  </stops>
+               </LinearGradient>
+            </fill>
       </Text>
    </children>
 </Pane>
