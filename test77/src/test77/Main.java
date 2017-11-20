@@ -9,8 +9,8 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
-import org.apache.commons.codec.binary.Base64;
-
+//import org.apache.commons.codec.binary.Base64;
+import java.util.Base64;
 /**
  *
  * @author Panisa
@@ -54,14 +54,19 @@ public class Main {
             imageFile.read(imageData);
              
             //Encoding Image Byte Array to Base64 Encoded Byte Array
-            byte[] base64EncodedByteArray = Base64.encodeBase64(imageData);
-//            String inputimage = base64EncodedByteArray.toString();
- //           System.out.print(inputimage);
+//            byte[] base64EncodedByteArray = Base64.encodeBase64(imageData);
+//           String inputimage = base64EncodedByteArray.toString();
+//           System.out.print(inputimage);
+           
+           String base64encodedString = Base64.getUrlEncoder().encodeToString(imageData);
+           System.out.println("Base64 Encoded String (Basic) :" + base64encodedString);
+           byte[] base64decodedBytes = Base64.getUrlDecoder().decode(base64encodedString);
             //Decoding Base64 encoded Byte Array to Image Byte array
-            byte[] base64DecodedByteArray = Base64.decodeBase64(base64EncodedByteArray);
+//            byte[] base64DecodedByteArray = Base64.decodeBase64(base64EncodedByteArray);
              
             FileOutputStream imageOutFile = new FileOutputStream("2.jpg");
-            imageOutFile.write(base64DecodedByteArray);
+            //imageOutFile.write(base64DecodedByteArray);
+            imageOutFile.write(base64decodedBytes);
             imageFile.close();
             imageOutFile.close();
             System.out.println("    Image successfully encoded and decoded");
