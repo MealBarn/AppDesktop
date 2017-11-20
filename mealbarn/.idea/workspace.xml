@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="44b06991-95b1-488a-9180-dedd2dfb1da5" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sample/Login.fxml" afterPath="$PROJECT_DIR$/src/sample/Login.fxml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sample/Search.fxml" afterPath="$PROJECT_DIR$/src/sample/Search.fxml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -14,7 +14,9 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FavoritesManager">
-    <favorites_list name="JavaFxApplication" />
+    <favorites_list name="JavaFxApplication">
+      <favorite_root url="file://$PROJECT_DIR$/src/sample/CategoryResult.fxml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+    </favorites_list>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
@@ -68,8 +70,8 @@
       <file leaf-file-name="Search.fxml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sample/Search.fxml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="69" column="24" lean-forward="true" selection-start-line="69" selection-start-column="24" selection-end-line="69" selection-end-column="24" />
+            <state relative-caret-position="56">
+              <caret line="143" column="23" lean-forward="true" selection-start-line="143" selection-start-column="23" selection-end-line="143" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -126,8 +128,21 @@
       <file leaf-file-name="Login.fxml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/sample/Login.fxml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="314">
-              <caret line="59" column="21" lean-forward="true" selection-start-line="59" selection-start-column="21" selection-end-line="59" selection-end-column="21" />
+            <state relative-caret-position="-29">
+              <caret line="196" column="50" lean-forward="true" selection-start-line="196" selection-start-column="50" selection-end-line="196" selection-end-column="50" />
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="JavaFX-Scene-Builder">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CategoryResult.fxml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sample/CategoryResult.fxml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="230">
+              <caret line="287" column="9" lean-forward="true" selection-start-line="287" selection-start-column="9" selection-end-line="296" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -175,21 +190,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ShowFood.fxml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sample/ShowFood.fxml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="36" lean-forward="false" selection-start-line="5" selection-start-column="36" selection-end-line="5" selection-end-column="36" />
-              <folding>
-                <marker date="1510927449000" expanded="true" signature="6457:6987" ph="..." />
-              </folding>
-            </state>
-          </provider>
-          <provider editor-type-id="JavaFX-Scene-Builder">
-            <state />
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FindInProjectRecents">
@@ -210,6 +210,7 @@
       <find>prev</find>
       <find>meal</find>
       <find>cate</find>
+      <find>Meal</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -236,8 +237,8 @@
         <option value="$PROJECT_DIR$/src/sample/text.css" />
         <option value="$PROJECT_DIR$/src/sample/SearchController.java" />
         <option value="$PROJECT_DIR$/src/sample/LoginController.java" />
-        <option value="$PROJECT_DIR$/src/sample/Login.fxml" />
         <option value="$PROJECT_DIR$/src/sample/Search.fxml" />
+        <option value="$PROJECT_DIR$/src/sample/Login.fxml" />
       </list>
     </option>
   </component>
@@ -717,17 +718,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/CategoryResult.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3254">
-          <caret line="237" column="17" lean-forward="true" selection-start-line="237" selection-start-column="17" selection-end-line="237" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -891,10 +881,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/CategoryResult.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="287" column="9" lean-forward="true" selection-start-line="287" selection-start-column="9" selection-end-line="296" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/Search.fxml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="69" column="24" lean-forward="true" selection-start-line="69" selection-start-column="24" selection-end-line="69" selection-end-column="24" />
+        <state relative-caret-position="56">
+          <caret line="143" column="23" lean-forward="true" selection-start-line="143" selection-start-column="23" selection-end-line="143" selection-end-column="23" />
           <folding />
         </state>
       </provider>
@@ -904,8 +905,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/Login.fxml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
-          <caret line="59" column="21" lean-forward="true" selection-start-line="59" selection-start-column="21" selection-end-line="59" selection-end-column="21" />
+        <state relative-caret-position="-29">
+          <caret line="196" column="50" lean-forward="true" selection-start-line="196" selection-start-column="50" selection-end-line="196" selection-end-column="50" />
           <folding />
         </state>
       </provider>

@@ -152,16 +152,16 @@
          <font>
             <Font name="Selima" size="130.0" />
          </font>
-         <fill>
-            <LinearGradient endX="1.0" endY="1.0">
-               <stops>
-                  <Stop color="#40311d" />
-                  <Stop color="#40311d" offset="0.14126394052044602" />
-                  <Stop color="#513810" offset="0.4857082468202558" />
-                  <Stop color="#bfa780" offset="1.0" />
-               </stops>
-            </LinearGradient>
-         </fill>
+            <fill>
+               <LinearGradient endX="1.0" endY="1.0">
+                  <stops>
+                     <Stop color="#40311d" />
+                     <Stop color="#40311d" offset="0.14126394052044602" />
+                     <Stop color="#513810" offset="0.4857082468202558" />
+                     <Stop color="#bfa780" offset="1.0" />
+                  </stops>
+               </LinearGradient>
+            </fill>
       </Text>
    </children>
 </Pane>
