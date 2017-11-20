@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
 <?import com.jfoenix.controls.JFXPasswordField?>
 <?import com.jfoenix.controls.JFXTextField?>
 <?import javafx.scene.Cursor?>
@@ -20,7 +21,7 @@
             <Image url="@../img/background.jpg" />
          </image>
       </ImageView>
-      <Pane layoutX="458.0" layoutY="254.0" opacity="0.73" prefHeight="374.0" prefWidth="547.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 15;">
+      <Pane layoutX="458.0" layoutY="254.0" opacity="0.87" prefHeight="374.0" prefWidth="547.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 15;">
          <children>
             <JFXTextField fx:id="userType" layoutX="123.0" layoutY="72.0" prefHeight="40.0" prefWidth="366.0" promptText="Username">
                <font>
@@ -42,7 +43,7 @@
                   <Font size="20.0" />
                </font>
             </JFXPasswordField>
-            <JFXButton layoutX="140.0" layoutY="263.0" onAction="#loginButtonAction" prefHeight="52.0" prefWidth="281.0" style="-fx-background-color: #ffff33; -fx-background-radius: 10;" text="LOGIN">
+            <JFXButton layoutX="123.0" layoutY="262.0" onAction="#loginButtonAction" prefHeight="52.0" prefWidth="167.0" style="-fx-background-color: #ffff33; -fx-background-radius: 10;" text="LOGIN">
                <font>
                   <Font size="20.0" />
                </font>
@@ -55,6 +56,25 @@
                   <Font name="System Bold" size="18.0" />
                </font>
             </Text>
+            <JFXCheckBox layoutX="123.0" layoutY="214.0" text="Remember Me">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </JFXCheckBox>
+            <JFXButton layoutX="311.0" layoutY="207.0" text="Forget Password" textFill="#51a2ae">
+               <font>
+                  <Font size="19.5" />
+               </font>
+            </JFXButton>
+            <Line endX="100.0" layoutX="385.0" layoutY="240.0" startX="-70.0" stroke="#51a2ae" />
+            <JFXButton layoutX="308.0" layoutY="262.0" onAction="#loginButtonAction" prefHeight="52.0" prefWidth="167.0" style="-fx-background-color: #80ffd4; -fx-background-radius: 10;" text="SIGN UP">
+               <font>
+                  <Font size="20.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
          </children>
       </Pane>
       <ImageView fitHeight="94.0" fitWidth="73.0" layoutX="60.0" pickOnBounds="true" preserveRatio="true">

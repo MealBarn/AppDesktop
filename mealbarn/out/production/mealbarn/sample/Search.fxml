@@ -8,6 +8,7 @@
 <?import javafx.scene.control.ListView?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.paint.LinearGradient?>
 <?import javafx.scene.paint.Stop?>
@@ -92,7 +93,7 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </JFXButton>
-            <JFXButton id="contentFont" fx:id="submitButton" layoutX="502.0" layoutY="258.0" onAction="#submitAction" prefHeight="51.0" prefWidth="223.0" style="-fx-background-color: #262626; -fx-background-radius: 7;" styleClass="contentFont" text="Search" textFill="WHITE">
+            <JFXButton id="contentFont" fx:id="submitButton" layoutX="498.0" layoutY="258.0" onAction="#submitAction" prefHeight="51.0" prefWidth="223.0" style="-fx-background-color: #262626; -fx-background-radius: 7;" styleClass="contentFont" text="Search" textFill="WHITE">
                <font>
                   <Font size="25.0" />
                </font>
@@ -111,6 +112,15 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </JFXButton>
+            <AnchorPane fx:id="testPane" layoutX="43.0" layoutY="154.0" onMouseClicked="#clickTest" opacity="0.61" prefHeight="91.0" prefWidth="175.0" style="-fx-background-color: #000000; -fx-background-radius: 10;">
+               <children>
+                  <Text fill="WHITE" layoutX="59.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Selima;" styleClass="logo" text="Text" wrappingWidth="56.691902443766594">
+                     <font>
+                        <Font size="40.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
          </children></Pane>
       <Pane prefHeight="91.0" prefWidth="1200.0" style="-fx-background-color: white;">
          <children>
@@ -122,7 +132,7 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </JFXButton>
-            <JFXButton layoutX="838.0" layoutY="20.0" onAction="#categoryPage" prefHeight="66.0" prefWidth="303.0" styleClass="contentFont" text="Category">
+            <JFXButton layoutX="838.0" layoutY="20.0" onAction="#categoryPage" prefHeight="66.0" prefWidth="303.0" styleClass="testFont" text="Category">
                <font>
                   <Font name="Audrey Normal" size="30.0" />
                </font>

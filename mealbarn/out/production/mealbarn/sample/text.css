@@ -1,12 +1,17 @@
-@@font-face {
-  src :url("resource/fonts/THSarabunNew.ttf");
-  src :url("resource/fonts/THSarabunNew-Bold.ttf");
-  src: url("resource/fonts/Selima.otf");
-  src: url("resource/fonts/Audrey-Bold.otf");
-  src: url("resource/fonts/Audrey-Normal.otf");
+@font-face {
+  src :url("resource/font/THSarabunNew.ttf");
+  src :url("resource/font/THSarabunNew Bold.ttf");
+  src: url("resource/font/Selima .otf");
+  src: url("resource/font/Audrey-Bold.otf");
+  src: url("resource/font/Audrey-Normal.otf");
+  src: url("resource/font/Prisma.otf");
 
 }
 
+.testFont {
+    -fx-font-family: 'Prisma';
+    -fx-font-size: 20px;
+}
 
 .logo {
     -fx-font-family: 'Selima';
