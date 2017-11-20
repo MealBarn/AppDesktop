@@ -3,6 +3,7 @@
 <?import com.jfoenix.controls.JFXButton?>
 <?import com.jfoenix.controls.JFXCheckBox?>
 <?import javafx.scene.Cursor?>
+<?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
@@ -19,7 +20,7 @@
             <Image url="@../img/background.jpg" />
          </image>
       </ImageView>
-      <Pane id="Signup" layoutX="458.0" layoutY="254.0" opacity="0.87" prefHeight="374.0" prefWidth="547.0" style="-fx-background-color: white; -fx-background-radius: 15;" visible="false">
+      <Pane id="Signup" layoutX="458.0" layoutY="254.0" opacity="0.87" prefHeight="374.0" prefWidth="547.0" style="-fx-background-color: white; -fx-background-radius: 15;">
          <children>
             <Pane layoutX="7.0" layoutY="68.0" prefHeight="302.0" prefWidth="532.0" style="-fx-background-color: none; -fx-background-radius: 10;">
                <children>
@@ -90,6 +91,21 @@
                   </LinearGradient>
                </fill>
             </Text>
+            <Text disable="true" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="logoLogin" text="Mealbarn">
+               <font>
+                  <Font name="Selima" size="180.0" />
+               </font>
+               <fill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#40311d" />
+                        <Stop color="#40311d" offset="0.14126394052044602" />
+                        <Stop color="#513810" offset="0.4857082468202558" />
+                        <Stop color="#bfa780" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Text>
          </children>
       </Pane>
       <Pane id="Signup" layoutX="458.0" layoutY="254.0" opacity="0.87" prefHeight="374.0" prefWidth="547.0" style="-fx-background-color: white; -fx-background-radius: 15;">
@@ -97,11 +113,6 @@
             <Pane layoutX="7.0" layoutY="68.0" prefHeight="302.0" prefWidth="532.0" style="-fx-background-color: none; -fx-background-radius: 10;">
                <children>
                   <TextField layoutX="128.0" layoutY="31.0" prefHeight="44.0" prefWidth="351.0" promptText="Username" style="-fx-background-color: white; -fx-border-color: #656060; -fx-background-radius: 5; -fx-border-radius: 2; -fx-border-width: 0.5;">
-                     <font>
-                        <Font size="18.0" />
-                     </font>
-                  </TextField>
-                  <TextField layoutX="128.0" layoutY="84.0" prefHeight="44.0" prefWidth="351.0" promptText="Password" style="-fx-background-color: white; -fx-border-color: #656060; -fx-background-radius: 5; -fx-border-radius: 3; -fx-border-width: 0.5;">
                      <font>
                         <Font size="18.0" />
                      </font>
@@ -153,6 +164,11 @@
                         <Font size="18.0" />
                      </font>
                   </Text>
+                  <PasswordField layoutX="128.0" layoutY="85.0" prefHeight="44.0" prefWidth="350.0" promptText="Password" style="-fx-background-color: white; -fx-border-color: #656060; -fx-background-radius: 5; -fx-border-radius: 3; -fx-border-width: 0.5;">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </PasswordField>
                </children>
             </Pane>
             <Text layoutX="161.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" text="L O G I N">

@@ -11,7 +11,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<Pane prefHeight="760.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ShowFoodController">
+<Pane prefHeight="760.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ShowFoodController">
    <children>
       <ImageView fitHeight="760.0" fitWidth="1202.0" pickOnBounds="true" preserveRatio="true">
          <image>
@@ -20,18 +20,18 @@
       </ImageView>
       <Pane layoutX="28.0" layoutY="81.0" prefHeight="640.0" prefWidth="1144.0">
          <children>
-            <Pane layoutX="17.0" layoutY="48.0" prefHeight="534.0" prefWidth="417.0" style="-fx-background-color: #734d26; -fx-background-radius: 5;">
+            <Pane layoutX="26.0" layoutY="124.0" prefHeight="484.0" prefWidth="417.0" style="-fx-background-color: #513810; -fx-background-radius: 5;">
                <children>
-                  <Pane layoutX="2.0" layoutY="24.0" prefHeight="73.0" prefWidth="414.0" style="-fx-background-color: #513810;">
+                  <Pane layoutX="18.0" layoutY="16.0" prefHeight="61.0" prefWidth="383.0" style="-fx-background-color: #996600;">
                      <children>
-                        <Text fx:id="foodName" fill="WHITE" layoutX="18.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="resultFoodname" text="ราดหน้าหมู" textAlignment="CENTER" wrappingWidth="372.2988804695646">
+                        <Text fx:id="foodName" fill="WHITE" layoutX="10.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="resultFoodname" text="ราดหน้าหมู" textAlignment="CENTER" wrappingWidth="372.2988804695646">
                            <font>
                               <Font name="TH Sarabun New Bold" size="45.0" />
                            </font>
                         </Text>
                      </children>
                   </Pane>
-                  <ImageView fx:id="foodImg" fitHeight="410.0" fitWidth="382.0" layoutX="19.0" layoutY="125.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="foodImg" fitHeight="410.0" fitWidth="382.0" layoutX="19.0" layoutY="87.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../img/Alacarte/12.png" />
                      </image>
@@ -40,12 +40,12 @@
             </Pane>
             <Pane layoutX="452.0" layoutY="102.0" prefHeight="527.0" prefWidth="684.0">
                <children>
-                  <ImageView fx:id="imgDetail" fitHeight="481.0" fitWidth="620.0" layoutX="19.0" layoutY="-9.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="imgDetail" fitHeight="481.0" fitWidth="620.0" layoutX="19.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../img/food/test-sol2-1.jpg" />
                      </image>
                   </ImageView>
-                  <JFXButton fx:id="prevButton" layoutX="227.0" layoutY="475.0" onAction="#prevPage" text=" Previous">
+                  <JFXButton fx:id="prevButton" layoutX="224.0" layoutY="482.0" onAction="#prevPage" text=" Previous">
                      <font>
                         <Font size="20.0" />
                      </font>
@@ -53,17 +53,17 @@
                         <Cursor fx:constant="HAND" />
                      </cursor>
                   </JFXButton>
-                  <ImageView fx:id="nextImg" fitHeight="28.0" fitWidth="87.0" layoutX="463.0" layoutY="481.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="nextImg" fitHeight="28.0" fitWidth="87.0" layoutX="460.0" layoutY="488.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../img/right-spoon.png" />
                      </image>
                   </ImageView>
-                  <ImageView fx:id="prevImg" fitHeight="28.0" fitWidth="87.0" layoutX="163.0" layoutY="483.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="prevImg" fitHeight="28.0" fitWidth="87.0" layoutX="160.0" layoutY="490.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../img/left-fork.png" />
                      </image>
                   </ImageView>
-                  <JFXButton fx:id="nextButton" layoutX="390.0" layoutY="475.0" onAction="#nextPage" text="Next">
+                  <JFXButton fx:id="nextButton" layoutX="387.0" layoutY="482.0" onAction="#nextPage" text="Next">
                      <font>
                         <Font size="20.0" />
                      </font>
@@ -89,6 +89,11 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </JFXButton>
+            <JFXButton layoutX="28.0" layoutY="48.0" prefHeight="45.0" prefWidth="127.0" style="-fx-background-color: #99cc00; -fx-background-radius: 8;" text="Back" textFill="WHITE">
+               <font>
+                  <Font name="Audrey Bold" size="22.0" />
+               </font>
+            </JFXButton>
          </children>
       </Pane>
       <Pane prefHeight="91.0" prefWidth="1200.0" style="-fx-background-color: white;">
@@ -101,7 +106,7 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </JFXButton>
-            <ImageView fx:id="closeButton" fitHeight="32.0" fitWidth="30.0" layoutX="1157.0" layoutY="31.0" onMouseClicked="#closeButtonAction" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="closeButton" fitHeight="32.0" fitWidth="30.0" layoutX="1160.0" layoutY="9.0" onMouseClicked="#closeButtonAction" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../img/exit-search.png" />
                </image>
