@@ -78,6 +78,9 @@ public class SearchController {
     }
 
     @FXML
+    void clearButtonAction(ActionEvent event){list.getItems().clear();}
+
+    @FXML
     void submitAction(ActionEvent event) throws IOException {
         data.clearPerfectFood();
         ArrayList<FoodShow> foodShowsList = data.getFoodShowsList();
@@ -101,6 +104,7 @@ public class SearchController {
         if(isSoup.isSelected()){
             select.addAll(data.getSoupIDList());
         }
+
         for (String choose : choosedList){
             for (Component component : componentList){
                 if (select.contains(component.getId().toString())) {
