@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="44b06991-95b1-488a-9180-dedd2dfb1da5" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sample/Login.fxml" afterPath="$PROJECT_DIR$/src/sample/Login.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sample/Search.fxml" afterPath="$PROJECT_DIR$/src/sample/Search.fxml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -70,8 +69,8 @@
       <file leaf-file-name="Search.fxml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/sample/Search.fxml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="251">
-              <caret line="156" column="25" lean-forward="true" selection-start-line="156" selection-start-column="25" selection-end-line="156" selection-end-column="25" />
+            <state relative-caret-position="337">
+              <caret line="156" column="25" lean-forward="false" selection-start-line="156" selection-start-column="25" selection-end-line="156" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -109,17 +108,11 @@
       <file leaf-file-name="SearchController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sample/SearchController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="615">
+            <state relative-caret-position="1065">
               <caret line="71" column="23" lean-forward="false" selection-start-line="71" selection-start-column="23" selection-end-line="71" selection-end-column="23" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <marker date="1511156873000" expanded="true" signature="3524:4396" ph="{...}" />
-                <marker date="1511156873000" expanded="true" signature="4458:4612" ph="{...}" />
-                <marker date="1511156873000" expanded="true" signature="4677:4775" ph="{...}" />
-                <marker date="1511156873000" expanded="true" signature="4805:5195" ph="{...}" />
-                <marker date="1511156873000" expanded="true" signature="5267:5299" ph="{...}" />
-                <marker date="1511156873000" expanded="true" signature="5353:5607" ph="{...}" />
-                <marker date="1511156873000" expanded="true" signature="5659:5917" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -128,8 +121,8 @@
       <file leaf-file-name="Login.fxml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sample/Login.fxml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="151">
-              <caret line="209" column="65" lean-forward="true" selection-start-line="209" selection-start-column="65" selection-end-line="209" selection-end-column="65" />
+            <state relative-caret-position="3135">
+              <caret line="209" column="65" lean-forward="false" selection-start-line="209" selection-start-column="65" selection-end-line="209" selection-end-column="65" />
               <folding />
             </state>
           </provider>
@@ -141,8 +134,8 @@
       <file leaf-file-name="CategoryResult.fxml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sample/CategoryResult.fxml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="287" column="9" lean-forward="true" selection-start-line="287" selection-start-column="9" selection-end-line="296" selection-end-column="16" />
+            <state relative-caret-position="4305">
+              <caret line="287" column="9" lean-forward="false" selection-start-line="287" selection-start-column="9" selection-end-line="296" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -154,7 +147,7 @@
       <file leaf-file-name="CategoryController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sample/CategoryController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="525">
+            <state relative-caret-position="705">
               <caret line="47" column="0" lean-forward="false" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -171,7 +164,7 @@
       <file leaf-file-name="LoginController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sample/LoginController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
+            <state relative-caret-position="450">
               <caret line="30" column="28" lean-forward="false" selection-start-line="30" selection-start-column="12" selection-end-line="30" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -270,10 +263,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="AndroidView" />
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -303,6 +292,10 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -454,7 +447,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="8" y="23" width="1414" height="775" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32889965" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -464,12 +456,12 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32935917" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.08064516" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28152493" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15962099" sideWeight="0.6703755" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15889212" sideWeight="0.6703755" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -817,24 +809,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/SearchController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="615">
+        <state relative-caret-position="1065">
           <caret line="71" column="23" lean-forward="false" selection-start-line="71" selection-start-column="23" selection-end-line="71" selection-end-column="23" />
           <folding>
             <element signature="imports" expanded="true" />
             <marker date="1511156873000" expanded="true" signature="3524:4396" ph="{...}" />
-            <marker date="1511156873000" expanded="true" signature="4458:4612" ph="{...}" />
-            <marker date="1511156873000" expanded="true" signature="4677:4775" ph="{...}" />
-            <marker date="1511156873000" expanded="true" signature="4805:5195" ph="{...}" />
-            <marker date="1511156873000" expanded="true" signature="5267:5299" ph="{...}" />
-            <marker date="1511156873000" expanded="true" signature="5353:5607" ph="{...}" />
-            <marker date="1511156873000" expanded="true" signature="5659:5917" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/LoginController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
+        <state relative-caret-position="450">
           <caret line="30" column="28" lean-forward="false" selection-start-line="30" selection-start-column="12" selection-end-line="30" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -844,7 +830,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/CategoryController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
+        <state relative-caret-position="705">
           <caret line="47" column="0" lean-forward="false" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -883,8 +869,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/CategoryResult.fxml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="287" column="9" lean-forward="true" selection-start-line="287" selection-start-column="9" selection-end-line="296" selection-end-column="16" />
+        <state relative-caret-position="4305">
+          <caret line="287" column="9" lean-forward="false" selection-start-line="287" selection-start-column="9" selection-end-line="296" selection-end-column="16" />
           <folding />
         </state>
       </provider>
@@ -894,8 +880,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/Login.fxml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="151">
-          <caret line="209" column="65" lean-forward="true" selection-start-line="209" selection-start-column="65" selection-end-line="209" selection-end-column="65" />
+        <state relative-caret-position="3135">
+          <caret line="209" column="65" lean-forward="false" selection-start-line="209" selection-start-column="65" selection-end-line="209" selection-end-column="65" />
           <folding />
         </state>
       </provider>
@@ -905,8 +891,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/Search.fxml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="156" column="25" lean-forward="true" selection-start-line="156" selection-start-column="25" selection-end-line="156" selection-end-column="25" />
+        <state relative-caret-position="337">
+          <caret line="156" column="25" lean-forward="false" selection-start-line="156" selection-start-column="25" selection-end-line="156" selection-end-column="25" />
           <folding />
         </state>
       </provider>
