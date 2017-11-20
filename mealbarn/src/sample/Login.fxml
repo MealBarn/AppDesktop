@@ -12,7 +12,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="760.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.LoginController">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="760.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.LoginController">
    <children>
       <ImageView fitHeight="760.0" fitWidth="1200.0" pickOnBounds="true">
          <image>
@@ -187,24 +187,6 @@
                   </LinearGradient>
                </fill>
             </Text>
-            <JFXButton layoutX="313.0" layoutY="263.0" prefHeight="55.0" prefWidth="176.0" style="-fx-background-color: #ff9999; -fx-background-radius: 10;" text="SIGN UP">
-               <font>
-                  <Font size="20.0" />
-               </font>
-               <cursor>
-                  <Cursor fx:constant="HAND" />
-               </cursor>
-            </JFXButton>
-            <JFXCheckBox layoutX="120.0" layoutY="211.0" text="Remember Me">
-               <font>
-                  <Font size="20.0" />
-               </font>
-            </JFXCheckBox>
-            <JFXButton layoutX="313.0" layoutY="204.0" prefHeight="30.0" prefWidth="176.0" text="Forget Password" textFill="#51a2ae">
-               <font>
-                  <Font size="20.0" />
-               </font>
-            </JFXButton>
             <Line endX="80.0" layoutX="401.0" layoutY="239.0" startX="-80.0" stroke="#51a2ae" />
          </children>
       </Pane>
