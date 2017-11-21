@@ -95,6 +95,9 @@ public class CategoryResultController {
     private ImageView nextImg;
 
     @FXML
+    private Text type;
+
+    @FXML
     void categoryPage(ActionEvent event) throws IOException {
         SceneCategory();
     }
@@ -181,6 +184,7 @@ public class CategoryResultController {
         page = tempData.getPage();
         size = tempData.getShowIDList().size();
         recipeCount.setText(String.format("Total %d Recipes",size));
+        type.setText(tempData.getType());
         updateData();
     }
 
@@ -217,8 +221,7 @@ public class CategoryResultController {
     void updateData(){
         int id;
         int idFood;
-        Integer p = page+1;
-        String pageNum = p.toString();
+        String pageNum = String.format("%d",page+1);
         pageId.setText(pageNum);
         ///////////////////////////////////////////--1
         id = (page*6)+0;
@@ -306,7 +309,7 @@ public class CategoryResultController {
             prevButton.setVisible(true);
             prevImg.setVisible(true);
         }
-        if(page==((size-1)/6)){
+        if(page >=((size-1)/6)){
             nextButton.setVisible(false);
             nextImg.setVisible(false);
         }else {

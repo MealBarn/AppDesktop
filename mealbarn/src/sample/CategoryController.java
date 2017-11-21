@@ -21,6 +21,7 @@ public class CategoryController {
     void alacarteSelect(ActionEvent event) throws IOException {
         tempData.setShowIDList(foodData.getAlacateIDList());
         tempData.setPage(0);
+        tempData.setType("Alacarte");
         SceneResult();
     }
 
@@ -28,6 +29,7 @@ public class CategoryController {
     void appetizerSelect(ActionEvent event) throws IOException {
         tempData.setShowIDList(foodData.getAppetizerIDList());
         tempData.setPage(0);
+        tempData.setType("Appetizer");
         SceneResult();
     }
 
@@ -40,6 +42,7 @@ public class CategoryController {
     void dessertSelect(ActionEvent event) throws IOException {
         tempData.setShowIDList(foodData.getDessertIDList());
         tempData.setPage(0);
+        tempData.setType("Dessert");
         SceneResult();
     }
 
@@ -47,6 +50,7 @@ public class CategoryController {
     void drinkSelect(ActionEvent event) throws IOException {
         tempData.setShowIDList(foodData.getDrinkIDList());
         tempData.setPage(0);
+        tempData.setType("Drink");
         SceneResult();
     }
 
@@ -54,6 +58,7 @@ public class CategoryController {
     void maincourseSelect(ActionEvent event) throws IOException {
         tempData.setShowIDList(foodData.getMainCourseIDList());
         tempData.setPage(0);
+        tempData.setType("Maincourse");
         SceneResult();
     }
 
@@ -61,6 +66,7 @@ public class CategoryController {
     void soupSelect(ActionEvent event) throws IOException {
         tempData.setShowIDList(foodData.getSoupIDList());
         tempData.setPage(0);
+        tempData.setType("Soup");
         SceneResult();
     }
 

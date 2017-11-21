@@ -16,6 +16,16 @@ public class TempData {
     private int idFood;
     private String mode;
     private int page;
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
+    }
+
+    private String type;
     private ArrayList<String> showIDList = new ArrayList<String>();
     private static TempData tempData = new TempData();
     private TempData(){

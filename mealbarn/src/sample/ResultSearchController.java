@@ -232,8 +232,7 @@ public class ResultSearchController {
     void updateData(){
         int id;
         int idFood;
-        Integer p = page+1;
-        String pageNum = p.toString();
+        String pageNum = String.format("%d",page+1);
         pageId.setText(pageNum);
         ///////////////////////////////////////////--1
         id = (page*6)+0;
@@ -332,7 +331,7 @@ public class ResultSearchController {
             prevButton.setVisible(true);
             prevImg.setVisible(true);
         }
-        if(page==((size-1)/6)){
+        if(page>=((size-1)/6)){
             nextButton.setVisible(false);
             nextImg.setVisible(false);
         }else {
