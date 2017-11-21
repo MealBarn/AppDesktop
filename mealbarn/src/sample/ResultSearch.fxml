@@ -14,9 +14,9 @@
 
 <Pane prefHeight="760.0" prefWidth="1200.0" style="-fx-background-color: #ffffe6;" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ResultSearchController">
    <children>
-      <ImageView fitHeight="771.0" fitWidth="1222.0" layoutY="-4.0" pickOnBounds="true">
+      <ImageView fitHeight="771.0" fitWidth="1205.0" layoutY="-4.0" pickOnBounds="true">
          <image>
-            <Image url="@../img/gg.jpg" />
+            <Image url="@../img/bbg.jpg" />
          </image>
       </ImageView>
       <Pane fx:id="food1" layoutX="123.0" layoutY="217.0" prefHeight="203.0" prefWidth="349.0" style="-fx-background-color: #ffffff; -fx-background-radius: 9; -fx-border-color: black; -fx-border-radius: 9; -fx-border-width: 0.5;">
