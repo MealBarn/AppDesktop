@@ -476,6 +476,7 @@ Database 'D:\edit\AppDesktop\mealbarn\src\ODB\Component.odb' is closed by 3956@D
 
 ------------------------------------------------------------------------------------------------------------------------
 
+<<<<<<< Updated upstream
 [2017-11-21 13:29:47 #1 store] 
 Database 'D:\edit\AppDesktop\mealbarn\src\ODB\Account.odb' is opened by 8168@DESKTOP-FUGN7L0
 
@@ -957,4 +958,203 @@ Type ooad.Component is not enhanced.
 
 [2017-11-21 14:49:12 #16 store] 
 Database 'D:\edit\AppDesktop\mealbarn\src\ODB\Component.odb' is closed by 12340@DESKTOP-FUGN7L0
+=======
+[2017-11-21 12:49:58 #1 store] 
+Database '/Users/sutarat/Documents/GitHub/AppDesktop/mealbarn/src/ODB/Account.odb' is opened by 6324@sutarats-MacBook-Air.local
+
+[2017-11-21 12:49:58 #2 store] 
+Configuration path: ?
+
+[2017-11-21 12:49:58 #3 type] 
+Type ooad.Account is not enhanced.
+
+[2017-11-21 12:49:58 #4 type] 
+Type ooad.Food is not enhanced.
+
+[2017-11-21 12:49:58 #5 store] 
+Database '/Users/sutarat/Documents/GitHub/AppDesktop/mealbarn/src/ODB/Account.odb' is closed by 6324@sutarats-MacBook-Air.local
+
+[2017-11-21 12:49:58 #6 store] 
+Database '/Users/sutarat/Documents/GitHub/AppDesktop/mealbarn/src/ODB/Food.odb' is opened by 6324@sutarats-MacBook-Air.local
+
+[2017-11-21 12:49:58 #7 store] 
+Configuration path: ?
+
+[2017-11-21 12:49:58 #8 store] 
+Database '/Users/sutarat/Documents/GitHub/AppDesktop/mealbarn/src/ODB/Food.odb' is closed by 6324@sutarats-MacBook-Air.local
+
+[2017-11-21 12:49:58 #9 store] 
+Database '/Users/sutarat/Documents/GitHub/AppDesktop/mealbarn/src/ODB/ImageSize.odb' is opened by 6324@sutarats-MacBook-Air.local
+
+[2017-11-21 12:49:58 #10 store] 
+Configuration path: ?
+
+[2017-11-21 12:49:58 #11 type] 
+Type ooad.ImageSize is not enhanced.
+
+[2017-11-21 12:49:58 #12 store] 
+Database '/Users/sutarat/Documents/GitHub/AppDesktop/mealbarn/src/ODB/ImageSize.odb' is closed by 6324@sutarats-MacBook-Air.local
+
+[2017-11-21 12:49:58 #13 store] 
+Database '/Users/sutarat/Documents/GitHub/AppDesktop/mealbarn/src/ODB/Component.odb' is opened by 6324@sutarats-MacBook-Air.local
+
+[2017-11-21 12:49:58 #14 store] 
+Configuration path: ?
+
+[2017-11-21 12:49:58 #15 type] 
+Type ooad.Component is not enhanced.
+
+[2017-11-21 12:49:58 #16 store] 
+Database '/Users/sutarat/Documents/GitHub/AppDesktop/mealbarn/src/ODB/Component.odb' is closed by 6324@sutarats-MacBook-Air.local
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2017-11-21 12:52:52 #1 store] 
+Database '/Users/sutarat/Documents/GitHub/AppDesktop/mealbarn/src/ODB/Account.odb' is opened by 6410@sutarats-MacBook-Air.local
+
+[2017-11-21 12:52:52 #2 store] 
+Configuration path: ?
+
+[2017-11-21 12:52:52 #3 type] 
+Type ooad.Account is not enhanced.
+
+[2017-11-21 12:52:52 #4 type] 
+Type ooad.Food is not enhanced.
+
+[2017-11-21 12:52:52 #5 store] 
+Database '/Users/sutarat/Documents/GitHub/AppDesktop/mealbarn/src/ODB/Account.odb' is closed by 6410@sutarats-MacBook-Air.local
+
+[2017-11-21 12:52:52 #6 store] 
+Database '/Users/sutarat/Documents/GitHub/AppDesktop/mealbarn/src/ODB/Food.odb' is opened by 6410@sutarats-MacBook-Air.local
+
+[2017-11-21 12:52:52 #7 store] 
+Configuration path: ?
+
+[2017-11-21 12:52:53 #8 store] 
+Database '/Users/sutarat/Documents/GitHub/AppDesktop/mealbarn/src/ODB/Food.odb' is closed by 6410@sutarats-MacBook-Air.local
+
+[2017-11-21 12:52:53 #9 store] 
+Database '/Users/sutarat/Documents/GitHub/AppDesktop/mealbarn/src/ODB/ImageSize.odb' is opened by 6410@sutarats-MacBook-Air.local
+
+[2017-11-21 12:52:53 #10 store] 
+Configuration path: ?
+
+[2017-11-21 12:52:53 #11 type] 
+Type ooad.ImageSize is not enhanced.
+
+[2017-11-21 12:52:53 #12 store] 
+Database '/Users/sutarat/Documents/GitHub/AppDesktop/mealbarn/src/ODB/ImageSize.odb' is closed by 6410@sutarats-MacBook-Air.local
+
+[2017-11-21 12:52:53 #13 store] 
+Database '/Users/sutarat/Documents/GitHub/AppDesktop/mealbarn/src/ODB/Component.odb' is opened by 6410@sutarats-MacBook-Air.local
+
+[2017-11-21 12:52:53 #14 store] 
+Configuration path: ?
+
+[2017-11-21 12:52:53 #15 type] 
+Type ooad.Component is not enhanced.
+
+[2017-11-21 12:52:53 #16 store] 
+Database '/Users/sutarat/Documents/GitHub/AppDesktop/mealbarn/src/ODB/Component.odb' is closed by 6410@sutarats-MacBook-Air.local
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2017-11-21 12:53:25 #1 store] 
+Database '/Users/sutarat/Documents/GitHub/AppDesktop/mealbarn/src/ODB/Account.odb' is opened by 6447@sutarats-MacBook-Air.local
+
+[2017-11-21 12:53:25 #2 store] 
+Configuration path: ?
+
+[2017-11-21 12:53:25 #3 type] 
+Type ooad.Account is not enhanced.
+
+[2017-11-21 12:53:25 #4 type] 
+Type ooad.Food is not enhanced.
+
+[2017-11-21 12:53:25 #5 store] 
+Database '/Users/sutarat/Documents/GitHub/AppDesktop/mealbarn/src/ODB/Account.odb' is closed by 6447@sutarats-MacBook-Air.local
+
+[2017-11-21 12:53:25 #6 store] 
+Database '/Users/sutarat/Documents/GitHub/AppDesktop/mealbarn/src/ODB/Food.odb' is opened by 6447@sutarats-MacBook-Air.local
+
+[2017-11-21 12:53:25 #7 store] 
+Configuration path: ?
+
+[2017-11-21 12:53:25 #8 store] 
+Database '/Users/sutarat/Documents/GitHub/AppDesktop/mealbarn/src/ODB/Food.odb' is closed by 6447@sutarats-MacBook-Air.local
+
+[2017-11-21 12:53:25 #9 store] 
+Database '/Users/sutarat/Documents/GitHub/AppDesktop/mealbarn/src/ODB/ImageSize.odb' is opened by 6447@sutarats-MacBook-Air.local
+
+[2017-11-21 12:53:25 #10 store] 
+Configuration path: ?
+
+[2017-11-21 12:53:25 #11 type] 
+Type ooad.ImageSize is not enhanced.
+
+[2017-11-21 12:53:25 #12 store] 
+Database '/Users/sutarat/Documents/GitHub/AppDesktop/mealbarn/src/ODB/ImageSize.odb' is closed by 6447@sutarats-MacBook-Air.local
+
+[2017-11-21 12:53:25 #13 store] 
+Database '/Users/sutarat/Documents/GitHub/AppDesktop/mealbarn/src/ODB/Component.odb' is opened by 6447@sutarats-MacBook-Air.local
+
+[2017-11-21 12:53:25 #14 store] 
+Configuration path: ?
+
+[2017-11-21 12:53:25 #15 type] 
+Type ooad.Component is not enhanced.
+
+[2017-11-21 12:53:25 #16 store] 
+Database '/Users/sutarat/Documents/GitHub/AppDesktop/mealbarn/src/ODB/Component.odb' is closed by 6447@sutarats-MacBook-Air.local
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2017-11-21 12:58:44 #1 store] 
+Database '/Users/sutarat/Documents/GitHub/AppDesktop/mealbarn/src/ODB/Account.odb' is opened by 6559@sutarats-MacBook-Air.local
+
+[2017-11-21 12:58:44 #2 store] 
+Configuration path: ?
+
+[2017-11-21 12:58:44 #3 type] 
+Type ooad.Account is not enhanced.
+
+[2017-11-21 12:58:44 #4 type] 
+Type ooad.Food is not enhanced.
+
+[2017-11-21 12:58:45 #5 store] 
+Database '/Users/sutarat/Documents/GitHub/AppDesktop/mealbarn/src/ODB/Account.odb' is closed by 6559@sutarats-MacBook-Air.local
+
+[2017-11-21 12:58:45 #6 store] 
+Database '/Users/sutarat/Documents/GitHub/AppDesktop/mealbarn/src/ODB/Food.odb' is opened by 6559@sutarats-MacBook-Air.local
+
+[2017-11-21 12:58:45 #7 store] 
+Configuration path: ?
+
+[2017-11-21 12:58:45 #8 store] 
+Database '/Users/sutarat/Documents/GitHub/AppDesktop/mealbarn/src/ODB/Food.odb' is closed by 6559@sutarats-MacBook-Air.local
+
+[2017-11-21 12:58:45 #9 store] 
+Database '/Users/sutarat/Documents/GitHub/AppDesktop/mealbarn/src/ODB/ImageSize.odb' is opened by 6559@sutarats-MacBook-Air.local
+
+[2017-11-21 12:58:45 #10 store] 
+Configuration path: ?
+
+[2017-11-21 12:58:45 #11 type] 
+Type ooad.ImageSize is not enhanced.
+
+[2017-11-21 12:58:45 #12 store] 
+Database '/Users/sutarat/Documents/GitHub/AppDesktop/mealbarn/src/ODB/ImageSize.odb' is closed by 6559@sutarats-MacBook-Air.local
+
+[2017-11-21 12:58:45 #13 store] 
+Database '/Users/sutarat/Documents/GitHub/AppDesktop/mealbarn/src/ODB/Component.odb' is opened by 6559@sutarats-MacBook-Air.local
+
+[2017-11-21 12:58:45 #14 store] 
+Configuration path: ?
+
+[2017-11-21 12:58:45 #15 type] 
+Type ooad.Component is not enhanced.
+
+[2017-11-21 12:58:45 #16 store] 
+Database '/Users/sutarat/Documents/GitHub/AppDesktop/mealbarn/src/ODB/Component.odb' is closed by 6559@sutarats-MacBook-Air.local
+>>>>>>> Stashed changes
 
