@@ -102,6 +102,11 @@ public class ShowFoodController {
     }
 
     @FXML
+    void backPage(ActionEvent event) throws IOException {
+        SceneBack(foodData.getMode());
+    }
+
+    @FXML
     void initialize() {
         page = 1;
         pageSize = sizeIng;
@@ -146,6 +151,20 @@ public class ShowFoodController {
         String sorceD = String.format("./img/foodRecipe/%d-%d-%d.png",idFood+1,mode,page);
         Image imageD = new Image(sorceD);
         imgDetail.setImage(imageD);
+    }
+
+    private void SceneBack(String mode) throws IOException {
+        Stage stage = (Stage) this.closeButton.getScene().getWindow();
+        Parent result;
+        if(mode.compareTo("Category")==0) {
+            result = FXMLLoader.load(getClass().getResource("CategoryResult.fxml"));
+        }
+        else {
+            result = FXMLLoader.load(getClass().getResource("ResultSearch.fxml"));
+        }
+        Scene scene = new Scene(result);
+        stage.setScene(scene);
+        stage.show();
     }
 
     private void SceneCategory() throws IOException {

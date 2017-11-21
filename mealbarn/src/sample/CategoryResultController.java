@@ -108,6 +108,7 @@ public class CategoryResultController {
     void foodRecipe1(ActionEvent event) throws IOException {
         int idFood = Integer.parseInt(idShow.get((page*6)+0))-1;
         foodData.setIdFood(idFood);
+        foodData.setMode("Category");
         SceneShowFood();
     }
 
@@ -115,6 +116,7 @@ public class CategoryResultController {
     void foodRecipe2(ActionEvent event) throws IOException {
         int idFood = Integer.parseInt(idShow.get((page*6)+1))-1;
         foodData.setIdFood(idFood);
+        foodData.setMode("Category");
         SceneShowFood();
     }
 
@@ -122,6 +124,7 @@ public class CategoryResultController {
     void foodRecipe3(ActionEvent event) throws IOException {
         int idFood = Integer.parseInt(idShow.get((page*6)+2))-1;
         foodData.setIdFood(idFood);
+        foodData.setMode("Category");
         SceneShowFood();
     }
 
@@ -129,6 +132,7 @@ public class CategoryResultController {
     void foodRecipe4(ActionEvent event) throws IOException {
         int idFood = Integer.parseInt(idShow.get((page*6)+3))-1;
         foodData.setIdFood(idFood);
+        foodData.setMode("Category");
         SceneShowFood();
     }
 
@@ -136,6 +140,7 @@ public class CategoryResultController {
     void foodRecipe5(ActionEvent event) throws IOException {
         int idFood = Integer.parseInt(idShow.get((page*6)+4))-1;
         foodData.setIdFood(idFood);
+        foodData.setMode("Category");
         SceneShowFood();
     }
 
@@ -143,6 +148,7 @@ public class CategoryResultController {
     void foodRecipe6(ActionEvent event) throws IOException {
         int idFood = Integer.parseInt(idShow.get((page*6)+5))-1;
         foodData.setIdFood(idFood);
+        foodData.setMode("Category");
         SceneShowFood();
     }
 

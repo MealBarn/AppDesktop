@@ -19,6 +19,16 @@ public class FoodData {
     private ArrayList<String> mainCourseIDList  =   new ArrayList<String>();
     private ArrayList<String> soupIDList        =   new ArrayList<String>();
     private ArrayList<String> showIDList        =   new ArrayList<String>();
+    private int idFood;
+    private String mode;
+
+    public String getMode() {
+        return mode;
+    }
+
+    public void setMode(String mode) {
+        this.mode = mode;
+    }
 
     public int getIdFood() {
         return idFood;
@@ -27,8 +37,6 @@ public class FoodData {
     public void setIdFood(int idFood) {
         this.idFood = idFood;
     }
-
-    private int idFood;
 
     public void setShowIDList(ArrayList<String> showIDList) {
         this.showIDList = showIDList;
