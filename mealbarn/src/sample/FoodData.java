@@ -5,19 +5,20 @@ import ooad.*;
 import javax.persistence.*;
 import java.util.*;
 
-public class Data {
-    private ArrayList<String> allComponent;
-    private ArrayList<String> accountStr;
+public class FoodData {
+
     private List<Component> componentList;
     private List<Food> foodsList;
-    private ArrayList<FoodShow> foodShowsList;
-    private List<Account> accountList;
     private List<ImageSize> imageSizeList;
-    private ArrayList<String> alacarteIDList;
-    private ArrayList<String> appetizerIDList;
-    private ArrayList<String> dessertIDList;
-    private ArrayList<String> drinkIDList;
-    private ArrayList<String> mainCourseIDList;
+    private ArrayList<FoodShow> foodShowsList   =   new ArrayList<FoodShow>();
+    private ArrayList<String> allComponent      =   new ArrayList<String>();
+    private ArrayList<String> alacarteIDList    =   new ArrayList<String>();
+    private ArrayList<String> appetizerIDList   =   new ArrayList<String>();
+    private ArrayList<String> dessertIDList     =   new ArrayList<String>();
+    private ArrayList<String> drinkIDList       =   new ArrayList<String>();
+    private ArrayList<String> mainCourseIDList  =   new ArrayList<String>();
+    private ArrayList<String> soupIDList        =   new ArrayList<String>();
+    private ArrayList<String> showIDList        =   new ArrayList<String>();
 
     public int getIdFood() {
         return idFood;
@@ -27,7 +28,6 @@ public class Data {
         this.idFood = idFood;
     }
 
-    private ArrayList<String> soupIDList;
     private int idFood;
 
     public void setShowIDList(ArrayList<String> showIDList) {
@@ -46,69 +46,20 @@ public class Data {
             }
         }
     }
-
-
-    private ArrayList<String> showIDList;
-    private static Data data = new Data();
+    private static FoodData foodData = new FoodData();
 
     public List<ImageSize> getImageSizeList() {
         return imageSizeList;
     }
 
-    private Data()
+    private FoodData()
     {
-        accountStr = new ArrayList<String>();
-        allComponent = new ArrayList<String>();
+        openFile();
+        initFoodData();
+        assortFood();
+    }
 
-        foodShowsList = new ArrayList<FoodShow>();
-        alacarteIDList = new ArrayList<String>();
-        appetizerIDList = new ArrayList<String>();
-        dessertIDList = new ArrayList<String>();
-        drinkIDList = new ArrayList<String>();
-        mainCourseIDList = new ArrayList<String>();
-        soupIDList = new ArrayList<String>();
-        showIDList = new ArrayList<String>();
-        EntityManagerFactory emf;
-        EntityManager em;
-//        emf = Persistence.createEntityManagerFactory("objectdb://192.168.43.229:80/Account.odb;user=admin;password=admin");
-        emf = Persistence.createEntityManagerFactory("./src/ODB/Account.odb");
-        em = emf.createEntityManager();
-        TypedQuery<Account> queryAccount =
-                em.createQuery("SELECT a FROM ooad.Account a", Account.class);
-        accountList = queryAccount.getResultList();
-        em.close();
-        emf.close();
-        //////////////////////////////////////////////////////////////////
-//        emf = Persistence.createEntityManagerFactory("objectdb://192.168.43.229:80/Account.odb;user=admin;password=admin");
-        emf = Persistence.createEntityManagerFactory("./src/ODB/Food.odb");
-        em = emf.createEntityManager();
-        TypedQuery<Food> queryFood =
-                em.createQuery("SELECT a FROM ooad.Food a", Food.class);
-        foodsList = queryFood.getResultList();
-        em.close();
-        emf.close();
-        /////////////////////////////////////////////////////////////////
-        emf = Persistence.createEntityManagerFactory("./src/ODB/ImageSize.odb");
-        em = emf.createEntityManager();
-        TypedQuery<ImageSize> querySize =
-                em.createQuery("SELECT a FROM ooad.ImageSize a", ImageSize.class);
-        imageSizeList = querySize.getResultList();
-        em.close();
-        emf.close();
-        /////////////////////////////////////////////////////////////////
-//        emf = Persistence.createEntityManagerFactory("objectdb://192.168.43.229:80/Account.odb;user=admin;password=admin");
-        emf = Persistence.createEntityManagerFactory("./src/ODB/Component.odb");
-        em = emf.createEntityManager();
-        TypedQuery<Component> queryComponent =
-                em.createQuery("SELECT a FROM ooad.Component a", Component.class);
-        componentList = queryComponent.getResultList();
-        em.close();
-        emf.close();
-        /////////////////////////////////////////////////////////////////
-        for(Account account : accountList){
-            accountStr.add(account.toString());
-        }
-        /////////////////////////////////////////////////////////////////
+    private void initFoodData(){
         ArrayList<String> amountComponent = new ArrayList<String>();
         int nowId;
         int prevId = -1;
@@ -149,9 +100,44 @@ public class Data {
             int amount = Integer.parseInt(amountComponent.get(i));
             Long id = food.getId();
             String name = food.getName();
-            String perfect = "0";
-            FoodShow foodShow = new FoodShow(id,name,amount);
+            FoodShow foodShow = new FoodShow(id, name, amount);
             foodShowsList.add(foodShow);
+        }
+    }
+
+    private void openFile(){
+        EntityManagerFactory emf;
+        EntityManager em;
+//        emf = Persistence.createEntityManagerFactory("objectdb://192.168.43.229:80/Food.odb;user=admin;password=admin");
+        emf = Persistence.createEntityManagerFactory("./src/ODB/Food.odb");
+        em = emf.createEntityManager();
+        TypedQuery<Food> queryFood =
+                em.createQuery("SELECT a FROM ooad.Food a", Food.class);
+        foodsList = queryFood.getResultList();
+        em.close();
+        emf.close();
+        /////////////////////////////////////////////////////////////////
+        emf = Persistence.createEntityManagerFactory("./src/ODB/ImageSize.odb");
+        em = emf.createEntityManager();
+        TypedQuery<ImageSize> querySize =
+                em.createQuery("SELECT a FROM ooad.ImageSize a", ImageSize.class);
+        imageSizeList = querySize.getResultList();
+        em.close();
+        emf.close();
+        /////////////////////////////////////////////////////////////////
+//        emf = Persistence.createEntityManagerFactory("objectdb://192.168.43.229:80/Account.odb;user=admin;password=admin");
+        emf = Persistence.createEntityManagerFactory("./src/ODB/Component.odb");
+        em = emf.createEntityManager();
+        TypedQuery<Component> queryComponent =
+                em.createQuery("SELECT a FROM ooad.Component a", Component.class);
+        componentList = queryComponent.getResultList();
+        em.close();
+        emf.close();
+    }
+
+    private void assortFood(){
+        for (Food food : foodsList) {
+            Long id = food.getId();
             String type = food.getType();
             if(type.compareTo("appetizer")==0){
                 appetizerIDList.add(id.toString());
@@ -174,7 +160,7 @@ public class Data {
         }
     }
 
-    public static Data getData(){return data;}
+    public static FoodData getFoodData(){return foodData;}
 
     public void sortPerfect(){
         int n = showIDList.size();
@@ -199,8 +185,6 @@ public class Data {
             n=n-1;
         }while (isSwitch);
     }
-
-    public ArrayList<String> getAccountStr() { return accountStr; }
 
     public ArrayList<String> getAlacateIDList() {
         return alacarteIDList;
@@ -232,15 +216,9 @@ public class Data {
 
     public ArrayList<String> getAllComponent(){ return allComponent; }
 
-//    public ArrayList<String> getFoodStr() { return foodStr; }
-
     public ArrayList<FoodShow> getFoodShowsList() { return foodShowsList; }
 
     public List<Component> getComponentList() { return componentList; }
-
-    public List<Food> getFoodsList() { return foodsList; }
-
-    public List<Account> getAccountList() { return accountList; }
 
     public void clearPerfectFood(){
         for (FoodShow foodShow : foodShowsList){

@@ -107,42 +107,42 @@ public class CategoryResultController {
     @FXML
     void foodRecipe1(ActionEvent event) throws IOException {
         int idFood = Integer.parseInt(idShow.get((page*6)+0))-1;
-        data.setIdFood(idFood);
+        foodData.setIdFood(idFood);
         SceneShowFood();
     }
 
     @FXML
     void foodRecipe2(ActionEvent event) throws IOException {
         int idFood = Integer.parseInt(idShow.get((page*6)+1))-1;
-        data.setIdFood(idFood);
+        foodData.setIdFood(idFood);
         SceneShowFood();
     }
 
     @FXML
     void foodRecipe3(ActionEvent event) throws IOException {
         int idFood = Integer.parseInt(idShow.get((page*6)+2))-1;
-        data.setIdFood(idFood);
+        foodData.setIdFood(idFood);
         SceneShowFood();
     }
 
     @FXML
     void foodRecipe4(ActionEvent event) throws IOException {
         int idFood = Integer.parseInt(idShow.get((page*6)+3))-1;
-        data.setIdFood(idFood);
+        foodData.setIdFood(idFood);
         SceneShowFood();
     }
 
     @FXML
     void foodRecipe5(ActionEvent event) throws IOException {
         int idFood = Integer.parseInt(idShow.get((page*6)+4))-1;
-        data.setIdFood(idFood);
+        foodData.setIdFood(idFood);
         SceneShowFood();
     }
 
     @FXML
     void foodRecipe6(ActionEvent event) throws IOException {
         int idFood = Integer.parseInt(idShow.get((page*6)+5))-1;
-        data.setIdFood(idFood);
+        foodData.setIdFood(idFood);
         SceneShowFood();
     }
 
@@ -165,9 +165,9 @@ public class CategoryResultController {
 
     @FXML
     void initialize() {
-        idShow = data.getShowIDList();
+        idShow = foodData.getShowIDList();
         page = 0;
-        size = data.getShowIDList().size();
+        size = foodData.getShowIDList().size();
         recipeCount.setText(String.format("Total %d Recipes",size));
         updateData();
     }
@@ -175,7 +175,7 @@ public class CategoryResultController {
     int page;
     int size;
     ArrayList<String> idShow;
-    Data data = Data.getData();
+    FoodData foodData = FoodData.getFoodData();
 
     private void SceneCategory() throws IOException {
         Stage stage = (Stage) this.closeButton.getScene().getWindow();
@@ -212,7 +212,7 @@ public class CategoryResultController {
         if(id<size) {
             food1.setVisible(true);
             idFood = Integer.parseInt(idShow.get(id))-1;
-            FoodShow food1 = data.getFoodShowsList().get(idFood);
+            FoodShow food1 = foodData.getFoodShowsList().get(idFood);
             foodName1.setText(food1.getName());
             String sorce1 = "./img/imgFood/"+idShow.get(id)+".png";
             Image image1 = new Image(sorce1);
@@ -225,7 +225,7 @@ public class CategoryResultController {
         if(id<size) {
             food2.setVisible(true);
             idFood = Integer.parseInt(idShow.get(id))-1;
-            FoodShow food2 = data.getFoodShowsList().get(idFood);
+            FoodShow food2 = foodData.getFoodShowsList().get(idFood);
             foodName2.setText(food2.getName());
             String sorce2 = "./img/imgFood/"+idShow.get(id)+".png";
             Image image2 = new Image(sorce2);
@@ -238,7 +238,7 @@ public class CategoryResultController {
         if(id<size) {
             food3.setVisible(true);
             idFood = Integer.parseInt(idShow.get(id))-1;
-            FoodShow food3 = data.getFoodShowsList().get(idFood);
+            FoodShow food3 = foodData.getFoodShowsList().get(idFood);
             foodName3.setText(food3.getName());
             String sorce3 = "./img/imgFood/"+idShow.get(id)+".png";
             Image image3 = new Image(sorce3);
@@ -251,7 +251,7 @@ public class CategoryResultController {
         if(id<size) {
             food4.setVisible(true);
             idFood = Integer.parseInt(idShow.get(id))-1;
-            FoodShow food4 = data.getFoodShowsList().get(idFood);
+            FoodShow food4 = foodData.getFoodShowsList().get(idFood);
 //            foodName4.setText(food4.getName());
             foodName4.setText(food4.getName());
             String sorce4 = "./img/imgFood/"+idShow.get(id)+".png";
@@ -265,7 +265,7 @@ public class CategoryResultController {
         if(id<size) {
             food5.setVisible(true);
             idFood = Integer.parseInt(idShow.get(id))-1;
-            FoodShow food5 = data.getFoodShowsList().get(idFood);
+            FoodShow food5 = foodData.getFoodShowsList().get(idFood);
             foodName5.setText(food5.getName());
             String sorce5 = "./img/imgFood/"+idShow.get(id)+".png";
             Image image5 = new Image(sorce5);
@@ -278,7 +278,7 @@ public class CategoryResultController {
         if(id<size) {
             food6.setVisible(true);
             idFood = Integer.parseInt(idShow.get(id))-1;
-            FoodShow food6 = data.getFoodShowsList().get(idFood);
+            FoodShow food6 = foodData.getFoodShowsList().get(idFood);
             foodName6.setText(food6.getName());
             String sorce6 = "./img/imgFood/"+idShow.get(id)+".png";
             Image image6 = new Image(sorce6);

@@ -8,7 +8,6 @@ import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
-import javafx.geometry.Insets;
 import javafx.scene.Cursor;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
@@ -17,11 +16,6 @@ import javafx.scene.image.ImageView;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
 import javafx.scene.input.MouseEvent;
-import javafx.scene.layout.AnchorPane;
-import javafx.scene.layout.Background;
-import javafx.scene.layout.BackgroundFill;
-import javafx.scene.layout.CornerRadii;
-import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 import ooad.FoodShow;
 import ooad.Component;
@@ -65,13 +59,13 @@ public class SearchController {
 //    private AnchorPane testPane;
 
     ObservableList<String> choosedList = FXCollections.observableArrayList();
-    Data data = Data.getData();
+    FoodData foodData = FoodData.getFoodData();
     ArrayList<String> allComponent;
 
     @FXML
     void initialize() {
         listCursor();
-        allComponent = data.getAllComponent();
+        allComponent = foodData.getAllComponent();
         TextFields.bindAutoCompletion(IngredientType,allComponent);
     }
 
@@ -93,36 +87,36 @@ public class SearchController {
 
 //        testPane.setStyle("-fx-background-color: #ffffff; -fx-background-radius: 10;");
 
-        data.clearPerfectFood();
-        ArrayList<FoodShow> foodShowsList = data.getFoodShowsList();
-        List<Component> componentList = data.getComponentList();
+        foodData.clearPerfectFood();
+        ArrayList<FoodShow> foodShowsList = foodData.getFoodShowsList();
+        List<Component> componentList = foodData.getComponentList();
         ArrayList<String> select = new ArrayList<String>();
         if(isAlacarte.isSelected()){
-            select.addAll(data.getAlacateIDList());
+            select.addAll(foodData.getAlacateIDList());
         }
         if(isAppetizer.isSelected()){
-            select.addAll(data.getAppetizerIDList());
+            select.addAll(foodData.getAppetizerIDList());
         }
         if(isDessert.isSelected()){
-            select.addAll(data.getDessertIDList());
+            select.addAll(foodData.getDessertIDList());
         }
         if(isDrink.isSelected()){
-            select.addAll(data.getDrinkIDList());
+            select.addAll(foodData.getDrinkIDList());
         }
         if(isMainCourse.isSelected()){
-            select.addAll(data.getMainCourseIDList());
+            select.addAll(foodData.getMainCourseIDList());
         }
         if(isSoup.isSelected()){
-            select.addAll(data.getSoupIDList());
+            select.addAll(foodData.getSoupIDList());
         }
 
         if(!(isAlacarte.isSelected()) && !(isAppetizer.isSelected()) && !(isDessert.isSelected()) && !(isDrink.isSelected()) && !(isMainCourse.isSelected()) && !(isSoup.isSelected()) ){
-            select.addAll(data.getAlacateIDList());
-            select.addAll(data.getAppetizerIDList());
-            select.addAll(data.getDessertIDList());
-            select.addAll(data.getDrinkIDList());
-            select.addAll(data.getMainCourseIDList());
-            select.addAll(data.getSoupIDList());
+            select.addAll(foodData.getAlacateIDList());
+            select.addAll(foodData.getAppetizerIDList());
+            select.addAll(foodData.getDessertIDList());
+            select.addAll(foodData.getDrinkIDList());
+            select.addAll(foodData.getMainCourseIDList());
+            select.addAll(foodData.getSoupIDList());
         }
         for (String choose : choosedList){
             for (Component component : componentList){
@@ -134,9 +128,9 @@ public class SearchController {
                 }
             }
         }
-        data.setFoodShowsList(foodShowsList);
-        data.setShowIDList();
-        data.sortPerfect();
+        foodData.setFoodShowsList(foodShowsList);
+        foodData.setShowIDList();
+        foodData.sortPerfect();
         choosedList.clear();
         isSoup.setSelected(false);
         isMainCourse.setSelected(false);

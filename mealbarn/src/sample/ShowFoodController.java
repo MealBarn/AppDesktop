@@ -106,7 +106,7 @@ public class ShowFoodController {
         page = 1;
         pageSize = sizeIng;
         mode = 1;
-        FoodShow food1 = data.getFoodShowsList().get(idFood);
+        FoodShow food1 = foodData.getFoodShowsList().get(idFood);
         foodName.setText(food1.getName());
         String sorceF = String.format("./img/imgFood/%d.png",idFood+1);
         Image imageF = new Image(sorceF);
@@ -116,9 +116,9 @@ public class ShowFoodController {
         ingButton.setDisable(true);
     }
 
-    Data data = Data.getData();
-    List<ImageSize> imageSizeList = data.getImageSizeList();
-    int idFood = data.getIdFood();
+    FoodData foodData = FoodData.getFoodData();
+    List<ImageSize> imageSizeList = foodData.getImageSizeList();
+    int idFood = foodData.getIdFood();
     int sizeIng = imageSizeList.get(idFood).getImgSize();
     int sizeDir = imageSizeList.get(idFood).getDirSize();
     int pageSize;

@@ -29,8 +29,6 @@ public class LoginController {
     @FXML
     private TextField passType;
 
-    Data data = Data.getData();
-
     @FXML
     void closeButtonAction(MouseEvent event) {
         Platform.exit();
@@ -38,12 +36,10 @@ public class LoginController {
 
     @FXML
     void loginButtonAction(ActionEvent event) throws IOException {
-        ArrayList<String> acc = data.getAccountStr();
         String user = userType.getText();
         String pass = passType.getText();
-        String uTest = String.format("%s %s",user,pass);
-        boolean canLog = acc.contains(uTest);
-        if(canLog) {
+        boolean canlogin = AccountData.getAccountData().canLogin(user,pass);
+        if(canlogin) {
             SceneSearch();
         }
         else {
