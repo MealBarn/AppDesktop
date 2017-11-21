@@ -103,7 +103,7 @@ public class ShowFoodController {
 
     @FXML
     void backPage(ActionEvent event) throws IOException {
-        SceneBack(foodData.getMode());
+        SceneBack(tempData.getMode());
     }
 
     @FXML
@@ -122,8 +122,9 @@ public class ShowFoodController {
     }
 
     FoodData foodData = FoodData.getFoodData();
+    TempData tempData = TempData.getTempData();
     List<ImageSize> imageSizeList = foodData.getImageSizeList();
-    int idFood = foodData.getIdFood();
+    int idFood = tempData.getIdFood();
     int sizeIng = imageSizeList.get(idFood).getImgSize();
     int sizeDir = imageSizeList.get(idFood).getDirSize();
     int pageSize;
@@ -154,6 +155,7 @@ public class ShowFoodController {
     }
 
     private void SceneBack(String mode) throws IOException {
+
         Stage stage = (Stage) this.closeButton.getScene().getWindow();
         Parent result;
         if(mode.compareTo("Category")==0) {

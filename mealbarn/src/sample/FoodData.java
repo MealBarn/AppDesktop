@@ -18,42 +18,11 @@ public class FoodData {
     private ArrayList<String> drinkIDList       =   new ArrayList<String>();
     private ArrayList<String> mainCourseIDList  =   new ArrayList<String>();
     private ArrayList<String> soupIDList        =   new ArrayList<String>();
-    private ArrayList<String> showIDList        =   new ArrayList<String>();
-    private int idFood;
-    private String mode;
-
-    public String getMode() {
-        return mode;
-    }
-
-    public void setMode(String mode) {
-        this.mode = mode;
-    }
-
-    public int getIdFood() {
-        return idFood;
-    }
-
-    public void setIdFood(int idFood) {
-        this.idFood = idFood;
-    }
-
-    public void setShowIDList(ArrayList<String> showIDList) {
-        this.showIDList = showIDList;
-    }
 
     public void setFoodShowsList(ArrayList<FoodShow> foodShowsList) {
         this.foodShowsList = foodShowsList;
     }
 
-    public void setShowIDList() {
-        showIDList.clear();
-        for (FoodShow food : foodShowsList){
-            if(food.getPerfect()>0){
-                showIDList.add(food.getId().toString());
-            }
-        }
-    }
     private static FoodData foodData = new FoodData();
 
     public List<ImageSize> getImageSizeList() {
@@ -170,30 +139,6 @@ public class FoodData {
 
     public static FoodData getFoodData(){return foodData;}
 
-    public void sortPerfect(){
-        int n = showIDList.size();
-        boolean isSwitch;
-        do{
-            isSwitch = false;
-            int idNow;
-            int idPrev;
-            float perfectNow;
-            float perfectPrev;
-            for(int i = 1 ;i<n;i++)
-            {
-                idNow = Integer.parseInt(showIDList.get(i));
-                idPrev= Integer.parseInt(showIDList.get(i-1));
-                perfectNow = foodShowsList.get(idNow-1).getPerfect();
-                perfectPrev = foodShowsList.get(idPrev-1).getPerfect();
-                if(perfectPrev<perfectNow){
-                    Collections.swap(showIDList,i,i-1);
-                    isSwitch =true;
-                }
-            }
-            n=n-1;
-        }while (isSwitch);
-    }
-
     public ArrayList<String> getAlacateIDList() {
         return alacarteIDList;
     }
@@ -216,10 +161,6 @@ public class FoodData {
 
     public ArrayList<String> getSoupIDList() {
         return soupIDList;
-    }
-
-    public ArrayList<String> getShowIDList() {
-        return showIDList;
     }
 
     public ArrayList<String> getAllComponent(){ return allComponent; }

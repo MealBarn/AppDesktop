@@ -60,6 +60,7 @@ public class SearchController {
 
     ObservableList<String> choosedList = FXCollections.observableArrayList();
     FoodData foodData = FoodData.getFoodData();
+    TempData tempData = TempData.getTempData();
     ArrayList<String> allComponent;
 
     @FXML
@@ -129,8 +130,8 @@ public class SearchController {
             }
         }
         foodData.setFoodShowsList(foodShowsList);
-        foodData.setShowIDList();
-        foodData.sortPerfect();
+        tempData.setShowIDList();
+        tempData.sortPerfect();
         choosedList.clear();
         isSoup.setSelected(false);
         isMainCourse.setSelected(false);
@@ -138,6 +139,7 @@ public class SearchController {
         isDessert.setSelected(false);
         isAppetizer.setSelected(false);
         isAlacarte.setSelected(false);
+        tempData.setPage(0);
         SceneResult();
     }
 

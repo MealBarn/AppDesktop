@@ -36,5 +36,19 @@ public class AccountData {
         return accountStr.contains(user);
     }
 
+    public boolean isDuplicateUser(String user){
+        for (Account account : accountList){
+            if(account.getUsername().compareTo(user)==0){
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public void addAccount(String user,String pass){
+        Long id = accountList.get(accountList.size()-1).getId()+1;
+        updateAccount();
+    }
+
     public static AccountData getAccountData() {return accountData;}
 }

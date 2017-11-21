@@ -146,48 +146,54 @@ public class ResultSearchController {
     @FXML
     void foodRecipe1(ActionEvent event) throws IOException {
         int idFood = Integer.parseInt(idShow.get((page*6)+0))-1;
-        foodData.setIdFood(idFood);
-        foodData.setMode("Search");
+        tempData.setIdFood(idFood);
+        tempData.setMode("Search");
+        tempData.setPage(page);
         SceneShowFood();
     }
 
     @FXML
     void foodRecipe2(ActionEvent event) throws IOException {
         int idFood = Integer.parseInt(idShow.get((page*6)+1))-1;
-        foodData.setIdFood(idFood);
-        foodData.setMode("Search");
+        tempData.setIdFood(idFood);
+        tempData.setMode("Search");
+        tempData.setPage(page);
         SceneShowFood();
     }
 
     @FXML
     void foodRecipe3(ActionEvent event) throws IOException {
         int idFood = Integer.parseInt(idShow.get((page*6)+2))-1;
-        foodData.setIdFood(idFood);
-        foodData.setMode("Search");
+        tempData.setIdFood(idFood);
+        tempData.setMode("Search");
+        tempData.setPage(page);
         SceneShowFood();
     }
 
     @FXML
     void foodRecipe4(ActionEvent event) throws IOException {
         int idFood = Integer.parseInt(idShow.get((page*6)+3))-1;
-        foodData.setIdFood(idFood);
-        foodData.setMode("Search");
+        tempData.setIdFood(idFood);
+        tempData.setMode("Search");
+        tempData.setPage(page);
         SceneShowFood();
     }
 
     @FXML
     void foodRecipe5(ActionEvent event) throws IOException {
         int idFood = Integer.parseInt(idShow.get((page*6)+4))-1;
-        foodData.setIdFood(idFood);
-        foodData.setMode("Search");
+        tempData.setIdFood(idFood);
+        tempData.setMode("Search");
+        tempData.setPage(page);
         SceneShowFood();
     }
 
     @FXML
     void foodRecipe6(ActionEvent event) throws IOException {
         int idFood = Integer.parseInt(idShow.get((page*6)+5))-1;
-        foodData.setIdFood(idFood);
-        foodData.setMode("Search");
+        tempData.setIdFood(idFood);
+        tempData.setMode("Search");
+        tempData.setPage(page);
         SceneShowFood();
     }
 
@@ -210,9 +216,9 @@ public class ResultSearchController {
 
     @FXML
     void initialize() {
-        idShow = foodData.getShowIDList();
-        page = 0;
-        size = foodData.getShowIDList().size();
+        idShow = tempData.getShowIDList();
+        page = tempData.getPage();
+        size = tempData.getShowIDList().size();
         recipeCount.setText(String.format("Total %d Recipes",size));
         updateData();
     }
@@ -220,8 +226,8 @@ public class ResultSearchController {
     int page;
     int size;
     ArrayList<String> idShow;
-
     FoodData foodData = FoodData.getFoodData();
+    TempData tempData = TempData.getTempData();
 
     void updateData(){
         int id;

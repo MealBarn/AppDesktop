@@ -19,13 +19,15 @@ public class CategoryController {
 
     @FXML
     void alacarteSelect(ActionEvent event) throws IOException {
-        foodData.setShowIDList(foodData.getAlacateIDList());
+        tempData.setShowIDList(foodData.getAlacateIDList());
+        tempData.setPage(0);
         SceneResult();
     }
 
     @FXML
     void appetizerSelect(ActionEvent event) throws IOException {
-        foodData.setShowIDList(foodData.getAppetizerIDList());
+        tempData.setShowIDList(foodData.getAppetizerIDList());
+        tempData.setPage(0);
         SceneResult();
     }
 
@@ -36,25 +38,29 @@ public class CategoryController {
 
     @FXML
     void dessertSelect(ActionEvent event) throws IOException {
-        foodData.setShowIDList(foodData.getDessertIDList());
+        tempData.setShowIDList(foodData.getDessertIDList());
+        tempData.setPage(0);
         SceneResult();
     }
 
     @FXML
     void drinkSelect(ActionEvent event) throws IOException {
-        foodData.setShowIDList(foodData.getDrinkIDList());
+        tempData.setShowIDList(foodData.getDrinkIDList());
+        tempData.setPage(0);
         SceneResult();
     }
 
     @FXML
     void maincourseSelect(ActionEvent event) throws IOException {
-        foodData.setShowIDList(foodData.getMainCourseIDList());
+        tempData.setShowIDList(foodData.getMainCourseIDList());
+        tempData.setPage(0);
         SceneResult();
     }
 
     @FXML
     void soupSelect(ActionEvent event) throws IOException {
-        foodData.setShowIDList(foodData.getSoupIDList());
+        tempData.setShowIDList(foodData.getSoupIDList());
+        tempData.setPage(0);
         SceneResult();
     }
 
@@ -64,6 +70,7 @@ public class CategoryController {
     }
 
     FoodData foodData = FoodData.getFoodData();
+    TempData tempData = TempData.getTempData();
 
     private void SceneSearch() throws IOException {
         Stage stage = (Stage) this.closeButton.getScene().getWindow();
