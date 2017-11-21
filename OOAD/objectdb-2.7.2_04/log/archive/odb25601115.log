@@ -1,0 +1,177 @@
+------------------------------------------------------------------------------------------------------------------------
+
+[2560-11-15 17:46:25 #1 store] 
+Database 'D:\ปี3เทอม1\OOAD\objectdb-2.7.2_04\db\points.odb' is opened by 2676@DESKTOP-TMJL86A
+
+[2560-11-15 17:46:25 #2 store] 
+Configuration path: D:\58010776\OOAD\objectdb-2.7.2_04\objectdb.conf
+
+[2560-11-15 17:46:42 #3 store] 
+Database 'D:\ปี3เทอม1\OOAD\objectdb-2.7.2_04\db\points.odb' is closed by 2676@DESKTOP-TMJL86A
+
+[2560-11-15 17:46:42 #4 store] 
+Database 'D:\58010776\OOAD\objectdb-2.7.2_04\db\points.odb' is opened by 2676@DESKTOP-TMJL86A
+
+[2560-11-15 17:46:42 #5 store] 
+Configuration path: D:\58010776\OOAD\objectdb-2.7.2_04\objectdb.conf
+
+[2560-11-15 17:46:47 #6 store] 
+Database 'D:\58010776\OOAD\objectdb-2.7.2_04\db\points.odb' is closed by 2676@DESKTOP-TMJL86A
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2560-11-15 17:47:47 #1 server] 
+Server on port 80 has started by 9284@DESKTOP-TMJL86A
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2560-11-15 17:48:32 #1 store] 
+Database 'D:\58010776\OOAD\objectdb-2.7.2_04\db\points.odb' is opened by 4088@DESKTOP-TMJL86A
+
+[2560-11-15 17:48:32 #2 store] 
+Configuration path: D:\58010776\OOAD\objectdb-2.7.2_04\objectdb.conf
+
+[2560-11-15 17:48:49 #3 store] 
+Database 'D:\58010776\OOAD\objectdb-2.7.2_04\db\points.odb' is closed by 4088@DESKTOP-TMJL86A
+
+[2560-11-15 17:48:49 #4 store] 
+Database 'D:\58010776\OOAD\objectdb-2.7.2_04\db\PicturePath.odb' is opened by 4088@DESKTOP-TMJL86A
+
+[2560-11-15 17:48:49 #5 store] 
+Configuration path: D:\58010776\OOAD\objectdb-2.7.2_04\objectdb.conf
+
+[2560-11-15 17:48:53 #6 store] 
+Database 'D:\58010776\OOAD\objectdb-2.7.2_04\db\PicturePath.odb' is closed by 4088@DESKTOP-TMJL86A
+
+[2560-11-15 17:51:13 #2 store] 
+Database 'D:\58010776\OOAD\objectdb-2.7.2_04\db\PicturePath.odb' is opened by 9284@DESKTOP-TMJL86A
+
+[2560-11-15 17:51:13 #3 store] 
+Configuration path: D:\58010776\OOAD\objectdb-2.7.2_04\objectdb.conf
+
+[2560-11-15 17:51:52 #4 store] 
+Database 'D:\58010776\OOAD\objectdb-2.7.2_04\db\PicturePath.odb' is closed by 9284@DESKTOP-TMJL86A
+
+[2560-11-15 18:01:46 #5 store] 
+Database 'D:\58010776\OOAD\objectdb-2.7.2_04\db\PicturePath.odb' is opened by 9284@DESKTOP-TMJL86A
+
+[2560-11-15 18:01:46 #6 store] 
+Configuration path: D:\58010776\OOAD\objectdb-2.7.2_04\objectdb.conf
+
+[2560-11-15 18:01:56 #7 store] 
+Database 'D:\58010776\OOAD\objectdb-2.7.2_04\db\PicturePath.odb' is closed by 9284@DESKTOP-TMJL86A
+
+[2560-11-15 18:23:14 #8 store] 
+Database 'D:\58010776\OOAD\objectdb-2.7.2_04\db\PicturePath.odb' is opened by 9284@DESKTOP-TMJL86A
+
+[2560-11-15 18:23:14 #9 store] 
+Configuration path: D:\58010776\OOAD\objectdb-2.7.2_04\objectdb.conf
+
+[2560-11-15 18:23:15 #10 type.user] 
+Enhancement of type ooad.PicturePath is old and cannot be used (3012594333306239679:6984769204647189793)
+
+[2560-11-15 18:23:15 #11 type] 
+Type ooad.PicturePath is not enhanced.
+
+[2560-11-15 18:23:16 #12 store] 
+Database 'D:\58010776\OOAD\objectdb-2.7.2_04\db\PicturePath.odb' is closed by 9284@DESKTOP-TMJL86A
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2560-11-15 18:24:10 #1 store] 
+Database 'D:\58010776\OOAD\objectdb-2.7.2_04\db\PicturePath.odb' is opened by 13988@DESKTOP-TMJL86A
+
+[2560-11-15 18:24:10 #2 store] 
+Configuration path: D:\58010776\OOAD\objectdb-2.7.2_04\objectdb.conf
+
+[2560-11-15 18:24:55 #13 store] 
+Database 'D:\58010776\OOAD\objectdb-2.7.2_04\db\Component.odb' is opened by 9284@DESKTOP-TMJL86A
+
+[2560-11-15 18:24:55 #14 store] 
+Configuration path: D:\58010776\OOAD\objectdb-2.7.2_04\objectdb.conf
+
+[2560-11-15 18:24:56 #15 store] 
+Database 'D:\58010776\OOAD\objectdb-2.7.2_04\db\Component.odb' is closed by 9284@DESKTOP-TMJL86A
+
+[2560-11-15 18:27:14 #3 store] 
+Database 'D:\58010776\OOAD\objectdb-2.7.2_04\db\PicturePath.odb' is closed by 13988@DESKTOP-TMJL86A
+
+[2560-11-15 18:27:42 #16 store] 
+Database 'D:\58010776\OOAD\objectdb-2.7.2_04\db\PicturePath.odb' is opened by 9284@DESKTOP-TMJL86A
+
+[2560-11-15 18:27:42 #17 store] 
+Configuration path: D:\58010776\OOAD\objectdb-2.7.2_04\objectdb.conf
+
+[2560-11-15 18:38:25 #18 server] 
+Server on port 80 has stopped by 9284@DESKTOP-TMJL86A
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2560-11-15 18:39:00 #1 explorer] 
+[ObjectDB 2.7.2_04] javax.persistence.PersistenceException
+Attempt to open a database file 'D:\58010776\OOAD\objectdb-2.7.2_04\db\PicturePath.odb' that is currently in use by another process (error 141)
+	at com.objectdb.Explorer$1.run(Explorer.java:57)
+	at java.awt.event.InvocationEvent.dispatch(Unknown Source)
+	at java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.awt.EventQueue.access$500(Unknown Source)
+	at java.awt.EventQueue$3.run(Unknown Source)
+	at java.awt.EventQueue$3.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.awt.EventDispatchThread.run(Unknown Source)
+Caused by: com.objectdb.o.UserException: Attempt to open a database file 'D:\58010776\OOAD\objectdb-2.7.2_04\db\PicturePath.odb' that is currently in use by another process
+	at com.objectdb.o.MSG.d(MSG.java:62)
+	at com.objectdb.o.LFL.F(LFL.java:929)
+	at com.objectdb.o.LFL.C(LFL.java:886)
+	at com.objectdb.o.LFL.C(LFL.java:796)
+	at com.objectdb.o.SFL.<init>(SFL.java:239)
+	at com.objectdb.o.MST.<init>(MST.java:123)
+	at com.objectdb.o.MST.aO(MST.java:105)
+	at com.objectdb.o.MSF.Vo(MSF.java:188)
+	at com.objectdb.o.OMF.an(OMF.java:782)
+	at com.objectdb.jpa.EMF.an(EMF.java:131)
+	at com.objectdb.o.OMF.am(OMF.java:693)
+	at com.objectdb.jpa.EMF.createEntityManager(EMF.java:150)
+	... 17 more
+
+[2560-11-15 18:39:08 #2 store] 
+Database 'D:\58010776\OOAD\Point.odb' is opened by 1104@DESKTOP-TMJL86A
+
+[2560-11-15 18:39:08 #3 store] 
+Configuration path: D:\58010776\OOAD\objectdb-2.7.2_04\objectdb.conf
+
+[2560-11-15 18:39:11 #4 store] 
+Database 'D:\58010776\OOAD\Point.odb' is closed by 1104@DESKTOP-TMJL86A
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2560-11-15 18:42:08 #1 server] 
+Server on port 80 has started by 4176@DESKTOP-TMJL86A
+
+[2560-11-15 18:43:15 #2 store] 
+Database 'D:\58010776\OOAD\objectdb-2.7.2_04\db\Account.odb' is opened by 4176@DESKTOP-TMJL86A
+
+[2560-11-15 18:43:15 #3 store] 
+Configuration path: D:\58010776\OOAD\objectdb-2.7.2_04\objectdb.conf
+
+[2560-11-15 18:43:16 #4 store] 
+Database 'D:\58010776\OOAD\objectdb-2.7.2_04\db\Account.odb' is closed by 4176@DESKTOP-TMJL86A
+
+[2560-11-15 18:43:53 #5 store] 
+Database 'D:\58010776\OOAD\objectdb-2.7.2_04\db\Account.odb' is opened by 4176@DESKTOP-TMJL86A
+
+[2560-11-15 18:43:53 #6 store] 
+Configuration path: D:\58010776\OOAD\objectdb-2.7.2_04\objectdb.conf
+
+[2560-11-15 18:43:54 #7 store] 
+Database 'D:\58010776\OOAD\objectdb-2.7.2_04\db\Account.odb' is closed by 4176@DESKTOP-TMJL86A
+
+[2560-11-15 18:48:40 #8 server] 
+Server on port 80 has stopped by 4176@DESKTOP-TMJL86A
+

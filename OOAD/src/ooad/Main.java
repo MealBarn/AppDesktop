@@ -17,12 +17,15 @@ public class Main {
         // TODO code application logic here
         //Scanner input = new Scanner (System.in);
 
-        String nameFile = "objectdb://192.168.43.19:80/PicturePath.odb;user=admin;password=admin";
-       // String nameFile ="Account.odb";
+        //String nameFile = "objectdb://192.168.43.19:80/PicturePath.odb;user=admin;password=admin";
+        String nameFile ="D://58010776//OOAD//objectdb-2.7.2_04//db//ImageSize.odb";
         EntityManagerFactory emf = Persistence.createEntityManagerFactory(nameFile);
         EntityManager em = emf.createEntityManager();
        // insertDBAccount(em,"Ham","58011173");
-            printAll(em);
+           // printAll(em);
+           for(int i=0;i<5;i++)
+           {
+           insertDBimgSize(em,3,4);}
          em.close();
         emf.close();
          
@@ -84,6 +87,22 @@ public class Main {
                     
         em.getTransaction().commit();
         /*Close connect*/
+    }
+    
+       public static void insertDBimgSize(EntityManager em,int imgSize,int dirSize)
+    {
+        /*Connect to database*/
+               em.getTransaction().begin();        
+
+                    ImageSize p = new ImageSize();
+                    em.persist(p);
+                    p.setImgSize(imgSize);
+                    p.setDirSize(dirSize);
+          
+        em.getTransaction().commit();
+        /*Close connect*/
+           
+
     }
 }   
 
