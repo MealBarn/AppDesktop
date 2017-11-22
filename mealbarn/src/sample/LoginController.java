@@ -53,7 +53,8 @@ public class LoginController {
         String pass = passType.getText();
         boolean canlogin = AccountData.getAccountData().canLogin(user,pass);
         if(canlogin) {
-            SceneSearch();
+            Stage stage = (Stage) this.closeButton.getScene().getWindow();
+            SceneData.getSceneData().searchScene(stage);
         }
         else {
             passType.clear();
@@ -104,12 +105,5 @@ public class LoginController {
         passType.setText("58010316");
     }
 
-    private void SceneSearch() throws IOException {
-        Stage stage = (Stage) this.closeButton.getScene().getWindow();
-        Parent login = FXMLLoader.load(getClass().getResource("Search.fxml"));
-        Scene scene = new Scene(login);
-        stage.setScene(scene);
-        stage.show();
-    }
 //aaaa
 }

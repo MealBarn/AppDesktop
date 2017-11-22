@@ -71,6 +71,9 @@
                      <font>
                         <Font size="16.0" />
                      </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
                   </JFXButton>
                   <Text layoutX="122.0" layoutY="-17.0" strokeType="OUTSIDE" strokeWidth="0.0" text="R E G I S T E R" textOrigin="CENTER">
                      <font>
@@ -117,6 +120,11 @@
                         <Font size="18.0" />
                      </font>
                   </TextField>
+                  <PasswordField fx:id="passType" layoutX="128.0" layoutY="85.0" prefHeight="44.0" prefWidth="350.0" promptText="Password" style="-fx-background-color: white; -fx-border-color: #656060; -fx-background-radius: 5; -fx-border-radius: 3; -fx-border-width: 0.5;">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </PasswordField>
                   <ImageView fitHeight="47.0" fitWidth="53.0" layoutX="74.0" layoutY="74.0" pickOnBounds="true" preserveRatio="true" />
                   <Pane layoutX="73.0" layoutY="31.0" prefHeight="45.0" prefWidth="54.0" style="-fx-background-color: #734d26; -fx-background-radius: 3;">
                      <children>
@@ -140,16 +148,9 @@
                      <font>
                         <Font size="18.0" />
                      </font>
-                  </JFXButton>
-                  <JFXCheckBox layoutX="87.0" layoutY="165.0" text="Remember Me">
-                     <font>
-                        <Font size="20.0" />
-                     </font>
-                  </JFXCheckBox>
-                  <JFXButton layoutX="279.0" layoutY="158.0" text="Forget Password" textFill="#51a2ae">
-                     <font>
-                        <Font size="19.5" />
-                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
                   </JFXButton>
                   <JFXButton layoutX="285.0" layoutY="208.0" onAction="#signupButtonAction" prefHeight="38.0" prefWidth="191.0" style="-fx-background-color: #ff9999; -fx-background-radius: 10;" text="SIGN UP" textFill="#514444">
                      <font>
@@ -159,11 +160,16 @@
                         <Cursor fx:constant="HAND" />
                      </cursor>
                   </JFXButton>
-                  <PasswordField fx:id="passType" layoutX="128.0" layoutY="85.0" prefHeight="44.0" prefWidth="350.0" promptText="Password" style="-fx-background-color: white; -fx-border-color: #656060; -fx-background-radius: 5; -fx-border-radius: 3; -fx-border-width: 0.5;">
+                  <JFXCheckBox focusTraversable="false" layoutX="87.0" layoutY="165.0" text="Remember Me">
                      <font>
-                        <Font size="18.0" />
+                        <Font size="20.0" />
                      </font>
-                  </PasswordField>
+                  </JFXCheckBox>
+                  <JFXButton focusTraversable="false" layoutX="279.0" layoutY="158.0" text="Forget Password" textFill="#51a2ae">
+                     <font>
+                        <Font size="19.5" />
+                     </font>
+                  </JFXButton>
                </children>
             </Pane>
             <Text layoutX="161.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" text="L O G I N">

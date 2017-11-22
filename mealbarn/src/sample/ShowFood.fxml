@@ -27,14 +27,31 @@
             </Text>
             <ImageView fx:id="foodImg" fitHeight="421.0" fitWidth="419.0" layoutX="28.0" layoutY="120.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../img/Alacarte/12.png" />
+                  <Image url="@../img/imgFood/1.png" />
                </image>
             </ImageView>
+            <Pane prefHeight="200.0" prefWidth="200.0" />
+            <JFXButton fx:id="dirButton" layoutX="862.0" layoutY="33.0" onAction="#dirMode" prefHeight="47.0" prefWidth="152.0" style="-fx-background-color: #513810; -fx-background-radius: 8;" styleClass="directionbutton" text="Directions" textFill="WHITE">
+               <font>
+                  <Font name="AdobeHeitiStd-Regular" size="22.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton fx:id="ingButton" disable="true" layoutX="685.0" layoutY="33.0" onAction="#ingMode" prefHeight="47.0" prefWidth="152.0" style="-fx-background-color: #513810; -fx-background-radius: 8;" styleClass="ingredientbutton" text="Ingredient" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
             <Pane layoutX="452.0" layoutY="102.0" prefHeight="510.0" prefWidth="580.0">
                <children>
                   <ImageView fx:id="imgDetail" fitHeight="445.0" fitWidth="582.0" layoutX="1.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../img/food/test-sol2-1.jpg" />
+                        <Image url="@../img/foodRecipe/1-1-1.png" />
                      </image>
                   </ImageView>
                   <Pane fx:id="prevPane" layoutX="37.0" layoutY="434.0" prefHeight="62.0" prefWidth="250.0">
@@ -83,23 +100,6 @@
                   </Pane>
                </children>
             </Pane>
-            <Pane prefHeight="200.0" prefWidth="200.0" />
-            <JFXButton fx:id="ingButton" disable="true" layoutX="685.0" layoutY="33.0" onAction="#ingMode" prefHeight="47.0" prefWidth="152.0" style="-fx-background-color: #513810; -fx-background-radius: 8;" styleClass="ingredientbutton" text="Ingredient" textFill="WHITE">
-               <font>
-                  <Font name="System Bold" size="22.0" />
-               </font>
-               <cursor>
-                  <Cursor fx:constant="HAND" />
-               </cursor>
-            </JFXButton>
-            <JFXButton fx:id="dirButton" layoutX="862.0" layoutY="33.0" onAction="#dirMode" prefHeight="47.0" prefWidth="152.0" style="-fx-background-color: #513810; -fx-background-radius: 8;" styleClass="directionbutton" text="Directions" textFill="WHITE">
-               <font>
-                  <Font name="AdobeHeitiStd-Regular" size="22.0" />
-               </font>
-               <cursor>
-                  <Cursor fx:constant="HAND" />
-               </cursor>
-            </JFXButton>
             <JFXButton layoutX="31.0" layoutY="553.0" onAction="#backPage" prefHeight="47.0" prefWidth="95.0" style="-fx-background-color: #ddff99; -fx-background-radius: 8;" text="Back">
                <font>
                   <Font name="System Bold" size="18.0" />
@@ -197,10 +197,19 @@
             </Text>
             <Line endX="100.0" layoutX="19.0" layoutY="377.0" startX="-15.0" stroke="WHITE" />
             <Line endX="100.0" layoutX="17.0" layoutY="502.0" startX="-15.0" stroke="WHITE" />
-            <JFXButton layoutX="-3.0" layoutY="138.0" prefHeight="105.0" prefWidth="114.0" text=" " />
-            <JFXButton layoutX="5.0" layoutY="254.0" prefHeight="114.0" prefWidth="107.0" text=" " />
-            <JFXButton layoutX="6.0" layoutY="384.0" prefHeight="114.0" prefWidth="100.0" text=" " />
-            <JFXButton layoutX="3.0" layoutY="501.0" prefHeight="130.0" prefWidth="114.0" text=" " />
+            <JFXButton disable="true" focusTraversable="false" layoutX="-3.0" layoutY="138.0" prefHeight="105.0" prefWidth="114.0" text=" " />
+            <JFXButton layoutX="5.0" layoutY="254.0" prefHeight="114.0" prefWidth="107.0" text=" ">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></JFXButton>
+            <JFXButton layoutX="6.0" layoutY="384.0" prefHeight="114.0" prefWidth="100.0" text=" ">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></JFXButton>
+            <JFXButton layoutX="3.0" layoutY="501.0" onAction="#logoutAction" prefHeight="130.0" prefWidth="114.0" text=" ">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></JFXButton>
          </children>
       </Pane>
    </children>

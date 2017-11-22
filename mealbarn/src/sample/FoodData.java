@@ -10,14 +10,14 @@ public class FoodData {
     private List<Component> componentList;
     private List<Food> foodsList;
     private List<ImageSize> imageSizeList;
-    private ArrayList<FoodShow> foodShowsList   =   new ArrayList<FoodShow>();
-    private ArrayList<String> allComponent      =   new ArrayList<String>();
-    private ArrayList<String> alacarteIDList    =   new ArrayList<String>();
-    private ArrayList<String> appetizerIDList   =   new ArrayList<String>();
-    private ArrayList<String> dessertIDList     =   new ArrayList<String>();
-    private ArrayList<String> drinkIDList       =   new ArrayList<String>();
-    private ArrayList<String> mainCourseIDList  =   new ArrayList<String>();
-    private ArrayList<String> soupIDList        =   new ArrayList<String>();
+    private ArrayList<FoodShow> foodShowsList   = new ArrayList<>();
+    private ArrayList<String> allComponent      = new ArrayList<>();
+    private ArrayList<String> alacarteIDList    = new ArrayList<>();
+    private ArrayList<String> appetizerIDList   = new ArrayList<>();
+    private ArrayList<String> dessertIDList     = new ArrayList<>();
+    private ArrayList<String> drinkIDList       = new ArrayList<>();
+    private ArrayList<String> mainCourseIDList  = new ArrayList<>();
+    private ArrayList<String> soupIDList        = new ArrayList<>();
 
     public void setFoodShowsList(ArrayList<FoodShow> foodShowsList) {
         this.foodShowsList = foodShowsList;

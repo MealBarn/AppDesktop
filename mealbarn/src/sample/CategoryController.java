@@ -22,7 +22,8 @@ public class CategoryController {
         tempData.setShowIDList(foodData.getAlacateIDList());
         tempData.setPage(0);
         tempData.setType("Alacarte");
-        SceneResult();
+        Stage stage = (Stage) this.closeButton.getScene().getWindow();
+        SceneData.getSceneData().categoryResultScene(stage);
     }
 
     @FXML
@@ -30,7 +31,8 @@ public class CategoryController {
         tempData.setShowIDList(foodData.getAppetizerIDList());
         tempData.setPage(0);
         tempData.setType("Appetizer");
-        SceneResult();
+        Stage stage = (Stage) this.closeButton.getScene().getWindow();
+        SceneData.getSceneData().categoryResultScene(stage);
     }
 
     @FXML
@@ -43,7 +45,8 @@ public class CategoryController {
         tempData.setShowIDList(foodData.getDessertIDList());
         tempData.setPage(0);
         tempData.setType("Dessert");
-        SceneResult();
+        Stage stage = (Stage) this.closeButton.getScene().getWindow();
+        SceneData.getSceneData().categoryResultScene(stage);
     }
 
     @FXML
@@ -51,7 +54,8 @@ public class CategoryController {
         tempData.setShowIDList(foodData.getDrinkIDList());
         tempData.setPage(0);
         tempData.setType("Drink");
-        SceneResult();
+        Stage stage = (Stage) this.closeButton.getScene().getWindow();
+        SceneData.getSceneData().categoryResultScene(stage);
     }
 
     @FXML
@@ -59,7 +63,8 @@ public class CategoryController {
         tempData.setShowIDList(foodData.getMainCourseIDList());
         tempData.setPage(0);
         tempData.setType("Maincourse");
-        SceneResult();
+        Stage stage = (Stage) this.closeButton.getScene().getWindow();
+        SceneData.getSceneData().categoryResultScene(stage);
     }
 
     @FXML
@@ -67,31 +72,25 @@ public class CategoryController {
         tempData.setShowIDList(foodData.getSoupIDList());
         tempData.setPage(0);
         tempData.setType("Soup");
-        SceneResult();
+        Stage stage = (Stage) this.closeButton.getScene().getWindow();
+        SceneData.getSceneData().categoryResultScene(stage);
     }
 
     @FXML
     void searchPage(ActionEvent event) throws IOException {
-        SceneSearch();
+        Stage stage = (Stage) this.closeButton.getScene().getWindow();
+        SceneData.getSceneData().searchScene(stage);
+    }
+
+    @FXML
+    void logoutAction(ActionEvent event) throws IOException {
+        tempData.setAccount(null);
+        tempData.setIdAccount(null);
+        Stage stage = (Stage) this.closeButton.getScene().getWindow();
+        SceneData.getSceneData().loginScene(stage);
     }
 
     FoodData foodData = FoodData.getFoodData();
     TempData tempData = TempData.getTempData();
-
-    private void SceneSearch() throws IOException {
-        Stage stage = (Stage) this.closeButton.getScene().getWindow();
-        Parent search = FXMLLoader.load(getClass().getResource("Search.fxml"));
-        Scene scene = new Scene(search);
-        stage.setScene(scene);
-        stage.show();
-    }
-
-    private void SceneResult() throws IOException {
-        Stage stage = (Stage) this.closeButton.getScene().getWindow();
-        Parent result = FXMLLoader.load(getClass().getResource("CategoryResult.fxml"));
-        Scene scene = new Scene(result);
-        stage.setScene(scene);
-        stage.show();
-    }
 
 }

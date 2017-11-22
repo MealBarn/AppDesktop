@@ -10,6 +10,9 @@ public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception{
+        FoodData.getFoodData();
+        TempData.getTempData();
+        AccountData.getAccountData();
         Stage priStage;
         priStage = primaryStage;
         Parent LoginP = FXMLLoader.load(getClass().getResource("Login.fxml"));  /// 1

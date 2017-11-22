@@ -47,7 +47,8 @@ public class ShowFoodController {
 
     @FXML
     void categoryPage(ActionEvent event) throws IOException {
-        SceneCategory();
+        Stage stage = (Stage) this.closeButton.getScene().getWindow();
+        SceneData.getSceneData().categoryScene(stage);
     }
 
     @FXML
@@ -93,12 +94,22 @@ public class ShowFoodController {
 
     @FXML
     void searchPage(ActionEvent event) throws IOException {
-        SceneSearch();
+        Stage stage = (Stage) this.closeButton.getScene().getWindow();
+        SceneData.getSceneData().searchScene(stage);
     }
 
     @FXML
     void backPage(ActionEvent event) throws IOException {
-        SceneBack(tempData.getMode());
+        Stage stage = (Stage) this.closeButton.getScene().getWindow();
+        SceneData.getSceneData().backScene(stage,tempData.getMode());
+    }
+
+    @FXML
+    void logoutAction(ActionEvent event) throws IOException {
+        tempData.setAccount(null);
+        tempData.setIdAccount(null);
+        Stage stage = (Stage) this.closeButton.getScene().getWindow();
+        SceneData.getSceneData().loginScene(stage);
     }
 
     @FXML
@@ -143,37 +154,6 @@ public class ShowFoodController {
         String sorceD = String.format("./img/foodRecipe/%d-%d-%d.png",idFood+1,mode,page);
         Image imageD = new Image(sorceD);
         imgDetail.setImage(imageD);
-    }
-
-    private void SceneBack(String mode) throws IOException {
-
-        Stage stage = (Stage) this.closeButton.getScene().getWindow();
-        Parent result;
-        if(mode.compareTo("Category")==0) {
-            result = FXMLLoader.load(getClass().getResource("CategoryResult.fxml"));
-        }
-        else {
-            result = FXMLLoader.load(getClass().getResource("ResultSearch.fxml"));
-        }
-        Scene scene = new Scene(result);
-        stage.setScene(scene);
-        stage.show();
-    }
-
-    private void SceneCategory() throws IOException {
-        Stage stage = (Stage) this.closeButton.getScene().getWindow();
-        Parent result = FXMLLoader.load(getClass().getResource("Category.fxml"));
-        Scene scene = new Scene(result);
-        stage.setScene(scene);
-        stage.show();
-    }
-
-    private void SceneSearch() throws IOException {
-        Stage stage = (Stage) this.closeButton.getScene().getWindow();
-        Parent search = FXMLLoader.load(getClass().getResource("Search.fxml"));
-        Scene scene = new Scene(search);
-        stage.setScene(scene);
-        stage.show();
     }
 
 }

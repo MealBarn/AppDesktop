@@ -140,7 +140,8 @@ public class SearchController {
         isAppetizer.setSelected(false);
         isAlacarte.setSelected(false);
         tempData.setPage(0);
-        SceneResult();
+        Stage stage = (Stage) this.closeButton.getScene().getWindow();
+        SceneData.getSceneData().resultSearchScene(stage);
     }
 
     @FXML
@@ -174,23 +175,16 @@ public class SearchController {
 
     @FXML
     void categoryPage(ActionEvent event) throws IOException {
-        SceneCategory();
+        Stage stage = (Stage) this.closeButton.getScene().getWindow();
+        SceneData.getSceneData().categoryScene(stage);
     }
 
-    private void SceneCategory() throws IOException {
+    @FXML
+    void logoutAction(ActionEvent event) throws IOException {
+        tempData.setAccount(null);
+        tempData.setIdAccount(null);
         Stage stage = (Stage) this.closeButton.getScene().getWindow();
-        Parent result = FXMLLoader.load(getClass().getResource("Category.fxml"));
-        Scene scene = new Scene(result);
-        stage.setScene(scene);
-        stage.show();
-    }
-
-    private void SceneResult() throws IOException {
-        Stage stage = (Stage) this.closeButton.getScene().getWindow();
-        Parent result = FXMLLoader.load(getClass().getResource("ResultSearch.fxml"));
-        Scene scene = new Scene(result);
-        stage.setScene(scene);
-        stage.show();
+        SceneData.getSceneData().loginScene(stage);
     }
 
     private void listCursor(){

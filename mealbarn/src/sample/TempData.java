@@ -15,7 +15,26 @@ public class TempData {
 
     private int idFood;
     private String mode;
+
+    public String getAccount() {
+        return account;
+    }
+
+    public void setAccount(String account) {
+        this.account = account;
+    }
+
+    public String getIdAccount() {
+        return idAccount;
+    }
+
+    public void setIdAccount(String idAccount) {
+        this.idAccount = idAccount;
+    }
+
     private int page;
+    private String account;
+    private String idAccount;
 
     public String getType() {
         return type;

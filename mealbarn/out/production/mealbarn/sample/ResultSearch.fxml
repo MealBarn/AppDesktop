@@ -23,7 +23,7 @@
          <children>
             <ImageView fx:id="foodImg1" fitHeight="210.0" fitWidth="203.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../img/Alacarte/1.png" />
+                  <Image url="@../img/imgFood/1.png" />
                </image>
             </ImageView>
             <Text fx:id="foodName1" layoutX="208.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="thaiFont" text="ก๋วยจั๊บ" textAlignment="CENTER" wrappingWidth="133.9999784231186">
@@ -53,12 +53,15 @@
             <Line endX="100.0" layoutX="230.0" layoutY="55.0" startX="-10.0" />
             <Pane layoutX="216.0" layoutY="111.0" prefHeight="43.0" prefWidth="123.0">
                <children>
-                  <ImageView fitHeight="25.0" fitWidth="29.0" layoutX="77.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="likeImg1" fitHeight="25.0" fitWidth="29.0" layoutX="77.0" layoutY="10.0" onMouseClicked="#like_unlike1" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../img/icons8-like_filled.png" />
+                        <Image url="@../img/like_unfill.png" />
                      </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
                   </ImageView>
-                  <Text layoutX="52.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="54">
+                  <Text fx:id="likeN1" layoutX="40.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="54" textAlignment="CENTER" wrappingWidth="30.0">
                      <font>
                         <Font size="15.0" />
                      </font>
@@ -71,7 +74,7 @@
          <children>
             <ImageView fx:id="foodImg2" fitHeight="203.0" fitWidth="208.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../img/Alacarte/1.png" />
+                  <Image url="@../img/imgFood/1.png" />
                </image>
             </ImageView>
             <Text fx:id="foodName2" layoutX="208.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ก๋วยจั๊บ" textAlignment="CENTER" wrappingWidth="133.9999784231186">
@@ -101,12 +104,15 @@
             </Text>
             <Pane layoutX="216.0" layoutY="111.0" prefHeight="43.0" prefWidth="123.0">
                <children>
-                  <ImageView fitHeight="25.0" fitWidth="29.0" layoutX="77.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="likeImg2" fitHeight="25.0" fitWidth="29.0" layoutX="77.0" layoutY="10.0" onMouseClicked="#like_unlike2" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../img/icons8-like_filled.png" />
+                        <Image url="@../img/like_fill.png" />
                      </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
                   </ImageView>
-                  <Text layoutX="52.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="54">
+                  <Text fx:id="likeN2" layoutX="40.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="54" textAlignment="CENTER" wrappingWidth="30.0">
                      <font>
                         <Font size="15.0" />
                      </font>
@@ -119,7 +125,7 @@
          <children>
             <ImageView fx:id="foodImg3" fitHeight="203.0" fitWidth="208.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../img/Alacarte/1.png" />
+                  <Image url="@../img/imgFood/1.png" />
                </image>
             </ImageView>
             <Text fx:id="foodName3" layoutX="208.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ก๋วยจั๊บ" textAlignment="CENTER" wrappingWidth="133.9999784231186">
@@ -149,12 +155,15 @@
             </Text>
             <Pane layoutX="216.0" layoutY="111.0" prefHeight="43.0" prefWidth="123.0">
                <children>
-                  <ImageView fitHeight="25.0" fitWidth="29.0" layoutX="77.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="likeImg3" fitHeight="25.0" fitWidth="29.0" layoutX="77.0" layoutY="10.0" onMouseClicked="#like_unlike3" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../img/icons8-like_filled.png" />
+                        <Image url="@../img/like_unfill.png" />
                      </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
                   </ImageView>
-                  <Text layoutX="52.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="54">
+                  <Text fx:id="likeN3" layoutX="40.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="54" textAlignment="CENTER" wrappingWidth="30.0">
                      <font>
                         <Font size="15.0" />
                      </font>
@@ -167,7 +176,7 @@
          <children>
             <ImageView fx:id="foodImg4" fitHeight="203.0" fitWidth="208.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../img/Alacarte/1.png" />
+                  <Image url="@../img/imgFood/1.png" />
                </image>
             </ImageView>
             <Text fx:id="foodName4" layoutX="208.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ก๋วยจั๊บ" textAlignment="CENTER" wrappingWidth="133.9999784231186">
@@ -197,12 +206,15 @@
             </Text>
             <Pane layoutX="216.0" layoutY="111.0" prefHeight="43.0" prefWidth="123.0">
                <children>
-                  <ImageView fitHeight="25.0" fitWidth="29.0" layoutX="77.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="likeImg4" fitHeight="25.0" fitWidth="29.0" layoutX="77.0" layoutY="10.0" onMouseClicked="#like_unlike4" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../img/icons8-like_filled.png" />
+                        <Image url="@../img/like_fill.png" />
                      </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
                   </ImageView>
-                  <Text layoutX="52.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="54">
+                  <Text fx:id="likeN4" layoutX="40.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="54" textAlignment="CENTER" wrappingWidth="30.0">
                      <font>
                         <Font size="15.0" />
                      </font>
@@ -215,7 +227,7 @@
          <children>
             <ImageView fx:id="foodImg5" fitHeight="203.0" fitWidth="208.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../img/Alacarte/1.png" />
+                  <Image url="@../img/imgFood/1.png" />
                </image>
             </ImageView>
             <Text fx:id="foodName5" layoutX="208.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ไข่เจียว" textAlignment="CENTER" wrappingWidth="133.9999784231186">
@@ -245,12 +257,15 @@
             </Text>
             <Pane layoutX="216.0" layoutY="111.0" prefHeight="43.0" prefWidth="123.0">
                <children>
-                  <ImageView fitHeight="25.0" fitWidth="29.0" layoutX="77.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="likeImg5" fitHeight="25.0" fitWidth="29.0" layoutX="77.0" layoutY="10.0" onMouseClicked="#like_unlike5" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../img/icons8-like_filled.png" />
+                        <Image url="@../img/like_unfill.png" />
                      </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
                   </ImageView>
-                  <Text layoutX="52.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="54">
+                  <Text fx:id="likeN5" layoutX="40.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="54" textAlignment="CENTER" wrappingWidth="30.0">
                      <font>
                         <Font size="15.0" />
                      </font>
@@ -263,7 +278,7 @@
          <children>
             <ImageView fx:id="foodImg6" fitHeight="203.0" fitWidth="208.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../img/Alacarte/1.png" />
+                  <Image url="@../img/imgFood/1.png" />
                </image>
             </ImageView>
             <Text fx:id="foodName6" layoutX="208.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ก๋วยจั๊บ" textAlignment="CENTER" wrappingWidth="133.9999784231186">
@@ -293,12 +308,15 @@
             </Text>
             <Pane layoutX="216.0" layoutY="111.0" prefHeight="43.0" prefWidth="123.0">
                <children>
-                  <ImageView fitHeight="25.0" fitWidth="29.0" layoutX="77.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="likeImg6" fitHeight="25.0" fitWidth="29.0" layoutX="77.0" layoutY="10.0" onMouseClicked="#like_unlike6" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../img/icons8-like_filled.png" />
+                        <Image url="@../img/like_fill.png" />
                      </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
                   </ImageView>
-                  <Text layoutX="52.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="54">
+                  <Text fx:id="likeN6" layoutX="40.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="54" textAlignment="CENTER" wrappingWidth="30.0">
                      <font>
                         <Font size="15.0" />
                      </font>
@@ -307,7 +325,7 @@
             </Pane>
          </children>
       </Pane>
-      <ImageView fx:id="nextImg" fitHeight="37.0" fitWidth="134.0" layoutX="727.0" layoutY="658.0" onMouseClicked="#nextPage" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="nextImg" fitHeight="37.0" fitWidth="134.0" focusTraversable="true" layoutX="727.0" layoutY="658.0" onMouseClicked="#nextPage" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../img/right-spoon.png" />
          </image>
@@ -315,7 +333,7 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </ImageView>
-      <ImageView fx:id="prevImg" fitHeight="37.0" fitWidth="134.0" layoutX="481.0" layoutY="658.0" onMouseClicked="#prevPage" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="prevImg" fitHeight="37.0" fitWidth="134.0" focusTraversable="true" layoutX="481.0" layoutY="658.0" onMouseClicked="#prevPage" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../img/left-fork.png" />
          </image>
@@ -418,10 +436,19 @@
             </Text>
             <Line endX="100.0" layoutX="19.0" layoutY="377.0" startX="-15.0" stroke="WHITE" />
             <Line endX="100.0" layoutX="17.0" layoutY="502.0" startX="-15.0" stroke="WHITE" />
-            <JFXButton layoutX="-3.0" layoutY="138.0" prefHeight="105.0" prefWidth="114.0" text=" " />
-            <JFXButton layoutX="5.0" layoutY="254.0" prefHeight="114.0" prefWidth="107.0" text=" " />
-            <JFXButton layoutX="6.0" layoutY="384.0" prefHeight="114.0" prefWidth="100.0" text=" " />
-            <JFXButton layoutX="3.0" layoutY="501.0" prefHeight="130.0" prefWidth="114.0" text=" " />
+            <JFXButton disable="true" focusTraversable="false" layoutX="-3.0" layoutY="138.0" prefHeight="105.0" prefWidth="114.0" text=" " />
+            <JFXButton layoutX="5.0" layoutY="254.0" onAction="#searchPage" prefHeight="114.0" prefWidth="107.0" text=" ">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></JFXButton>
+            <JFXButton layoutX="6.0" layoutY="384.0" onAction="#categoryPage" prefHeight="114.0" prefWidth="100.0" text=" ">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></JFXButton>
+            <JFXButton layoutX="3.0" layoutY="501.0" onAction="#logoutAction" prefHeight="130.0" prefWidth="114.0" text=" ">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></JFXButton>
          </children>
       </Pane>
       <Pane layoutX="476.0" layoutY="128.0" prefHeight="67.0" prefWidth="349.0" style="-fx-background-color: #660033; -fx-background-radius: 9;">

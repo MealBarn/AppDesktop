@@ -32,8 +32,17 @@ public class AccountData {
     }
 
     public boolean canLogin(String userId,String password){
-        String user = String.format("%s %s",userId,password);
-        return accountStr.contains(user);
+        for(Account account : accountList){
+            if(account.getUsername().compareTo(userId)==0){
+                if(account.getPassword().compareTo(password)==0){
+                    TempData.getTempData().setIdAccount(account.getId().toString());
+                    TempData.getTempData().setAccount(account.getUsername());
+                    LikeData.getLikeData().refreshLike();
+                    return true;
+                }else return false;
+            }else continue;
+        }
+        return false;
     }
 
     public boolean isDuplicateUser(String user){

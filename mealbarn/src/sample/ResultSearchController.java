@@ -113,6 +113,43 @@ public class ResultSearchController {
     private Text foodPerfect6;
 
     @FXML
+    private ImageView likeImg1;
+
+    @FXML
+    private ImageView likeImg2;
+
+    @FXML
+    private ImageView likeImg3;
+
+    @FXML
+    private ImageView likeImg4;
+
+    @FXML
+    private ImageView likeImg5;
+
+    @FXML
+    private ImageView likeImg6;
+
+    @FXML
+    private Text likeN1;
+
+    @FXML
+    private Text likeN2;
+
+    @FXML
+    private Text likeN3;
+
+    @FXML
+    private Text likeN4;
+
+    @FXML
+    private Text likeN5;
+
+    @FXML
+    private Text likeN6;
+
+
+    @FXML
     private ImageView closeButton;
 
     @FXML
@@ -129,7 +166,8 @@ public class ResultSearchController {
 
     @FXML
     void categoryPage(ActionEvent event) throws IOException {
-        SceneCategory();
+        Stage stage = (Stage) this.closeButton.getScene().getWindow();
+        SceneData.getSceneData().categoryResultScene(stage);
     }
 
     @FXML
@@ -143,7 +181,8 @@ public class ResultSearchController {
         tempData.setIdFood(idFood);
         tempData.setMode("Search");
         tempData.setPage(page);
-        SceneShowFood();
+        Stage stage = (Stage) this.closeButton.getScene().getWindow();
+        SceneData.getSceneData().showFoodScene(stage);
     }
 
     @FXML
@@ -152,7 +191,8 @@ public class ResultSearchController {
         tempData.setIdFood(idFood);
         tempData.setMode("Search");
         tempData.setPage(page);
-        SceneShowFood();
+        Stage stage = (Stage) this.closeButton.getScene().getWindow();
+        SceneData.getSceneData().showFoodScene(stage);
     }
 
     @FXML
@@ -161,7 +201,8 @@ public class ResultSearchController {
         tempData.setIdFood(idFood);
         tempData.setMode("Search");
         tempData.setPage(page);
-        SceneShowFood();
+        Stage stage = (Stage) this.closeButton.getScene().getWindow();
+        SceneData.getSceneData().showFoodScene(stage);
     }
 
     @FXML
@@ -170,7 +211,8 @@ public class ResultSearchController {
         tempData.setIdFood(idFood);
         tempData.setMode("Search");
         tempData.setPage(page);
-        SceneShowFood();
+        Stage stage = (Stage) this.closeButton.getScene().getWindow();
+        SceneData.getSceneData().showFoodScene(stage);
     }
 
     @FXML
@@ -179,7 +221,8 @@ public class ResultSearchController {
         tempData.setIdFood(idFood);
         tempData.setMode("Search");
         tempData.setPage(page);
-        SceneShowFood();
+        Stage stage = (Stage) this.closeButton.getScene().getWindow();
+        SceneData.getSceneData().showFoodScene(stage);
     }
 
     @FXML
@@ -188,7 +231,38 @@ public class ResultSearchController {
         tempData.setIdFood(idFood);
         tempData.setMode("Search");
         tempData.setPage(page);
-        SceneShowFood();
+        Stage stage = (Stage) this.closeButton.getScene().getWindow();
+        SceneData.getSceneData().showFoodScene(stage);
+    }
+
+    @FXML
+    void like_unlike1(MouseEvent event) {
+
+    }
+
+    @FXML
+    void like_unlike2(MouseEvent event) {
+
+    }
+
+    @FXML
+    void like_unlike3(MouseEvent event) {
+
+    }
+
+    @FXML
+    void like_unlike4(MouseEvent event) {
+
+    }
+
+    @FXML
+    void like_unlike5(MouseEvent event) {
+
+    }
+
+    @FXML
+    void like_unlike6(MouseEvent event) {
+
     }
 
     @FXML
@@ -205,7 +279,16 @@ public class ResultSearchController {
 
     @FXML
     void searchPage(ActionEvent event) throws IOException {
-        SceneSearch();
+        Stage stage = (Stage) this.closeButton.getScene().getWindow();
+        SceneData.getSceneData().searchScene(stage);
+    }
+
+    @FXML
+    void logoutAction(ActionEvent event) throws IOException {
+        tempData.setAccount(null);
+        tempData.setIdAccount(null);
+        Stage stage = (Stage) this.closeButton.getScene().getWindow();
+        SceneData.getSceneData().loginScene(stage);
     }
 
     @FXML
@@ -328,30 +411,6 @@ public class ResultSearchController {
         }else {
             nextImg.setVisible(true);
         }
-    }
-
-    private void SceneCategory() throws IOException {
-        Stage stage = (Stage) this.closeButton.getScene().getWindow();
-        Parent result = FXMLLoader.load(getClass().getResource("Category.fxml"));
-        Scene scene = new Scene(result);
-        stage.setScene(scene);
-        stage.show();
-    }
-
-    private void SceneSearch() throws IOException {
-        Stage stage = (Stage) this.closeButton.getScene().getWindow();
-        Parent search = FXMLLoader.load(getClass().getResource("Search.fxml"));
-        Scene scene = new Scene(search);
-        stage.setScene(scene);
-        stage.show();
-    }
-
-    private void SceneShowFood() throws IOException {
-        Stage stage = (Stage) this.closeButton.getScene().getWindow();
-        Parent search = FXMLLoader.load(getClass().getResource("ShowFood.fxml"));
-        Scene scene = new Scene(search);
-        stage.setScene(scene);
-        stage.show();
     }
 
 }
