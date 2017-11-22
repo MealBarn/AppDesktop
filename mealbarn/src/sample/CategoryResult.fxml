@@ -20,7 +20,7 @@
                   <Image url="@../img/bg-new.jpg" />
                </image>
             </ImageView>
-            <ImageView fx:id="nextImg" fitHeight="37.0" fitWidth="107.0" layoutX="732.0" layoutY="667.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="nextImg" fitHeight="37.0" fitWidth="107.0" layoutX="732.0" layoutY="667.0" onMouseClicked="#nextPage" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../img/right-spoon.png" />
                </image>
@@ -28,7 +28,7 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </ImageView>
-            <ImageView fx:id="prevImg" fitHeight="37.0" fitWidth="134.0" layoutX="481.0" layoutY="666.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="prevImg" fitHeight="37.0" fitWidth="134.0" layoutX="481.0" layoutY="666.0" onMouseClicked="#prevPage" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../img/left-fork.png" />
                </image>
@@ -50,6 +50,11 @@
                   </Text>
                </children>
             </Pane>
+            <Text layoutX="735.0" layoutY="729.0" onMouseClicked="#nextPage" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="91.00002130866051">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Text>
          </children>
       </Pane>
       <Pane fx:id="food1" layoutX="123.0" layoutY="217.0" prefHeight="203.0" prefWidth="349.0" style="-fx-background-color: #ffffff; -fx-background-radius: 9; -fx-border-color: black; -fx-border-radius: 9; -fx-border-width: 0.5;">

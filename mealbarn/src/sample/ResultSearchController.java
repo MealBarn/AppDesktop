@@ -192,13 +192,13 @@ public class ResultSearchController {
     }
 
     @FXML
-    void nextPage(ActionEvent event) {
+    void nextPage(MouseEvent event) {
         page++;
         updateData();
     }
 
     @FXML
-    void prevPage(ActionEvent event) {
+    void prevPage(MouseEvent event) {
         page--;
         updateData();
     }

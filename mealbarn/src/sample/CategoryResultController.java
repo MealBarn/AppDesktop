@@ -153,15 +153,15 @@ public class CategoryResultController {
     }
 
     @FXML
-    void nextPage(ActionEvent event) {
+    void nextPage(MouseEvent event) {
         page++;
-        //updateData();
+        updateData();
     }
 
     @FXML
-    void prevPage(ActionEvent event) {
+    void prevPage(MouseEvent event) {
         page--;
-        //updateData();
+        updateData();
     }
 
     @FXML
@@ -258,7 +258,7 @@ public class CategoryResultController {
             food4.setVisible(true);
             idFood = Integer.parseInt(idShow.get(id))-1;
             FoodShow food4 = foodData.getFoodShowsList().get(idFood);
-//            foodName4.setText(food4.getName());
+            foodName4.setText(food4.getName());
             foodName4.setText(food4.getName());
             String sorce4 = "./img/imgFood/"+idShow.get(id)+".png";
             Image image4 = new Image(sorce4);
