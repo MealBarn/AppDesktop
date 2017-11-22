@@ -77,16 +77,7 @@ public class CategoryResultController {
     private Text pageId;
 
     @FXML
-    private Text recipeCount;
-
-    @FXML
     private ImageView closeButton;
-
-    @FXML
-    private JFXButton nextButton;
-
-    @FXML
-    private JFXButton prevButton;
 
     @FXML
     private ImageView prevImg;
@@ -164,13 +155,13 @@ public class CategoryResultController {
     @FXML
     void nextPage(ActionEvent event) {
         page++;
-        updateData();
+        //updateData();
     }
 
     @FXML
     void prevPage(ActionEvent event) {
         page--;
-        updateData();
+        //updateData();
     }
 
     @FXML
@@ -183,7 +174,6 @@ public class CategoryResultController {
         idShow = tempData.getShowIDList();
         page = tempData.getPage();
         size = tempData.getShowIDList().size();
-        recipeCount.setText(String.format("Total %d Recipes",size));
         type.setText(tempData.getType());
         updateData();
     }
@@ -303,17 +293,13 @@ public class CategoryResultController {
             food6.setVisible(false);
         }
         if(page==0){
-            prevButton.setVisible(false);
             prevImg.setVisible(false);
         }else {
-            prevButton.setVisible(true);
             prevImg.setVisible(true);
         }
         if(page >=((size-1)/6)){
-            nextButton.setVisible(false);
             nextImg.setVisible(false);
         }else {
-            nextButton.setVisible(true);
             nextImg.setVisible(true);
         }
     }

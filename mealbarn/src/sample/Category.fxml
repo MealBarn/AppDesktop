@@ -11,42 +11,49 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<Pane prefHeight="760.0" prefWidth="1200.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.CategoryController">
+<Pane prefHeight="760.0" prefWidth="1200.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.CategoryController">
    <children>
       <ImageView fitHeight="763.0" fitWidth="1205.0" layoutX="-5.0" layoutY="31.0" pickOnBounds="true">
          <image>
             <Image url="@../img/bg0neww.jpg" />
          </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
       </ImageView>
-      <Pane layoutX="10.0" layoutY="6.0" prefHeight="114.0" prefWidth="271.0" visible="false">
-         <children>
-            <ImageView fitHeight="84.0" fitWidth="77.0" layoutX="23.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../img/member-suzy.jpg" />
-               </image>
-            </ImageView>
-            <Text fill="#4d4848" layoutX="117.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name  : Suzy">
-               <font>
-                  <Font size="18.0" />
-               </font>
-            </Text>
-            <Text fill="#4d4848" layoutX="118.0" layoutY="82.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Status : User">
-               <font>
-                  <Font size="18.0" />
-               </font>
-            </Text>
-            <Line endX="100.0" layoutX="144.0" layoutY="99.0" startX="-30.0" stroke="#c99e4c" />
-            <Text layoutX="115.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Member">
-               <font>
-                  <Font name="System Bold" size="19.0" />
-               </font>
-            </Text>
-         </children>
-      </Pane>
-      <Pane layoutX="-3.0" layoutY="-2.0" prefHeight="69.0" prefWidth="200.0" style="-fx-background-color: white;" />
+      <ImageView fitHeight="573.0" fitWidth="183.0" layoutX="837.0" layoutY="145.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/photo_Category/p-Dessert.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="567.0" fitWidth="183.0" layoutX="115.0" layoutY="146.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/photo_Category/p-ALaCarte1.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="572.0" fitWidth="183.0" layoutX="295.0" layoutY="144.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/photo_Category/p-Appetizer.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="570.0" fitWidth="183.0" layoutX="477.0" layoutY="144.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/photo_Category/p-Drink.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="573.0" fitWidth="183.0" layoutX="657.0" layoutY="144.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/photo_Category/p-Soup.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="572.0" fitWidth="183.0" layoutX="1018.0" layoutY="146.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/photo_Category/p-Maincourse2.png" />
+         </image>
+      </ImageView>
       <Pane layoutX="119.0" layoutY="-2.0" prefHeight="76.0" prefWidth="1081.0" style="-fx-background-color: white;">
          <children>
-            <JFXButton layoutX="2.0" layoutY="9.0" prefHeight="53.0" prefWidth="290.0" styleClass="contentFont" text="Search Ingredients">
+            <JFXButton layoutX="2.0" layoutY="9.0" onAction="#searchPage" prefHeight="53.0" prefWidth="290.0" styleClass="contentFont" text="Search Ingredients">
                <font>
                   <Font size="25.0" />
                </font>
@@ -54,7 +61,7 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </JFXButton>
-            <JFXButton disable="true" layoutX="779.0" layoutY="9.0" onAction="#categoryPage" prefHeight="53.0" prefWidth="250.0" styleClass="contentFont" text="Category">
+            <JFXButton disable="true" layoutX="779.0" layoutY="9.0" prefHeight="53.0" prefWidth="250.0" styleClass="contentFont" text="Category">
                <font>
                   <Font size="25.0" />
                </font>
@@ -62,7 +69,7 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </JFXButton>
-            <ImageView fx:id="closeButton1" fitHeight="32.0" fitWidth="30.0" layoutX="1036.0" layoutY="11.0" onMouseClicked="#closeButtonAction" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="closeButton" fitHeight="32.0" fitWidth="30.0" layoutX="1036.0" layoutY="11.0" onMouseClicked="#closeButtonAction" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../img/exit-search.png" />
                </image>
@@ -140,54 +147,30 @@
             <JFXButton layoutX="3.0" layoutY="501.0" prefHeight="130.0" prefWidth="114.0" text=" " />
          </children>
       </Pane>
-      <ImageView fitHeight="567.0" fitWidth="183.0" layoutX="115.0" layoutY="146.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../img/photo_Category/p-ALaCarte1.png" />
-         </image>
-      </ImageView>
-      <ImageView fitHeight="572.0" fitWidth="183.0" layoutX="295.0" layoutY="144.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../img/photo_Category/p-Appetizer.png" />
-         </image>
-      </ImageView>
-      <ImageView fitHeight="570.0" fitWidth="183.0" layoutX="477.0" layoutY="144.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../img/photo_Category/p-Drink.png" />
-         </image>
-      </ImageView>
-      <ImageView fitHeight="573.0" fitWidth="183.0" layoutX="657.0" layoutY="144.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../img/photo_Category/p-Soup.png" />
-         </image>
-      </ImageView>
-      <ImageView fitHeight="575.0" fitWidth="183.0" layoutX="837.0" layoutY="145.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../img/photo_Category/p-Dessert.png" />
-         </image>
-      </ImageView>
-      <ImageView fitHeight="572.0" fitWidth="183.0" layoutX="1018.0" layoutY="146.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../img/photo_Category/p-Maincourse2.png" />
-         </image>
-      </ImageView>
-      <Pane layoutX="115.0" layoutY="620.0" prefHeight="56.0" prefWidth="169.0" style="-fx-background-color: white;" />
-      <Text fill="#513810" layoutX="132.0" layoutY="663.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Alacate">
-         <font>
-            <Font name="Selima" size="58.0" />
-         </font>
-      </Text>
-      <Pane layoutX="295.0" layoutY="155.0" prefHeight="56.0" prefWidth="171.0" style="-fx-background-color: white;" />
-      <Text fill="#513810" layoutX="299.0" layoutY="194.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Appetizer">
-         <font>
-            <Font name="Selima" size="52.0" />
-         </font>
-      </Text>
-      <Pane layoutX="478.0" layoutY="620.0" prefHeight="56.0" prefWidth="169.0" style="-fx-background-color: white;" />
-      <Text fill="#513810" layoutX="508.0" layoutY="660.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Drink">
-         <font>
-            <Font name="Selima" size="55.0" />
-         </font>
-      </Text>
+      <Pane layoutX="115.0" layoutY="620.0" prefHeight="56.0" prefWidth="169.0" style="-fx-background-color: white;">
+         <children>
+            <Text fill="#513810" layoutX="14.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Alacate">
+               <font>
+                  <Font name="Selima" size="58.0" />
+               </font>
+            </Text>
+         </children></Pane>
+      <Pane layoutX="295.0" layoutY="155.0" prefHeight="56.0" prefWidth="171.0" style="-fx-background-color: white;">
+         <children>
+            <Text fill="#513810" layoutX="3.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Appetizer">
+               <font>
+                  <Font name="Selima" size="52.0" />
+               </font>
+            </Text>
+         </children></Pane>
+      <Pane layoutX="478.0" layoutY="620.0" prefHeight="56.0" prefWidth="169.0" style="-fx-background-color: white;">
+         <children>
+            <Text fill="#513810" layoutX="28.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Drink">
+               <font>
+                  <Font name="Selima" size="55.0" />
+               </font>
+            </Text>
+         </children></Pane>
       <Pane layoutX="657.0" layoutY="153.0" prefHeight="56.0" prefWidth="169.0" style="-fx-background-color: white;">
          <children>
             <Text fill="#513810" layoutX="43.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Soup">
@@ -197,24 +180,50 @@
             </Text>
          </children>
       </Pane>
-      <Pane layoutX="837.0" layoutY="622.0" prefHeight="56.0" prefWidth="169.0" style="-fx-background-color: white;" />
-      <Text fill="#513810" layoutX="858.0" layoutY="660.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dessert">
-         <font>
-            <Font name="Selima" size="55.0" />
-         </font>
-      </Text>
-      <Pane layoutX="1018.0" layoutY="156.0" prefHeight="56.0" prefWidth="169.0" style="-fx-background-color: white;" />
-      <Text fill="#513810" layoutX="1023.0" layoutY="193.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Maincourse">
-         <font>
-            <Font name="Selima" size="45.0" />
-         </font>
-      </Text>
-      <Pane layoutX="1020.0" layoutY="663.0" prefHeight="24.0" prefWidth="164.0" style="-fx-background-color: white;" />
-      <JFXButton layoutX="113.0" layoutY="144.0" prefHeight="545.0" prefWidth="171.0" text=" " />
-      <JFXButton layoutX="295.0" layoutY="145.0" prefHeight="544.0" prefWidth="171.0" text=" " />
-      <JFXButton layoutX="474.0" layoutY="143.0" prefHeight="542.0" prefWidth="171.0" text=" " />
-      <JFXButton layoutX="653.0" layoutY="143.0" prefHeight="544.0" prefWidth="171.0" text=" " />
-      <JFXButton layoutX="836.0" layoutY="143.0" prefHeight="545.0" prefWidth="171.0" text=" " visible="false" />
-      <JFXButton layoutX="1014.0" layoutY="146.0" prefHeight="542.0" prefWidth="171.0" text=" " />
+      <Pane layoutX="837.0" layoutY="622.0" prefHeight="56.0" prefWidth="169.0" style="-fx-background-color: white;">
+         <children>
+            <Text fill="#513810" layoutX="19.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dessert">
+               <font>
+                  <Font name="Selima" size="55.0" />
+               </font>
+            </Text>
+         </children></Pane>
+      <Pane layoutX="1018.0" layoutY="156.0" prefHeight="56.0" prefWidth="169.0" style="-fx-background-color: white;">
+         <children>
+            <Text fill="#513810" layoutX="2.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Maincourse">
+               <font>
+                  <Font name="Selima" size="45.0" />
+               </font>
+            </Text>
+         </children></Pane>
+      <JFXButton layoutX="653.0" layoutY="143.0" onAction="#soupSelect" prefHeight="544.0" prefWidth="171.0" text=" ">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton layoutX="1014.0" layoutY="146.0" onAction="#maincourseSelect" prefHeight="542.0" prefWidth="171.0" text=" ">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton layoutX="113.0" layoutY="144.0" onAction="#alacarteSelect" prefHeight="545.0" prefWidth="171.0" text=" ">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton layoutX="474.0" layoutY="143.0" onAction="#drinkSelect" prefHeight="542.0" prefWidth="171.0" text=" ">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton layoutX="295.0" layoutY="145.0" onAction="#appetizerSelect" prefHeight="544.0" prefWidth="171.0" text=" ">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></JFXButton>
+      <JFXButton layoutX="836.0" layoutY="145.0" onAction="#dessertSelect" prefHeight="544.0" prefWidth="171.0" text=" ">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
    </children>
 </Pane>

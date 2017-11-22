@@ -12,7 +12,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<Pane prefHeight="760.0" prefWidth="1200.0" style="-fx-background-color: #ffffe6;" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ResultSearchController">
+<Pane prefHeight="760.0" prefWidth="1200.0" style="-fx-background-color: #ffffe6;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ResultSearchController">
    <children>
       <ImageView fitHeight="771.0" fitWidth="1205.0" layoutY="-4.0" pickOnBounds="true">
          <image>
@@ -93,8 +93,8 @@
                   <Font name="TH Sarabun New" size="25.0" />
                </font>
             </Text>
-            <JFXProgressBar fx:id="foodScale11" layoutX="251.0" layoutY="90.0" prefHeight="13.0" prefWidth="80.0" progress="0.66" />
-            <Text fx:id="foodPerfect11" layoutX="217.0" layoutY="102.0" strokeType="OUTSIDE" strokeWidth="0.0" text="80%">
+            <JFXProgressBar fx:id="foodScale2" layoutX="251.0" layoutY="90.0" prefHeight="13.0" prefWidth="80.0" progress="0.66" />
+            <Text fx:id="foodPerfect2" layoutX="217.0" layoutY="102.0" strokeType="OUTSIDE" strokeWidth="0.0" text="80%">
                <font>
                   <Font size="15.0" />
                </font>
@@ -141,8 +141,8 @@
                   <Font name="TH Sarabun New" size="25.0" />
                </font>
             </Text>
-            <JFXProgressBar fx:id="foodScale111" layoutX="251.0" layoutY="90.0" prefHeight="13.0" prefWidth="80.0" progress="0.66" />
-            <Text fx:id="foodPerfect111" layoutX="217.0" layoutY="102.0" strokeType="OUTSIDE" strokeWidth="0.0" text="80%">
+            <JFXProgressBar fx:id="foodScale3" layoutX="251.0" layoutY="90.0" prefHeight="13.0" prefWidth="80.0" progress="0.66" />
+            <Text fx:id="foodPerfect3" layoutX="217.0" layoutY="102.0" strokeType="OUTSIDE" strokeWidth="0.0" text="80%">
                <font>
                   <Font size="15.0" />
                </font>
@@ -189,8 +189,8 @@
                   <Font name="TH Sarabun New" size="25.0" />
                </font>
             </Text>
-            <JFXProgressBar fx:id="foodScale1111" layoutX="251.0" layoutY="90.0" prefHeight="13.0" prefWidth="80.0" progress="0.66" />
-            <Text fx:id="foodPerfect1111" layoutX="217.0" layoutY="102.0" strokeType="OUTSIDE" strokeWidth="0.0" text="80%">
+            <JFXProgressBar fx:id="foodScale4" layoutX="251.0" layoutY="90.0" prefHeight="13.0" prefWidth="80.0" progress="0.66" />
+            <Text fx:id="foodPerfect4" layoutX="217.0" layoutY="102.0" strokeType="OUTSIDE" strokeWidth="0.0" text="80%">
                <font>
                   <Font size="15.0" />
                </font>
@@ -237,8 +237,8 @@
                   <Font name="TH Sarabun New" size="25.0" />
                </font>
             </Text>
-            <JFXProgressBar fx:id="foodScale11111" layoutX="251.0" layoutY="90.0" prefHeight="13.0" prefWidth="80.0" progress="0.66" />
-            <Text fx:id="foodPerfect11111" layoutX="217.0" layoutY="102.0" strokeType="OUTSIDE" strokeWidth="0.0" text="80%">
+            <JFXProgressBar fx:id="foodScale5" layoutX="251.0" layoutY="90.0" prefHeight="13.0" prefWidth="80.0" progress="0.66" />
+            <Text fx:id="foodPerfect5" layoutX="217.0" layoutY="102.0" strokeType="OUTSIDE" strokeWidth="0.0" text="80%">
                <font>
                   <Font size="15.0" />
                </font>
@@ -285,8 +285,8 @@
                   <Font name="TH Sarabun New" size="25.0" />
                </font>
             </Text>
-            <JFXProgressBar fx:id="foodScale111111" layoutX="251.0" layoutY="90.0" prefHeight="13.0" prefWidth="80.0" progress="0.66" />
-            <Text fx:id="foodPerfect111111" layoutX="217.0" layoutY="102.0" strokeType="OUTSIDE" strokeWidth="0.0" text="80%">
+            <JFXProgressBar fx:id="foodScale6" layoutX="251.0" layoutY="90.0" prefHeight="13.0" prefWidth="80.0" progress="0.66" />
+            <Text fx:id="foodPerfect6" layoutX="217.0" layoutY="102.0" strokeType="OUTSIDE" strokeWidth="0.0" text="80%">
                <font>
                   <Font size="15.0" />
                </font>
@@ -307,25 +307,30 @@
             </Pane>
          </children>
       </Pane>
-      <ImageView fx:id="nextImg" fitHeight="37.0" fitWidth="134.0" layoutX="690.0" layoutY="674.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="nextImg" fitHeight="37.0" fitWidth="134.0" layoutX="727.0" layoutY="658.0" onMouseClicked="#nextPage" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../img/right-spoon.png" />
          </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
       </ImageView>
-      <ImageView fx:id="prevImg" fitHeight="37.0" fitWidth="134.0" layoutX="541.0" layoutY="674.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="prevImg" fitHeight="37.0" fitWidth="134.0" layoutX="481.0" layoutY="658.0" onMouseClicked="#prevPage" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../img/left-fork.png" />
          </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
       </ImageView>
-      <Text fx:id="pageId" layoutX="659.0" layoutY="701.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
+      <Text fx:id="pageId" layoutX="628.0" layoutY="686.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER" wrappingWidth="44.235361367464066">
          <font>
             <Font size="23.0" />
          </font>
       </Text>
-      <Pane prefHeight="69.0" prefWidth="200.0" style="-fx-background-color: white;" />
       <Pane layoutX="122.0" prefHeight="76.0" prefWidth="1081.0" style="-fx-background-color: white;">
          <children>
-            <JFXButton disable="true" layoutX="2.0" layoutY="9.0" prefHeight="53.0" prefWidth="290.0" styleClass="contentFont" text="Search Ingredients">
+            <JFXButton layoutX="2.0" layoutY="9.0" onAction="#searchPage" prefHeight="53.0" prefWidth="290.0" styleClass="contentFont" text="Search Ingredients">
                <font>
                   <Font size="25.0" />
                </font>
@@ -421,7 +426,7 @@
       </Pane>
       <Pane layoutX="476.0" layoutY="128.0" prefHeight="67.0" prefWidth="349.0" style="-fx-background-color: #660033; -fx-background-radius: 9;">
          <children>
-            <Text fx:id="recipeCount" fill="WHITE" layoutX="87.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total 0 Recipes" wrappingWidth="209.57617338001728">
+            <Text fx:id="recipeCount" fill="WHITE" layoutX="54.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total 0 Recipes" textAlignment="CENTER" wrappingWidth="240.57617338001728">
                <font>
                   <Font size="25.0" />
                </font>

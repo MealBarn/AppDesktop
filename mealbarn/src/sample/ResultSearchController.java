@@ -116,12 +116,6 @@ public class ResultSearchController {
     private ImageView closeButton;
 
     @FXML
-    private JFXButton nextButton;
-
-    @FXML
-    private JFXButton prevButton;
-
-    @FXML
     private ImageView prevImg;
 
     @FXML
@@ -325,17 +319,13 @@ public class ResultSearchController {
             food6.setVisible(false);
         }
         if(page==0){
-            prevButton.setVisible(false);
             prevImg.setVisible(false);
         }else {
-            prevButton.setVisible(true);
             prevImg.setVisible(true);
         }
         if(page>=((size-1)/6)){
-            nextButton.setVisible(false);
             nextImg.setVisible(false);
         }else {
-            nextButton.setVisible(true);
             nextImg.setVisible(true);
         }
     }

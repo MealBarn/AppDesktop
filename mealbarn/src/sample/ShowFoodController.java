@@ -10,6 +10,7 @@ import javafx.scene.Scene;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
+import javafx.scene.layout.Pane;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 import ooad.FoodShow;
@@ -39,16 +40,10 @@ public class ShowFoodController {
     private JFXButton ingButton;
 
     @FXML
-    private JFXButton prevButton;
+    private Pane prevPane;
 
     @FXML
-    private JFXButton nextButton;
-
-    @FXML
-    private ImageView prevImg;
-
-    @FXML
-    private ImageView nextImg;
+    private Pane nextPane;
 
     @FXML
     void categoryPage(ActionEvent event) throws IOException {
@@ -133,18 +128,14 @@ public class ShowFoodController {
 
     void updateButton(){
         if(page==1){
-            prevButton.setVisible(false);
-            prevImg.setVisible(false);
+            prevPane.setVisible(false);
         }else {
-            prevButton.setVisible(true);
-            prevImg.setVisible(true);
+            prevPane.setVisible(true);
         }
         if(page==pageSize){
-            nextButton.setVisible(false);
-            nextImg.setVisible(false);
+            nextPane.setVisible(false);
         }else {
-            nextButton.setVisible(true);
-            nextImg.setVisible(true);
+            nextPane.setVisible(true);
         }
     }
 
