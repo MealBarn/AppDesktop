@@ -7,7 +7,7 @@ import ooad.Like;
 import java.util.*;
 
 public class LikeData {
-    ArrayList<Like> likeList = new ArrayList<>();
+    private ArrayList<Like> likeList = new ArrayList<>();
     private static LikeData likeData = new LikeData();
     private LikeData(){}
 
@@ -43,19 +43,23 @@ public class LikeData {
 
     public void refreshLike(){
         setData();
-        for (Like like : likeList){
-            System.out.println(like);
-
-        }
+//        for (Like like : likeList){
+//            System.out.println(like);
+//
+//        }
     }
 
     public void activeLike(int idFood){
-        String value = likeList.get(idFood-1).getValue();
+        Like like = likeList.get(idFood);
+        String value = like.getValue();
         if(value=="L"){
-            likeList.get(idFood-1).setValue(null);
+            like.setValue(null);
+            like.setSumValue(like.getSumValue()-1);
         }else {
-            likeList.get(idFood-1).setValue("L");
+            like.setValue("L");
+            like.setSumValue(like.getSumValue()+1);
         }
+        System.out.println(likeList.get(idFood).toString());
     }
 
 

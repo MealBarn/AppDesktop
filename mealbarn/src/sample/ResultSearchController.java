@@ -19,6 +19,7 @@ import javafx.scene.layout.Pane;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 import ooad.FoodShow;
+import ooad.Like;
 
 public class ResultSearchController {
 
@@ -237,44 +238,58 @@ public class ResultSearchController {
 
     @FXML
     void like_unlike1(MouseEvent event) {
-
+        int idFood = Integer.parseInt(idShow.get((page*6)+0))-1;
+        LikeData.getLikeData().activeLike(idFood);
+        updateLike();
     }
 
     @FXML
     void like_unlike2(MouseEvent event) {
-
+        int idFood = Integer.parseInt(idShow.get((page*6)+1))-1;
+        LikeData.getLikeData().activeLike(idFood);
+        updateLike();
     }
 
     @FXML
     void like_unlike3(MouseEvent event) {
-
+        int idFood = Integer.parseInt(idShow.get((page*6)+2))-1;
+        LikeData.getLikeData().activeLike(idFood);
+        updateLike();
     }
 
     @FXML
     void like_unlike4(MouseEvent event) {
-
+        int idFood = Integer.parseInt(idShow.get((page*6)+3))-1;
+        LikeData.getLikeData().activeLike(idFood);
+        updateLike();
     }
 
     @FXML
     void like_unlike5(MouseEvent event) {
-
+        int idFood = Integer.parseInt(idShow.get((page*6)+4))-1;
+        LikeData.getLikeData().activeLike(idFood);
+        updateLike();
     }
 
     @FXML
     void like_unlike6(MouseEvent event) {
-
+        int idFood = Integer.parseInt(idShow.get((page*6)+5))-1;
+        LikeData.getLikeData().activeLike(idFood);
+        updateLike();
     }
 
     @FXML
     void nextPage(MouseEvent event) {
         page++;
         updateData();
+        updateLike();
     }
 
     @FXML
     void prevPage(MouseEvent event) {
         page--;
         updateData();
+        updateLike();
     }
 
     @FXML
@@ -298,6 +313,7 @@ public class ResultSearchController {
         size = tempData.getShowIDList().size();
         recipeCount.setText(String.format("Total %d Recipes",size));
         updateData();
+        updateLike();
     }
 
     int page;
@@ -305,6 +321,77 @@ public class ResultSearchController {
     ArrayList<String> idShow;
     FoodData foodData = FoodData.getFoodData();
     TempData tempData = TempData.getTempData();
+
+    void updateLike(){
+        ArrayList<Like> likeList = LikeData.getLikeData().getLikeList();
+        String sorce = "./img/like_fill.png";
+        Image fill = new Image(sorce);
+        sorce = "./img/like_unfill.png";
+        Image unfill = new Image(sorce);
+        Like like;
+        int idFood;
+        int id;
+        //////////////////////////--1
+        id = (page*6)+0;
+        idFood = Integer.parseInt(idShow.get(id))-1;
+        like = likeList.get(idFood);
+        likeN1.setText(like.getSumValue()+"");
+        if(like.getValue()==null){
+            likeImg1.setImage(unfill);
+        }else {
+            likeImg1.setImage(fill);
+        }
+        //////////////////////////--2
+        id = (page*6)+1;
+        idFood = Integer.parseInt(idShow.get(id))-1;
+        like = likeList.get(idFood);
+        likeN2.setText(like.getSumValue()+"");
+        if(like.getValue()==null){
+            likeImg2.setImage(unfill);
+        }else {
+            likeImg2.setImage(fill);
+        }
+        //////////////////////////--3
+        id = (page*6)+2;
+        idFood = Integer.parseInt(idShow.get(id))-1;
+        like = likeList.get(idFood);
+        likeN3.setText(like.getSumValue()+"");
+        if(like.getValue()==null){
+            likeImg3.setImage(unfill);
+        }else {
+            likeImg3.setImage(fill);
+        }
+        //////////////////////////--4
+        id = (page*6)+3;
+        idFood = Integer.parseInt(idShow.get(id))-1;
+        like = likeList.get(idFood);
+        likeN4.setText(like.getSumValue()+"");
+        if(like.getValue()==null){
+            likeImg4.setImage(unfill);
+        }else {
+            likeImg4.setImage(fill);
+        }
+        //////////////////////////--5
+        id = (page*6)+4;
+        idFood = Integer.parseInt(idShow.get(id))-1;
+        like = likeList.get(idFood);
+        likeN5.setText(like.getSumValue()+"");
+        if(like.getValue()==null){
+            likeImg5.setImage(unfill);
+        }else {
+            likeImg5.setImage(fill);
+        }
+        //////////////////////////--6
+        id = (page*6)+5;
+        idFood = Integer.parseInt(idShow.get(id))-1;
+        like = likeList.get(idFood);
+        likeN1.setText(like.getSumValue()+"");
+        if(like.getValue()==null){
+            likeImg6.setImage(unfill);
+        }else {
+            likeImg6.setImage(fill);
+        }
+    }
 
     void updateData(){
         int id;
