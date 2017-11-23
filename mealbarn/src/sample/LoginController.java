@@ -76,7 +76,7 @@ public class LoginController {
         String user = userR.getText();
         String pass = passR.getText();
         String passA = passRagain.getText();
-        if(accountData.isDuplicateUser(user)){
+        if(accountData.isDuplicateUser(user)||user.length()<3){
             Alert alert = new Alert(Alert.AlertType.ERROR);
             alert.setTitle("Register error");
             alert.setHeaderText("The user name is Duplicate");

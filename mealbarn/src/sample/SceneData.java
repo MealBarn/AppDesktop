@@ -19,7 +19,7 @@ public class SceneData {
     public void backScene(Stage stage,String mode) throws IOException {
         Parent result;
         if(mode.compareTo("Category")==0) {
-            result = FXMLLoader.load(getClass().getResource("CategoryResult.fxml"));
+            result = FXMLLoader.load(getClass().getResource("ResultCategory.fxml"));
         }
         else {
             result = FXMLLoader.load(getClass().getResource("ResultSearch.fxml"));
@@ -37,9 +37,9 @@ public class SceneData {
     }
 
 
-    public void categoryResultScene(Stage stage) throws IOException {
-        Parent categoryResult = FXMLLoader.load(getClass().getResource("CategoryResult.fxml"));
-        javafx.scene.Scene scene = new javafx.scene.Scene(categoryResult);
+    public void resultCategoryScene(Stage stage) throws IOException {
+        Parent resultcategory = FXMLLoader.load(getClass().getResource("ResultCategory.fxml"));
+        javafx.scene.Scene scene = new javafx.scene.Scene(resultcategory);
         stage.setScene(scene);
         stage.show();
     }

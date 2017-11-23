@@ -19,7 +19,7 @@ import ooad.Like;
 import java.io.IOException;
 import java.util.ArrayList;
 
-public class CategoryResultController {
+public class ResultCategoryController {
 
     @FXML
     private Pane food1;

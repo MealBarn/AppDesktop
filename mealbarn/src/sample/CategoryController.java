@@ -27,7 +27,7 @@ public class CategoryController {
         tempData.setPage(0);
         tempData.setType("Alacarte");
         Stage stage = (Stage) this.closeButton.getScene().getWindow();
-        SceneData.getSceneData().categoryResultScene(stage);
+        SceneData.getSceneData().resultCategoryScene(stage);
     }
 
     @FXML
@@ -36,7 +36,7 @@ public class CategoryController {
         tempData.setPage(0);
         tempData.setType("Appetizer");
         Stage stage = (Stage) this.closeButton.getScene().getWindow();
-        SceneData.getSceneData().categoryResultScene(stage);
+        SceneData.getSceneData().resultCategoryScene(stage);
     }
 
     @FXML
@@ -50,7 +50,7 @@ public class CategoryController {
         tempData.setPage(0);
         tempData.setType("Dessert");
         Stage stage = (Stage) this.closeButton.getScene().getWindow();
-        SceneData.getSceneData().categoryResultScene(stage);
+        SceneData.getSceneData().resultCategoryScene(stage);
     }
 
     @FXML
@@ -59,7 +59,7 @@ public class CategoryController {
         tempData.setPage(0);
         tempData.setType("Drink");
         Stage stage = (Stage) this.closeButton.getScene().getWindow();
-        SceneData.getSceneData().categoryResultScene(stage);
+        SceneData.getSceneData().resultCategoryScene(stage);
     }
 
     @FXML
@@ -68,7 +68,7 @@ public class CategoryController {
         tempData.setPage(0);
         tempData.setType("Maincourse");
         Stage stage = (Stage) this.closeButton.getScene().getWindow();
-        SceneData.getSceneData().categoryResultScene(stage);
+        SceneData.getSceneData().resultCategoryScene(stage);
     }
 
     @FXML
@@ -77,7 +77,7 @@ public class CategoryController {
         tempData.setPage(0);
         tempData.setType("Soup");
         Stage stage = (Stage) this.closeButton.getScene().getWindow();
-        SceneData.getSceneData().categoryResultScene(stage);
+        SceneData.getSceneData().resultCategoryScene(stage);
     }
 
     @FXML
