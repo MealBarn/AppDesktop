@@ -8,6 +8,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Alert;
+import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
@@ -26,10 +27,10 @@ public class LoginController {
     private TextField userR;
 
     @FXML
-    private TextField passR;
+    private PasswordField passR;
 
     @FXML
-    private TextField passRagain;
+    private PasswordField passRagain;
 
     @FXML
     private Pane loginPane;
@@ -104,6 +105,15 @@ public class LoginController {
                 }
             }
         }
+    }
+
+    @FXML
+    void back (ActionEvent event) {
+        userR.clear();
+        passR.clear();
+        passRagain.clear();
+        loginPane.setVisible(true);
+        registerPane.setVisible(false);
     }
 
     @FXML
