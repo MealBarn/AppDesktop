@@ -1,11 +1,8 @@
 package ooad;
 
-<<<<<<< Updated upstream
 import javax.persistence.*;
 import java.util.*;
 import java.sql.*;
-=======
->>>>>>> Stashed changes
 
 /**
  *

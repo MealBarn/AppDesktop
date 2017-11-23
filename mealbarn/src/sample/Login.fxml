@@ -117,18 +117,6 @@
                   </LinearGradient>
                </fill>
             </Text>
-=======
-            <JFXButton fx:id="loginButton" layoutX="140.0" layoutY="263.0" onAction="#loginButtonAction" onMouseMoved="#loginCursor" prefHeight="52.0" prefWidth="281.0" style="-fx-background-color: #ffff33; -fx-background-radius: 10;" text="LOGIN">
-               <font>
-                  <Font size="20.0" />
-               </font>
-            </JFXButton>
-            <JFXCheckBox layoutX="126.0" layoutY="211.0" text="Remember Me">
-               <font>
-                  <Font size="20.0" />
-               </font>
-            </JFXCheckBox>
->>>>>>> Stashed changes
          </children>
       </Pane>
       <Pane id="Signup" fx:id="loginPane" layoutX="458.0" layoutY="254.0" opacity="0.87" prefHeight="374.0" prefWidth="547.0" style="-fx-background-color: white; -fx-background-radius: 15;">
@@ -248,12 +236,6 @@
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor>
-=======
-      <ImageView fx:id="closeButton" fitHeight="36.0" fitWidth="36.0" layoutX="1118.0" layoutY="27.0" onMouseClicked="#closeButtonAction" onMouseMoved="#closeCursor" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../img/icons8-delete_sign_filled.png" />
-         </image>
->>>>>>> Stashed changes
       </ImageView>
       <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="1089.0" layoutY="660.0" pickOnBounds="true" preserveRatio="true">
          <image>

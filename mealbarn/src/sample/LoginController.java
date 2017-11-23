@@ -1,11 +1,9 @@
 package sample;
 
-import com.jfoenix.controls.JFXPasswordField;
-import com.jfoenix.controls.JFXTextField;
+import com.jfoenix.controls.JFXCheckBox;
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-<<<<<<< Updated upstream
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
@@ -19,11 +17,9 @@ import javafx.stage.Stage;
 import ooad.Account;
 
 import java.io.IOException;
-import java.util.ArrayList;
 
 public class LoginController {
 
-<<<<<<< Updated upstream
     @FXML
     private Pane registerPane;
 
@@ -43,10 +39,10 @@ public class LoginController {
     private ImageView closeButton;
 
     @FXML
-    private Text warningPass;
+    private TextField userType;
 
     @FXML
-    private JFXTextField userType;
+    private TextField passType;
 
     @FXML
     private JFXCheckBox isRemember;
@@ -57,16 +53,14 @@ public class LoginController {
     }
 
     @FXML
-<<<<<<< Updated upstream
     void loginButtonAction(ActionEvent event) throws IOException {
-        Data data = Data.getData();
-        ArrayList<String> acc = data.getAccountStr();
         String user = userType.getText();
         String pass = passType.getText();
-        String uTest = String.format("%s %s",user,pass);
-        boolean canLog = acc.contains(uTest);
-        if(canLog) {
-            SceneSearch();
+        boolean canlogin = accountData.canLogin(user,pass);
+        if(canlogin) {
+            tempData.setRemember(isRemember.isSelected());
+            Stage stage = (Stage) this.closeButton.getScene().getWindow();
+            SceneData.getSceneData().searchScene(stage);
         }
         else {
             passType.clear();
@@ -113,16 +107,37 @@ public class LoginController {
         }
     }
 
-    private void SceneSearch() throws IOException {
-        Stage stage = (Stage) this.closeButton.getScene().getWindow();
-        Parent login = FXMLLoader.load(getClass().getResource("Search.fxml"));
-        Scene scene = new Scene(login);
-        stage.setScene(scene);
-        stage.show();
-    }
     @FXML
-    void closeCursor(MouseEvent event) {
-        closeButton.setCursor(Cursor.HAND);
+    void back (ActionEvent event) {
+        userR.clear();
+        passR.clear();
+        passRagain.clear();
+        loginPane.setVisible(true);
+        registerPane.setVisible(false);
     }
 
+    @FXML
+    void signupButtonAction(ActionEvent event) {
+        userR.clear();
+        passR.clear();
+        passRagain.clear();
+        loginPane.setVisible(false);
+        registerPane.setVisible(true);
+    }
+
+    TempData tempData = TempData.getTempData();
+    AccountData accountData = AccountData.getAccountData();
+
+    @FXML
+    void initialize() {
+        userType.clear();
+        passType.clear();
+        isRemember.setSelected(tempData.isRemember());
+        if(tempData.isRemember()) {
+            userType.setText(tempData.getAccountFill());
+            passType.setText(tempData.getPassword());
+        }
+    }
+
+//aaaa
 }

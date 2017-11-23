@@ -8,13 +8,9 @@ package ooad;
 import java.io.Serializable;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
-<<<<<<< Updated upstream
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import static java.nio.charset.StandardCharsets.*;
-=======
-import javax.persistence.Id;
->>>>>>> Stashed changes
 
 /**
  *
@@ -57,10 +53,6 @@ public class Component implements Serializable {
     public void setComponent(String component) {
         this.component = component;
     }
-<<<<<<< Updated upstream
-=======
-    public String toString(){return String.format("%d,%d,%s",this.idprimary,this.id,this.component);}
->>>>>>> Stashed changes
     
     
     

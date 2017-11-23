@@ -3,7 +3,6 @@ package sample;
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-<<<<<<< Updated upstream
 import javafx.fxml.FXMLLoader;
 import javafx.scene.*;
 import javafx.scene.Scene;

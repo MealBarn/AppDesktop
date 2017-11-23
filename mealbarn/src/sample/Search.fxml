@@ -3,16 +3,12 @@
 <?import com.jfoenix.controls.JFXButton?>
 <?import com.jfoenix.controls.JFXCheckBox?>
 <?import com.jfoenix.controls.JFXTextField?>
-<<<<<<< Updated upstream
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.Cursor?>
-=======
->>>>>>> Stashed changes
 <?import javafx.scene.control.ListView?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.Pane?>
-<<<<<<< Updated upstream
 <?import javafx.scene.paint.LinearGradient?>
 <?import javafx.scene.paint.Stop?>
 <?import javafx.scene.shape.Line?>
@@ -49,7 +45,6 @@
                <font>
                   <Font size="18.0" />
                </font>
-<<<<<<< Updated upstream
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor>
@@ -58,51 +53,38 @@
                <font>
                   <Font size="18.0" />
                </font>
-<<<<<<< Updated upstream
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor>
-=======
->>>>>>> Stashed changes
             </JFXCheckBox>
             <JFXCheckBox fx:id="isAppetizer" layoutX="334.0" layoutY="85.0" text="Appetizer">
                <font>
                   <Font size="18.0" />
                </font>
-<<<<<<< Updated upstream
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor>
-=======
->>>>>>> Stashed changes
             </JFXCheckBox>
             <JFXCheckBox fx:id="isDessert" layoutX="462.0" layoutY="85.0" text="Dessert">
                <font>
                   <Font size="18.0" />
                </font>
-<<<<<<< Updated upstream
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor>
-=======
->>>>>>> Stashed changes
             </JFXCheckBox>
             <JFXCheckBox fx:id="isDrink" layoutX="574.0" layoutY="85.0" text="Drink">
                <font>
                   <Font size="18.0" />
                </font>
-<<<<<<< Updated upstream
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor>
-=======
->>>>>>> Stashed changes
             </JFXCheckBox>
             <JFXCheckBox fx:id="isMainCourse" layoutX="661.0" layoutY="85.0" text="MainCourse">
                <font>
                   <Font size="18.0" />
                </font>
-<<<<<<< Updated upstream
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor>

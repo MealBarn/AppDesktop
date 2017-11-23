@@ -2,16 +2,12 @@
 
 <?import com.jfoenix.controls.JFXButton?>
 <?import com.jfoenix.controls.JFXProgressBar?>
-<<<<<<< Updated upstream
 <?import javafx.scene.Cursor?>
-=======
->>>>>>> Stashed changes
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.paint.LinearGradient?>
 <?import javafx.scene.paint.Stop?>
-<<<<<<< Updated upstream
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
@@ -51,16 +47,9 @@
             </JFXButton>
             <Text layoutX="244.0" layoutY="81.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ingredients">
                <font>
-                  <Font size="15.0" />
-               </font>
-            </JFXButton>
-            <Text layoutX="244.0" layoutY="118.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ingredients">
->>>>>>> Stashed changes
-               <font>
                   <Font name="TH Sarabun New" size="25.0" />
                </font>
             </Text>
-<<<<<<< Updated upstream
             <Line endX="100.0" layoutX="230.0" layoutY="55.0" startX="-10.0" />
             <Pane layoutX="216.0" layoutY="111.0" prefHeight="43.0" prefWidth="123.0">
                <children>
@@ -84,13 +73,6 @@
       <Pane fx:id="food2" layoutX="484.0" layoutY="217.0" prefHeight="203.0" prefWidth="349.0" style="-fx-background-color: #ffffff; -fx-background-radius: 9; -fx-border-color: black; -fx-border-radius: 9; -fx-border-width: 0.5;">
          <children>
             <ImageView fx:id="foodImg2" fitHeight="203.0" fitWidth="208.0" pickOnBounds="true" preserveRatio="true">
-=======
-         </children>
-      </Pane>
-      <Pane layoutX="427.0" layoutY="230.0" prefHeight="203.0" prefWidth="349.0" style="-fx-background-color: #ffffff;">
-         <children>
-            <ImageView fitHeight="203.0" fitWidth="208.0" pickOnBounds="true" preserveRatio="true">
->>>>>>> Stashed changes
                <image>
                   <Image url="@../img/imgFood/1.png" />
                </image>
@@ -110,12 +92,6 @@
             </JFXButton>
             <Line endX="100.0" layoutX="230.0" layoutY="55.0" startX="-10.0" />
             <Text layoutX="244.0" layoutY="81.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ingredients">
-               <font>
-                  <Font size="15.0" />
-               </font>
-            </JFXButton>
-            <Text layoutX="244.0" layoutY="118.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ingredients">
->>>>>>> Stashed changes
                <font>
                   <Font name="TH Sarabun New" size="25.0" />
                </font>
@@ -148,13 +124,6 @@
       <Pane fx:id="food3" layoutX="843.0" layoutY="217.0" prefHeight="203.0" prefWidth="349.0" style="-fx-background-color: #ffffff; -fx-background-radius: 9; -fx-border-color: black; -fx-border-radius: 9; -fx-border-width: 0.5;">
          <children>
             <ImageView fx:id="foodImg3" fitHeight="203.0" fitWidth="208.0" pickOnBounds="true" preserveRatio="true">
-=======
-         </children>
-      </Pane>
-      <Pane layoutX="799.0" layoutY="229.0" prefHeight="203.0" prefWidth="349.0" style="-fx-background-color: #ffffff;">
-         <children>
-            <ImageView fitHeight="203.0" fitWidth="208.0" pickOnBounds="true" preserveRatio="true">
->>>>>>> Stashed changes
                <image>
                   <Image url="@../img/imgFood/1.png" />
                </image>
@@ -174,12 +143,6 @@
             </JFXButton>
             <Line endX="100.0" layoutX="230.0" layoutY="55.0" startX="-10.0" />
             <Text layoutX="244.0" layoutY="81.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ingredients">
-               <font>
-                  <Font size="15.0" />
-               </font>
-            </JFXButton>
-            <Text layoutX="244.0" layoutY="118.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ingredients">
->>>>>>> Stashed changes
                <font>
                   <Font name="TH Sarabun New" size="25.0" />
                </font>
@@ -212,13 +175,6 @@
       <Pane fx:id="food4" layoutX="120.0" layoutY="445.0" prefHeight="203.0" prefWidth="349.0" style="-fx-background-color: #ffffff; -fx-background-radius: 9; -fx-border-color: black; -fx-border-radius: 9; -fx-border-width: 0.5;">
          <children>
             <ImageView fx:id="foodImg4" fitHeight="203.0" fitWidth="208.0" pickOnBounds="true" preserveRatio="true">
-=======
-         </children>
-      </Pane>
-      <Pane layoutX="53.0" layoutY="458.0" prefHeight="203.0" prefWidth="349.0" style="-fx-background-color: #ffffff;">
-         <children>
-            <ImageView fitHeight="203.0" fitWidth="208.0" pickOnBounds="true" preserveRatio="true">
->>>>>>> Stashed changes
                <image>
                   <Image url="@../img/imgFood/1.png" />
                </image>
@@ -238,12 +194,6 @@
             </JFXButton>
             <Line endX="100.0" layoutX="230.0" layoutY="55.0" startX="-10.0" />
             <Text layoutX="244.0" layoutY="81.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ingredients">
-               <font>
-                  <Font size="15.0" />
-               </font>
-            </JFXButton>
-            <Text layoutX="244.0" layoutY="118.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ingredients">
->>>>>>> Stashed changes
                <font>
                   <Font name="TH Sarabun New" size="25.0" />
                </font>
@@ -276,13 +226,6 @@
       <Pane fx:id="food5" layoutX="481.0" layoutY="445.0" prefHeight="203.0" prefWidth="349.0" style="-fx-background-color: #ffffff; -fx-background-radius: 9; -fx-border-color: black; -fx-border-radius: 9; -fx-border-width: 0.5;">
          <children>
             <ImageView fx:id="foodImg5" fitHeight="203.0" fitWidth="208.0" pickOnBounds="true" preserveRatio="true">
-=======
-         </children>
-      </Pane>
-      <Pane layoutX="424.0" layoutY="458.0" prefHeight="203.0" prefWidth="349.0" style="-fx-background-color: #ffffff;">
-         <children>
-            <ImageView fitHeight="203.0" fitWidth="208.0" pickOnBounds="true" preserveRatio="true">
->>>>>>> Stashed changes
                <image>
                   <Image url="@../img/imgFood/1.png" />
                </image>
@@ -302,12 +245,6 @@
             </JFXButton>
             <Line endX="100.0" layoutX="230.0" layoutY="55.0" startX="-10.0" />
             <Text layoutX="244.0" layoutY="81.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ingredients">
-               <font>
-                  <Font size="15.0" />
-               </font>
-            </JFXButton>
-            <Text layoutX="244.0" layoutY="118.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ingredients">
->>>>>>> Stashed changes
                <font>
                   <Font name="TH Sarabun New" size="25.0" />
                </font>
@@ -340,13 +277,6 @@
       <Pane fx:id="food6" layoutX="840.0" layoutY="445.0" prefHeight="203.0" prefWidth="349.0" style="-fx-background-color: #ffffff; -fx-background-radius: 9; -fx-border-color: black; -fx-border-radius: 9; -fx-border-width: 0.5;">
          <children>
             <ImageView fx:id="foodImg6" fitHeight="203.0" fitWidth="208.0" pickOnBounds="true" preserveRatio="true">
-=======
-         </children>
-      </Pane>
-      <Pane layoutX="796.0" layoutY="457.0" prefHeight="203.0" prefWidth="349.0" style="-fx-background-color: #ffffff;">
-         <children>
-            <ImageView fitHeight="203.0" fitWidth="208.0" pickOnBounds="true" preserveRatio="true">
->>>>>>> Stashed changes
                <image>
                   <Image url="@../img/imgFood/1.png" />
                </image>
@@ -366,12 +296,6 @@
             </JFXButton>
             <Line endX="100.0" layoutX="230.0" layoutY="55.0" startX="-10.0" />
             <Text layoutX="244.0" layoutY="81.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ingredients">
-               <font>
-                  <Font size="15.0" />
-               </font>
-            </JFXButton>
-            <Text layoutX="244.0" layoutY="118.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ingredients">
->>>>>>> Stashed changes
                <font>
                   <Font name="TH Sarabun New" size="25.0" />
                </font>
