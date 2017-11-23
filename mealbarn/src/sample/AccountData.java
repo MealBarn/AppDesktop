@@ -11,18 +11,24 @@ public class AccountData {
     private AccountData(){
         openFile();
     }
-
-    private void openFile(){
+	
+	public void addAccount(String user,String pass){
         EntityManagerFactory emf = Persistence.createEntityManagerFactory("./src/ODB/Account.odb");
         EntityManager em = emf.createEntityManager();
+        em.getTransaction().begin();
+        Account account = new Account();
+        em.persist(account);
+        account.setUsername(user);
+        account.setPassword(pass);
+        em.getTransaction().commit();
         TypedQuery<Account> queryAccount =
                 em.createQuery("SELECT a FROM ooad.Account a", Account.class);
         accountList = queryAccount.getResultList();
         em.close();
         emf.close();
     }
-
-    public boolean canLogin(String user,String password){
+	
+	public boolean canLogin(String user,String password){
         TempData tempData = TempData.getTempData();
         for(Account account : accountList){
             if(account.getUsername().compareTo(user)==0){
@@ -44,7 +50,9 @@ public class AccountData {
         return false;
     }
 
-    public boolean isDuplicateUser(String user){
+	public static AccountData getAccountData() {return accountData;}
+	
+	public boolean isDuplicateUser(String user){
         for (Account account : accountList){
             if(account.getUsername().compareTo(user)==0){
                 return true;
@@ -52,16 +60,10 @@ public class AccountData {
         }
         return false;
     }
-
-    public void addAccount(String user,String pass){
+	
+    private void openFile(){
         EntityManagerFactory emf = Persistence.createEntityManagerFactory("./src/ODB/Account.odb");
         EntityManager em = emf.createEntityManager();
-        em.getTransaction().begin();
-        Account account = new Account();
-        em.persist(account);
-        account.setUsername(user);
-        account.setPassword(pass);
-        em.getTransaction().commit();
         TypedQuery<Account> queryAccount =
                 em.createQuery("SELECT a FROM ooad.Account a", Account.class);
         accountList = queryAccount.getResultList();
@@ -69,5 +71,7 @@ public class AccountData {
         emf.close();
     }
 
-    public static AccountData getAccountData() {return accountData;}
+    
+    
+    
 }

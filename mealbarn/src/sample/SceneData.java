@@ -12,10 +12,7 @@ public class SceneData {
     private SceneData(){
 
     }
-    public static SceneData getSceneData(){
-        return sceneData;
-    }
-
+    
     public void backScene(Stage stage,String mode) throws IOException {
         Parent result;
         if(mode.compareTo("Category")==0) {
@@ -36,22 +33,23 @@ public class SceneData {
         stage.show();
     }
 
-
-    public void resultCategoryScene(Stage stage) throws IOException {
-        Parent resultcategory = FXMLLoader.load(getClass().getResource("ResultCategory.fxml"));
-        javafx.scene.Scene scene = new javafx.scene.Scene(resultcategory);
-        stage.setScene(scene);
-        stage.show();
+	public static SceneData getSceneData(){
+        return sceneData;
     }
 
-
-    public void loginScene(Stage stage) throws IOException {
+	public void loginScene(Stage stage) throws IOException {
         Parent login = FXMLLoader.load(getClass().getResource("Login.fxml"));
         javafx.scene.Scene scene = new javafx.scene.Scene(login);
         stage.setScene(scene);
         stage.show();
     }
 
+    public void resultCategoryScene(Stage stage) throws IOException {
+        Parent resultcategory = FXMLLoader.load(getClass().getResource("ResultCategory.fxml"));
+        javafx.scene.Scene scene = new javafx.scene.Scene(resultcategory);
+        stage.setScene(scene);
+        stage.show();
+    } 
 
     public void resultSearchScene(Stage stage) throws IOException {
         Parent resultSearch = FXMLLoader.load(getClass().getResource("ResultSearch.fxml"));
@@ -66,7 +64,6 @@ public class SceneData {
         stage.setScene(scene);
         stage.show();
     }
-
 
     public void showFoodScene(Stage stage) throws IOException {
         Parent showFood = FXMLLoader.load(getClass().getResource("ShowFood.fxml"));

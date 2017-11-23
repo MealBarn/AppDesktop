@@ -6,21 +6,53 @@ import javax.persistence.*;
 import java.util.*;
 
 public class LikeData {
-    private ArrayList<Like> likeList = new ArrayList<>();
-    private static LikeData likeData = new LikeData();
-    private LikeData(){    }
+	
+    
+    
+	private ArrayList<Like> likeList = new ArrayList<>();
     private List<PointDetail> pointDetailList;
 
-    public static LikeData getLikeData(){
+	private static LikeData likeData = new LikeData();
+	
+	private LikeData(){    }
+	
+	public void activeLike(int idFood){
+        EntityManagerFactory emf = Persistence.createEntityManagerFactory("./src/ODB/PointDetail.odb");
+        EntityManager em = emf.createEntityManager();
+        em.getTransaction().begin();
+        PointDetail p = new PointDetail();
+        p.setIdAccount(Integer.parseInt(TempData.getTempData().getIdAccount()));
+        p.setIdFood(idFood+1);
+        Like like = likeList.get(idFood);
+        String value = like.getValue();
+        if(value=="L"){
+            like.setValue("U");
+            p.setValue("U");
+            like.setSumValue(like.getSumValue()-1);
+        }else {
+            like.setValue("L");
+            p.setValue("L");
+            like.setSumValue(like.getSumValue()+1);
+        }
+        em.persist(p);
+        em.getTransaction().commit();
+        em.close();
+        emf.close();
+    }
+
+	public static LikeData getLikeData(){
         return likeData;
     }
 
-    int idAccount;
-    ArrayList<FoodShow> foodList = FoodData.getFoodData().getFoodShowsList();
-    int[] likeSum = new int[foodList.size()];
-    int[] likeAcc = new int[foodList.size()];
+	public ArrayList<Like> getLikeList() {
+        return likeList;
+    }
 
-    private void openFile(){
+	public void refreshLike(){
+        int idAccount;
+        int foodSize = FoodData.getFoodData().getFoodShowsList().size();
+        int[] likeAcc = new int[foodSize];
+        int[] likeSum = new int[foodSize];
         EntityManagerFactory emf = Persistence.createEntityManagerFactory("./src/ODB/PointDetail.odb");
         EntityManager em = emf.createEntityManager();
         TypedQuery<PointDetail> queryPointDetail =
@@ -29,8 +61,6 @@ public class LikeData {
         em.close();
         emf.close();
         idAccount = Integer.parseInt(TempData.getTempData().getIdAccount());
-        likeSum = new int[foodList.size()];
-        likeAcc = new int[foodList.size()];
         for(PointDetail pointDetail : pointDetailList){
             int idFood=pointDetail.getIdFood()-1;
             if(pointDetail.getValue().compareTo("L")==0){
@@ -47,11 +77,8 @@ public class LikeData {
                 }
             }
         }
-    }
-
-    private void setData(){
         likeList.clear();
-        for (int i = 1;i<=foodList.size();i++){
+        for (int i = 1;i<=foodSize;i++){
             Like like = new Like();
             like.setId(Long.valueOf(i));
             like.setIdAcc(idAccount);
@@ -65,51 +92,5 @@ public class LikeData {
             likeList.add(like);
         }
     }
-
-    public ArrayList<Like> getLikeList() {
-        return likeList;
-    }
-
-    public void refreshLike(){
-        openFile();
-        setData();
-//        for (Like like : likeList){
-//            System.out.println(like);
-//
-//        }
-    }
-
-    private void editLike(int idFood,String mode){
-        EntityManagerFactory emf = Persistence.createEntityManagerFactory("./src/ODB/PointDetail.odb");
-        EntityManager em = emf.createEntityManager();
-        em.getTransaction().begin();
-        PointDetail p = new PointDetail();
-        em.persist(p);
-        p.setIdAccount(Integer.parseInt(TempData.getTempData().getIdAccount()));
-        p.setIdFood(idFood);
-        if(mode.compareTo("L")==0) {
-            p.setValue("L");
-        }else {
-            p.setValue("U");
-        }
-        em.getTransaction().commit();
-        em.close();
-        emf.close();
-    }
-
-    public void activeLike(int idFood){
-        Like like = likeList.get(idFood);
-        String value = like.getValue();
-        if(value=="L"){
-            like.setValue(null);
-            like.setSumValue(like.getSumValue()-1);
-            editLike(idFood+1,"U");
-        }else {
-            like.setValue("L");
-            like.setSumValue(like.getSumValue()+1);
-            editLike(idFood+1,"L");
-        }
-    }
-
 
 }

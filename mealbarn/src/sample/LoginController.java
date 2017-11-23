@@ -19,33 +19,42 @@ import ooad.Account;
 import java.io.IOException;
 
 public class LoginController {
+	
+	@FXML
+    private ImageView closeButton;
+
+	@FXML
+    private JFXCheckBox isRemember;
+
+	@FXML
+    private Pane loginPane;
+	
+	@FXML
+    private PasswordField passR;
+
+    @FXML
+    private PasswordField passRagain;
+
+	@FXML
+    private TextField passType;
 
     @FXML
     private Pane registerPane;
 
     @FXML
     private TextField userR;
-
-    @FXML
-    private PasswordField passR;
-
-    @FXML
-    private PasswordField passRagain;
-
-    @FXML
-    private Pane loginPane;
-
-    @FXML
-    private ImageView closeButton;
-
+    
     @FXML
     private TextField userType;
-
-    @FXML
-    private TextField passType;
-
-    @FXML
-    private JFXCheckBox isRemember;
+    	
+	@FXML
+    void back (ActionEvent event) {
+        userR.clear();
+        passR.clear();
+        passRagain.clear();
+        loginPane.setVisible(true);
+        registerPane.setVisible(false);
+    }
 
     @FXML
     void closeButtonAction(MouseEvent event) {
@@ -106,16 +115,7 @@ public class LoginController {
             }
         }
     }
-
-    @FXML
-    void back (ActionEvent event) {
-        userR.clear();
-        passR.clear();
-        passRagain.clear();
-        loginPane.setVisible(true);
-        registerPane.setVisible(false);
-    }
-
+   
     @FXML
     void signupButtonAction(ActionEvent event) {
         userR.clear();
@@ -124,9 +124,6 @@ public class LoginController {
         loginPane.setVisible(false);
         registerPane.setVisible(true);
     }
-
-    TempData tempData = TempData.getTempData();
-    AccountData accountData = AccountData.getAccountData();
 
     @FXML
     void initialize() {
@@ -139,5 +136,7 @@ public class LoginController {
         }
     }
 
-//aaaa
+	private TempData tempData = TempData.getTempData();
+    private AccountData accountData = AccountData.getAccountData();
+	
 }

@@ -23,8 +23,7 @@
     -fx-font-size: 180px;
 }
 
-
-#contentFont .text{
+.contentFont .text{
     -fx-font-family: 'Audrey';
     -fx-font-size: 30px;
 }

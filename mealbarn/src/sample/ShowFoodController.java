@@ -20,33 +20,39 @@ import java.io.IOException;
 import java.util.List;
 
 public class ShowFoodController {
+	
+	@FXML
+    private Text accountName;
 
     @FXML
     private ImageView closeButton;
 
     @FXML
     private JFXButton dirButton;
+	
+	@FXML
+    private ImageView foodImg;
 
     @FXML
     private Text foodName;
-
-    @FXML
-    private ImageView foodImg;
 
     @FXML
     private ImageView imgDetail;
 
     @FXML
     private JFXButton ingButton;
-
-    @FXML
-    private Pane prevPane;
-
+	
     @FXML
     private Pane nextPane;
 
     @FXML
-    private Text accountName;
+    private Pane prevPane;
+	
+	@FXML
+    void backPage(ActionEvent event) throws IOException {
+        Stage stage = (Stage) this.closeButton.getScene().getWindow();
+        SceneData.getSceneData().backScene(stage,tempData.getMode());
+    }
 
     @FXML
     void categoryPage(ActionEvent event) throws IOException {
@@ -81,6 +87,14 @@ public class ShowFoodController {
         dirButton.setDisable(false);
     }
 
+	@FXML
+    void logoutAction(ActionEvent event) throws IOException {
+        tempData.setAccount(null);
+        tempData.setIdAccount(null);
+        Stage stage = (Stage) this.closeButton.getScene().getWindow();
+        SceneData.getSceneData().loginScene(stage);
+    }
+
     @FXML
     void nextPage(ActionEvent event) {
         page++;
@@ -100,21 +114,7 @@ public class ShowFoodController {
         Stage stage = (Stage) this.closeButton.getScene().getWindow();
         SceneData.getSceneData().searchScene(stage);
     }
-
-    @FXML
-    void backPage(ActionEvent event) throws IOException {
-        Stage stage = (Stage) this.closeButton.getScene().getWindow();
-        SceneData.getSceneData().backScene(stage,tempData.getMode());
-    }
-
-    @FXML
-    void logoutAction(ActionEvent event) throws IOException {
-        tempData.setAccount(null);
-        tempData.setIdAccount(null);
-        Stage stage = (Stage) this.closeButton.getScene().getWindow();
-        SceneData.getSceneData().loginScene(stage);
-    }
-
+    
     @FXML
     void initialize() {
         page = 1;
@@ -131,17 +131,23 @@ public class ShowFoodController {
         ingButton.setDisable(true);
     }
 
-    FoodData foodData = FoodData.getFoodData();
-    TempData tempData = TempData.getTempData();
-    List<ImageSize> imageSizeList = foodData.getImageSizeList();
-    int idFood = tempData.getIdFood();
-    int sizeIng = imageSizeList.get(idFood).getImgSize();
-    int sizeDir = imageSizeList.get(idFood).getDirSize();
-    int pageSize;
-    int page;
-    int mode;
+    private FoodData foodData = FoodData.getFoodData();
+    private TempData tempData = TempData.getTempData();
+    private List<ImageSize> imageSizeList = foodData.getImageSizeList();
+    private int idFood = tempData.getIdFood();
+    private int sizeIng = imageSizeList.get(idFood).getImgSize();
+    private int sizeDir = imageSizeList.get(idFood).getDirSize();
+    private int pageSize;
+    private int page;
+    private int mode;
+    
+    void setImg(){
+        String sorceD = String.format("./img/foodRecipe/%d-%d-%d.png",idFood+1,mode,page);
+        Image imageD = new Image(sorceD);
+        imgDetail.setImage(imageD);
+    }
 
-    void updateButton(){
+	void updateButton(){
         if(page==1){
             prevPane.setVisible(false);
         }else {
@@ -152,12 +158,6 @@ public class ShowFoodController {
         }else {
             nextPane.setVisible(true);
         }
-    }
-
-    void setImg(){
-        String sorceD = String.format("./img/foodRecipe/%d-%d-%d.png",idFood+1,mode,page);
-        Image imageD = new Image(sorceD);
-        imgDetail.setImage(imageD);
     }
 
 }

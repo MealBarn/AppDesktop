@@ -30,67 +30,81 @@ import java.util.List;
 
 public class SearchController {
 
-    @FXML
-    private JFXTextField IngredientType;
+	@FXML
+    private Text accountName;
 
     @FXML
     private ImageView closeButton;
 
     @FXML
-    private ListView<String> list;
-
-    @FXML
     private JFXCheckBox isAlacarte;
-
-    @FXML
-    private JFXCheckBox isDrink;
 
     @FXML
     private JFXCheckBox isAppetizer;
 
     @FXML
     private JFXCheckBox isDessert;
+	
+	@FXML
+    private JFXCheckBox isDrink;
 
     @FXML
     private JFXCheckBox isMainCourse;
 
     @FXML
     private JFXCheckBox isSoup;
-
-    @FXML
-    private Text accountName;
-//    private AnchorPane testPane;
-
-    ObservableList<String> choosedList = FXCollections.observableArrayList();
-    FoodData foodData = FoodData.getFoodData();
-    TempData tempData = TempData.getTempData();
-    ArrayList<String> allComponent;
-
-    @FXML
-    void initialize() {
-        listCursor();
-        allComponent = foodData.getAllComponent();
-        accountName.setText(tempData.getAccount());
-        TextFields.bindAutoCompletion(IngredientType,allComponent);
-    }
-
-    @FXML
-    void closeButtonAction(MouseEvent event) {
-        Platform.exit();
-    }
-
+	
+	@FXML
+    private JFXTextField ingredientType;
+	
+	@FXML
+    private ListView<String> list;
+    
+    
     @FXML
     void addButtonAction(ActionEvent event) {
         addIngredientsBox();
     }
 
+	@FXML
+    void categoryPage(ActionEvent event) throws IOException {
+        Stage stage = (Stage) this.closeButton.getScene().getWindow();
+        SceneData.getSceneData().categoryScene(stage);
+    }
+
     @FXML
     void clearButtonAction(ActionEvent event){choosedList.clear();listCursor();}
 
+	@FXML
+    void closeButtonAction(MouseEvent event) {
+        Platform.exit();
+    }
+
+	@FXML
+    void deleteIngredientsList (MouseEvent event) {
+        if(event.getClickCount() > 1){
+            choosedList.remove(list.getSelectionModel().getSelectedItem());
+        }
+        listCursor();
+    }
+
+	@FXML
+    void ingredientsPressEnterAction(KeyEvent event) {
+        if (event.getCode() == KeyCode.ENTER) {
+            addIngredientsBox();
+        }
+    }
+    
+    @FXML
+    void logoutAction(ActionEvent event) throws IOException {
+        tempData.setAccount(null);
+        tempData.setIdAccount(null);
+        Stage stage = (Stage) this.closeButton.getScene().getWindow();
+        SceneData.getSceneData().loginScene(stage);
+    }
+
     @FXML
     void submitAction(ActionEvent event) throws IOException {
-
-//        testPane.setStyle("-fx-background-color: #ffffff; -fx-background-radius: 10;");
         if(!choosedList.isEmpty()) {
             foodData.clearPerfectFood();
             ArrayList<FoodShow> foodShowsList = foodData.getFoodShowsList();
@@ -149,47 +163,31 @@ public class SearchController {
         }
     }
 
-    @FXML
-    void deleteIngredientsList (MouseEvent event) {
-        if(event.getClickCount() > 1){
-            choosedList.remove(list.getSelectionModel().getSelectedItem());
-        }
+	@FXML
+    void initialize() {
         listCursor();
+        allComponent = foodData.getAllComponent();
+        accountName.setText(tempData.getAccount());
+        TextFields.bindAutoCompletion(ingredientType,allComponent);
     }
+	
+	private ObservableList<String> choosedList = FXCollections.observableArrayList();
+    private FoodData foodData = FoodData.getFoodData();
+    private TempData tempData = TempData.getTempData();
+    private ArrayList<String> allComponent;
 
-    @FXML
-    void IngredientsPressEnterAction(KeyEvent event) {
-        if (event.getCode() == KeyCode.ENTER) {
-            addIngredientsBox();
-        }
-    }
-
-    void addIngredientsBox(){
-        String input = IngredientType.getText();
+	void addIngredientsBox(){
+        String input = ingredientType.getText();
         if((input.length() != 0)&&!choosedList.contains(input)){
             if(allComponent.contains(input)) {
                 list.setItems(choosedList);
                 choosedList.add(input);
-                IngredientType.clear();
+                ingredientType.clear();
             }
         }else {
-            IngredientType.clear();
+            ingredientType.clear();
         }
         listCursor();
-    }
-
-    @FXML
-    void categoryPage(ActionEvent event) throws IOException {
-        Stage stage = (Stage) this.closeButton.getScene().getWindow();
-        SceneData.getSceneData().categoryScene(stage);
-    }
-
-    @FXML
-    void logoutAction(ActionEvent event) throws IOException {
-        tempData.setAccount(null);
-        tempData.setIdAccount(null);
-        Stage stage = (Stage) this.closeButton.getScene().getWindow();
-        SceneData.getSceneData().loginScene(stage);
     }
 
     private void listCursor(){
@@ -199,11 +197,6 @@ public class SearchController {
             list.setCursor(Cursor.HAND);
         }
     }
-//    @FXML
-//    private void clickTest(){
-//        testPane.setStyle("-fx-background-color: #ffffff; -fx-background-radius: 10;");
-//
-//    }
 
 
 }

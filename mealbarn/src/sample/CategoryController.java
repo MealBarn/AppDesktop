@@ -14,12 +14,12 @@ import javafx.stage.Stage;
 import java.io.IOException;
 
 public class CategoryController {
+	
+	@FXML
+    private Text accountName;
 
     @FXML
     private ImageView closeButton;
-
-    @FXML
-    private Text accountName;
 
     @FXML
     void alacarteSelect(ActionEvent event) throws IOException {
@@ -62,6 +62,14 @@ public class CategoryController {
         SceneData.getSceneData().resultCategoryScene(stage);
     }
 
+	@FXML
+    void logoutAction(ActionEvent event) throws IOException {
+        tempData.setAccount(null);
+        tempData.setIdAccount(null);
+        Stage stage = (Stage) this.closeButton.getScene().getWindow();
+        SceneData.getSceneData().loginScene(stage);
+    }
+
     @FXML
     void maincourseSelect(ActionEvent event) throws IOException {
         tempData.setShowIDList(foodData.getMainCourseIDList());
@@ -71,6 +79,12 @@ public class CategoryController {
         SceneData.getSceneData().resultCategoryScene(stage);
     }
 
+	@FXML
+    void searchPage(ActionEvent event) throws IOException {
+        Stage stage = (Stage) this.closeButton.getScene().getWindow();
+        SceneData.getSceneData().searchScene(stage);
+    }
+
     @FXML
     void soupSelect(ActionEvent event) throws IOException {
         tempData.setShowIDList(foodData.getSoupIDList());
@@ -78,28 +92,14 @@ public class CategoryController {
         tempData.setType("Soup");
         Stage stage = (Stage) this.closeButton.getScene().getWindow();
         SceneData.getSceneData().resultCategoryScene(stage);
-    }
-
-    @FXML
-    void searchPage(ActionEvent event) throws IOException {
-        Stage stage = (Stage) this.closeButton.getScene().getWindow();
-        SceneData.getSceneData().searchScene(stage);
-    }
-
-    @FXML
-    void logoutAction(ActionEvent event) throws IOException {
-        tempData.setAccount(null);
-        tempData.setIdAccount(null);
-        Stage stage = (Stage) this.closeButton.getScene().getWindow();
-        SceneData.getSceneData().loginScene(stage);
-    }
-
+    } 
+    
     @FXML
     void initialize() {
         accountName.setText(tempData.getAccount());
     }
 
-    FoodData foodData = FoodData.getFoodData();
-    TempData tempData = TempData.getTempData();
+    private FoodData foodData = FoodData.getFoodData();
+    private TempData tempData = TempData.getTempData();
 
 }
