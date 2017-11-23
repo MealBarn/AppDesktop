@@ -1,5 +1,6 @@
 package sample;
 
+import com.jfoenix.controls.JFXCheckBox;
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -43,6 +44,9 @@ public class LoginController {
     private TextField passType;
 
     @FXML
+    private JFXCheckBox isRemember;
+
+    @FXML
     void closeButtonAction(MouseEvent event) {
         Platform.exit();
     }
@@ -51,8 +55,9 @@ public class LoginController {
     void loginButtonAction(ActionEvent event) throws IOException {
         String user = userType.getText();
         String pass = passType.getText();
-        boolean canlogin = AccountData.getAccountData().canLogin(user,pass);
+        boolean canlogin = accountData.canLogin(user,pass);
         if(canlogin) {
+            tempData.setRemember(isRemember.isSelected());
             Stage stage = (Stage) this.closeButton.getScene().getWindow();
             SceneData.getSceneData().searchScene(stage);
         }
@@ -71,7 +76,7 @@ public class LoginController {
         String user = userR.getText();
         String pass = passR.getText();
         String passA = passRagain.getText();
-        if(AccountData.getAccountData().isDuplicateUser(user)){
+        if(accountData.isDuplicateUser(user)){
             Alert alert = new Alert(Alert.AlertType.ERROR);
             alert.setTitle("Register error");
             alert.setHeaderText("The user name is Duplicate");
@@ -87,22 +92,41 @@ public class LoginController {
                 passR.clear();
                 passRagain.clear();
             }else {
-                registerPane.setVisible(false);
-                loginPane.setVisible(true);
+                if(pass.length()>=4) {
+                    userType.clear();
+                    passType.clear();
+                    accountData.addAccount(user, pass);
+                    registerPane.setVisible(false);
+                    loginPane.setVisible(true);
+                }else {
+                    passR.clear();
+                    passRagain.clear();
+                }
             }
         }
     }
 
     @FXML
     void signupButtonAction(ActionEvent event) {
+        userR.clear();
+        passR.clear();
+        passRagain.clear();
         loginPane.setVisible(false);
         registerPane.setVisible(true);
     }
 
+    TempData tempData = TempData.getTempData();
+    AccountData accountData = AccountData.getAccountData();
+
     @FXML
     void initialize() {
-        userType.setText("Korn");
-        passType.setText("58010316");
+        userType.clear();
+        passType.clear();
+        isRemember.setSelected(tempData.isRemember());
+        if(tempData.isRemember()) {
+            userType.setText(tempData.getAccountFill());
+            passType.setText(tempData.getPassword());
+        }
     }
 
 //aaaa

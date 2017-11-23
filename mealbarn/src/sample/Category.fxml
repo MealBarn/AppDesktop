@@ -181,7 +181,7 @@
                   <Image url="@../img/iconUser/icons8-chef_hat_filled.png" />
                </image>
             </ImageView>
-            <Text fill="WHITE" layoutX="29.0" layoutY="225.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ssuzy">
+            <Text fx:id="accountName" fill="WHITE" layoutX="15.0" layoutY="225.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ssuzy" textAlignment="CENTER" wrappingWidth="78.2353515625">
                <font>
                   <Font size="18.0" />
                </font>

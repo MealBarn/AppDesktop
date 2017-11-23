@@ -8,6 +8,7 @@ import javafx.scene.*;
 import javafx.scene.Scene;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
+import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -16,6 +17,9 @@ public class CategoryController {
 
     @FXML
     private ImageView closeButton;
+
+    @FXML
+    private Text accountName;
 
     @FXML
     void alacarteSelect(ActionEvent event) throws IOException {
@@ -88,6 +92,11 @@ public class CategoryController {
         tempData.setIdAccount(null);
         Stage stage = (Stage) this.closeButton.getScene().getWindow();
         SceneData.getSceneData().loginScene(stage);
+    }
+
+    @FXML
+    void initialize() {
+        accountName.setText(tempData.getAccount());
     }
 
     FoodData foodData = FoodData.getFoodData();

@@ -1,6 +1,7 @@
 package sample;
 
 import ooad.FoodShow;
+import ooad.Like;
 
 import java.util.*;
 
@@ -33,8 +34,36 @@ public class TempData {
     }
 
     private int page;
+
+    public boolean isRemember() {
+        return isRemember;
+    }
+
+    public void setRemember(boolean remember) {
+        isRemember = remember;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public String getAccountFill() {
+        return accountFill;
+    }
+
+    public void setAccountFill(String accountFill) {
+        this.accountFill = accountFill;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
     private String account;
+    private String accountFill;
+    private String password;
     private String idAccount;
+    private boolean isRemember= true;
 
     public String getType() {
         return type;
@@ -82,8 +111,34 @@ public class TempData {
         this.idFood = idFood;
     }
 
+    private ArrayList<String> sortLike(ArrayList<String > iDListTemp){
+        ArrayList<Like> likeList = LikeData.getLikeData().getLikeList();
+        int n = iDListTemp.size();
+        boolean isSwitch;
+        do{
+            isSwitch = false;
+            int idNow;
+            int idPrev;
+            int likeNow;
+            int likePrev;
+            for(int i = 1 ;i<n;i++)
+            {
+                idNow = Integer.parseInt(iDListTemp.get(i));
+                idPrev= Integer.parseInt(iDListTemp.get(i-1));
+                likeNow = likeList.get(idNow-1).getSumValue();
+                likePrev = likeList.get(idPrev-1).getSumValue();
+                if(likePrev<likeNow){
+                    Collections.swap(iDListTemp,i,i-1);
+                    isSwitch =true;
+                }
+            }
+            n=n-1;
+        }while (isSwitch);
+        return iDListTemp;
+    }
+
     public void setShowIDList(ArrayList<String> showIDList) {
-        this.showIDList = showIDList;
+        this.showIDList = sortLike(showIDList);
     }
 
     public void sortPerfect(){

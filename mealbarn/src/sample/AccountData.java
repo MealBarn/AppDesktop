@@ -7,11 +7,9 @@ import java.util.*;
 
 public class AccountData {
     private List<Account> accountList;
-    private ArrayList<String> accountStr;
     private static AccountData accountData = new AccountData();
     private AccountData(){
         openFile();
-        updateAccount();
     }
 
     private void openFile(){
@@ -24,19 +22,20 @@ public class AccountData {
         emf.close();
     }
 
-    public void updateAccount() {
-        accountStr = new ArrayList<String>();
+    public boolean canLogin(String user,String password){
+        TempData tempData = TempData.getTempData();
         for(Account account : accountList){
-            accountStr.add(account.toString());
-        }
-    }
-
-    public boolean canLogin(String userId,String password){
-        for(Account account : accountList){
-            if(account.getUsername().compareTo(userId)==0){
+            if(account.getUsername().compareTo(user)==0){
                 if(account.getPassword().compareTo(password)==0){
-                    TempData.getTempData().setIdAccount(account.getId().toString());
-                    TempData.getTempData().setAccount(account.getUsername());
+                    tempData.setIdAccount(account.getId().toString());
+                    tempData.setAccount(account.getUsername());
+                    if(tempData.isRemember()) {
+                        tempData.setAccountFill(account.getUsername());
+                        tempData.setPassword(account.getPassword());
+                    }else {
+                        tempData.setAccountFill(null);
+                        tempData.setPassword(null);
+                    }
                     LikeData.getLikeData().refreshLike();
                     return true;
                 }else return false;
@@ -55,8 +54,19 @@ public class AccountData {
     }
 
     public void addAccount(String user,String pass){
-        Long id = accountList.get(accountList.size()-1).getId()+1;
-        updateAccount();
+        EntityManagerFactory emf = Persistence.createEntityManagerFactory("./src/ODB/Account.odb");
+        EntityManager em = emf.createEntityManager();
+        em.getTransaction().begin();
+        Account account = new Account();
+        em.persist(account);
+        account.setUsername(user);
+        account.setPassword(pass);
+        em.getTransaction().commit();
+        TypedQuery<Account> queryAccount =
+                em.createQuery("SELECT a FROM ooad.Account a", Account.class);
+        accountList = queryAccount.getResultList();
+        em.close();
+        emf.close();
     }
 
     public static AccountData getAccountData() {return accountData;}

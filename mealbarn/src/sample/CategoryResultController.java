@@ -127,6 +127,9 @@ public class CategoryResultController {
     private Text type;
 
     @FXML
+    private Text accountName;
+
+    @FXML
     void categoryPage(ActionEvent event) throws IOException {
         Stage stage = (Stage) this.closeButton.getScene().getWindow();
         SceneData.getSceneData().categoryScene(stage);
@@ -273,6 +276,7 @@ public class CategoryResultController {
         page = tempData.getPage();
         size = tempData.getShowIDList().size();
         type.setText(tempData.getType());
+        accountName.setText(tempData.getAccount());
         updateData();
         updateLike();
     }

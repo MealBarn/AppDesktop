@@ -46,6 +46,9 @@ public class ShowFoodController {
     private Pane nextPane;
 
     @FXML
+    private Text accountName;
+
+    @FXML
     void categoryPage(ActionEvent event) throws IOException {
         Stage stage = (Stage) this.closeButton.getScene().getWindow();
         SceneData.getSceneData().categoryScene(stage);
@@ -123,6 +126,7 @@ public class ShowFoodController {
         Image imageF = new Image(sorceF);
         foodImg.setImage(imageF);
         setImg();
+        accountName.setText(tempData.getAccount());
         updateButton();
         ingButton.setDisable(true);
     }

@@ -16,6 +16,7 @@ import javafx.scene.image.ImageView;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
 import javafx.scene.input.MouseEvent;
+import javafx.scene.text.Text;
 import javafx.stage.Stage;
 import ooad.FoodShow;
 import ooad.Component;
@@ -55,7 +56,9 @@ public class SearchController {
 
     @FXML
     private JFXCheckBox isSoup;
+
     @FXML
+    private Text accountName;
 //    private AnchorPane testPane;
 
     ObservableList<String> choosedList = FXCollections.observableArrayList();
@@ -67,6 +70,7 @@ public class SearchController {
     void initialize() {
         listCursor();
         allComponent = foodData.getAllComponent();
+        accountName.setText(tempData.getAccount());
         TextFields.bindAutoCompletion(IngredientType,allComponent);
     }
 
@@ -87,61 +91,62 @@ public class SearchController {
     void submitAction(ActionEvent event) throws IOException {
 
 //        testPane.setStyle("-fx-background-color: #ffffff; -fx-background-radius: 10;");
+        if(!choosedList.isEmpty()) {
+            foodData.clearPerfectFood();
+            ArrayList<FoodShow> foodShowsList = foodData.getFoodShowsList();
+            List<Component> componentList = foodData.getComponentList();
+            ArrayList<String> select = new ArrayList<String>();
+            if (isAlacarte.isSelected()) {
+                select.addAll(foodData.getAlacateIDList());
+            }
+            if (isAppetizer.isSelected()) {
+                select.addAll(foodData.getAppetizerIDList());
+            }
+            if (isDessert.isSelected()) {
+                select.addAll(foodData.getDessertIDList());
+            }
+            if (isDrink.isSelected()) {
+                select.addAll(foodData.getDrinkIDList());
+            }
+            if (isMainCourse.isSelected()) {
+                select.addAll(foodData.getMainCourseIDList());
+            }
+            if (isSoup.isSelected()) {
+                select.addAll(foodData.getSoupIDList());
+            }
 
-        foodData.clearPerfectFood();
-        ArrayList<FoodShow> foodShowsList = foodData.getFoodShowsList();
-        List<Component> componentList = foodData.getComponentList();
-        ArrayList<String> select = new ArrayList<String>();
-        if(isAlacarte.isSelected()){
-            select.addAll(foodData.getAlacateIDList());
-        }
-        if(isAppetizer.isSelected()){
-            select.addAll(foodData.getAppetizerIDList());
-        }
-        if(isDessert.isSelected()){
-            select.addAll(foodData.getDessertIDList());
-        }
-        if(isDrink.isSelected()){
-            select.addAll(foodData.getDrinkIDList());
-        }
-        if(isMainCourse.isSelected()){
-            select.addAll(foodData.getMainCourseIDList());
-        }
-        if(isSoup.isSelected()){
-            select.addAll(foodData.getSoupIDList());
-        }
-
-        if(!(isAlacarte.isSelected()) && !(isAppetizer.isSelected()) && !(isDessert.isSelected()) && !(isDrink.isSelected()) && !(isMainCourse.isSelected()) && !(isSoup.isSelected()) ){
-            select.addAll(foodData.getAlacateIDList());
-            select.addAll(foodData.getAppetizerIDList());
-            select.addAll(foodData.getDessertIDList());
-            select.addAll(foodData.getDrinkIDList());
-            select.addAll(foodData.getMainCourseIDList());
-            select.addAll(foodData.getSoupIDList());
-        }
-        for (String choose : choosedList){
-            for (Component component : componentList){
-                if (select.contains(component.getId().toString())) {
-                    if (component.getComponent().compareTo(choose) == 0) {
-                        int id = component.getId() - 1;
-                        foodShowsList.get(id).addPerfect();
+            if (!(isAlacarte.isSelected()) && !(isAppetizer.isSelected()) && !(isDessert.isSelected()) && !(isDrink.isSelected()) && !(isMainCourse.isSelected()) && !(isSoup.isSelected())) {
+                select.addAll(foodData.getAlacateIDList());
+                select.addAll(foodData.getAppetizerIDList());
+                select.addAll(foodData.getDessertIDList());
+                select.addAll(foodData.getDrinkIDList());
+                select.addAll(foodData.getMainCourseIDList());
+                select.addAll(foodData.getSoupIDList());
+            }
+            for (String choose : choosedList) {
+                for (Component component : componentList) {
+                    if (select.contains(component.getId().toString())) {
+                        if (component.getComponent().compareTo(choose) == 0) {
+                            int id = component.getId() - 1;
+                            foodShowsList.get(id).addPerfect();
+                        }
                     }
                 }
             }
+            foodData.setFoodShowsList(foodShowsList);
+            tempData.setShowIDList();
+            tempData.sortPerfect();
+            choosedList.clear();
+            isSoup.setSelected(false);
+            isMainCourse.setSelected(false);
+            isDrink.setSelected(false);
+            isDessert.setSelected(false);
+            isAppetizer.setSelected(false);
+            isAlacarte.setSelected(false);
+            tempData.setPage(0);
+            Stage stage = (Stage) this.closeButton.getScene().getWindow();
+            SceneData.getSceneData().resultSearchScene(stage);
         }
-        foodData.setFoodShowsList(foodShowsList);
-        tempData.setShowIDList();
-        tempData.sortPerfect();
-        choosedList.clear();
-        isSoup.setSelected(false);
-        isMainCourse.setSelected(false);
-        isDrink.setSelected(false);
-        isDessert.setSelected(false);
-        isAppetizer.setSelected(false);
-        isAlacarte.setSelected(false);
-        tempData.setPage(0);
-        Stage stage = (Stage) this.closeButton.getScene().getWindow();
-        SceneData.getSceneData().resultSearchScene(stage);
     }
 
     @FXML

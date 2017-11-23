@@ -166,9 +166,12 @@ public class ResultSearchController {
     private Text recipeCount;
 
     @FXML
+    private Text accountName;
+
+    @FXML
     void categoryPage(ActionEvent event) throws IOException {
         Stage stage = (Stage) this.closeButton.getScene().getWindow();
-        SceneData.getSceneData().categoryResultScene(stage);
+        SceneData.getSceneData().categoryScene(stage);
     }
 
     @FXML
@@ -312,6 +315,7 @@ public class ResultSearchController {
         page = tempData.getPage();
         size = tempData.getShowIDList().size();
         recipeCount.setText(String.format("Total %d Recipes",size));
+        accountName.setText(tempData.getAccount());
         updateData();
         updateLike();
     }
@@ -333,6 +337,7 @@ public class ResultSearchController {
         int id;
         //////////////////////////--1
         id = (page*6)+0;
+        if(id>=size) return;
         idFood = Integer.parseInt(idShow.get(id))-1;
         like = likeList.get(idFood);
         likeN1.setText(like.getSumValue()+"");
@@ -343,6 +348,7 @@ public class ResultSearchController {
         }
         //////////////////////////--2
         id = (page*6)+1;
+        if(id>=size) return;
         idFood = Integer.parseInt(idShow.get(id))-1;
         like = likeList.get(idFood);
         likeN2.setText(like.getSumValue()+"");
@@ -353,6 +359,7 @@ public class ResultSearchController {
         }
         //////////////////////////--3
         id = (page*6)+2;
+        if(id>=size) return;
         idFood = Integer.parseInt(idShow.get(id))-1;
         like = likeList.get(idFood);
         likeN3.setText(like.getSumValue()+"");
@@ -363,6 +370,7 @@ public class ResultSearchController {
         }
         //////////////////////////--4
         id = (page*6)+3;
+        if(id>=size) return;
         idFood = Integer.parseInt(idShow.get(id))-1;
         like = likeList.get(idFood);
         likeN4.setText(like.getSumValue()+"");
@@ -373,6 +381,7 @@ public class ResultSearchController {
         }
         //////////////////////////--5
         id = (page*6)+4;
+        if(id>=size) return;
         idFood = Integer.parseInt(idShow.get(id))-1;
         like = likeList.get(idFood);
         likeN5.setText(like.getSumValue()+"");
@@ -383,6 +392,7 @@ public class ResultSearchController {
         }
         //////////////////////////--6
         id = (page*6)+5;
+        if(id>=size) return;
         idFood = Integer.parseInt(idShow.get(id))-1;
         like = likeList.get(idFood);
         likeN1.setText(like.getSumValue()+"");
