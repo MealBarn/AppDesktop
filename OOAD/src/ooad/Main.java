@@ -27,8 +27,13 @@ public class Main {
 //           for(int i=0;i<5;i++)
     //       {
    //        insertDBimgSize(em,3,4);}
-    updatePoint(em,(long)5);
-    printAll(em);
+    //updatePointInc(em,(long)5);
+    //printAll(em);
+    //updatePointDec(em,(long)78);
+    //printAll(em);
+ //   insertDBpoint(em);
+  // deleteObj(em,(long)77);
+   printAll(em);
          em.close();
         emf.close();
          
@@ -106,12 +111,38 @@ public class Main {
         /*Close connect*/
     }
        
+       public static void insertDBpoint(EntityManager em)
+    {
+        /*Connect to database*/
+               em.getTransaction().begin();        
+
+                    Point p = new Point();
+                    em.persist(p);
+                 //   p.setImgSize(imgSize);
+                //    p.setDirSize(dirSize);
+          
+        em.getTransaction().commit();
+        /*Close connect*/
+    }
     /**
      *
      * @param em
      * @param idprimary
-     */
-    public static void updatePoint(EntityManager em,Long idprimary)
+     * Increase point and update point.odb     */
+    public static void updatePointInc(EntityManager em,Long idprimary)
+       {  
+           /*Connect to database*/
+              em.getTransaction().begin();        
+            Query query = em.createQuery("UPDATE Point SET point=point+1 WHERE idprimary="+idprimary);
+            int updateCount = query.executeUpdate();
+        em.getTransaction().commit();
+        /*Close connect*/
+       }
+    
+    /*
+    Decrease point and update point.odb
+    */
+     public static void updatePointDec(EntityManager em,Long idprimary)
        {  
            /*Connect to database*/
               em.getTransaction().begin();        
@@ -120,5 +151,15 @@ public class Main {
         em.getTransaction().commit();
         /*Close connect*/
        }
+     
+     /* id will run automaticly. e.g. NO.35 was deleted,Next object will
+    be generated number is NO.36*/
+//     public static void deleteObj(EntityManager em,Long idprimary){
+//        em.getTransaction().begin();        
+//            Query query = em.createQuery("DELETE FROM Point WHERE idprimary="+idprimary);
+//            int deletedCount = query.executeUpdate();
+//        em.getTransaction().commit();
+//     }
+     
 }   
 
