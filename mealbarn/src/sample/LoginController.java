@@ -1,9 +1,5 @@
 package sample;
 
-<<<<<<< Updated upstream
-=======
-import com.jfoenix.controls.JFXButton;
->>>>>>> Stashed changes
 import com.jfoenix.controls.JFXPasswordField;
 import com.jfoenix.controls.JFXTextField;
 import javafx.application.Platform;
@@ -13,43 +9,47 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Alert;
+import javafx.scene.control.PasswordField;
+import javafx.scene.control.TextField;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
-import javafx.scene.text.Text;
+import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
+import ooad.Account;
 
 import java.io.IOException;
-=======
-import javafx.scene.Cursor;
-import javafx.scene.control.Button;
-import javafx.scene.image.ImageView;
-import javafx.scene.input.MouseEvent;
-
->>>>>>> Stashed changes
 import java.util.ArrayList;
 
 public class LoginController {
 
 <<<<<<< Updated upstream
     @FXML
+    private Pane registerPane;
+
+    @FXML
+    private TextField userR;
+
+    @FXML
+    private PasswordField passR;
+
+    @FXML
+    private PasswordField passRagain;
+
+    @FXML
+    private Pane loginPane;
+
+    @FXML
     private ImageView closeButton;
 
     @FXML
     private Text warningPass;
-=======
-
-    @FXML
-    private JFXButton loginButton;
-
-    @FXML
-    private ImageView closeButton;
->>>>>>> Stashed changes
 
     @FXML
     private JFXTextField userType;
 
     @FXML
-    private JFXPasswordField passType;
+    private JFXCheckBox isRemember;
 
     @FXML
     void closeButtonAction(MouseEvent event) {
@@ -59,9 +59,6 @@ public class LoginController {
     @FXML
 <<<<<<< Updated upstream
     void loginButtonAction(ActionEvent event) throws IOException {
-=======
-    void loginButtonAction(ActionEvent event) {
->>>>>>> Stashed changes
         Data data = Data.getData();
         ArrayList<String> acc = data.getAccountStr();
         String user = userType.getText();
@@ -69,19 +66,51 @@ public class LoginController {
         String uTest = String.format("%s %s",user,pass);
         boolean canLog = acc.contains(uTest);
         if(canLog) {
-<<<<<<< Updated upstream
             SceneSearch();
         }
         else {
             passType.clear();
-            warningPass.setVisible(true);
+            Alert alert = new Alert(Alert.AlertType.ERROR);
+            alert.setTitle("Login error");
+            alert.setHeaderText("The user name or password is incorrect");
+            alert.setContentText("Check you user name ,then type your password again.");
+            alert.showAndWait();
         }
     }
 
     @FXML
-    void initialize() {
-        userType.setText("Korn");
-        passType.setText("58010316");
+    void signUp(ActionEvent event) {
+        String user = userR.getText();
+        String pass = passR.getText();
+        String passA = passRagain.getText();
+        if(accountData.isDuplicateUser(user)||user.length()<3){
+            Alert alert = new Alert(Alert.AlertType.ERROR);
+            alert.setTitle("Register error");
+            alert.setHeaderText("The user name is Duplicate");
+            alert.setContentText("Please change your user name.");
+            alert.showAndWait();
+        }else {
+            if(pass.compareTo(passA)!=0){
+                Alert alert = new Alert(Alert.AlertType.ERROR);
+                alert.setTitle("Register error");
+                alert.setHeaderText("Passwords do not match");
+                alert.setContentText("Please type your password again.");
+                alert.showAndWait();
+                passR.clear();
+                passRagain.clear();
+            }else {
+                if(pass.length()>=4) {
+                    userType.clear();
+                    passType.clear();
+                    accountData.addAccount(user, pass);
+                    registerPane.setVisible(false);
+                    loginPane.setVisible(true);
+                }else {
+                    passR.clear();
+                    passRagain.clear();
+                }
+            }
+        }
     }
 
     private void SceneSearch() throws IOException {
@@ -90,28 +119,10 @@ public class LoginController {
         Scene scene = new Scene(login);
         stage.setScene(scene);
         stage.show();
-=======
-            Main.priStage.setScene(Main.Select);
-        }
-        else {
-            passType.clear();
-        }
     }
     @FXML
     void closeCursor(MouseEvent event) {
         closeButton.setCursor(Cursor.HAND);
-    }
-
-    @FXML
-    void loginCursor(MouseEvent event) {
-        loginButton.setCursor(Cursor.HAND);
-    }
-
-    @FXML
-    void autoInput(MouseEvent event){
-        userType.setText("Suzy");
-        passType.setText("58011348");
->>>>>>> Stashed changes
     }
 
 }

@@ -1,40 +1,23 @@
 package sample;
 
-<<<<<<< Updated upstream
 import ooad.*;
-=======
-import ooad.Account;
-import ooad.Component;
-import ooad.Food;
-import ooad.FoodShow;
->>>>>>> Stashed changes
 
 import javax.persistence.*;
 import java.util.*;
 
 public class Data {
     private ArrayList<String> allComponent;
-<<<<<<< Updated upstream
     private ArrayList<String> accountStr;
-=======
-    private ArrayList<String> matchComponent;
-    private ArrayList<String> accountStr;
-    private ArrayList<String> foodStr;
->>>>>>> Stashed changes
     private List<Component> componentList;
     private List<Food> foodsList;
     private ArrayList<FoodShow> foodShowsList;
     private List<Account> accountList;
-<<<<<<< Updated upstream
     private List<ImageSize> imageSizeList;
-=======
->>>>>>> Stashed changes
     private ArrayList<String> alacarteIDList;
     private ArrayList<String> appetizerIDList;
     private ArrayList<String> dessertIDList;
     private ArrayList<String> drinkIDList;
     private ArrayList<String> mainCourseIDList;
-<<<<<<< Updated upstream
 
     public int getIdFood() {
         return idFood;
@@ -46,9 +29,6 @@ public class Data {
 
     private ArrayList<String> soupIDList;
     private int idFood;
-=======
-    private ArrayList<String> soupIDList;
->>>>>>> Stashed changes
 
     public void setShowIDList(ArrayList<String> showIDList) {
         this.showIDList = showIDList;
@@ -71,23 +51,16 @@ public class Data {
     private ArrayList<String> showIDList;
     private ArrayList<String> selectIDList;
     private static Data data = new Data();
-<<<<<<< Updated upstream
 
     public List<ImageSize> getImageSizeList() {
         return imageSizeList;
     }
 
-=======
->>>>>>> Stashed changes
     private Data()
     {
         accountStr = new ArrayList<String>();
         allComponent = new ArrayList<String>();
-<<<<<<< Updated upstream
 
-=======
-        matchComponent = new ArrayList<String>();
->>>>>>> Stashed changes
         foodShowsList = new ArrayList<FoodShow>();
         alacarteIDList = new ArrayList<String>();
         appetizerIDList = new ArrayList<String>();
@@ -98,10 +71,7 @@ public class Data {
         showIDList = new ArrayList<String>();
         EntityManagerFactory emf;
         EntityManager em;
-<<<<<<< Updated upstream
 //        emf = Persistence.createEntityManagerFactory("objectdb://192.168.43.229:80/Account.odb;user=admin;password=admin");
-=======
->>>>>>> Stashed changes
         emf = Persistence.createEntityManagerFactory("./src/ODB/Account.odb");
         em = emf.createEntityManager();
         TypedQuery<Account> queryAccount =
@@ -110,23 +80,15 @@ public class Data {
         em.close();
         emf.close();
         //////////////////////////////////////////////////////////////////
-<<<<<<< Updated upstream
 //        emf = Persistence.createEntityManagerFactory("objectdb://192.168.43.229:80/Account.odb;user=admin;password=admin");
         emf = Persistence.createEntityManagerFactory("./src/ODB/Food.odb");
         em = emf.createEntityManager();
         TypedQuery<Food> queryFood =
                 em.createQuery("SELECT a FROM ooad.Food a", Food.class);
-=======
-        emf = Persistence.createEntityManagerFactory("./src/ODB/Food.odb");
-        em = emf.createEntityManager();
-        TypedQuery<Food> queryFood =
-                em.createQuery("SELECT a FROM Food a", Food.class);
->>>>>>> Stashed changes
         foodsList = queryFood.getResultList();
         em.close();
         emf.close();
         /////////////////////////////////////////////////////////////////
-<<<<<<< Updated upstream
         emf = Persistence.createEntityManagerFactory("./src/ODB/ImageSize.odb");
         em = emf.createEntityManager();
         TypedQuery<ImageSize> querySize =
@@ -140,12 +102,6 @@ public class Data {
         em = emf.createEntityManager();
         TypedQuery<Component> queryComponent =
                 em.createQuery("SELECT a FROM ooad.Component a", Component.class);
-=======
-        emf = Persistence.createEntityManagerFactory("./src/ODB/Component.odb");
-        em = emf.createEntityManager();
-        TypedQuery<Component> queryComponent =
-                em.createQuery("SELECT a FROM Component a", Component.class);
->>>>>>> Stashed changes
         componentList = queryComponent.getResultList();
         em.close();
         emf.close();
@@ -161,10 +117,7 @@ public class Data {
         boolean unique;
         for (Component component : componentList) {
             nowId = component.getId();
-<<<<<<< Updated upstream
 
-=======
->>>>>>> Stashed changes
             if(nowId!=prevId)
             {
                 amountComponent.add(""+count);
@@ -174,10 +127,7 @@ public class Data {
                 count++;
             }
             unique = true;
-<<<<<<< Updated upstream
 
-=======
->>>>>>> Stashed changes
             String componentTmp = component.getComponent();
             for(String componetSamp : allComponent)
             {
@@ -228,10 +178,6 @@ public class Data {
     public static Data getData(){return data;}
 
     public void sortPerfect(){
-<<<<<<< Updated upstream
-=======
-        System.out.println("--------------");
->>>>>>> Stashed changes
         int n = showIDList.size();
         boolean isSwitch;
         do{
@@ -253,18 +199,6 @@ public class Data {
             }
             n=n-1;
         }while (isSwitch);
-<<<<<<< Updated upstream
-=======
-        printFood();
-    }
-
-    public void printFood(){
-        int id;
-        for (String foodId : showIDList){
-            id = Integer.parseInt(foodId)-1;
-            System.out.println((id+1)+"\t"+foodShowsList.get(id).getPerfect());
-        }
->>>>>>> Stashed changes
     }
 
     public ArrayList<String> getAccountStr() { return accountStr; }
@@ -303,11 +237,7 @@ public class Data {
 
     public ArrayList<String> getAllComponent(){ return allComponent; }
 
-<<<<<<< Updated upstream
 //    public ArrayList<String> getFoodStr() { return foodStr; }
-=======
-    public ArrayList<String> getFoodStr() { return foodStr; }
->>>>>>> Stashed changes
 
     public ArrayList<FoodShow> getFoodShowsList() { return foodShowsList; }
 
@@ -317,19 +247,6 @@ public class Data {
 
     public List<Account> getAccountList() { return accountList; }
 
-<<<<<<< Updated upstream
-=======
-    public ArrayList<String> getMatchComponent(String inputComp) {
-        matchComponent.clear();
-        for (String component : allComponent){
-            if (component.indexOf(inputComp)==0){
-                matchComponent.add(component);
-            }
-
-        }
-        return matchComponent;
-    }
->>>>>>> Stashed changes
     public void clearPerfectFood(){
         for (FoodShow foodShow : foodShowsList){
             foodShow.clearPerfect();
