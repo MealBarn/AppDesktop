@@ -8,15 +8,14 @@ import java.util.*;
 public class LikeData {
     private ArrayList<Like> likeList = new ArrayList<>();
     private static LikeData likeData = new LikeData();
-    private LikeData(){
-    }
+    private LikeData(){    }
     private List<PointDetail> pointDetailList;
 
     public static LikeData getLikeData(){
         return likeData;
     }
 
-    int idAccount = Integer.parseInt(TempData.getTempData().getIdAccount());
+    int idAccount;
     ArrayList<FoodShow> foodList = FoodData.getFoodData().getFoodShowsList();
     int[] likeSum = new int[foodList.size()];
     int[] likeAcc = new int[foodList.size()];
@@ -29,6 +28,7 @@ public class LikeData {
         pointDetailList = queryPointDetail.getResultList();
         em.close();
         emf.close();
+        idAccount = Integer.parseInt(TempData.getTempData().getIdAccount());
         likeSum = new int[foodList.size()];
         likeAcc = new int[foodList.size()];
         for(PointDetail pointDetail : pointDetailList){
