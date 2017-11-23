@@ -3,6 +3,7 @@ package ooad;
 import javax.persistence.*;
 import java.util.*;
 import java.sql.*;
+import javax.persistence.Query;
 
 /**
  *
@@ -18,14 +19,21 @@ public class Main {
         //Scanner input = new Scanner (System.in);
 
         //String nameFile = "objectdb://192.168.43.19:80/PicturePath.odb;user=admin;password=admin";
-        String nameFile ="D://58010776//OOAD//objectdb-2.7.2_04//db//ImageSize.odb";
+        String nameFile ="D://58010776//OOAD//objectdb-2.7.2_04//db//Point.odb";
         EntityManagerFactory emf = Persistence.createEntityManagerFactory(nameFile);
         EntityManager em = emf.createEntityManager();
        // insertDBAccount(em,"Ham","58011173");
-           // printAll(em);
-           for(int i=0;i<5;i++)
-           {
-           insertDBimgSize(em,3,4);}
+            
+//           for(int i=0;i<5;i++)
+    //       {
+   //        insertDBimgSize(em,3,4);}
+    //updatePointInc(em,(long)5);
+    //printAll(em);
+    //updatePointDec(em,(long)78);
+    //printAll(em);
+ //   insertDBpoint(em);
+  // deleteObj(em,(long)77);
+   printAll(em);
          em.close();
         emf.close();
          
@@ -34,9 +42,9 @@ public class Main {
     /*For displaying list Food*/
     public static void printAll(EntityManager em)
     {
-              TypedQuery<PicturePath> query = em.createQuery("SELECT p FROM PicturePath p", PicturePath.class);
-        List<PicturePath> results = query.getResultList();
-        for (PicturePath p : results) {
+              TypedQuery<Point> query = em.createQuery("SELECT p FROM Point p", Point.class);
+        List<Point> results = query.getResultList();
+        for (Point p : results) {
             System.out.println(p);
         }
     }
@@ -44,7 +52,7 @@ public class Main {
     /*For displaying selected Food detail*/
     public static void printSelect(EntityManager em)
     {
-                Query query = em.createQuery("SELECT c FROM Food c WHERE c.id = 1");
+        Query query = em.createQuery("SELECT c FROM Food c WHERE c.id = 1");
         Food c = (Food)query.getSingleResult();
        System.out.print(c);
     }
@@ -101,8 +109,57 @@ public class Main {
           
         em.getTransaction().commit();
         /*Close connect*/
-           
-
     }
+       
+       public static void insertDBpoint(EntityManager em)
+    {
+        /*Connect to database*/
+               em.getTransaction().begin();        
+
+                    Point p = new Point();
+                    em.persist(p);
+                 //   p.setImgSize(imgSize);
+                //    p.setDirSize(dirSize);
+          
+        em.getTransaction().commit();
+        /*Close connect*/
+    }
+    /**
+     *
+     * @param em
+     * @param idprimary
+     * Increase point and update point.odb     */
+    public static void updatePointInc(EntityManager em,Long idprimary)
+       {  
+           /*Connect to database*/
+              em.getTransaction().begin();        
+            Query query = em.createQuery("UPDATE Point SET point=point+1 WHERE idprimary="+idprimary);
+            int updateCount = query.executeUpdate();
+        em.getTransaction().commit();
+        /*Close connect*/
+       }
+    
+    /*
+    Decrease point and update point.odb
+    */
+     public static void updatePointDec(EntityManager em,Long idprimary)
+       {  
+           /*Connect to database*/
+              em.getTransaction().begin();        
+            Query query = em.createQuery("UPDATE Point SET point=point-1 WHERE idprimary="+idprimary);
+            int updateCount = query.executeUpdate();
+        em.getTransaction().commit();
+        /*Close connect*/
+       }
+     
+     /* id will run automaticly. e.g. NO.35 was deleted,Next object will
+    be generated number is NO.36*/
+//     public static void deleteObj(EntityManager em,Long idprimary){
+//        em.getTransaction().begin();        
+//            Query query = em.createQuery("DELETE FROM Point WHERE idprimary="+idprimary);
+//            int deletedCount = query.executeUpdate();
+//        em.getTransaction().commit();
+//     }
+     
 }   
 
