@@ -4,14 +4,16 @@ public class FoodShow {
 
     private Long id;
     private String name;
+    private String nametag;
     private int amount;
     private float perfect;
 
     FoodShow(){ }
 
-    public FoodShow(Long foodID,String foodName, int foodAmount){
+    public FoodShow(Long foodID,String foodName,String foodNametag,int foodAmount){
         this.id = foodID;
         this.name = foodName;
+        this.nametag = foodNametag;
         this.amount = foodAmount;
         perfect = 0;
     }
@@ -28,6 +30,8 @@ public class FoodShow {
     public Long getId(){ return id;}
 
     public String getName() { return name; }
+
+    public String getNametag() { return nametag; }
 
     public int getAmount() {return amount;}
 

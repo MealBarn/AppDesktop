@@ -136,7 +136,8 @@ public class FoodData {
             int amount = Integer.parseInt(amountComponent.get(i));
             Long id = food.getId();
             String name = food.getName();
-            FoodShow foodShow = new FoodShow(id, name, amount);
+            String nametag = food.getNametag();
+            FoodShow foodShow = new FoodShow(id, name, nametag, amount);
             foodShowsList.add(foodShow);
         }
     }

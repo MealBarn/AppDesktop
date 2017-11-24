@@ -338,7 +338,7 @@ public class ResultSearchController {
             food1.setVisible(true);
             idFood = Integer.parseInt(idShow.get(id))-1;
             FoodShow food1 = foodData.getFoodShowsList().get(idFood);
-            foodName1.setText(food1.getName());
+            foodName1.setText(food1.getNametag());
             foodPerfect1.setText(food1.getPerfect() + "%");
             String sorce1 = "./img/imgFood/"+idShow.get(id)+".png";
             Image image1 = new Image(sorce1);
@@ -353,7 +353,7 @@ public class ResultSearchController {
             food2.setVisible(true);
             idFood = Integer.parseInt(idShow.get(id))-1;
             FoodShow food2 = foodData.getFoodShowsList().get(idFood);
-            foodName2.setText(food2.getName());
+            foodName2.setText(food2.getNametag());
             foodPerfect2.setText(food2.getPerfect() + "%");
             String sorce2 = "./img/imgFood/"+idShow.get(id)+".png";
             Image image2 = new Image(sorce2);
@@ -368,7 +368,7 @@ public class ResultSearchController {
             food3.setVisible(true);
             idFood = Integer.parseInt(idShow.get(id))-1;
             FoodShow food3 = foodData.getFoodShowsList().get(idFood);
-            foodName3.setText(food3.getName());
+            foodName3.setText(food3.getNametag());
             foodPerfect3.setText(food3.getPerfect() + "%");
             String sorce3 = "./img/imgFood/"+idShow.get(id)+".png";
             Image image3 = new Image(sorce3);
@@ -383,7 +383,7 @@ public class ResultSearchController {
             food4.setVisible(true);
             idFood = Integer.parseInt(idShow.get(id))-1;
             FoodShow food4 = foodData.getFoodShowsList().get(idFood);
-            foodName4.setText(food4.getName());
+            foodName4.setText(food4.getNametag());
             foodPerfect4.setText(food4.getPerfect() + "%");
             String sorce4 = "./img/imgFood/"+idShow.get(id)+".png";
             Image image4 = new Image(sorce4);
@@ -398,7 +398,7 @@ public class ResultSearchController {
             food5.setVisible(true);
             idFood = Integer.parseInt(idShow.get(id))-1;
             FoodShow food5 = foodData.getFoodShowsList().get(idFood);
-            foodName5.setText(food5.getName());
+            foodName5.setText(food5.getNametag());
             foodPerfect5.setText(food5.getPerfect() + "%");
             String sorce5 = "./img/imgFood/"+idShow.get(id)+".png";
             Image image5 = new Image(sorce5);
@@ -413,7 +413,7 @@ public class ResultSearchController {
             food6.setVisible(true);
             idFood = Integer.parseInt(idShow.get(id))-1;
             FoodShow food6 = foodData.getFoodShowsList().get(idFood);
-            foodName6.setText(food6.getName());
+            foodName6.setText(food6.getNametag());
             foodPerfect6.setText(food6.getPerfect() + "%");
             String sorce6 = "./img/imgFood/"+idShow.get(id)+".png";
             Image image6 = new Image(sorce6);
@@ -449,7 +449,7 @@ public class ResultSearchController {
         idFood = Integer.parseInt(idShow.get(id))-1;
         like = likeList.get(idFood);
         likeN1.setText(like.getSumValue()+"");
-        if(like.getValue()==null){
+        if(like.getValue()=="U"){
             likeImg1.setImage(unfill);
         }else {
             likeImg1.setImage(fill);
@@ -460,7 +460,7 @@ public class ResultSearchController {
         idFood = Integer.parseInt(idShow.get(id))-1;
         like = likeList.get(idFood);
         likeN2.setText(like.getSumValue()+"");
-        if(like.getValue()==null){
+        if(like.getValue()=="U"){
             likeImg2.setImage(unfill);
         }else {
             likeImg2.setImage(fill);
@@ -471,7 +471,7 @@ public class ResultSearchController {
         idFood = Integer.parseInt(idShow.get(id))-1;
         like = likeList.get(idFood);
         likeN3.setText(like.getSumValue()+"");
-        if(like.getValue()==null){
+        if(like.getValue()=="U"){
             likeImg3.setImage(unfill);
         }else {
             likeImg3.setImage(fill);
@@ -482,7 +482,7 @@ public class ResultSearchController {
         idFood = Integer.parseInt(idShow.get(id))-1;
         like = likeList.get(idFood);
         likeN4.setText(like.getSumValue()+"");
-        if(like.getValue()==null){
+        if(like.getValue()=="U"){
             likeImg4.setImage(unfill);
         }else {
             likeImg4.setImage(fill);
@@ -493,7 +493,7 @@ public class ResultSearchController {
         idFood = Integer.parseInt(idShow.get(id))-1;
         like = likeList.get(idFood);
         likeN5.setText(like.getSumValue()+"");
-        if(like.getValue()==null){
+        if(like.getValue()=="U"){
             likeImg5.setImage(unfill);
         }else {
             likeImg5.setImage(fill);
@@ -504,7 +504,7 @@ public class ResultSearchController {
         idFood = Integer.parseInt(idShow.get(id))-1;
         like = likeList.get(idFood);
         likeN6.setText(like.getSumValue()+"");
-        if(like.getValue()==null){
+        if(like.getValue()=="U"){
             likeImg6.setImage(unfill);
         }else {
             likeImg6.setImage(fill);

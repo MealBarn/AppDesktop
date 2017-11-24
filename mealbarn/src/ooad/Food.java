@@ -22,7 +22,7 @@ public class Food implements Serializable {
     @GeneratedValue
     private Long id;
     private String name; 
-    private String recipe;
+    private String nametag;
     private String type;
 
     Food(){}
@@ -31,9 +31,9 @@ public class Food implements Serializable {
         this.type=typeName;
     }
 
-    Food(String nameFood, String recipeFood){
+    Food(String nameFood, String nametag){
         this.name=nameFood;
-        this.recipe=recipeFood;
+        this.nametag=nametag;
     }
 
     public Long getId() {
@@ -52,12 +52,12 @@ public class Food implements Serializable {
         this.name = name;
     }
 
-    public String getRecipe() {
-        return recipe;
+    public String getNametag() {
+        return nametag;
     }
 
-    public void setRecipe(String recipe) {
-        this.recipe = recipe;
+    public void setNametag(String recipe) {
+        this.nametag = recipe;
     }
     
     public String getType() {
