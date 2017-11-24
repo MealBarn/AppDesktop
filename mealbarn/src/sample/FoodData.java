@@ -65,7 +65,7 @@ public class FoodData {
         return imageSizeList;
     }
 
-    public ArrayList<String> getAlacateIDList() {
+    public ArrayList<String> getAlacarteIDList() {
         return alacarteIDList;
     }
 

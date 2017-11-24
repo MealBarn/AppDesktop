@@ -23,7 +23,7 @@ public class CategoryController {
 
     @FXML
     void alacarteSelect(ActionEvent event) throws IOException {
-        tempData.setShowIDList(foodData.getAlacateIDList());
+        tempData.setShowIDList(foodData.getAlacarteIDList());
         tempData.setPage(0);
         tempData.setType("Alacarte");
         Stage stage = (Stage) this.closeButton.getScene().getWindow();

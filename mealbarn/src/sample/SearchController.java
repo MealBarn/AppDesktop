@@ -111,7 +111,7 @@ public class SearchController {
             List<Component> componentList = foodData.getComponentList();
             ArrayList<String> select = new ArrayList<String>();
             if (isAlacarte.isSelected()) {
-                select.addAll(foodData.getAlacateIDList());
+                select.addAll(foodData.getAlacarteIDList());
             }
             if (isAppetizer.isSelected()) {
                 select.addAll(foodData.getAppetizerIDList());
@@ -130,7 +130,7 @@ public class SearchController {
             }
 
             if (!(isAlacarte.isSelected()) && !(isAppetizer.isSelected()) && !(isDessert.isSelected()) && !(isDrink.isSelected()) && !(isMainCourse.isSelected()) && !(isSoup.isSelected())) {
-                select.addAll(foodData.getAlacateIDList());
+                select.addAll(foodData.getAlacarteIDList());
                 select.addAll(foodData.getAppetizerIDList());
                 select.addAll(foodData.getDessertIDList());
                 select.addAll(foodData.getDrinkIDList());

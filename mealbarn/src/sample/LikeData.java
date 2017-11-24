@@ -82,7 +82,7 @@ public class LikeData {
             like.setIdAcc(idAccount);
             like.setIdFood(i);
             if(likeAcc[i-1]==0){
-                like.setValue(null);
+                like.setValue("U");
             }else {
                 like.setValue("L");
             }
