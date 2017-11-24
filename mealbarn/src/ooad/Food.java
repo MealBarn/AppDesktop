@@ -24,26 +24,18 @@ public class Food implements Serializable {
     private String name; 
     private String recipe;
     private String type;
-    
-    
-    Food(String nameFood, String recipeFood){
-        this.name=nameFood;
-        this.recipe=recipeFood;
-    }
-    
+
     Food(){}
     
     Food(String typeName){
         this.type=typeName;
     }
-    
-    public String getType() {
-        return type;
+
+    Food(String nameFood, String recipeFood){
+        this.name=nameFood;
+        this.recipe=recipeFood;
     }
 
-    public void setType(String type) {
-        this.type = type;
-    }
     public Long getId() {
         return id;
     }
@@ -67,12 +59,18 @@ public class Food implements Serializable {
     public void setRecipe(String recipe) {
         this.recipe = recipe;
     }
+    
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
+    }
 
     @Override
     public String toString() {
         return String.format("%d,%s",this.id,this.name);
     }
-    
-    
-    
+
 }

@@ -26,10 +26,7 @@ public class Component implements Serializable {
     private Integer id; 
     private String component;
     
-    Component(){
-        //this.id=IdentityNumber;
-        //this.name=nameFood;
-    }
+    Component(){    }
 
     public Long getIdprimary() {
         return idprimary;
@@ -38,10 +35,11 @@ public class Component implements Serializable {
     public void setIdprimary(Long id) {
         this.idprimary = id;
     }
-    
+
     public Integer getId(){
         return id;
     }
+
     public void setId(Integer id){
         this.id= id;
     }
@@ -53,7 +51,4 @@ public class Component implements Serializable {
     public void setComponent(String component) {
         this.component = component;
     }
-    
-    
-    
 }

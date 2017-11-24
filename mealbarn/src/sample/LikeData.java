@@ -6,8 +6,6 @@ import javax.persistence.*;
 import java.util.*;
 
 public class LikeData {
-	
-    
     
 	private ArrayList<Like> likeList = new ArrayList<>();
     private List<PointDetail> pointDetailList;
@@ -15,6 +13,10 @@ public class LikeData {
 	private static LikeData likeData = new LikeData();
 	
 	private LikeData(){    }
+
+    public static LikeData getLikeData(){
+        return likeData;
+    }
 	
 	public void activeLike(int idFood){
         EntityManagerFactory emf = Persistence.createEntityManagerFactory("./src/ODB/PointDetail.odb");
@@ -38,10 +40,6 @@ public class LikeData {
         em.getTransaction().commit();
         em.close();
         emf.close();
-    }
-
-	public static LikeData getLikeData(){
-        return likeData;
     }
 
 	public ArrayList<Like> getLikeList() {

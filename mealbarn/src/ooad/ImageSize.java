@@ -24,7 +24,6 @@ public class ImageSize implements Serializable {
     private Long id;
     private int imgSize;
     private int dirSize;
-    
 
     public Long getId() {
         return id;
@@ -49,7 +48,6 @@ public class ImageSize implements Serializable {
     public void setDirSize(int dirSize) {
         this.dirSize = dirSize;
     }
-
 
     @Override
     public String toString() {

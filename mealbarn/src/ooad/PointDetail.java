@@ -16,6 +16,9 @@ public class PointDetail implements Serializable {
     private long id;
     private int idAccount;
     private int idFood;
+    private String value;
+
+    public PointDetail(){}
 
     public long getId() {
         return id;
@@ -24,10 +27,6 @@ public class PointDetail implements Serializable {
     public void setId(long id) {
         this.id = id;
     }
-
-    private String value;
-
-    public PointDetail(){}
 
     public int getIdAccount() {
         return idAccount;
@@ -53,13 +52,4 @@ public class PointDetail implements Serializable {
         this.value = value;
     }
 
-    @Override
-    public String toString() {
-        return "PointDetail{" +
-                "id=" + id +
-                ", idAccount=" + idAccount +
-                ", idFood=" + idFood +
-                ", value='" + value + '\'' +
-                '}';
-    }
 }

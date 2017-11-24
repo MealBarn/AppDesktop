@@ -9,8 +9,11 @@ import java.io.IOException;
 
 public class SceneData {
     private static SceneData sceneData = new SceneData();
-    private SceneData(){
 
+    private SceneData(){    }
+
+    public static SceneData getSceneData(){
+        return sceneData;
     }
     
     public void backScene(Stage stage,String mode) throws IOException {
@@ -31,10 +34,6 @@ public class SceneData {
         javafx.scene.Scene scene = new javafx.scene.Scene(category);
         stage.setScene(scene);
         stage.show();
-    }
-
-	public static SceneData getSceneData(){
-        return sceneData;
     }
 
 	public void loginScene(Stage stage) throws IOException {

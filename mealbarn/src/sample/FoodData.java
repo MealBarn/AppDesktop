@@ -28,6 +28,8 @@ public class FoodData {
         assortFood();
     }
 
+    public static FoodData getFoodData(){return foodData;}
+
 	private void assortFood(){
         for (Food food : foodsList) {
             Long id = food.getId();
@@ -82,8 +84,6 @@ public class FoodData {
     public ArrayList<String> getDrinkIDList() {
         return drinkIDList;
     }
-
-	public static FoodData getFoodData(){return foodData;}
 
 	public ArrayList<FoodShow> getFoodShowsList() { return foodShowsList; }
 

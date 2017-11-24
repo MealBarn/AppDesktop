@@ -11,6 +11,8 @@ public class AccountData {
     private AccountData(){
         openFile();
     }
+
+    public static AccountData getAccountData() {return accountData;}
 	
 	public void addAccount(String user,String pass){
         EntityManagerFactory emf = Persistence.createEntityManagerFactory("./src/ODB/Account.odb");
@@ -49,8 +51,6 @@ public class AccountData {
         }
         return false;
     }
-
-	public static AccountData getAccountData() {return accountData;}
 	
 	public boolean isDuplicateUser(String user){
         for (Account account : accountList){
@@ -70,8 +70,5 @@ public class AccountData {
         em.close();
         emf.close();
     }
-
-    
-    
     
 }

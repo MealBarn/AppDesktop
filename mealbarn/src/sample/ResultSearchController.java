@@ -503,7 +503,7 @@ public class ResultSearchController {
         if(id>=size) return;
         idFood = Integer.parseInt(idShow.get(id))-1;
         like = likeList.get(idFood);
-        likeN1.setText(like.getSumValue()+"");
+        likeN6.setText(like.getSumValue()+"");
         if(like.getValue()==null){
             likeImg6.setImage(unfill);
         }else {

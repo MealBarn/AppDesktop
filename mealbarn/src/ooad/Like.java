@@ -1,10 +1,14 @@
 package ooad;
 
 public class Like {
+
     private Long id;
     private int idAccount;
     private int idFood;
     private String value;
+    private int sumValue;
+
+    public Like(){}
 
     public Long getId() {
         return id;
@@ -42,20 +46,8 @@ public class Like {
         return sumValue;
     }
 
-    public String toString() {
-        return "Like{" +
-                "id=" + id +
-                ", idAccount=" + idAccount +
-                ", idFood=" + idFood +
-                ", value='" + value + '\'' +
-                ", sumValue=" + sumValue +
-                '}';
-    }
-
     public void setSumValue(int sumValue) {
         this.sumValue = sumValue;
     }
 
-    private int sumValue;
-    public Like(){}
 }

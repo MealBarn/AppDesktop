@@ -27,83 +27,71 @@ public class TempData {
         foodShowsList = FoodData.getFoodData().getFoodShowsList();
     }
 
+    public static TempData getTempData() {
+        return tempData;
+    }
+
     public String getAccount() {
         return account;
+    }
+
+    public void setAccount(String account) {
+        this.account = account;
     }
 	
 	public String getAccountFill() {
         return accountFill;
     }
 
+    public void setAccountFill(String accountFill) {
+        this.accountFill = accountFill;
+    }
+
 	public String getIdAccount() {
         return idAccount;
+    }
+
+    public void setIdAccount(String idAccount) {
+        this.idAccount = idAccount;
     }
 
 	public int getIdFood() {
         return idFood;
     }
+
+    public void setIdFood(int idFood) {
+        this.idFood = idFood;
+    }
 	
 	public String getMode() {
         return mode;
+    }
+
+    public void setMode(String mode) {
+        this.mode = mode;
     }
 	
 	public int getPage() {
         return page;
     }
 
+    public void setPage(int page) {
+        this.page = page;
+    }
+
 	public String getPassword() {
         return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
     }
 
 	public ArrayList<String> getShowIDList() {
         return showIDList;
     }
-	
-	public static TempData getTempData() {
-        return tempData;
-    }
-	
-	public String getType() {
-        return type;
-    }
 
-	public boolean isRemember() {
-        return isRemember;
-    }
-    
-    public void setAccount(String account) {
-        this.account = account;
-    }
-
-	public void setAccountFill(String accountFill) {
-        this.accountFill = accountFill;
-    }
-    
-    public void setIdAccount(String idAccount) {
-        this.idAccount = idAccount;
-    }
-
-    public void setIdFood(int idFood) {
-        this.idFood = idFood;
-    }
-
-	public void setMode(String mode) {
-        this.mode = mode;
-    }
-
-	public void setPage(int page) {
-        this.page = page;
-    }
-
-	public void setPassword(String password) {
-        this.password = password;
-    }
-	
-    public void setRemember(boolean remember) {
-        isRemember = remember;
-    }
-
-	public void setShowIDList() {
+    public void setShowIDList() {
         showIDList.clear();
 
         for (FoodShow food : foodShowsList){
@@ -113,12 +101,24 @@ public class TempData {
         }
     }
 
-	public void setShowIDList(ArrayList<String> showIDList) {
+    public void setShowIDList(ArrayList<String> showIDList) {
         this.showIDList = sortLike(showIDList);
     }
+	
+	public String getType() {
+        return type;
+    }
 
-	public void setType(String type) {
+    public void setType(String type) {
         this.type = type;
+    }
+
+	public boolean isRemember() {
+        return isRemember;
+    }
+
+    public void setRemember(boolean remember) {
+        isRemember = remember;
     }
 
     private ArrayList<String> sortLike(ArrayList<String > iDListTemp){
@@ -171,5 +171,4 @@ public class TempData {
         }while (isSwitch);
     }
 
-    
 }
