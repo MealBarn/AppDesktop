@@ -48,7 +48,16 @@ public class SceneData {
         javafx.scene.Scene scene = new javafx.scene.Scene(resultcategory);
         stage.setScene(scene);
         stage.show();
-    } 
+    }
+
+    public void resultLikeScene(Stage stage) throws IOException {
+        LikeData.getLikeData().refreshLike();
+        TempData.getTempData().setShowIDList(LikeData.getLikeData().getLikeIDList());
+        Parent like = FXMLLoader.load(getClass().getResource("ResultLike.fxml"));
+        javafx.scene.Scene scene = new javafx.scene.Scene(like);
+        stage.setScene(scene);
+        stage.show();
+    }
 
     public void resultSearchScene(Stage stage) throws IOException {
         Parent resultSearch = FXMLLoader.load(getClass().getResource("ResultSearch.fxml"));

@@ -87,6 +87,12 @@ public class ShowFoodController {
         dirButton.setDisable(false);
     }
 
+    @FXML
+    void likePage(ActionEvent event) throws IOException {
+        Stage stage = (Stage) this.closeButton.getScene().getWindow();
+        SceneData.getSceneData().resultLikeScene(stage);
+    }
+
 	@FXML
     void logoutAction(ActionEvent event) throws IOException {
         tempData.setAccount(null);

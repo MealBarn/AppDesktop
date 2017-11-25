@@ -9,6 +9,7 @@ public class LikeData {
     
 	private ArrayList<Like> likeList = new ArrayList<>();
     private List<PointDetail> pointDetailList;
+    private ArrayList<String> likeIDList = new ArrayList<>();
 
 	private static LikeData likeData = new LikeData();
 	
@@ -40,6 +41,10 @@ public class LikeData {
         em.getTransaction().commit();
         em.close();
         emf.close();
+    }
+
+    public ArrayList<String> getLikeIDList() {
+        return likeIDList;
     }
 
 	public ArrayList<Like> getLikeList() {
@@ -76,6 +81,7 @@ public class LikeData {
             }
         }
         likeList.clear();
+        likeIDList.clear();
         for (int i = 1;i<=foodSize;i++){
             Like like = new Like();
             like.setId(Long.valueOf(i));
@@ -85,6 +91,7 @@ public class LikeData {
                 like.setValue("U");
             }else {
                 like.setValue("L");
+                likeIDList.add(String.format("%d",i));
             }
             like.setSumValue(likeSum[i-1]);
             likeList.add(like);

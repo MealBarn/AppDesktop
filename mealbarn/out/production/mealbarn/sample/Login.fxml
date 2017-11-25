@@ -57,14 +57,6 @@
                         </ImageView>
                      </children>
                   </Pane>
-                  <JFXButton layoutX="286.0" layoutY="207.0" onAction="#signUp" prefHeight="38.0" prefWidth="177.0" style="-fx-background-color: #ff9999; -fx-background-radius: 8;" text="S I G N  U P" textFill="#514444">
-                     <font>
-                        <Font size="16.0" />
-                     </font>
-                     <cursor>
-                        <Cursor fx:constant="HAND" />
-                     </cursor>
-                  </JFXButton>
                   <Text layoutX="122.0" layoutY="-17.0" strokeType="OUTSIDE" strokeWidth="0.0" text="R E G I S T E R" textOrigin="CENTER">
                      <font>
                         <Font name="Audrey Normal" size="51.0" />
@@ -82,14 +74,6 @@
                         </LinearGradient>
                      </fill>
                   </Text>
-                  <JFXButton layoutX="89.0" layoutY="207.0" onAction="#back" prefHeight="38.0" prefWidth="177.0" style="-fx-background-color: #ffff4d; -fx-background-radius: 8;" text="B A C K" textFill="#514444">
-                     <font>
-                        <Font size="16.0" />
-                     </font>
-                     <cursor>
-                        <Cursor fx:constant="HAND" />
-                     </cursor>
-                  </JFXButton>
                   <PasswordField fx:id="passR" layoutX="128.0" layoutY="85.0" prefHeight="44.0" prefWidth="351.0" promptText="Password" style="-fx-background-color: white; -fx-border-color: #656060; -fx-background-radius: 5; -fx-border-radius: 3; -fx-border-width: 0.5;">
                      <font>
                         <Font size="18.0" />
@@ -100,6 +84,22 @@
                         <Font size="18.0" />
                      </font>
                   </PasswordField>
+                  <JFXButton layoutX="286.0" layoutY="207.0" onAction="#signUp" prefHeight="38.0" prefWidth="177.0" style="-fx-background-color: #ff9999; -fx-background-radius: 8;" text="S I G N  U P" textFill="#514444">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </JFXButton>
+                  <JFXButton layoutX="89.0" layoutY="207.0" onAction="#back" prefHeight="38.0" prefWidth="177.0" style="-fx-background-color: #ffff4d; -fx-background-radius: 8;" text="B A C K" textFill="#514444">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </JFXButton>
                </children>
             </Pane>
             <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="logoLogin" text="Mealbarn">

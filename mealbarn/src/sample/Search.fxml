@@ -218,7 +218,10 @@
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor></JFXButton>
-            <JFXButton disable="true" focusTraversable="false" layoutX="-3.0" layoutY="138.0" prefHeight="105.0" prefWidth="114.0" text=" " />
+            <JFXButton layoutX="-3.0" layoutY="138.0" onAction="#likePage" prefHeight="105.0" prefWidth="114.0" text=" ">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></JFXButton>
          </children>
       </Pane>
    </children>

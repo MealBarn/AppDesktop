@@ -219,7 +219,10 @@
             </Text>
             <Line endX="100.0" layoutX="19.0" layoutY="377.0" startX="-15.0" stroke="WHITE" />
             <Line endX="100.0" layoutX="17.0" layoutY="502.0" startX="-15.0" stroke="WHITE" />
-            <JFXButton disable="true" focusTraversable="false" layoutX="-3.0" layoutY="138.0" prefHeight="105.0" prefWidth="114.0" text=" " />
+            <JFXButton layoutX="-3.0" layoutY="138.0" onAction="#likePage" prefHeight="105.0" prefWidth="114.0" text=" ">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></JFXButton>
             <JFXButton layoutX="5.0" layoutY="254.0" onAction="#searchPage" prefHeight="114.0" prefWidth="107.0" text=" ">
                <cursor>
                   <Cursor fx:constant="HAND" />

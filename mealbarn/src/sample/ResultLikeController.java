@@ -1,17 +1,8 @@
 package sample;
 
-import com.jfoenix.controls.JFXButton;
-import com.jfoenix.controls.JFXProgressBar;
-
-import java.io.IOException;
-import java.util.ArrayList;
-
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
@@ -21,12 +12,14 @@ import javafx.stage.Stage;
 import ooad.FoodShow;
 import ooad.Like;
 
-public class ResultSearchController {
-	
-	@FXML
+import java.io.IOException;
+import java.util.ArrayList;
+
+public class ResultLikeController {
+    @FXML
     private Text accountName;
-	
-	@FXML
+
+    @FXML
     private ImageView closeButton;
 
     @FXML
@@ -82,42 +75,6 @@ public class ResultSearchController {
 
     @FXML
     private Text foodName6;
-	
-	@FXML
-    private Text foodPerfect1;
-
-    @FXML
-    private Text foodPerfect2;
-
-    @FXML
-    private Text foodPerfect3;
-
-    @FXML
-    private Text foodPerfect4;
-
-    @FXML
-    private Text foodPerfect5;
-
-    @FXML
-    private Text foodPerfect6;
-
-    @FXML
-    private JFXProgressBar foodScale1;
-
-    @FXML
-    private JFXProgressBar foodScale2;
-
-    @FXML
-    private JFXProgressBar foodScale3;
-
-    @FXML
-    private JFXProgressBar foodScale4;
-
-    @FXML
-    private JFXProgressBar foodScale5;
-
-    @FXML
-    private JFXProgressBar foodScale6;
 
     @FXML
     private ImageView likeImg1;
@@ -155,9 +112,6 @@ public class ResultSearchController {
     @FXML
     private Text likeN6;
 
-	@FXML
-    private ImageView nextImg;
-
     @FXML
     private Text pageId;
 
@@ -165,9 +119,12 @@ public class ResultSearchController {
     private ImageView prevImg;
 
     @FXML
+    private ImageView nextImg;
+
+    @FXML
     private Text recipeCount;
 
-    
+
 
     @FXML
     void categoryPage(ActionEvent event) throws IOException {
@@ -184,7 +141,7 @@ public class ResultSearchController {
     void foodRecipe1(ActionEvent event) throws IOException {
         int idFood = Integer.parseInt(idShow.get((page*6)+0))-1;
         tempData.setIdFood(idFood);
-        tempData.setMode("Search");
+        tempData.setMode("Category");
         tempData.setPage(page);
         Stage stage = (Stage) this.closeButton.getScene().getWindow();
         SceneData.getSceneData().showFoodScene(stage);
@@ -194,7 +151,7 @@ public class ResultSearchController {
     void foodRecipe2(ActionEvent event) throws IOException {
         int idFood = Integer.parseInt(idShow.get((page*6)+1))-1;
         tempData.setIdFood(idFood);
-        tempData.setMode("Search");
+        tempData.setMode("Category");
         tempData.setPage(page);
         Stage stage = (Stage) this.closeButton.getScene().getWindow();
         SceneData.getSceneData().showFoodScene(stage);
@@ -204,7 +161,7 @@ public class ResultSearchController {
     void foodRecipe3(ActionEvent event) throws IOException {
         int idFood = Integer.parseInt(idShow.get((page*6)+2))-1;
         tempData.setIdFood(idFood);
-        tempData.setMode("Search");
+        tempData.setMode("Category");
         tempData.setPage(page);
         Stage stage = (Stage) this.closeButton.getScene().getWindow();
         SceneData.getSceneData().showFoodScene(stage);
@@ -214,7 +171,7 @@ public class ResultSearchController {
     void foodRecipe4(ActionEvent event) throws IOException {
         int idFood = Integer.parseInt(idShow.get((page*6)+3))-1;
         tempData.setIdFood(idFood);
-        tempData.setMode("Search");
+        tempData.setMode("Category");
         tempData.setPage(page);
         Stage stage = (Stage) this.closeButton.getScene().getWindow();
         SceneData.getSceneData().showFoodScene(stage);
@@ -224,7 +181,7 @@ public class ResultSearchController {
     void foodRecipe5(ActionEvent event) throws IOException {
         int idFood = Integer.parseInt(idShow.get((page*6)+4))-1;
         tempData.setIdFood(idFood);
-        tempData.setMode("Search");
+        tempData.setMode("Category");
         tempData.setPage(page);
         Stage stage = (Stage) this.closeButton.getScene().getWindow();
         SceneData.getSceneData().showFoodScene(stage);
@@ -234,24 +191,18 @@ public class ResultSearchController {
     void foodRecipe6(ActionEvent event) throws IOException {
         int idFood = Integer.parseInt(idShow.get((page*6)+5))-1;
         tempData.setIdFood(idFood);
-        tempData.setMode("Search");
+        tempData.setMode("Category");
         tempData.setPage(page);
         Stage stage = (Stage) this.closeButton.getScene().getWindow();
         SceneData.getSceneData().showFoodScene(stage);
     }
 
-	@FXML
+    @FXML
     void logoutAction(ActionEvent event) throws IOException {
         tempData.setAccount(null);
         tempData.setIdAccount(null);
         Stage stage = (Stage) this.closeButton.getScene().getWindow();
         SceneData.getSceneData().loginScene(stage);
-    }
-
-    @FXML
-    void likePage(ActionEvent event) throws IOException {
-        Stage stage = (Stage) this.closeButton.getScene().getWindow();
-        SceneData.getSceneData().resultLikeScene(stage);
     }
 
     @FXML
@@ -327,13 +278,13 @@ public class ResultSearchController {
         updateLike();
     }
 
-    private int page;
-    private int size;
     private ArrayList<String> idShow;
     private FoodData foodData = FoodData.getFoodData();
     private TempData tempData = TempData.getTempData();
+    private int page;
+    private int size;
 
-	void updateData(){
+    void updateData(){
         int id;
         int idFood;
         String pageNum = String.format("%d",page+1);
@@ -345,11 +296,9 @@ public class ResultSearchController {
             idFood = Integer.parseInt(idShow.get(id))-1;
             FoodShow food1 = foodData.getFoodShowsList().get(idFood);
             foodName1.setText(food1.getNametag());
-            foodPerfect1.setText(food1.getPerfect() + "%");
             String sorce1 = "./img/imgFood/"+idShow.get(id)+".png";
             Image image1 = new Image(sorce1);
             foodImg1.setImage(image1);
-            foodScale1.setProgress(food1.getPerfect() / 100);
         }else {
             food1.setVisible(false);
         }
@@ -360,11 +309,9 @@ public class ResultSearchController {
             idFood = Integer.parseInt(idShow.get(id))-1;
             FoodShow food2 = foodData.getFoodShowsList().get(idFood);
             foodName2.setText(food2.getNametag());
-            foodPerfect2.setText(food2.getPerfect() + "%");
             String sorce2 = "./img/imgFood/"+idShow.get(id)+".png";
             Image image2 = new Image(sorce2);
             foodImg2.setImage(image2);
-            foodScale2.setProgress(food2.getPerfect() / 100);
         }else {
             food2.setVisible(false);
         }
@@ -375,26 +322,22 @@ public class ResultSearchController {
             idFood = Integer.parseInt(idShow.get(id))-1;
             FoodShow food3 = foodData.getFoodShowsList().get(idFood);
             foodName3.setText(food3.getNametag());
-            foodPerfect3.setText(food3.getPerfect() + "%");
             String sorce3 = "./img/imgFood/"+idShow.get(id)+".png";
             Image image3 = new Image(sorce3);
             foodImg3.setImage(image3);
-            foodScale3.setProgress(food3.getPerfect() / 100);
         }else {
             food3.setVisible(false);
         }
-        ///////////////////////////////////////////--4
+        /////////////////////////////////////////--4
         id = (page*6)+3;
         if(id<size) {
             food4.setVisible(true);
             idFood = Integer.parseInt(idShow.get(id))-1;
             FoodShow food4 = foodData.getFoodShowsList().get(idFood);
             foodName4.setText(food4.getNametag());
-            foodPerfect4.setText(food4.getPerfect() + "%");
             String sorce4 = "./img/imgFood/"+idShow.get(id)+".png";
             Image image4 = new Image(sorce4);
             foodImg4.setImage(image4);
-            foodScale4.setProgress(food4.getPerfect() / 100);
         }else {
             food4.setVisible(false);
         }
@@ -405,11 +348,9 @@ public class ResultSearchController {
             idFood = Integer.parseInt(idShow.get(id))-1;
             FoodShow food5 = foodData.getFoodShowsList().get(idFood);
             foodName5.setText(food5.getNametag());
-            foodPerfect5.setText(food5.getPerfect() + "%");
             String sorce5 = "./img/imgFood/"+idShow.get(id)+".png";
             Image image5 = new Image(sorce5);
             foodImg5.setImage(image5);
-            foodScale5.setProgress(food5.getPerfect() / 100);
         }else {
             food5.setVisible(false);
         }
@@ -420,11 +361,9 @@ public class ResultSearchController {
             idFood = Integer.parseInt(idShow.get(id))-1;
             FoodShow food6 = foodData.getFoodShowsList().get(idFood);
             foodName6.setText(food6.getNametag());
-            foodPerfect6.setText(food6.getPerfect() + "%");
             String sorce6 = "./img/imgFood/"+idShow.get(id)+".png";
             Image image6 = new Image(sorce6);
             foodImg6.setImage(image6);
-            foodScale6.setProgress(food6.getPerfect() / 100);
         }else {
             food6.setVisible(false);
         }
@@ -433,7 +372,7 @@ public class ResultSearchController {
         }else {
             prevImg.setVisible(true);
         }
-        if(page>=((size-1)/6)){
+        if(page >=((size-1)/6)){
             nextImg.setVisible(false);
         }else {
             nextImg.setVisible(true);
@@ -516,6 +455,4 @@ public class ResultSearchController {
             likeImg6.setImage(fill);
         }
     }
-
-    
 }

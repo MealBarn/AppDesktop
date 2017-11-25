@@ -12,10 +12,6 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import static java.nio.charset.StandardCharsets.*;
 
-/**
- *
- * @author Panisa
- */
 @Entity
 public class Component implements Serializable {
 
