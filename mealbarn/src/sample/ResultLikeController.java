@@ -141,7 +141,7 @@ public class ResultLikeController {
     void foodRecipe1(ActionEvent event) throws IOException {
         int idFood = Integer.parseInt(idShow.get((page*6)+0))-1;
         tempData.setIdFood(idFood);
-        tempData.setMode("Category");
+        tempData.setMode("Like");
         tempData.setPage(page);
         Stage stage = (Stage) this.closeButton.getScene().getWindow();
         SceneData.getSceneData().showFoodScene(stage);
@@ -151,7 +151,7 @@ public class ResultLikeController {
     void foodRecipe2(ActionEvent event) throws IOException {
         int idFood = Integer.parseInt(idShow.get((page*6)+1))-1;
         tempData.setIdFood(idFood);
-        tempData.setMode("Category");
+        tempData.setMode("Like");
         tempData.setPage(page);
         Stage stage = (Stage) this.closeButton.getScene().getWindow();
         SceneData.getSceneData().showFoodScene(stage);
@@ -161,7 +161,7 @@ public class ResultLikeController {
     void foodRecipe3(ActionEvent event) throws IOException {
         int idFood = Integer.parseInt(idShow.get((page*6)+2))-1;
         tempData.setIdFood(idFood);
-        tempData.setMode("Category");
+        tempData.setMode("Like");
         tempData.setPage(page);
         Stage stage = (Stage) this.closeButton.getScene().getWindow();
         SceneData.getSceneData().showFoodScene(stage);
@@ -171,7 +171,7 @@ public class ResultLikeController {
     void foodRecipe4(ActionEvent event) throws IOException {
         int idFood = Integer.parseInt(idShow.get((page*6)+3))-1;
         tempData.setIdFood(idFood);
-        tempData.setMode("Category");
+        tempData.setMode("Like");
         tempData.setPage(page);
         Stage stage = (Stage) this.closeButton.getScene().getWindow();
         SceneData.getSceneData().showFoodScene(stage);
@@ -181,7 +181,7 @@ public class ResultLikeController {
     void foodRecipe5(ActionEvent event) throws IOException {
         int idFood = Integer.parseInt(idShow.get((page*6)+4))-1;
         tempData.setIdFood(idFood);
-        tempData.setMode("Category");
+        tempData.setMode("Like");
         tempData.setPage(page);
         Stage stage = (Stage) this.closeButton.getScene().getWindow();
         SceneData.getSceneData().showFoodScene(stage);
@@ -191,10 +191,16 @@ public class ResultLikeController {
     void foodRecipe6(ActionEvent event) throws IOException {
         int idFood = Integer.parseInt(idShow.get((page*6)+5))-1;
         tempData.setIdFood(idFood);
-        tempData.setMode("Category");
+        tempData.setMode("Like");
         tempData.setPage(page);
         Stage stage = (Stage) this.closeButton.getScene().getWindow();
         SceneData.getSceneData().showFoodScene(stage);
+    }
+
+    @FXML
+    void likePage(ActionEvent event) throws IOException {
+        Stage stage = (Stage) this.closeButton.getScene().getWindow();
+        SceneData.getSceneData().resultLikeScene(stage);
     }
 
     @FXML

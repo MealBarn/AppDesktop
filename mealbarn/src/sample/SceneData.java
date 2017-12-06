@@ -21,8 +21,10 @@ public class SceneData {
         if(mode.compareTo("Category")==0) {
             result = FXMLLoader.load(getClass().getResource("ResultCategory.fxml"));
         }
-        else {
+        else if(mode.compareTo("Search")==0) {
             result = FXMLLoader.load(getClass().getResource("ResultSearch.fxml"));
+        } else {
+            result = FXMLLoader.load(getClass().getResource("ResultLike.fxml"));
         }
         Scene scene = new Scene(result);
         stage.setScene(scene);
