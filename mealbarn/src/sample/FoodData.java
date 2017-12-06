@@ -145,8 +145,8 @@ public class FoodData {
     private void openFile(){
         EntityManagerFactory emf;
         EntityManager em;
-//        emf = Persistence.createEntityManagerFactory("objectdb://192.168.43.229:80/Food.odb;user=admin;password=admin");
-        emf = Persistence.createEntityManagerFactory("./src/ODB/Food.odb");
+        emf = Persistence.createEntityManagerFactory("objectdb://10.66.14.237:80/Food.odb;user=admin;password=admin");
+//        emf = Persistence.createEntityManagerFactory("./src/ODB/Food.odb");
         em = emf.createEntityManager();
         TypedQuery<Food> queryFood =
                 em.createQuery("SELECT a FROM ooad.Food a", Food.class);
@@ -154,7 +154,8 @@ public class FoodData {
         em.close();
         emf.close();
         /////////////////////////////////////////////////////////////////
-        emf = Persistence.createEntityManagerFactory("./src/ODB/ImageSize.odb");
+        emf = Persistence.createEntityManagerFactory("objectdb://10.66.14.237:80/ImageSize.odb;user=admin;password=admin");
+//        emf = Persistence.createEntityManagerFactory("./src/ODB/ImageSize.odb");
         em = emf.createEntityManager();
         TypedQuery<ImageSize> querySize =
                 em.createQuery("SELECT a FROM ooad.ImageSize a", ImageSize.class);
@@ -162,8 +163,8 @@ public class FoodData {
         em.close();
         emf.close();
         /////////////////////////////////////////////////////////////////
-//        emf = Persistence.createEntityManagerFactory("objectdb://192.168.43.229:80/Account.odb;user=admin;password=admin");
-        emf = Persistence.createEntityManagerFactory("./src/ODB/Component.odb");
+        emf = Persistence.createEntityManagerFactory("objectdb://10.66.14.237:80/Component.odb;user=admin;password=admin");
+//        emf = Persistence.createEntityManagerFactory("./src/ODB/Component.odb");
         em = emf.createEntityManager();
         TypedQuery<Component> queryComponent =
                 em.createQuery("SELECT a FROM ooad.Component a", Component.class);

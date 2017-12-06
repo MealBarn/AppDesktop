@@ -56,7 +56,8 @@ public class LikeData {
         int foodSize = FoodData.getFoodData().getFoodShowsList().size();
         int[] likeAcc = new int[foodSize];
         int[] likeSum = new int[foodSize];
-        EntityManagerFactory emf = Persistence.createEntityManagerFactory("./src/ODB/PointDetail.odb");
+        EntityManagerFactory emf = Persistence.createEntityManagerFactory("objectdb://10.66.14.237:80/PointDetail.odb;user=admin;password=admin");
+//        EntityManagerFactory emf = Persistence.createEntityManagerFactory("./src/ODB/PointDetail.odb");
         EntityManager em = emf.createEntityManager();
         TypedQuery<PointDetail> queryPointDetail =
                 em.createQuery("SELECT a FROM ooad.PointDetail a", PointDetail.class);
