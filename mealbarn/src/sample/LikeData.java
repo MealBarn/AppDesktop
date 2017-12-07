@@ -20,7 +20,8 @@ public class LikeData {
     }
 	
 	public void activeLike(int idFood){
-        EntityManagerFactory emf = Persistence.createEntityManagerFactory("./src/ODB/PointDetail.odb");
+        EntityManagerFactory emf = Persistence.createEntityManagerFactory("objectdb://10.66.14.237:80/PointDetail.odb;user=admin;password=admin");
+//        EntityManagerFactory emf = Persistence.createEntityManagerFactory("./src/ODB/PointDetail.odb");
         EntityManager em = emf.createEntityManager();
         em.getTransaction().begin();
         PointDetail p = new PointDetail();
