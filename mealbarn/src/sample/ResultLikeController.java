@@ -5,6 +5,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+import javafx.scene.input.MouseButton;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.Pane;
 import javafx.scene.text.Text;
@@ -12,6 +13,7 @@ import javafx.stage.Stage;
 import ooad.FoodShow;
 import ooad.Like;
 
+import java.awt.*;
 import java.io.IOException;
 import java.util.ArrayList;
 
@@ -213,44 +215,56 @@ public class ResultLikeController {
 
     @FXML
     void like_unlike1(MouseEvent event) {
-        int idFood = Integer.parseInt(idShow.get((page*6)+0))-1;
-        LikeData.getLikeData().activeLike(idFood);
-        updateLike();
+        if(event.getButton()== MouseButton.PRIMARY) {
+            int idFood = Integer.parseInt(idShow.get((page * 6) + 0)) - 1;
+            LikeData.getLikeData().activeLike(idFood);
+            updateLike();
+        }
     }
 
     @FXML
     void like_unlike2(MouseEvent event) {
-        int idFood = Integer.parseInt(idShow.get((page*6)+1))-1;
-        LikeData.getLikeData().activeLike(idFood);
-        updateLike();
+        if(event.getButton()== MouseButton.PRIMARY) {
+            int idFood = Integer.parseInt(idShow.get((page * 6) + 1)) - 1;
+            LikeData.getLikeData().activeLike(idFood);
+            updateLike();
+        }
     }
 
     @FXML
     void like_unlike3(MouseEvent event) {
-        int idFood = Integer.parseInt(idShow.get((page*6)+2))-1;
-        LikeData.getLikeData().activeLike(idFood);
-        updateLike();
+        if(event.getButton()== MouseButton.PRIMARY) {
+            int idFood = Integer.parseInt(idShow.get((page * 6) + 2)) - 1;
+            LikeData.getLikeData().activeLike(idFood);
+            updateLike();
+        }
     }
 
     @FXML
     void like_unlike4(MouseEvent event) {
-        int idFood = Integer.parseInt(idShow.get((page*6)+3))-1;
-        LikeData.getLikeData().activeLike(idFood);
-        updateLike();
+        if(event.getButton()== MouseButton.PRIMARY) {
+            int idFood = Integer.parseInt(idShow.get((page * 6) + 3)) - 1;
+            LikeData.getLikeData().activeLike(idFood);
+            updateLike();
+        }
     }
 
     @FXML
     void like_unlike5(MouseEvent event) {
-        int idFood = Integer.parseInt(idShow.get((page*6)+4))-1;
-        LikeData.getLikeData().activeLike(idFood);
-        updateLike();
+        if(event.getButton()== MouseButton.PRIMARY) {
+            int idFood = Integer.parseInt(idShow.get((page * 6) + 4)) - 1;
+            LikeData.getLikeData().activeLike(idFood);
+            updateLike();
+        }
     }
 
     @FXML
     void like_unlike6(MouseEvent event) {
-        int idFood = Integer.parseInt(idShow.get((page*6)+5))-1;
-        LikeData.getLikeData().activeLike(idFood);
-        updateLike();
+        if(event.getButton()== MouseButton.PRIMARY) {
+            int idFood = Integer.parseInt(idShow.get((page * 6) + 5)) - 1;
+            LikeData.getLikeData().activeLike(idFood);
+            updateLike();
+        }
     }
 
     @FXML

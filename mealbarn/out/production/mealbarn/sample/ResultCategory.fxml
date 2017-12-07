@@ -52,7 +52,7 @@
             </Pane>
          </children>
       </Pane>
-      <Pane fx:id="food1" layoutX="123.0" layoutY="217.0" prefHeight="203.0" prefWidth="349.0" style="-fx-background-color: #ffffff; -fx-background-radius: 9; -fx-border-color: black; -fx-border-radius: 9; -fx-border-width: 0.5;">
+      <Pane fx:id="food1" layoutX="123.0" layoutY="217.0" prefHeight="203.0" prefWidth="349.0" style="-fx-background-color: #ffffff;">
          <children>
             <ImageView fx:id="foodImg1" fitHeight="210.0" fitWidth="203.0" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -92,7 +92,7 @@
             </Pane>
          </children>
       </Pane>
-      <Pane fx:id="food2" layoutX="484.0" layoutY="217.0" prefHeight="203.0" prefWidth="349.0" style="-fx-background-color: #ffffff; -fx-background-radius: 9; -fx-border-color: black; -fx-border-radius: 9; -fx-border-width: 0.5;">
+      <Pane fx:id="food2" layoutX="484.0" layoutY="217.0" prefHeight="203.0" prefWidth="349.0" style="-fx-background-color: #ffffff;">
          <children>
             <ImageView fx:id="foodImg2" fitHeight="203.0" fitWidth="208.0" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -132,7 +132,7 @@
             </Pane>
          </children>
       </Pane>
-      <Pane fx:id="food3" layoutX="843.0" layoutY="217.0" prefHeight="203.0" prefWidth="349.0" style="-fx-background-color: #ffffff; -fx-background-radius: 9; -fx-border-color: black; -fx-border-radius: 9; -fx-border-width: 0.5;">
+      <Pane fx:id="food3" layoutX="843.0" layoutY="217.0" prefHeight="203.0" prefWidth="349.0" style="-fx-background-color: #ffffff;">
          <children>
             <ImageView fx:id="foodImg3" fitHeight="203.0" fitWidth="208.0" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -172,7 +172,7 @@
             </Pane>
          </children>
       </Pane>
-      <Pane fx:id="food4" layoutX="120.0" layoutY="445.0" prefHeight="203.0" prefWidth="349.0" style="-fx-background-color: #ffffff; -fx-background-radius: 9; -fx-border-color: black; -fx-border-radius: 9; -fx-border-width: 0.5;">
+      <Pane fx:id="food4" layoutX="120.0" layoutY="445.0" prefHeight="203.0" prefWidth="349.0" style="-fx-background-color: #ffffff;">
          <children>
             <ImageView fx:id="foodImg4" fitHeight="203.0" fitWidth="208.0" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -212,7 +212,7 @@
             </Pane>
          </children>
       </Pane>
-      <Pane fx:id="food5" layoutX="481.0" layoutY="445.0" prefHeight="203.0" prefWidth="349.0" style="-fx-background-color: #ffffff; -fx-background-radius: 9; -fx-border-color: black; -fx-border-radius: 9; -fx-border-width: 0.5;">
+      <Pane fx:id="food5" layoutX="481.0" layoutY="445.0" prefHeight="203.0" prefWidth="349.0" style="-fx-background-color: #ffffff;">
          <children>
             <ImageView fx:id="foodImg5" fitHeight="203.0" fitWidth="208.0" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -252,7 +252,7 @@
             </Pane>
          </children>
       </Pane>
-      <Pane fx:id="food6" layoutX="840.0" layoutY="445.0" prefHeight="203.0" prefWidth="349.0" style="-fx-background-color: #ffffff; -fx-background-radius: 9; -fx-border-color: black; -fx-border-radius: 9; -fx-border-width: 0.5;">
+      <Pane fx:id="food6" layoutX="840.0" layoutY="445.0" prefHeight="203.0" prefWidth="349.0" style="-fx-background-color: #ffffff;">
          <children>
             <ImageView fx:id="foodImg6" fitHeight="203.0" fitWidth="208.0" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -338,7 +338,7 @@
             <Line endX="100.0" layoutX="964.0" layoutY="67.0" startX="-200.0" stroke="#6b4c1d" strokeWidth="2.0" />
          </children>
       </Pane>
-      <Pane layoutX="-3.0" layoutY="-12.0" prefHeight="777.0" prefWidth="114.0" style="-fx-background-color: #4d3300; -fx-border-color: black; -fx-border-width: 0.2;">
+      <Pane prefHeight="777.0" prefWidth="114.0" style="-fx-background-color: #4d3300; -fx-border-color: black; -fx-border-width: 0.2;">
          <children>
             <ImageView fitHeight="53.0" fitWidth="57.0" layoutX="30.0" layoutY="148.0" pickOnBounds="true" preserveRatio="true">
                <image>
