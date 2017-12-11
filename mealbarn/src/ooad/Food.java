@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package ooad;
 
 import java.io.Serializable;
@@ -62,11 +57,6 @@ public class Food implements Serializable {
 
     public void setType(String type) {
         this.type = type;
-    }
-
-    @Override
-    public String toString() {
-        return String.format("%d,%s",this.id,this.name);
     }
 
 }

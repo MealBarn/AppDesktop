@@ -1,7 +1,6 @@
 package sample;
 
 import ooad.Account;
-
 import javax.persistence.*;
 import java.util.*;
 
@@ -15,8 +14,7 @@ public class AccountData {
     public static AccountData getAccountData() {return accountData;}
 	
 	public void addAccount(String user,String pass){
-//        EntityManagerFactory emf = Persistence.createEntityManagerFactory("./src/ODB/Account.odb");
-        EntityManagerFactory emf = Persistence.createEntityManagerFactory("objectdb://10.66.14.237:80/Account.odb;user=admin;password=admin");
+        EntityManagerFactory emf = Persistence.createEntityManagerFactory("./src/ODB/Account.odb");
         EntityManager em = emf.createEntityManager();
         em.getTransaction().begin();
         Account account = new Account();
@@ -63,8 +61,7 @@ public class AccountData {
     }
 	
     private void openFile(){
-//        EntityManagerFactory emf = Persistence.createEntityManagerFactory("./src/ODB/Account.odb");
-        EntityManagerFactory emf = Persistence.createEntityManagerFactory("objectdb://10.66.14.237:80/Account.odb;user=admin;password=admin");
+        EntityManagerFactory emf = Persistence.createEntityManagerFactory("./src/ODB/Account.odb");
         EntityManager em = emf.createEntityManager();
         TypedQuery<Account> queryAccount =
                 em.createQuery("SELECT a FROM ooad.Account a", Account.class);

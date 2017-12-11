@@ -4,9 +4,6 @@ import com.jfoenix.controls.JFXButton;
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
@@ -15,7 +12,6 @@ import javafx.scene.text.Text;
 import javafx.stage.Stage;
 import ooad.FoodShow;
 import ooad.ImageSize;
-
 import java.io.IOException;
 import java.util.List;
 

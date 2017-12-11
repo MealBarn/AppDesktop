@@ -1,23 +1,22 @@
 package sample;
 
 import ooad.*;
-
 import javax.persistence.*;
 import java.util.*;
 
 public class FoodData {
 	
-	private ArrayList<String> alacarteIDList    = new ArrayList<>();
-	private ArrayList<String> allComponent      = new ArrayList<>();
-	private ArrayList<String> appetizerIDList   = new ArrayList<>();
+	private ArrayList<String> alacarteIDList    = new ArrayList<String>();
+	private ArrayList<String> allComponent      = new ArrayList<String>();
+	private ArrayList<String> appetizerIDList   = new ArrayList<String>();
     private List<Component> componentList;
-	private ArrayList<String> dessertIDList     = new ArrayList<>();
-    private ArrayList<String> drinkIDList       = new ArrayList<>();
+	private ArrayList<String> dessertIDList     = new ArrayList<String>();
+    private ArrayList<String> drinkIDList       = new ArrayList<String>();
     private List<Food> foodsList;
-	private ArrayList<FoodShow> foodShowsList   = new ArrayList<>();
+	private ArrayList<FoodShow> foodShowsList   = new ArrayList<FoodShow>();
     private List<ImageSize> imageSizeList;
-    private ArrayList<String> mainCourseIDList  = new ArrayList<>();
-    private ArrayList<String> soupIDList        = new ArrayList<>();
+    private ArrayList<String> mainCourseIDList  = new ArrayList<String>();
+    private ArrayList<String> soupIDList        = new ArrayList<String>();
 
     
     private static FoodData foodData = new FoodData();
@@ -130,7 +129,6 @@ public class FoodData {
         amountComponent.add(""+count);
         Collections.sort(allComponent);
         amountComponent.remove(0);
-        /////////////////////////////////////////////////////////////////
         for (int i = 0;i<foodsList.size();i++) {
             Food food = foodsList.get(i);
             int amount = Integer.parseInt(amountComponent.get(i));
@@ -145,8 +143,7 @@ public class FoodData {
     private void openFile(){
         EntityManagerFactory emf;
         EntityManager em;
-        emf = Persistence.createEntityManagerFactory("objectdb://10.66.14.237:80/Food.odb;user=admin;password=admin");
-//        emf = Persistence.createEntityManagerFactory("./src/ODB/Food.odb");
+        emf = Persistence.createEntityManagerFactory("./src/ODB/Food.odb");
         em = emf.createEntityManager();
         TypedQuery<Food> queryFood =
                 em.createQuery("SELECT a FROM ooad.Food a", Food.class);
@@ -154,8 +151,7 @@ public class FoodData {
         em.close();
         emf.close();
         /////////////////////////////////////////////////////////////////
-        emf = Persistence.createEntityManagerFactory("objectdb://10.66.14.237:80/ImageSize.odb;user=admin;password=admin");
-//        emf = Persistence.createEntityManagerFactory("./src/ODB/ImageSize.odb");
+        emf = Persistence.createEntityManagerFactory("./src/ODB/ImageSize.odb");
         em = emf.createEntityManager();
         TypedQuery<ImageSize> querySize =
                 em.createQuery("SELECT a FROM ooad.ImageSize a", ImageSize.class);
@@ -163,8 +159,7 @@ public class FoodData {
         em.close();
         emf.close();
         /////////////////////////////////////////////////////////////////
-        emf = Persistence.createEntityManagerFactory("objectdb://10.66.14.237:80/Component.odb;user=admin;password=admin");
-//        emf = Persistence.createEntityManagerFactory("./src/ODB/Component.odb");
+        emf = Persistence.createEntityManagerFactory("./src/ODB/Component.odb");
         em = emf.createEntityManager();
         TypedQuery<Component> queryComponent =
                 em.createQuery("SELECT a FROM ooad.Component a", Component.class);

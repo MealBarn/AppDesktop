@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package ooad;
 
 import java.io.Serializable;
@@ -43,11 +38,6 @@ public class ImageSize implements Serializable {
 
     public void setDirSize(int dirSize) {
         this.dirSize = dirSize;
-    }
-
-    @Override
-    public String toString() {
-        return String.format("%d,%d,%d",this.id,this.imgSize,this.dirSize);
     }
     
 }

@@ -7,10 +7,6 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Cursor;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
 import javafx.scene.control.ListView;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.KeyCode;
@@ -21,8 +17,6 @@ import javafx.stage.Stage;
 import ooad.FoodShow;
 import ooad.Component;
 import org.controlsfx.control.textfield.TextFields;
-
-
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
@@ -73,7 +67,7 @@ public class SearchController {
     }
 
     @FXML
-    void clearButtonAction(ActionEvent event){choosedList.clear();listCursor();}
+    void clearButtonAction(ActionEvent event){choosedList.clear();}
 
 	@FXML
     void closeButtonAction(MouseEvent event) {
@@ -85,7 +79,6 @@ public class SearchController {
         if(event.getClickCount() > 1){
             choosedList.remove(list.getSelectionModel().getSelectedItem());
         }
-        listCursor();
     }
 
 	@FXML
@@ -171,7 +164,6 @@ public class SearchController {
 
 	@FXML
     void initialize() {
-        listCursor();
         allComponent = foodData.getAllComponent();
         accountName.setText(tempData.getAccount());
         TextFields.bindAutoCompletion(ingredientType,allComponent);
@@ -192,15 +184,6 @@ public class SearchController {
             }
         }else {
             ingredientType.clear();
-        }
-        listCursor();
-    }
-
-    private void listCursor(){
-        if(choosedList.isEmpty()){
-            list.setCursor(Cursor.NONE);
-        }else {
-            list.setCursor(Cursor.HAND);
         }
     }
 

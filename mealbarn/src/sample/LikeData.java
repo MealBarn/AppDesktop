@@ -1,15 +1,14 @@
 package sample;
 
 import ooad.*;
-
 import javax.persistence.*;
 import java.util.*;
 
 public class LikeData {
     
-	private ArrayList<Like> likeList = new ArrayList<>();
+	private ArrayList<Like> likeList = new ArrayList<Like>();
     private List<PointDetail> pointDetailList;
-    private ArrayList<String> likeIDList = new ArrayList<>();
+    private ArrayList<String> likeIDList = new ArrayList<String>();
 
 	private static LikeData likeData = new LikeData();
 	
@@ -20,8 +19,7 @@ public class LikeData {
     }
 	
 	public void activeLike(int idFood){
-        EntityManagerFactory emf = Persistence.createEntityManagerFactory("objectdb://10.66.14.237:80/PointDetail.odb;user=admin;password=admin");
-//        EntityManagerFactory emf = Persistence.createEntityManagerFactory("./src/ODB/PointDetail.odb");
+        EntityManagerFactory emf = Persistence.createEntityManagerFactory("./src/ODB/PointDetail.odb");
         EntityManager em = emf.createEntityManager();
         em.getTransaction().begin();
         PointDetail p = new PointDetail();
@@ -57,8 +55,7 @@ public class LikeData {
         int foodSize = FoodData.getFoodData().getFoodShowsList().size();
         int[] likeAcc = new int[foodSize];
         int[] likeSum = new int[foodSize];
-        EntityManagerFactory emf = Persistence.createEntityManagerFactory("objectdb://10.66.14.237:80/PointDetail.odb;user=admin;password=admin");
-//        EntityManagerFactory emf = Persistence.createEntityManagerFactory("./src/ODB/PointDetail.odb");
+        EntityManagerFactory emf = Persistence.createEntityManagerFactory("./src/ODB/PointDetail.odb");
         EntityManager em = emf.createEntityManager();
         TypedQuery<PointDetail> queryPointDetail =
                 em.createQuery("SELECT a FROM ooad.PointDetail a", PointDetail.class);

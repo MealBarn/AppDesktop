@@ -12,8 +12,6 @@ import javafx.scene.text.Text;
 import javafx.stage.Stage;
 import ooad.FoodShow;
 import ooad.Like;
-
-import java.awt.*;
 import java.io.IOException;
 import java.util.ArrayList;
 

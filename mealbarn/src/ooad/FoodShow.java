@@ -41,5 +41,4 @@ public class FoodShow {
         this.perfect = newPerfect;
     }
 
-    public String toString(){return String.format("%d %s %s %s",this.id,this.name,this.amount,this.perfect);}
 }
